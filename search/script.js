@@ -1,5 +1,20 @@
 // script.js
 
+/**
+ * @param {Function} func A função a ser executada após o delay.
+ * @param {number} delay O tempo de espera em milissegundos.
+ * @returns {Function} A nova função debounced.
+ */
+function debounce(func, delay) {
+  let timeoutId;
+  return function (...args) {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+      func.apply(this, args);
+    }, delay);
+  };
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const API_BASE_URL = "https://api.eternityready.com";
   const dynamicContentArea = document.getElementById("dynamic-content-area");
@@ -11,6 +26,46 @@ document.addEventListener("DOMContentLoaded", () => {
    * @param {Array} videos
    * @returns {string} - O HTML do media-card.
    */
+
+  function renderLiveResults(videos) {
+    // Esconde as seções de histórico e categorias
+    categoriesSection.style.display = "none";
+    historySection.style.display = "none";
+    mediaSection.style.display = "block"; // Mostra a seção de resultados
+    mediaList.innerHTML = ""; // Limpa resultados antigos
+
+    if (videos.length === 0) {
+      mediaList.innerHTML =
+        '<li class="search-feedback">Nenhum resultado encontrado.</li>';
+      return;
+    }
+
+    videos.slice(0, 5).forEach((video) => {
+      const imageUrl = video.thumbnail?.url
+        ? `${API_BASE_URL}${video.thumbnail.url}`
+        : "images/placeholder.jpg";
+
+      const li = document.createElement("li");
+      li.className = "media-item";
+      const videoUrl = "/";
+      li.innerHTML = `
+        <img src="${imageUrl}" alt="${video.title}">
+        <div class="media-info">
+          <p class="media-title">${video.title}</p>
+          <p class="media-meta">${video.categories
+            .map((c) => c.name)
+            .join(", ")}</p>
+        </div>`;
+
+      // Opcional: Adiciona um evento de clique para ir para a página do vídeo
+      li.onclick = () => {
+        window.location.href = videoUrl; // Exemplo de navegação
+        console.log("Clicou em:", video.title);
+      };
+
+      mediaList.appendChild(li);
+    });
+  }
 
   function createAllVideosGridHTML(title, videos) {
     // Gera o HTML para todos os cards de vídeo
@@ -359,6 +414,60 @@ document.addEventListener("DOMContentLoaded", () => {
     else renderResults(q);
   }
 
+  const performLiveSearch = async (event) => {
+    const query = event.target.value.trim();
+
+    // Se o campo estiver vazio, volta a mostrar o histórico/categorias
+    if (query.length < 2) {
+      renderEmpty(); // Função que você já tem para mostrar histórico, etc.
+      return;
+    }
+
+    // Mostra um feedback de carregamento
+    mediaSection.style.display = "block";
+    categoriesSection.style.display = "none";
+    historySection.style.display = "none";
+    mediaList.innerHTML = '<li class="search-feedback">Buscando...</li>';
+
+    const results = await searchMidia(query);
+    renderLiveResults(results);
+
+    // Atualiza o link "See all results"
+    seeAllLink.textContent = `See all results for ${query} »`;
+    seeAllLink.href = `#search?query=${encodeURIComponent(query)}`;
+  };
+
+  const debouncedSearch = debounce(performLiveSearch, 400);
+
+  input.addEventListener("input", debouncedSearch);
+
+  input.addEventListener("focus", () => {
+    dropdown.style.display = "block";
+    // Mostra o histórico se o campo estiver vazio
+    if (input.value.trim() === "") {
+      renderEmpty();
+    }
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!document.querySelector(".search-container").contains(e.target)) {
+      dropdown.style.display = "none";
+    }
+  });
+
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      const q = input.value.trim();
+      if (q) {
+        history = [q, ...history.filter((h) => h !== q)].slice(0, 5);
+        localStorage.setItem("searchHistory", JSON.stringify(history));
+        // Redirecionar para a página de busca, por exemplo:
+        // window.location.href = `/search?search_query=${encodeURIComponent(q)}`;
+      }
+      dropdown.style.display = "none";
+    }
+  });
+
   input.addEventListener("focus", () => {
     dropdown.style.display = "block";
     updateDropdown();
@@ -472,7 +581,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       // Usa o parâmetro 'search_query' esperado pela sua API
-      const url = `http://localhost:3002/api/search?search_query=${encodeURIComponent(
+      const url = `${API_BASE_URL}/api/search?search_query=${encodeURIComponent(
         query
       )}`;
       const response = await fetch(url);
