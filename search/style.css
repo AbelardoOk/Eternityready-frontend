@@ -29,6 +29,7 @@ a {
   margin: 0 auto;
 }
 
+
 /* ================================
    HEADER
    ================================ */
@@ -1157,7 +1158,7 @@ a {
    ==================================== */
 .media-section {
   background: #060d17;
-  padding: 0 0 60px 0;
+  padding: 2rem 0 0 0;
 }
 
 .media-section .section-header {
@@ -1327,7 +1328,7 @@ a {
 
 /* NEWEST STUFF META */
 .newest-section {
-  padding: 0 0 60px 0;
+  /* padding: 0 0 60px 0; */
 }
 
 .bible-section, .television-section, .radio-section {
@@ -1998,6 +1999,14 @@ a {
   margin: 0;
   font-size: 1rem;
   color: #fff;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.1rem;
+  min-height: calc(1.4em * 2);
 }
 
 .media-meta {
@@ -2032,6 +2041,7 @@ a {
     width: 98%;
     padding: 0 6px;
   }
+
 
   /* Header: Stack, Mobile Nav */
   .header-inner {
@@ -2242,7 +2252,7 @@ a {
 
   /* Media Section: Carousels */
   .media-section {
-    padding: 20px 0 10px 0;
+    padding: 20px 0 0 0;
   }
 
   .media-section .section-title {

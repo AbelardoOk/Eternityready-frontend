@@ -1,14 +1,34 @@
 // script.js
 
 document.addEventListener("DOMContentLoaded", () => {
-  const API_BASE_URL = "https://localhost:3002";
+  const API_BASE_URL = "https://api.eternityready.com";
   const dynamicContentArea = document.getElementById("dynamic-content-area");
 
   /**
    * Cria o HTML para um único card de vídeo.
    * @param {object} video - O objeto de vídeo da API.
+   * @param {string} title
+   * @param {Array} videos
    * @returns {string} - O HTML do media-card.
    */
+
+  function createAllVideosGridHTML(title, videos) {
+    // Gera o HTML para todos os cards de vídeo
+    const cardsHTML = videos.map(createVideoCardHTML).join("");
+
+    return `
+      <section class="media-section">
+        <div class="all-videos-section">
+          <div class="section-header">
+            <h2 class="section-title">${title}</h2>
+          </div>
+          <div class="media-grid all-videos-grid">
+            ${cardsHTML}
+          </div>
+        </div>
+      </section>
+    `;
+  }
 
   function createVideoCardHTML(video) {
     const imageUrl = video.thumbnail?.url
@@ -86,17 +106,17 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   async function fetchAndRenderSliders() {
-    if (!dynamicContentArea) return; // Se o contêiner não existir, não faz nada
+    if (!dynamicContentArea) return;
+    const backHomeButtonHTML =
+      '<a class="backHome-Button" href="/">Back Home</a>';
 
     try {
-      // 1. Buscar os vídeos da API (sem query para buscar todos ou os mais recentes)
-      const url = `${API_BASE_URL}/api/search`; // Endpoint sem search_query
+      const url = `${API_BASE_URL}/api/search`;
       const response = await fetch(url);
       if (!response.ok) throw new Error("Failed featching videos");
 
       const data = await response.json();
       const allVideos = Array.isArray(data) ? data : data.videos || [];
-      console.log("Loaded videos:", allVideos);
 
       // 2. Agrupar vídeos por categoria
       const videosByCategory = {};
@@ -113,6 +133,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // 3. Gerar o HTML para cada slider e juntar tudo
       let finalHTML = "";
+
+      if (allVideos.length > 0) {
+        finalHTML += createAllVideosGridHTML(
+          `Found ${allVideos.length} videos`,
+          allVideos
+        );
+      }
+
       for (const categoryName in videosByCategory) {
         if (videosByCategory[categoryName].length >= 3) {
           finalHTML += createSliderSectionHTML(
@@ -124,9 +152,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // 4. Inserir o HTML gerado no contêiner da página
       if (finalHTML) {
-        dynamicContentArea.innerHTML = finalHTML;
+        dynamicContentArea.innerHTML = backHomeButtonHTML + finalHTML;
       } else {
         dynamicContentArea.innerHTML =
+          backHomeButtonHTML +
           '<p class="container" style="text-align: center;">No content to display.</p>';
       }
 
@@ -136,6 +165,7 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Erro ao renderizar sliders:", error);
       if (dynamicContentArea) {
         dynamicContentArea.innerHTML =
+          backHomeButtonHTML +
           '<p class="container" style="text-align: center; color: red;">The content could not be loaded.</p>';
       }
     }
