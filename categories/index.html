@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1"
+    />
+    <title>Eternity Ready</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-?qXv587Op+TN2fPLwKdTkciOc0/nZ0hpqbvBxXqyFfpu7H2Qnz+Wc+vlV5jJ2fr4RkBuWsR+S1pWQgf0RX+vRg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css?v=1" />
+  </head>
+  <body>
+    <!-- BACKDROP FOR SLIDE-IN MENU -->
+    <div class="menu-overlay"></div>
+
+    <!-- HEADER (desktop) -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="logo">
+          <img
+            src="images/logo1USE-THIS.png"
+            alt="Flame Logo"
+            class="logo-icon"
+          />
+        </div>
+
+        <!-- Desktop Nav -->
+        <nav class="site-nav desktop-nav">
+          <a href="#" class="active">Home</a>
+          <a href="#">New</a>
+          <a href="#">Popular</a>
+          <a href="#">Web Pages</a>
+        </nav>
+
+        <div class="search-container">
+          <input
+            id="search-input"
+            type="text"
+            placeholder="Search for movies, radio, podcasts or TV shows"
+            autocomplete="off"
+          />
+          <i class="fa-solid fa-search"></i>
+          <div id="search-dropdown">
+            <!-- existing dropdown markup -->
+            <div id="history-section" class="dropdown-section">
+              <p id="no-history" class="empty-text">No recent searches</p>
+              <ul id="history-list" class="history-list"></ul>
+            </div>
+            <div id="categories-section" class="dropdown-section">
+              <p class="section-label">Filter searches by categories</p>
+              <div id="categories-list" class="chip-list"></div>
+            </div>
+            <div id="media-section" class="dropdown-section">
+              <p class="section-label">MOVIES &amp; TV SHOWS</p>
+              <ul id="media-list" class="media-list"></ul>
+            </div>
+            <div id="trending-section" class="dropdown-section">
+              <p class="section-label">Trending searches</p>
+              <div id="trending-list" class="chip-list"></div>
+            </div>
+            <div class="search-footer">
+              <a href="#" id="see-all">See all results »</a>
+            </div>
+          </div>
+        </div>
+        <a class="btn-radio" role="button" href = "https://eternityreadyradio.com/"><span class="text">Radio</span></a>
+        <!--<a class="btn-radio" href = "https://eternityreadyradio.com/">Radio</a>-->
+        <button class="btn-menu" aria-label="Open menu">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect y="4" width="24" height="2" />
+            <rect y="11" width="24" height="2" />
+            <rect y="18" width="24" height="2" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+<!-- MOBILE SLIDE-IN NAV -->
+<nav class="site-nav mobile-nav">
+  <div class="mobile-nav-header">
+    <span class="menu-title">Menu</span>
+    <button class="btn-nav-close" aria-label="Close menu">&times;</button>
+  </div>
+
+  <!-- Donate CTA -->
+  <button class="btn-donate">Donate</button>
+
+  <div class="mobile-nav-list">
+    <div class="nav-group">
+      <a href="#">ON-DEMAND <i class="fa fa-chevron-down"></i></a>
+      <ul class="submenu">
+        <li><a href="#">Feature Films</a></li>
+        <li><a href="#">Drama Series</a></li>
+        <li><a href="#">Comedy Series</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-group">
+      <a href="#">PODCASTS <i class="fa fa-chevron-down"></i></a>
+      <ul class="submenu">
+        <li><a href="#">Latest Episodes</a></li>
+        <li><a href="#">Top Charts</a></li>
+        <li><a href="#">Categories</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-group">
+      <a href="#">TV CHANNELS <i class="fa fa-chevron-down"></i></a>
+      <ul class="submenu">
+        <li><a href="#">Live Now</a></li>
+        <li><a href="#">All Channels</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-group">
+      <a href="#">AFFILIATES</a>
+    </div>
+
+    <div class="nav-group">
+      <a href="#">ABOUT US <i class="fa fa-chevron-down"></i></a>
+      <ul class="submenu">
+        <li><a href="#">Donate</a></li>
+        <li><a href="#">Contact &amp; Help</a></li>
+        <li><a href="#">Mission, Beliefs</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <section class="container">
+        <a class="backHome-Button" href="/">Back Home</a>
+        
+        <h1 class="categorieTitle">Categoriy title <span>102 Found</span></h1>
+        
+        <section class="media-section">
+            <div class="media-grid">
+              <div class="media-card">
+                <div class="media-thumb">
+                  <img src="images/your.jpeg" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="media-card">
+                <div class="media-thumb">
+                  <img src="images/your.jpeg" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="media-card">
+                <div class="media-thumb">
+                  <img src="images/your.jpeg" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            <div class="media-card">
+                <div class="media-thumb">
+                  <img src="images/your.jpeg" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="media-card">
+                <div class="media-thumb">
+                  <img src="images/your.jpeg" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="media-card">
+                <div class="media-thumb">
+                  <img src="images/your.jpeg" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            <div class="media-card">
+                <div class="media-thumb">
+                  <img src="images/your.jpeg" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="media-card">
+                <div class="media-thumb">
+                  <img src="images/your.jpeg" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="media-card">
+                <div class="media-thumb">
+                  <img src="images/your.jpeg" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            
+        </div>
+        </section>
+        
+    </section>
+    
+    
+    <div class="bottom_most_section free-container">
+         <div class="content_wrapper">
+            <div class="free-content">
+               <h3>Are You Eternity Ready?</h3>
+               <h4>If not learn how</h4>
+               <a href="https://www.eternityready.com/salvation" class="button">Learn More</a>
+            </div>
+         </div>
+         <div class="red_fitler"></div>
+         <img src="public/if-not.webp" alt="Eternity Ready promotional content" width="1921" height="656" />
+      </div>
+
+    <footer class="footer-section">
+    <!--<hr class="footer-divider" />-->
+      <div class="subfooter">
+        <div class="container">
+          <div class="footer-connect">
+            <h3>Connect with us</h3>
+            <ul class="social-list">
+              <li>
+                <a
+                  href="https://www.facebook.com/eternityready"
+                  target="_blank"
+                  class="social-facebook"
+                >
+                  <i class="fab fa-facebook-f"></i> Facebook
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.eternityready.com/#"
+                  target="_blank"
+                  class="social-twitter"
+                >
+                  <i class="fab fa-x-twitter"></i> x.com
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.eternityready.com/#"
+                  target="_blank"
+                  class="social-youtube"
+                >
+                  <i class="fab fa-youtube"></i> YouTube
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/jeremiahfarris/"
+                  target="_blank"
+                  class="social-instagram"
+                >
+                  <i class="fab fa-instagram"></i> Instagram
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="footer-divider" />
+
+        <div class="footer-links-box">
+          <div class="container">
+            <div class="footer-content">
+              <!-- All columns on desktop in a row, on mobile use .footer-cols-wrap grid -->
+              <div class="footer-col footer-apps">
+                <h4>Our Apps</h4>
+                <div class="app-buttons">
+                  <a href="#" class="app-btn">
+                    <img
+                      src="images/pngegg (1).png"
+                      alt="Get it on Google Play"
+                    />
+                  </a>
+                  <a href="#" class="app-btn">
+                    <img
+                      src="images/pngegg.png"
+                      alt="Download on the App Store"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="footer-stack-col">
+                <div class="footer-col">
+                  <h4>Useful Links</h4>
+                  <ul>
+                    <li><a href="#">Radio Schedule</a></li>
+                    <li><a href="#">Ways to Listen</a></li>
+                    <li><a href="#">Donate</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>Our Brands</h4>
+                  <ul>
+                    <li><a href="#">Corporate</a></li>
+                    <li><a href="#">Eternity Ready TV</a></li>
+                    <li><a href="#">Rapture Ready TV</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>About</h4>
+                  <ul>
+                    <li><a href="#">Team &amp; Culture</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Media Kit</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>Help</h4>
+                  <ul>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy &amp; Legal</a></li>
+                    <li><a href="#">Contact &amp; Help</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="media-separator" />
+        <div class="container">
+          <div class="footer-bottom">
+            <div class="footer-brand">
+              <img
+                src="images/logo1USE-THIS.png"
+                alt="Eternity Logo"
+                class="logo-icon"
+              />
+            </div>
+            <p class="footer-copy">
+              © 2012–2025 Eternity Ready LLC, All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

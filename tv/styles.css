@@ -1,0 +1,1265 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --bg-dark: #0f0f0f;
+  --text-light: #ffffff;
+  --text-muted: #9ca3af;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0;
+  padding: 1rem;
+}
+
+.button-container {
+  display: none;
+}
+
+/* Header */
+/* Header and Navbar Responsive Styles */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  z-index: 1000;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+  height: 50px;
+  z-index: 1;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0;
+  padding: 0 45px;
+}
+
+/* Logo Styling */
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo span {
+  color: #e53935;
+}
+
+/* Search Bar */
+.search-bar {
+  /* display: flex; */
+  align-items: center;
+  position: relative;
+}
+
+.search-bar input {
+  padding: 6px 15px;
+  padding-right: 40px;
+  border: 0 solid transparent;
+  border-radius: 3px;
+  background-color: #ffffff;
+  color: #888;
+  transition: all 0.3s ease;
+  width: 240px;
+  padding-left: 5px;
+  font-weight: bolder;
+  font-size: 16px;
+  margin-left: 15px;
+  margin-top: 14px;
+}
+
+.search-bar input:focus {
+  outline: none;
+  /* border-color: #33c3a5; */
+  border-color: #fb2c36;
+  box-shadow: 0 0 10px rgba(51, 195, 165, 0.3);
+}
+
+.search-bar button {
+  position: absolute;
+  right: 5px;
+  top: 32px;
+  transform: translateY(-50%);
+  background-color: #cc0001;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: -3px;
+}
+
+/* Mobile Menu Toggle */
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.close-btn-nav {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  padding: 4px 12px;
+  border: 1px solid #777;
+  border-radius: 5px;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+.arrow-icon {
+  display: none;
+  font-size: 17px;
+  transition: all 0.3s ease;
+  float: right;
+  border: 1px solid #000;
+  border-radius: 15px;
+  padding: 4px 15px;
+  color: #777;
+  margin-right: 10px;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+  position: relative;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  /* font-size: 14px; */
+  /* font-weight: 700; */
+  /* font-family: "Asap Condensed",'Oswald', 'sans-serif'; */
+}
+
+dropdown-section li > a {
+  color: #f5f5f5;
+  font-size: 14px;
+  padding: 5px 0px 5px 20px;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  /* color: #33c3a5; */
+  color: #fb2c36 !important;
+}
+
+/* Adding the arrow after specific list items */
+/* .nav-links li.has-arrow::after {
+  content: "▼";
+  font-size: 10px;
+  color: rgb(255, 255, 255);
+  margin-left: 5px;
+  transition: transform 0.3s;
+} */
+
+.nav-links li.has-right-arrow {
+  position: relative;
+}
+
+.nav-links li.has-right-arrow::after {
+  content: "►";
+  font-size: 10px;
+  color: #ffffff;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+}
+
+.nav-links li.has-right-arrow:hover::after {
+  transform: translateY(-50%) rotate(90deg); /* تأكد من أن السهم لا ينزل عند التحويل */
+}
+/* ============================================= */
+/* on-demand-dropdown */
+/* ============================================= */
+.nav-links li .on-demand-dropdown {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -260px;
+  background-color: #000;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  width: 750px;
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 10;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Layout of the dropdown items */
+.dropdown-section {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 15px;
+  padding: 10px; */
+}
+
+.dropdown-section li {
+  width: 25%;
+  font-weight: normal;
+  padding: 3px 0px 3px 10px;
+}
+
+.on-demand-dropdown a {
+  color: #ffffff;
+  font-size: 14px;
+  /* padding: 5px 0px 5px 20px; */
+  font-weight: 600;
+}
+
+.on-demand-dropdown a:hover {
+  /* color: #33c3a5; */
+  color: #fb2c36;
+}
+
+/* Mobile responsiveness for dropdown */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+    width: 100%;
+  }
+}
+
+/* ============================================= */
+/* About Us Dropdown */
+/* ============================================= */
+.about-us {
+  position: relative;
+}
+
+.about-us-dropdown {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  width: 180px;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.about-us-dropdown li {
+  padding: 1.5px 15px;
+}
+
+.about-us-dropdown a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.about-us-dropdown a:hover {
+  /* color: #33c3a5; */
+  color: #fb2c36;
+}
+
+/* ============================================= */
+/* TV Channels Dropdown */
+/* ============================================= */
+.nav-links li .tv-channels-dropdown {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  width: 180px;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.tv-channels-dropdown li {
+  padding: 1.5px 15px;
+}
+
+.tv-channels-dropdown a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.tv-channels-dropdown a:hover {
+  /* color: #33c3a5; */
+  color: #fb2c36;
+}
+/* Base styles for the dropdown (hidden by default) */
+.tv-channels-dropdown {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Show dropdown when the parent has 'open' class (used for mobile) */
+.has-arrow.open .on-demand-dropdown,
+.has-arrow.open .podcasts-dropdown,
+.has-arrow.open .tv-channels-dropdown,
+.has-arrow.open .about-us-dropdown {
+  display: block !important;
+  opacity: 1;
+}
+
+/* Media query for desktop screens (>1025px) */
+@media (min-width: 1026px) {
+  /* Use hover to show dropdowns on desktop */
+  .has-arrow:hover .on-demand-dropdown,
+  .has-arrow:hover .podcasts-dropdown,
+  .has-arrow:hover .tv-channels-dropdown,
+  .has-arrow:hover .about-us-dropdown {
+    display: block;
+  }
+  .nav-links li:hover .on-demand-dropdown,
+  .nav-links li:hover .podcasts-dropdown,
+  .nav-links li:hover .tv-channels-dropdown,
+  .nav-links li:hover .about-us-dropdown {
+    opacity: 1;
+    transform: scale(1);
+  }
+  .vertizontal-dropdown {
+    background-color: #000;
+    position: absolute !important;
+    opacity: 0;
+  }
+  .vertizontal:hover .vertizontal-dropdown {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+    top: -2px;
+  }
+}
+
+/* ============================================= */
+/* Podcasts Dropdown */
+/* ============================================= */
+.nav-links li .podcasts-dropdown {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  width: 180px;
+  max-height: 400px;
+  overflow-y: auto;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.podcasts-dropdown li {
+  padding: 1.5px 15px;
+}
+
+.podcasts-dropdown a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.podcasts-dropdown a:hover {
+  /* color: #33c3a5; */
+  color: #fb2c36;
+}
+
+/* ============================================= */
+/* Vertizontal Dropdown (sub-sub menus) */
+/* ============================================= */
+.vertizontal {
+  position: relative;
+}
+
+.vertizontal .vertizontal-dropdown {
+  display: none;
+  left: 0;
+
+  list-style: none;
+  margin: 0;
+  width: 180px;
+  opacity: 1;
+  transform: scale(0.95);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 10;
+  border: 1px solid #222;
+  padding-left: 0;
+}
+.vertizontal .vertizontal-dropdown li {
+  width: 70%;
+}
+
+.vertizontal-dropdown a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.vertizontal-dropdown a:hover {
+  /* color: #33c3a5; */
+  color: #fb2c36;
+}
+@media (max-width: 991px) {
+  .close-btn-nav {
+    position: absolute;
+    top: 0;
+    right: 9%;
+    margin: 12px 0 0 0;
+    padding: 5px 10px;
+    border: 1px solid #777 !important;
+    background: transparent !important;
+    line-height: 1.5em;
+  }
+  span.closex {
+    color: #000;
+    font-size: 20px;
+    padding: 5px;
+  }
+}
+
+/* drop menu 1 */
+.vertizontal .vertizontal-dropdown-mune {
+  visibility: hidden;
+  position: absolute;
+  left: -10px;
+  background-color: #1c1c1c;
+  list-style: none;
+  margin: 0;
+  width: 180px;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 10;
+  border: 1px solid #222;
+  padding-left: 0;
+}
+
+.vertizontal-dropdown-mune li {
+  width: 70%;
+}
+.deep:hover .vertizontal-dropdown-mune {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+  top: -2px;
+}
+
+/* drop menu1 */
+
+header .cta-button {
+  color: #fff;
+  background-color: #1bbc9b;
+  border-color: #1bbc9b;
+  border-radius: 30px;
+  font-size: 18px;
+  padding: 5px 15px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  border: 0;
+}
+
+header .cta-button a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: "Asap Condensed", "Oswald", "sans-serif";
+}
+
+.donate-btn {
+  display: none;
+}
+/* 3 btns */
+@media (max-width: 768px) {
+  .button-container {
+    display: flex;
+    gap: 6px;
+    background: #000;
+    margin-top: -3px;
+    justify-content: center;
+    padding: 10px 0;
+    min-width: 360px;
+    position: fixed;
+    width: 100%;
+    top: 60px;
+  }
+
+  .button-container a {
+    width: 30%;
+    text-align: center;
+  }
+  .button {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  .button.on-demand,
+  .button.podcasts {
+    background-color: #00aeef;
+    text-decoration: none;
+    padding: 11px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+  }
+  .button.on-demand:hover,
+  .button.podcasts:hover {
+    background-color: #00acc1;
+  }
+  .button.listen {
+    background: linear-gradient(135deg, #c63663, #ed6430 50%, #ffdf63);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+  }
+  .button.listen:hover {
+    opacity: 0.9;
+  }
+  .icon {
+    display: inline-block;
+    width: 10px;
+    height: 13px;
+    fill: white;
+  }
+
+  header .cta-button {
+    display: none;
+  }
+
+  .donate-btn {
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+    border: none;
+    padding: 10px 0;
+    border-radius: 30px;
+    background-color: #00aeef;
+  }
+  .nav-links .donate-btn a {
+    color: #fff;
+    font-weight: normal;
+    font-size: 17px;
+    font-family: inherit;
+  }
+}
+/* 3 btns */
+
+/* ============================================= */
+/* Mobile Styles (Mobile & Tablet View) */
+/* ============================================= */
+@media (max-width: 1024px) {
+  .spaceing {
+    width: 100%;
+  }
+  .nav-links {
+    flex-direction: column;
+    justify-content: center;
+    width: 84%;
+    margin: 0;
+
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    width: 90%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    padding: 20px 0;
+  }
+
+  .nav-links li {
+    margin: 7px 0;
+    padding: 0;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+    color: #777777;
+    margin-left: 20px;
+  }
+
+  .arrow-icon {
+    display: block;
+  }
+
+  .nav-links li .on-demand-dropdown {
+    position: static;
+    background-color: #ffffff;
+    list-style: none;
+    margin: 0;
+    width: 100%;
+    overflow-y: auto;
+    z-index: 10;
+  }
+
+  /* Layout of the dropdown items */
+
+  .dropdown-section li {
+    font-weight: normal;
+    padding: 3px 0px 3px 10px;
+    width: 100%;
+  }
+
+  .on-demand-dropdown a {
+    color: #777;
+    font-size: 14px !important;
+    padding: 5px 0px 5px 20px;
+    font-weight: 600;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+  }
+
+  .nav-links li .podcasts-dropdown {
+    position: static;
+    background-color: #ffffff;
+    list-style: none;
+    margin: 0;
+    width: 100%;
+    overflow-y: auto;
+    z-index: 10;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.5s ease, transform 0.3s ease;
+  }
+
+  .nav-links li .tv-channels-dropdown {
+    position: static;
+    background-color: #ffffff;
+    list-style: none;
+    margin: 0;
+    width: 100%;
+    overflow-y: auto;
+    z-index: 10;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.5s ease, transform 0.3s ease;
+  }
+  .about-us .about-us-dropdown {
+    position: static;
+    background-color: #ffffff;
+    z-index: 10;
+  }
+
+  .about-us-dropdown a {
+    color: #8d8d8d;
+    font-size: 14px;
+    padding: 5px 0px 5px 20px;
+    font-weight: 600;
+  }
+
+  .podcasts-dropdown a {
+    color: #8d8d8d;
+    font-size: 14px;
+    padding: 5px 0px 5px 20px;
+    font-weight: 600;
+  }
+
+  .tv-channels-dropdown a {
+    color: #8d8d8d;
+    font-size: 14px;
+    padding: 5px 0px 5px 20px;
+    font-weight: 600;
+  }
+
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 85px 30px 0 0;
+    z-index: 3;
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+    color: #bf1e2e;
+    border: 1px solid #bf1e2e;
+    padding: 0 8px;
+    border-radius: 5px;
+    font-size: 21px;
+    margin-top: 0px;
+    margin-right: 0;
+    line-height: 1.4;
+  }
+
+  .close-btn-nav {
+    display: block;
+  }
+
+  .vertizontal .vertizontal-dropdown {
+    left: 0;
+    background-color: #fff;
+    list-style: none;
+    margin: 0;
+    width: 200px;
+    z-index: 9999;
+    position: relative;
+    transform: scale(0.95);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 10;
+    border: 0;
+  }
+
+  .vertizontal-dropdown a {
+    margin-left: 50px;
+  }
+
+  .podcasts-dropdown li {
+    width: 40%;
+  }
+  /* /* .nav-links li.has-right-arrow {
+    position: static; 
+  } */
+
+  .nav-links li.has-right-arrow::after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -7px;
+  }
+  */ .dropdown-section {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 50%; */
+    /* gap: 15px; */
+    /* padding: 10px; */
+  }
+
+  .dropdown-section li {
+    width: 40%;
+    white-space: nowrap;
+    display: block;
+    padding: 0;
+  }
+  .dropdown-section a {
+    font-size: 12px;
+  }
+
+  /* drop menu 1 */
+  .vertizontal .vertizontal-dropdown-mune {
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    background-color: #d7d7d7;
+    list-style: none;
+    margin: 0;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 10;
+    border: 0;
+    padding-left: 0;
+  }
+
+  .vertizontal-dropdown-mune li a {
+    width: 100%;
+  }
+  .deep:hover .vertizontal-dropdown-mune {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+    top: -2px;
+  }
+
+  .vertizontal-dropdown-mune a {
+    margin-left: 0;
+  }
+
+  /* drop menu1 */
+
+  .vertizontal .vertizontal-dropdown li {
+    width: 90%;
+  }
+}
+
+.search-bar {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+  }
+
+  .nav-links.active {
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+    color: #bf1e2e;
+    border: 1px solid #bf1e2e;
+    padding: 0 8px;
+    border-radius: 5px;
+    font-size: 21px;
+    margin-top: 0px;
+    margin-right: 0;
+    line-height: 1.4;
+  }
+
+  /*  */
+
+  /* Search Bar */
+  .search-bar {
+    /* display: flex; */
+    align-items: center;
+    position: relative;
+  }
+
+  .search-bar input {
+    padding: 6px 15px;
+    padding-right: 40px;
+    border: 0 solid transparent;
+    border-radius: 15px;
+    background-color: #060404;
+    color: #888;
+    transition: all 0.3s ease;
+    width: 90%;
+    padding-left: 5px;
+    font-weight: bolder;
+    font-size: 16px;
+    margin-left: 15px;
+    margin-top: 14px;
+  }
+
+  .search-bar input:focus {
+    outline: none;
+    /* border-color: #33c3a5; */
+    border-color: #fb2c36;
+    box-shadow: 0 0 10px rgba(51, 195, 165, 0.3);
+  }
+
+  .search-bar button {
+    position: absolute;
+    right: 5px;
+    top: 32px;
+    transform: translateY(-50%);
+    background-color: #cc000000;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: -3px;
+  }
+
+  /*  */
+}
+
+@media (max-width: 480px) {
+  header .container {
+    padding: 0;
+    width: 90%;
+  }
+
+  .search-bar {
+    width: 50%;
+  }
+
+  .cta-button {
+    display: none;
+  }
+
+  .dropdown-section {
+    display: block;
+    flex-wrap: nowrap;
+    /* gap: 15px;
+    padding: 10px; */
+  }
+}
+
+/* after nav */
+
+/* main */
+/* main */
+/* main */
+/* main */
+/* main */
+
+/* Modal Styles */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-container.hidden {
+  display: none;
+  opacity: 0;
+}
+
+.modal-container:not(.hidden) {
+  opacity: 1;
+}
+
+.modal-container .modal-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  height: 90%;
+  max-height: 95vh;
+  width: 90%;
+  max-width: 1400px;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Close Button Styles */
+.close-btn-vid {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #4a5568;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+.close-btn-vid:hover {
+  background-color: #2d3748;
+}
+
+.close-btn-vid i {
+  font-size: 1.2rem;
+}
+
+.left-content {
+  width: 30%;
+  min-width: 300px;
+  padding: 1.5rem;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #a0aec0;
+}
+
+.platform-btn:hover {
+  background-color: #2d3748;
+}
+
+.video-container {
+  width: 70%;
+  flex-grow: 1;
+  height: auto;
+  min-height: 400px;
+  position: relative;
+  border-radius: 10px;
+  aspect-ratio: 16 / 9;
+}
+
+.video-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  border: none;
+  border-top-right-radius: 10px;
+}
+
+/* Estilos para a seção de recomendações no modal */
+.recommendations-section {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 1.5rem 1.5rem 1.5rem;
+  margin-top: 20px;
+}
+
+.recommendations-section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #f1f1f1;
+}
+
+/* Grid para os cards de recomendação */
+.recommendations-grid {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 15px;
+}
+
+/* Scrollbar customizada para melhor aparência (opcional, mas recomendado) */
+.recommendations-grid::-webkit-scrollbar {
+  height: 8px;
+}
+.recommendations-grid::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+.recommendations-grid::-webkit-scrollbar-track {
+  background: #2a2a2a;
+}
+
+/*
+ * Ajuste de tamanho dos cards QUANDO ESTÃO DENTRO DO MODAL.
+ * Usamos seletores mais específicos para não afetar os cards da página principal.
+*/
+.modal-container .channel-card,
+.modal-container .movie-card {
+  flex-shrink: 0; /* Impede que os cards encolham */
+  width: 200px; /* Largura fixa para os cards de recomendação */
+  cursor: pointer; /* Garante que o cursor seja de ponteiro */
+}
+
+.modal-container .channel-card h3,
+.modal-container .movie-card h3 {
+  font-size: 0.9rem; /* Fonte um pouco menor para o título */
+}
+
+.modal-container .channel-card .channel-details {
+  padding: 8px; /* Menos preenchimento interno */
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .modal-container .modal-content {
+    width: 90%;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+  .video-container {
+    width: 100%;
+    min-height: unset;
+    height: auto;
+  }
+  
+  .recommendations-section{
+      display: none !important;
+  }
+
+  .left-content {
+    width: 100%;
+    padding: 1rem;
+    height: 30%;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .platform-btn {
+    padding: 0.8rem 1.4rem;
+    font-size: 1rem;
+  }
+}
+
+/* Extra small devices (phones, 480px and up) */
+@media (max-width: 480px) {
+  .modal-container .modal-content {
+    width: 95%;
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+  }
+
+  .left-content {
+    width: 100%;
+    padding: 0.5rem;
+    height: 40%;
+    gap: 0;
+  }
+
+  #channel-desc{
+     display: -webkit-box;
+     -webkit-line-clamp: 7; /* O número de linhas que você quer exibir */
+     -webkit-box-orient: vertical;  
+     overflow: hidden;
+     text-overflow: ellipsis;
+  }
+
+  .video-container {
+    width: 100%;
+    min-height: unset;
+    height: auto;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .platform-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  list-style: none;
+  padding: 0;
+  margin-top: 5px;
+}
+
+/* Links dentro do dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content li {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.dropdown-content a:hover {
+  background-color: #262d3b;
+}
+
+.dropdown-content.show {
+  display: block;
+}
+
+#side_menu li {
+  width: 100% !important;
+}
+
+.menuButton {
+  background: #f00;
+  padding: 10px 24px !important;
+  border-radius: 8px;
+  font-weight: 700;
+  width: min-content !important;
+  transition: all 0.5s ease;
+}
+
+.menuButton:hover {
+  background: #de0000 !important;
+}

@@ -1,0 +1,249 @@
+/* footer */
+
+footer {
+    margin: 0;
+    background-color: #000;
+  }
+  
+  footer .brand-logo{
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    font-family: "Asap Condensed", Oswald, "sans-serif";
+  }
+  footer .brand-logo span{
+    color: #E53935;
+  }
+  
+  .f-wd {
+    width: 30%;
+  }
+  footer .main-title {
+    font-size: 26px;
+    font-family: "Open Sans", Sans-serif;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+    padding: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  footer .social-links {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px 30px;
+  }
+  
+  footer .social-links a {
+    font-family: "Asap Condensed", Oswald, "sans-serif";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    border-radius: 30px;
+    margin: 0px 12px 0px 12px;
+    transition: background-color 0.5s ease-out 100ms;
+    text-decoration: none !important;
+    height: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 30px;
+  }
+  
+  
+  footer .social-btn {
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 5px 8px;
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+  }
+  
+  footer .social-btn:hover {
+    background-color: #fff;
+    transition: ease;
+    border-radius: 30px;
+    
+  }
+  
+  footer .social-btn img{
+    width: 14px;
+    height: 14px;
+    margin-right: 15px;
+  }
+  
+  footer .social-row {
+    display: flex;
+  }
+  
+  footer .facebook-btn {
+    color: #576eee;
+  }
+  
+  footer .twitter-btn {
+    color: #1dbbff;
+  }
+  
+  footer .youtube-btn {
+    color: #c31010;
+  }
+  
+  footer .instagram-btn {
+    color: #f8079a;
+  }
+  footer .divider {
+    border-top: 1px solid #444;
+    width: 100%;
+    margin: 0 auto;
+    margin: 25px 0 30px 0;
+  }
+  
+  footer .app-wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 0 20px;
+  }
+  footer .app-wrap h4 {
+    color: #33C3A5;
+    font-family: "Asap Condensed", Oswald, "sans-serif";
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 24px;
+  }
+  footer .app-wrap ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  footer .app-wrap ul li {
+    margin-bottom: 8px;
+  }
+  footer .app-wrap ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Asap Condensed", Oswald, "sans-serif";
+    font-weight: 400;
+    padding: 6px 0px;
+    line-height: 24px;
+  }
+  
+  footer .our-apps img {
+    width: 150px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  .our-apps {
+    width: 20%;
+  }
+  
+  .f-r-container{
+    display: flex;
+    width: 100%;
+  }
+  
+  footer .row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+  
+    margin-bottom: 20px;
+  }
+  
+  .f-wd {
+    width: 100%;
+    margin: 0 5px;
+  }
+  
+  
+  .our-brands li,
+  h4 {
+    text-align: left;
+  }
+  
+  footer .copyright {
+    font-size: 14px;
+    color: #666;
+    margin-top: 20px;
+    font-weight: 500;
+    font-family: "Asap Condensed", Oswald, "sans-serif";
+    text-align: center;
+  }
+  footer .content {
+    padding: 20px 0px;
+  }
+  
+  .full-divider {
+    border-top: 1px solid #666;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* ----------------------- */
+  @media (max-width: 768px) {
+  
+    footer .social-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .f-r-container{
+      display: block;
+    }
+  
+  
+  
+    footer .app-wrap {
+      display: flex
+;
+    flex-wrap: wrap;
+    gap: 20px;
+    }
+  
+    footer .app-links {
+      text-align: center;
+      display: flex;
+    }
+    footer .our-apps img {
+      max-width: 60%;
+      margin: 0 auto 20px auto;
+    }
+  
+    .our-apps {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+      width: 100%;
+      order: 2;
+    }
+  
+    .our-apps a{
+      width: 100%;
+      text-align: center;
+    }
+    .f-wd {
+      width: 100%;
+    }
+  
+  
+    footer .copyright p {
+      font-size: 11px;
+  
+    }
+    footer .content {
+      padding: 0px;
+      flex-direction: column;
+    }
+  
+    footer .divider {
+      margin-bottom: 20px;
+    }
+  }

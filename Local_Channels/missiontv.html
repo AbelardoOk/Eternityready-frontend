@@ -1,0 +1,270 @@
+
+<!-- <script src="//missiontv.com/tv/jwplayer/jwplayer.js"></script>
+<script>jwplayer.key="BGxjJI39tH9KcwUuoBstUUzjjsDDHFkQidFNzHbSzqA=";</script> -->
+
+
+
+
+<script type='text/javascript' src='https://missiontv.com/wp-content/themes/synch/lib/jquery-1.6.1.min.js?ver=5.8.1' id='jquery-js'></script>
+<script type='text/javascript' src='https://missiontv.com/wp-content/themes/synch/lib/jquery.cookie.js?ver=5.8.1' id='jquery-cookie-js'></script>
+
+<script type='text/javascript' src='https://missiontv.com/wp-content/themes/synch/main.js?ver=5.8.1' id='synch-main-js'></script>
+
+<script type='text/javascript' src='https://content.jwplatform.com/libraries/JXRGgAvN.js?ver=5.8.1' id='jwppp-library-js'></script>
+<script type='text/javascript' src='https://missiontv.com/wp-content/plugins/jw-player-7-for-wp/jw-widget/js/jw-widget-min.js?ver=5.8.1' id='jwppp-widget-js'></script>
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+
+
+<script src="https://missiontv.com/wp-content/themes/synch/lib/platform.js"></script>
+
+
+
+<div id="videos">
+<div class="menu-item-3137-sub-menu sub-menu-container" style="display: none;"><div class="sub-menu-pointer" style="display: block;"><div style="left: 1016.08px;"></div></div><div class="wrapper"><ul class="sub-menu" style="display: block;">
+		<li id="menu-item-3152" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3152"><a href="javascript:loadJWPlayer(source_high);">High Bandwidth</a></li>
+		<li id="menu-item-3153" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3153"><a href="javascript:loadJWPlayer(source_med);">Medium Bandwidth</a></li>
+		<li id="menu-item-3154" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3154"><a href="javascript:loadJWPlayer(source_low);">Low Bandwidth</a></li>
+	</ul></div></div>
+</div>
+
+<div id="main">
+
+<div id='missiontv-player'></div>
+
+<script>
+console.log(
+	"\nplatform.name: " + 
+	platform.name + 
+	"\nplatform.version: " + 
+	platform.version + 
+	"\nplatform.product: " + 
+	platform.product + 
+	"\nplatform.manufacturer: " + 
+	platform.manufacturer + 
+	"\nplatform.layout: " + 
+	platform.layout + 
+	"\nplatform.os: " + 
+	platform.os + 
+	"\nplatform.description: " +
+	platform.description
+)
+var sources = [
+{
+	file: "http://stream.missiontv.com:1935/live/missiontv.smil/jwplayer.smil",
+	label: "Auto"
+},
+{
+	file: "http://stream.missiontv.com:1935/live/ngrp:missiontv_all/Manifest",
+	label: "Auto"
+},
+{
+	file: "http://stream.missiontv.com:1935/live/missiontv_720p/playlist.m3u8",
+	label: "720p HD"
+},
+{
+	file: "http://stream.missiontv.com:1935/live/missiontv_360p/playlist.m3u8",
+	label: "360p SD"
+},
+{
+	file: "http://stream.missiontv.com:1935/live/missiontv_240p/playlist.m3u8",
+	label: "240p SD"
+},
+{
+	file: "http://stream.missiontv.com:1935/live/missiontv_180p/playlist.m3u8",
+	label: "180p SD"
+},
+{
+	file: "http://stream.missiontv.com:1935/live/missiontv/manifest.mpd",
+	label: "DASH 1080p SD"
+},
+{
+	file: "http://stream.missiontv.com:1935/live/missiontv_720p/manifest.mpd",
+	label: "DASH 720p HD"
+},
+{
+	file: "http://stream.missiontv.com:1935/live/missiontv_360p/manifest.mpd",
+	label: "DASH 360p SD"
+},
+{
+	file: "http://stream.missiontv.com:1935/live/missiontv_240p/manifest.mpd",
+	label: "DASH 240p SD"
+},
+{
+	file: "http://stream.missiontv.com:1935/live/missiontv_180p/manifest.mpd",
+	label: "DASH 180p SD"
+},
+{
+	file: "rtsp://stream.missiontv.com:1935/live/missiontv",
+	label: "Android 1080p SD"
+},
+{
+	file: "rtsp://stream.missiontv.com:1935/live/missiontv_720p",
+	label: "Android 720p HD"
+},
+{
+	file: "rtsp://stream.missiontv.com:1935/live/missiontv_360p",
+	label: "Android 360p SD"
+},
+{
+	file: "rtsp://stream.missiontv.com:1935/live/missiontv_240p",
+	label: "Android 240p SD"
+},
+{
+	file: "rtsp://stream.missiontv.com:1935/live/missiontv_180p",
+	label: "Android 180p SD"
+},
+{
+	file: "rtmp://stream.missiontv.com:1935/live/missiontv",
+	label: "RTMP"
+}];
+var source_high = [{
+	file: "http://stream.missiontv.com:1935/live/missiontv_720p/playlist.m3u8",
+	label: "720p HD"
+}];
+var source_med = [{
+	file: "http://stream.missiontv.com:1935/live/missiontv_360p/playlist.m3u8",
+	label: "360p SD"
+}];
+var source_low = [{
+	file: "http://stream.missiontv.com:1935/live/missiontv_180p/playlist.m3u8",
+	label: "180p SD"
+}];
+//https://6096a9cf11ae5.streamlock.net:1943/
+var ssl_sources = [
+{
+	file: "https://6096a9cf11ae5.streamlock.net:1943/live/missiontv.smil/jwplayer.smil",
+	label: "Auto"
+},
+{
+	file: "https://6096a9cf11ae5.streamlock.net:1943/live/ngrp:missiontv_all/Manifest",
+	label: "Auto"
+},
+{
+	file: "https://6096a9cf11ae5.streamlock.net:1943/live/missiontv_720p/playlist.m3u8",
+	label: "720p HD"
+},
+{
+	file: "https://6096a9cf11ae5.streamlock.net:1943/live/missiontv_360p/playlist.m3u8",
+	default: true,
+	label: "360p SD"
+},
+{
+	file: "https://6096a9cf11ae5.streamlock.net:1943/live/missiontv_240p/playlist.m3u8",
+	label: "240p SD"
+},
+{
+	file: "https://6096a9cf11ae5.streamlock.net:1943/live/missiontv_180p/playlist.m3u8",
+	label: "180p SD"
+},
+{
+	file: "https://6096a9cf11ae5.streamlock.net:1943/live/missiontv/manifest.mpd",
+	label: "DASH 1080p SD"
+},
+{
+	file: "https://6096a9cf11ae5.streamlock.net:1943/live/missiontv_720p/manifest.mpd",
+	label: "DASH 720p HD"
+},
+{
+	file: "https://6096a9cf11ae5.streamlock.net:1943/live/missiontv_360p/manifest.mpd",
+	label: "DASH 360p SD"
+},
+{
+	file: "https://6096a9cf11ae5.streamlock.net:1943/live/missiontv_240p/manifest.mpd",
+	label: "DASH 240p SD"
+},
+{
+	file: "https://6096a9cf11ae5.streamlock.net:1943/live/missiontv_180p/manifest.mpd",
+	label: "DASH 180p SD"
+},
+{
+	file: "rtsp://6096a9cf11ae5.streamlock.net:1935/live/missiontv",
+	label: "Android 1080p SD"
+},
+{
+	file: "rtsp://6096a9cf11ae5.streamlock.net:1935/live/missiontv_720p",
+	label: "Android 720p HD"
+},
+{
+	file: "rtsp://6096a9cf11ae5.streamlock.net:1935/live/missiontv_360p",
+	label: "Android 360p SD"
+},
+{
+	file: "rtsp://6096a9cf11ae5.streamlock.net:1935/live/missiontv_240p",
+	label: "Android 240p SD"
+},
+{
+	file: "rtsp://6096a9cf11ae5.streamlock.net:1935/live/missiontv_180p",
+	label: "Android 180p SD"
+},
+{
+	file: "rtmp://6096a9cf11ae5.streamlock.net:1935/live/missiontv",
+	label: "RTMP"
+}
+];
+var source_high = [{
+	file: "https://6096a9cf11ae5.streamlock.net:1943/live/missiontv_720p/playlist.m3u8",
+	label: "720p HD"
+}];
+var source_med = [{
+	file: "https://6096a9cf11ae5.streamlock.net:1943/live/missiontv_360p/playlist.m3u8",
+	label: "360p SD"
+}];
+var source_low = [{
+	file: "https://6096a9cf11ae5.streamlock.net:1943/live/missiontv_180p/playlist.m3u8",
+	label: "180p SD"
+}];
+function loadJWPlayer(sources) {
+	$("#menu-item-3137").removeClass("submenu-on");
+	$(".menu-item-3137-sub-menu").hide();
+	var player = jwplayer('missiontv-player');
+	player.setup({
+	playlist: [{
+	image: "https://missiontv.com/MissionTV-Logo-LiveBox-16-9.jpg",
+		title: 'MissionTV Live Stream',
+		'displayclick':'fullscreen',
+		autostart: 'true',
+		sources: sources
+	}],
+		rtmp: {
+		bufferlength: 3
+	},
+		fallback: false
+	});
+	player.on('setupError', function (error) {
+		//alert(JSON.stringify(error));
+		if (error.message == "No playable sources found" ){
+			player.remove();
+			var player_div = document.getElementById('missiontv-player');
+			var text = '<br><br><h1>Android Streaming Options</h1><p>';
+			for (i = 0; i < sources.length; i++) {
+				var file = sources[i].file;
+				var label = sources[i].label;
+				if (label.match(/^\d/)) {
+					label = 'HLS '+sources[i].label;
+				}
+				text += '<a href="'+file+'">'+label+'</a>&nbsp;&nbsp;&nbsp;&nbsp;';
+				if (i==3||i==7) text += '</p><p>';
+				if (i==11) text += '</p>';
+			}
+			text +=	'<br><p>Older Android devices may need to install <a href="https://www.videolan.org/vlc/download-android.html" target="_blank">VLC for Android</a>.</p>';
+			text +=	'<p><a href="https://www.videolan.org/vlc/download-android.html" target="_blank"><img class="alignnone wp-image-2997" src="https://missiontv.com/wp-content/uploads/2015/10/VLC1-150x150.png" alt="" srcset="https://missiontv.com/wp-content/uploads/2015/10/VLC1-150x150.png 150w, https://missiontv.com/wp-content/uploads/2015/10/VLC1-300x300.png 300w, https://missiontv.com/wp-content/uploads/2015/10/VLC1-30x30.png 30w, https://missiontv.com/wp-content/uploads/2015/10/VLC1.png 616w" sizes="(max-width: 75px) 100vw, 75px" width="75" height="75">VLC for Android&nbsp;</a><a href="https://play.google.com/store/apps/details?id=org.videolan.vlc" target="_blank"><img class="alignnone wp-image-2994" src="https://missiontv.com/wp-content/uploads/2015/10/GooglePlay-300x89.png" alt="GooglePlay" srcset="https://missiontv.com/wp-content/uploads/2015/10/GooglePlay-300x89.png 300w, https://missiontv.com/wp-content/uploads/2015/10/GooglePlay-1024x303.png 1024w, https://missiontv.com/wp-content/uploads/2015/10/GooglePlay.png 1124w" sizes="(max-width: 150px) 100vw, 150px" width="150" height="44"></a></p>';
+			player_div.innerHTML = text;
+		}
+	});
+	$("#menu-item-3137").addClass("menu-item-has-children submenu-off");
+}
+loadJWPlayer(ssl_sources);
+// menu-item menu-item-type-post_type menu-item-object-page menu-item-3137
+// menu-item menu-item-type-post_type menu-item-object-page menu-item-3137 menu-item-has-children submenu-off
+</script>
+
+
+

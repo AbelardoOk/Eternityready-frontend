@@ -1,0 +1,82 @@
+{
+    "randomPlayback": true,
+    "Monday": [
+        {
+            "start": "16:00",
+            "end": "20:00",
+            "url": "https://www.youtube.com/watch?v=0DWP3Pk7xN0"
+        },
+        {
+            "start": "20:00",
+            "end": "20:30",
+            "url": "celebrate.mp4"
+        }
+    ],
+    "Tuesday": [
+        {
+            "start": "16:00",
+            "end": "20:00",
+            "url": "https://www.youtube.com/watch?v=Bhyzc70lE"
+        },
+        {
+            "start": "20:00",
+            "end": "20:30",
+            "url": "bird.mp4"
+        }
+    ],
+    "Wednesday": [
+        {
+            "start": "16:00",
+            "end": "20:00",
+            "url": "https://www.youtube.com/watch?v=WPmN5P-zVKM"
+        },
+        {
+            "start": "20:00",
+            "end": "20:30",
+            "url": "bridge.mp4"
+        }
+    ],
+    "Thursday": [
+        {
+            "start": "16:00",
+            "end": "20:00",
+            "url": "https://www.youtube.com/watch?v=uixQ-fI7Mws"
+        },
+        {
+            "start": "20:00",
+            "end": "20:30",
+            "url": "ferriswheel.mp4"
+        }
+    ],
+    "Friday": [
+        {
+            "start": "16:00",
+            "end": "20:00",
+            "url": "https://www.youtube.com/watch?v=FrxmJLDw7qI"
+        },
+        {
+            "start": "20:00",
+            "end": "20:30",
+            "url": "lady.mp4"
+        }
+    ],
+    "Saturday": [
+        {
+            "start": "16:00",
+            "end": "20:00",
+            "url": "https://www.youtube.com/watch?v=aMQW5xl4tzw"
+        },
+        {
+            "start": "20:00",
+            "end": "20:30",
+            "url": "temple.mp4"
+        }
+    ],
+    "Sunday": [
+        {
+            "start": "16:00",
+            "end": "20:00",
+            "url": "https://www.youtube.com/shorts/DSHpVA0OdLw"
+        }
+    ]
+}

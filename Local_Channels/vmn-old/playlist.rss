@@ -1,0 +1,17 @@
+<rss version="2.0" xmlns:jwplayer="http://rss.jwpcdn.com/">
+    <channel>
+        <title>VertiZontal Media</title>
+ 
+
+                <item>
+    		<title>Amy Grant</title></title>
+    		<description>None</description>
+    		<jwplayer:source file="https://www.youtube.com/embed/8txqw-u4V78?si=RJ6Zvld4LXXY1qVX"/>
+                </item>
+
+                
+               
+                              
+							
+    </channel>
+</rss>

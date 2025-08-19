@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="http://vidmgr.abnvideos.com/css/embed.css?v=1.51">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/hls.js/latest/hls.min.js"></script>
+    <script type="text/javascript" src="http://vidmgr.abnvideos.com/js/player.js?v=1.51"></script>
+
+  </head>
+  <body>
+    <div class="widescreen">
+      <svg viewbox="0 0 16 9"></svg>
+      <div id="player"></div>
+      <div id="logoContainer"></div>
+      <img id="playButton" src="http://vidmgr.abnvideos.com/images/play_button.png" />
+    </div>
+    <div id="loader"><div class="left"></div><div class="middle"></div><div class="right"></div></div>
+    <script>
+      var player = new Player({"type":"live","title":"ABN Africa","hls_url":"https:\/\/rtmp2.abnvideos.com\/hls\/abnafrica.m3u8","items":[],"language":"arabic","scrolling":"","logo_url":null});
+    </script>
+  </body>
+</html>

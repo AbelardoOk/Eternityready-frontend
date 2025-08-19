@@ -1,0 +1,1672 @@
+HTTrack3.49-2 launched on Thu, 30 Apr 2020 19:00:33 at https://www.parables.tv/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/*
+(webhttrack -q -%i -w https://www.parables.tv/ -O "/home/oem/websites/parables" -n -%P -N100 -s2 -o -p7 -D -a -K0 -c4 -%k -A350000 -F  -%F  +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -%s -%u )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+19:00:33	Warning: 	* security warning: maximum bandwidth limited to 250000 to avoid server overload
+19:02:19	Error: 	"Forbidden" (403) at link https://www.parables.tv/wordpress/xmlrpc.php (from https://www.parables.tv/)
+19:02:19	Error: 	"Bad Request" (400) at link https://www.parables.tv/wordpress/wp-admin/admin-ajax.php (from https://www.parables.tv/)
+19:02:20	Warning: 	Found for ajax.googleapis.com/
+19:02:20	Warning: 	File has moved from ajax.googleapis.com/ to https://developers.google.com/speed/libraries/devguide
+19:02:36	Error: 	"Not Found" (404) at link fonts.googleapis.com/ (from https://www.parables.tv/)
+19:02:37	Warning: 	Note: due to s.w.org remote robots.txt rules, links beginning with these path will be forbidden: /search, /support/rss, /archive/, /?filters (see in the options to disable this)
+19:02:37	Warning: 	Moved Permanently for s.w.org/
+19:02:37	Warning: 	File has moved from s.w.org/ to https://wordpress.org/
+19:02:38	Error: 	"Forbidden" (403) at link https://www.parables.tv/wordpress/xmlrpc.php?rsd (from https://www.parables.tv/)
+19:02:53	Warning: 	Found for https://www.parables.tv/browse/home/coming-soon/
+19:02:53	Warning: 	File has moved from https://www.parables.tv/browse/home/coming-soon/ to 404
+19:04:09	Warning: 	Found for https://www.parables.tv/sign-in/
+19:04:09	Warning: 	File has moved from https://www.parables.tv/sign-in/ to https://www.parables.tv/account/
+19:04:13	Error: 	"Not Found" (404) at link https://www.parables.tv/premium-plans (from https://www.parables.tv/)
+19:06:08	Warning: 	Moved Permanently for https://www.parables.tv/?p=71854
+19:06:08	Warning: 	File has moved from https://www.parables.tv/?p=71854 to https://www.parables.tv/browse/home/
+19:14:43	Error: 	"Not Found" (404) at link https://www.parables.tv/browse/home/coming-soon/404 (from https://www.parables.tv/browse/home/coming-soon/)
+19:23:58	Warning: 	Moved Permanently for https://www.parables.tv/?p=71855
+19:23:58	Warning: 	File has moved from https://www.parables.tv/?p=71855 to https://www.parables.tv/browse/movies/
+19:24:21	Warning: 	Moved Permanently for https://www.parables.tv/?p=71856
+19:24:21	Warning: 	File has moved from https://www.parables.tv/?p=71856 to https://www.parables.tv/browse/tv-shows/
+19:24:55	Warning: 	Moved Permanently for https://www.parables.tv/?p=68687
+19:24:55	Warning: 	File has moved from https://www.parables.tv/?p=68687 to https://www.parables.tv/live-stream/
+19:24:59	Warning: 	Moved Permanently for https://www.parables.tv/?p=68693
+19:24:59	Warning: 	File has moved from https://www.parables.tv/?p=68693 to https://www.parables.tv/schedule/
+19:24:59	Warning: 	Link https://www.parables.tv/account/ not scanned (follow robots meta tag)
+19:24:59	Warning: 	Found for https://www.parables.tv/plans/free/
+19:24:59	Warning: 	File has moved from https://www.parables.tv/plans/free/ to https://www.parables.tv/plans/
+19:24:59	Warning: 	Moved Permanently for https://www.parables.tv/?p=68670
+19:24:59	Warning: 	File has moved from https://www.parables.tv/?p=68670 to https://www.parables.tv/about-us/
+19:24:59	Warning: 	Moved Permanently for https://www.parables.tv/?p=68680
+19:24:59	Warning: 	File has moved from https://www.parables.tv/?p=68680 to https://www.parables.tv/faqs/
+19:25:03	Warning: 	Moved Permanently for https://www.parables.tv/?p=68697
+19:25:03	Warning: 	File has moved from https://www.parables.tv/?p=68697 to https://www.parables.tv/troubleshooting-problems-with-streaming/
+19:25:03	Warning: 	Moved Permanently for https://www.parables.tv/?p=68672
+19:25:03	Warning: 	File has moved from https://www.parables.tv/?p=68672 to https://www.parables.tv/affiliate-portal/
+19:25:03	Warning: 	Moved Permanently for https://www.parables.tv/?p=68696
+19:25:03	Warning: 	File has moved from https://www.parables.tv/?p=68696 to https://www.parables.tv/testimonials-from-parables-tv-customers/
+19:25:03	Warning: 	Moved Permanently for https://www.parables.tv/?p=68695
+19:25:03	Warning: 	File has moved from https://www.parables.tv/?p=68695 to https://www.parables.tv/terms-of-use/
+19:25:03	Warning: 	Moved Permanently for https://www.parables.tv/?p=68691
+19:25:03	Warning: 	File has moved from https://www.parables.tv/?p=68691 to https://www.parables.tv/privacy-policy/
+19:25:03	Warning: 	Moved Permanently for https://www.parables.tv/?p=68679
+19:25:03	Warning: 	File has moved from https://www.parables.tv/?p=68679 to https://www.parables.tv/contact-us/
+19:25:03	Warning: 	Moved Permanently for https://www.parables.tv/?p=98452
+19:25:03	Warning: 	File has moved from https://www.parables.tv/?p=98452 to https://www.parables.tv/video/dinosaur-heart/
+19:25:03	Warning: 	Moved Permanently for https://www.parables.tv/?p=84465
+19:25:03	Warning: 	File has moved from https://www.parables.tv/?p=84465 to https://www.parables.tv/series/coop-dreams/
+19:25:04	Warning: 	Moved Permanently for https://www.parables.tv/?p=85315
+19:25:04	Warning: 	File has moved from https://www.parables.tv/?p=85315 to https://www.parables.tv/video/long-road-ahead/
+19:25:07	Warning: 	Moved Permanently for https://www.parables.tv/?p=98628
+19:25:07	Warning: 	File has moved from https://www.parables.tv/?p=98628 to https://www.parables.tv/video/arctic-light/
+19:25:07	Warning: 	Moved Permanently for https://www.parables.tv/?p=98629
+19:25:07	Warning: 	File has moved from https://www.parables.tv/?p=98629 to https://www.parables.tv/video/chelsey-lauren-story/
+19:25:08	Warning: 	Moved Permanently for https://www.parables.tv/?p=98630
+19:25:08	Warning: 	File has moved from https://www.parables.tv/?p=98630 to https://www.parables.tv/series/following-the-messiah/
+19:25:10	Warning: 	Moved Permanently for https://www.parables.tv/?p=98646
+19:25:10	Warning: 	File has moved from https://www.parables.tv/?p=98646 to https://www.parables.tv/series/from-history-to-hope/
+19:25:12	Warning: 	Moved Permanently for https://www.parables.tv/?p=98654
+19:25:12	Warning: 	File has moved from https://www.parables.tv/?p=98654 to https://www.parables.tv/series/illuminations/
+19:25:13	Warning: 	Moved Permanently for https://www.parables.tv/?p=98668
+19:25:13	Warning: 	File has moved from https://www.parables.tv/?p=98668 to https://www.parables.tv/series/god-save-the-king/
+19:25:14	Warning: 	Moved Permanently for https://www.parables.tv/?p=98283
+19:25:14	Warning: 	File has moved from https://www.parables.tv/?p=98283 to https://www.parables.tv/series/kingdom-wild/
+19:25:17	Warning: 	Moved Permanently for https://www.parables.tv/?p=97701
+19:25:17	Warning: 	File has moved from https://www.parables.tv/?p=97701 to https://www.parables.tv/series/faith-on-film/
+19:25:18	Warning: 	Moved Permanently for https://www.parables.tv/?p=97881
+19:25:18	Warning: 	File has moved from https://www.parables.tv/?p=97881 to https://www.parables.tv/series/chris-christian-a-grandmothers-prayer/
+19:25:18	Warning: 	Moved Permanently for https://www.parables.tv/?p=97884
+19:25:18	Warning: 	File has moved from https://www.parables.tv/?p=97884 to https://www.parables.tv/series/recovery-strategies-4-life/
+19:25:20	Warning: 	Moved Permanently for https://www.parables.tv/?p=97896
+19:25:20	Warning: 	File has moved from https://www.parables.tv/?p=97896 to https://www.parables.tv/series/the-rev-sitcom/
+19:25:22	Warning: 	Moved Permanently for https://www.parables.tv/?p=97556
+19:25:22	Warning: 	File has moved from https://www.parables.tv/?p=97556 to https://www.parables.tv/video/by-gods-grace/
+19:25:23	Warning: 	Moved Permanently for https://www.parables.tv/?p=97557
+19:25:23	Warning: 	File has moved from https://www.parables.tv/?p=97557 to https://www.parables.tv/video/divine-will/
+19:25:24	Warning: 	Moved Permanently for https://www.parables.tv/?p=97558
+19:25:24	Warning: 	File has moved from https://www.parables.tv/?p=97558 to https://www.parables.tv/tv-special/jaime-jorge-live-25-years-of-music/
+19:25:26	Warning: 	Moved Permanently for https://www.parables.tv/?p=97559
+19:25:26	Warning: 	File has moved from https://www.parables.tv/?p=97559 to https://www.parables.tv/video/hope-has-a-name/
+19:25:28	Warning: 	Moved Permanently for https://www.parables.tv/?p=95211
+19:25:28	Warning: 	File has moved from https://www.parables.tv/?p=95211 to https://www.parables.tv/series/life-focus/
+19:25:28	Warning: 	Moved Permanently for https://www.parables.tv/?p=87005
+19:25:28	Warning: 	File has moved from https://www.parables.tv/?p=87005 to https://www.parables.tv/tv-special/twelve-ordinary-men/
+19:25:28	Warning: 	Moved Permanently for https://www.parables.tv/?p=97560
+19:25:28	Warning: 	File has moved from https://www.parables.tv/?p=97560 to https://www.parables.tv/video/last-supper-artifacts/
+19:25:29	Warning: 	Moved Permanently for https://www.parables.tv/?p=84060
+19:25:29	Warning: 	File has moved from https://www.parables.tv/?p=84060 to https://www.parables.tv/tv-special/bible-code-2-the-future-and-beyond/
+19:25:29	Warning: 	Moved Permanently for https://www.parables.tv/?p=84218
+19:25:29	Warning: 	File has moved from https://www.parables.tv/?p=84218 to https://www.parables.tv/video/breaking-the-da-vinci-code/
+19:25:29	Warning: 	Moved Permanently for https://www.parables.tv/?p=86783
+19:25:29	Warning: 	File has moved from https://www.parables.tv/?p=86783 to https://www.parables.tv/tv-special/the-perfect-sacrifice/
+19:25:29	Warning: 	Moved Permanently for https://www.parables.tv/?p=84680
+19:25:29	Warning: 	File has moved from https://www.parables.tv/?p=84680 to https://www.parables.tv/series/facing-life-head-on/
+19:25:30	Warning: 	Moved Permanently for https://www.parables.tv/?p=84878
+19:25:30	Warning: 	File has moved from https://www.parables.tv/?p=84878 to https://www.parables.tv/video/i-am-the-living-bread/
+19:25:30	Warning: 	Moved Permanently for https://www.parables.tv/?p=85040
+19:25:30	Warning: 	File has moved from https://www.parables.tv/?p=85040 to https://www.parables.tv/video/last-supper-artifacts-mary-magdalene-and-the-holy-grail/
+19:25:30	Warning: 	Moved Permanently for https://www.parables.tv/?p=85503
+19:25:30	Warning: 	File has moved from https://www.parables.tv/?p=85503 to https://www.parables.tv/series/mysteries-of-the-ancient-world/
+19:25:32	Warning: 	Moved Permanently for https://www.parables.tv/?p=84056
+19:25:32	Warning: 	File has moved from https://www.parables.tv/?p=84056 to https://www.parables.tv/tv-special/bible-code-1-secrets-of-the-bible-code-revealed/
+19:25:32	Warning: 	Moved Permanently for https://www.parables.tv/?p=85691
+19:25:32	Warning: 	File has moved from https://www.parables.tv/?p=85691 to https://www.parables.tv/tv-special/portrait-of-courage-the-untold-story-of-flight-93/
+19:25:32	Warning: 	Moved Permanently for https://www.parables.tv/?p=85380
+19:25:32	Warning: 	File has moved from https://www.parables.tv/?p=85380 to https://www.parables.tv/video/miraculous-messages/
+19:25:32	Warning: 	Moved Permanently for https://www.parables.tv/?p=87190
+19:25:32	Warning: 	File has moved from https://www.parables.tv/?p=87190 to https://www.parables.tv/tv-special/week-that-changed-the-world/
+19:25:32	Warning: 	Moved Permanently for https://www.parables.tv/?p=97561
+19:25:32	Warning: 	File has moved from https://www.parables.tv/?p=97561 to https://www.parables.tv/video/my-finish-line/
+19:25:33	Warning: 	Moved Permanently for https://www.parables.tv/?p=85307
+19:25:33	Warning: 	File has moved from https://www.parables.tv/?p=85307 to https://www.parables.tv/tv-special/linsanity/
+19:25:33	Warning: 	Moved Permanently for https://www.parables.tv/?p=85376
+19:25:33	Warning: 	File has moved from https://www.parables.tv/?p=85376 to https://www.parables.tv/video/miracles-in-our-midst/
+19:25:36	Warning: 	Moved Permanently for https://www.parables.tv/?p=89875
+19:25:36	Warning: 	File has moved from https://www.parables.tv/?p=89875 to https://www.parables.tv/tv-special/love-always/
+19:25:39	Warning: 	Moved Permanently for https://www.parables.tv/?p=89874
+19:25:39	Warning: 	File has moved from https://www.parables.tv/?p=89874 to https://www.parables.tv/tv-special/hope-for-christmas/
+19:25:42	Warning: 	Moved Permanently for https://www.parables.tv/?p=86775
+19:25:42	Warning: 	File has moved from https://www.parables.tv/?p=86775 to https://www.parables.tv/tv-special/the-penny-suit/
+19:25:44	Warning: 	Moved Permanently for https://www.parables.tv/?p=85402
+19:25:44	Warning: 	File has moved from https://www.parables.tv/?p=85402 to https://www.parables.tv/tv-special/missions-in-the-wilderness/
+19:25:44	Warning: 	Moved Permanently for https://www.parables.tv/?p=87204
+19:25:44	Warning: 	File has moved from https://www.parables.tv/?p=87204 to https://www.parables.tv/tv-special/what-the-bible-code-predicts/
+19:25:44	Warning: 	Moved Permanently for https://www.parables.tv/?p=87021
+19:25:44	Warning: 	File has moved from https://www.parables.tv/?p=87021 to https://www.parables.tv/tv-special/uncovering-the-truth-about-jesus/
+19:25:44	Warning: 	Moved Permanently for https://www.parables.tv/?p=86859
+19:25:44	Warning: 	File has moved from https://www.parables.tv/?p=86859 to https://www.parables.tv/tv-special/the-truth-exposed/
+19:25:44	Warning: 	Moved Permanently for https://www.parables.tv/?p=86796
+19:25:44	Warning: 	File has moved from https://www.parables.tv/?p=86796 to https://www.parables.tv/tv-special/the-quest-for-noahs-ark/
+19:25:45	Warning: 	Moved Permanently for https://www.parables.tv/?p=86673
+19:25:45	Warning: 	File has moved from https://www.parables.tv/?p=86673 to https://www.parables.tv/tv-special/the-miracle-and-wonder-of-prayer/
+19:25:45	Warning: 	Moved Permanently for https://www.parables.tv/?p=86572
+19:25:45	Warning: 	File has moved from https://www.parables.tv/?p=86572 to https://www.parables.tv/tv-special/the-fabric-of-time/
+19:25:45	Warning: 	Moved Permanently for https://www.parables.tv/?p=86568
+19:25:45	Warning: 	File has moved from https://www.parables.tv/?p=86568 to https://www.parables.tv/tv-special/the-evidence-for-heaven/
+19:25:45	Warning: 	Moved Permanently for https://www.parables.tv/?p=84809
+19:25:45	Warning: 	File has moved from https://www.parables.tv/?p=84809 to https://www.parables.tv/tv-special/god-provides/
+19:25:45	Warning: 	Moved Permanently for https://www.parables.tv/?p=94518
+19:25:45	Warning: 	File has moved from https://www.parables.tv/?p=94518 to https://www.parables.tv/video/how-to-beat-a-bully/
+19:25:47	Warning: 	Moved Permanently for https://www.parables.tv/?p=94461
+19:25:47	Warning: 	File has moved from https://www.parables.tv/?p=94461 to https://www.parables.tv/video/no-postage-necessary/
+19:25:48	Warning: 	Moved Permanently for https://www.parables.tv/?p=86843
+19:25:48	Warning: 	File has moved from https://www.parables.tv/?p=86843 to https://www.parables.tv/video/the-studio/
+19:25:50	Warning: 	Moved Permanently for https://www.parables.tv/?p=84452
+19:25:50	Warning: 	File has moved from https://www.parables.tv/?p=84452 to https://www.parables.tv/video/class-of-91/
+19:25:52	Warning: 	Moved Permanently for https://www.parables.tv/?p=86851
+19:25:52	Warning: 	File has moved from https://www.parables.tv/?p=86851 to https://www.parables.tv/video/the-town-that-came-a-courtin/
+19:25:55	Warning: 	Moved Permanently for https://www.parables.tv/?p=87221
+19:25:55	Warning: 	File has moved from https://www.parables.tv/?p=87221 to https://www.parables.tv/video/whos-watching-the-kids/
+19:25:57	Warning: 	Moved Permanently for https://www.parables.tv/?p=84933
+19:25:57	Warning: 	File has moved from https://www.parables.tv/?p=84933 to https://www.parables.tv/video/in-the-dog-house/
+19:25:59	Warning: 	Moved Permanently for https://www.parables.tv/?p=83819
+19:25:59	Warning: 	File has moved from https://www.parables.tv/?p=83819 to https://www.parables.tv/video/amity/
+19:26:02	Warning: 	Moved Permanently for https://www.parables.tv/?p=87126
+19:26:02	Warning: 	File has moved from https://www.parables.tv/?p=87126 to https://www.parables.tv/video/walk-on-water-family-reunion/
+19:26:05	Warning: 	Moved Permanently for https://www.parables.tv/?p=84312
+19:26:05	Warning: 	File has moved from https://www.parables.tv/?p=84312 to https://www.parables.tv/video/captain-sabertooth/
+19:26:07	Warning: 	Moved Permanently for https://www.parables.tv/?p=84306
+19:26:07	Warning: 	File has moved from https://www.parables.tv/?p=84306 to https://www.parables.tv/video/by-the-grace-of-bob/
+19:26:09	Warning: 	Moved Permanently for https://www.parables.tv/?p=84464
+19:26:09	Warning: 	File has moved from https://www.parables.tv/?p=84464 to https://www.parables.tv/video/common-chord/
+19:26:10	Warning: 	Moved Permanently for https://www.parables.tv/?p=86808
+19:26:10	Warning: 	File has moved from https://www.parables.tv/?p=86808 to https://www.parables.tv/video/the-rev/
+19:26:12	Warning: 	Moved Permanently for https://www.parables.tv/?p=86351
+19:26:12	Warning: 	File has moved from https://www.parables.tv/?p=86351 to https://www.parables.tv/video/the-billl-collector/
+19:26:15	Warning: 	Moved Permanently for https://www.parables.tv/?p=85679
+19:26:15	Warning: 	File has moved from https://www.parables.tv/?p=85679 to https://www.parables.tv/video/pieces-of-easter/
+19:26:18	Warning: 	Moved Permanently for https://www.parables.tv/?p=84866
+19:26:18	Warning: 	File has moved from https://www.parables.tv/?p=84866 to https://www.parables.tv/video/highway-to-hell/
+19:26:35	Warning: 	Moved Permanently for https://www.parables.tv/?p=84870
+19:26:35	Warning: 	File has moved from https://www.parables.tv/?p=84870 to https://www.parables.tv/video/hollys-story/
+19:26:38	Warning: 	Moved Permanently for https://www.parables.tv/?p=86234
+19:26:38	Warning: 	File has moved from https://www.parables.tv/?p=86234 to https://www.parables.tv/video/service/
+19:26:39	Warning: 	Moved Permanently for https://www.parables.tv/?p=85036
+19:26:39	Warning: 	File has moved from https://www.parables.tv/?p=85036 to https://www.parables.tv/video/last-chance-school/
+19:26:40	Warning: 	Moved Permanently for https://www.parables.tv/?p=97432
+19:26:40	Warning: 	File has moved from https://www.parables.tv/?p=97432 to https://www.parables.tv/video/but-now-i-see/
+19:26:42	Warning: 	Moved Permanently for https://www.parables.tv/?p=97433
+19:26:42	Warning: 	File has moved from https://www.parables.tv/?p=97433 to https://www.parables.tv/video/foreclosed/
+19:26:44	Warning: 	Moved Permanently for https://www.parables.tv/?p=97434
+19:26:44	Warning: 	File has moved from https://www.parables.tv/?p=97434 to https://www.parables.tv/video/freedom-nates-testimony/
+19:26:45	Warning: 	Moved Permanently for https://www.parables.tv/?p=97435
+19:26:45	Warning: 	File has moved from https://www.parables.tv/?p=97435 to https://www.parables.tv/video/lilly-the-movie/
+19:26:46	Warning: 	Moved Permanently for https://www.parables.tv/?p=97436
+19:26:46	Warning: 	File has moved from https://www.parables.tv/?p=97436 to https://www.parables.tv/video/loved-one/
+19:26:48	Warning: 	Moved Permanently for https://www.parables.tv/?p=97437
+19:26:48	Warning: 	File has moved from https://www.parables.tv/?p=97437 to https://www.parables.tv/video/new-life/
+19:26:48	Warning: 	Moved Permanently for https://www.parables.tv/?p=97438
+19:26:48	Warning: 	File has moved from https://www.parables.tv/?p=97438 to https://www.parables.tv/video/the-substitute/
+19:26:50	Warning: 	Moved Permanently for https://www.parables.tv/?p=97200
+19:26:50	Warning: 	File has moved from https://www.parables.tv/?p=97200 to https://www.parables.tv/video/invisible-the-story-and-hope-of-mexicos-street-kids/
+19:26:51	Warning: 	Moved Permanently for https://www.parables.tv/?p=97202
+19:26:51	Warning: 	File has moved from https://www.parables.tv/?p=97202 to https://www.parables.tv/video/our-father/
+19:26:53	Warning: 	Moved Permanently for https://www.parables.tv/?p=96703
+19:26:53	Warning: 	File has moved from https://www.parables.tv/?p=96703 to https://www.parables.tv/video/saved-escape-from-kims-regime/
+19:26:54	Warning: 	Moved Permanently for https://www.parables.tv/?p=97562
+19:26:54	Warning: 	File has moved from https://www.parables.tv/?p=97562 to https://www.parables.tv/video/chefs-in-concert/
+19:26:55	Warning: 	Moved Permanently for https://www.parables.tv/?p=86339
+19:26:55	Warning: 	File has moved from https://www.parables.tv/?p=86339 to https://www.parables.tv/video/the-7/
+19:26:57	Warning: 	Moved Permanently for https://www.parables.tv/?p=86364
+19:26:57	Warning: 	File has moved from https://www.parables.tv/?p=86364 to https://www.parables.tv/series/the-burnnie-show/
+19:26:59	Warning: 	Moved Permanently for https://www.parables.tv/?p=97203
+19:26:59	Warning: 	File has moved from https://www.parables.tv/?p=97203 to https://www.parables.tv/series/searching-for-a-king/
+19:27:00	Warning: 	Moved Permanently for https://www.parables.tv/?p=95822
+19:27:00	Warning: 	File has moved from https://www.parables.tv/?p=95822 to https://www.parables.tv/series/being-martelli/
+19:27:02	Warning: 	Moved Permanently for https://www.parables.tv/?p=97201
+19:27:02	Warning: 	File has moved from https://www.parables.tv/?p=97201 to https://www.parables.tv/video/genesis-the-biblical-music-experience/
+19:27:03	Warning: 	Moved Permanently for https://www.parables.tv/?p=96704
+19:27:03	Warning: 	File has moved from https://www.parables.tv/?p=96704 to https://www.parables.tv/video/for-joseph/
+19:27:05	Warning: 	Moved Permanently for https://www.parables.tv/?p=96705
+19:27:05	Warning: 	File has moved from https://www.parables.tv/?p=96705 to https://www.parables.tv/series/chance/
+19:27:06	Warning: 	Moved Permanently for https://www.parables.tv/?p=96163
+19:27:06	Warning: 	File has moved from https://www.parables.tv/?p=96163 to https://www.parables.tv/video/a-mass-of-wine/
+19:27:08	Warning: 	Moved Permanently for https://www.parables.tv/?p=95697
+19:27:08	Warning: 	File has moved from https://www.parables.tv/?p=95697 to https://www.parables.tv/video/two-brothers-prodigal-road/
+19:27:10	Warning: 	Moved Permanently for https://www.parables.tv/?p=95695
+19:27:10	Warning: 	File has moved from https://www.parables.tv/?p=95695 to https://www.parables.tv/video/healed-by-grace/
+19:27:12	Warning: 	Moved Permanently for https://www.parables.tv/?p=95696
+19:27:12	Warning: 	File has moved from https://www.parables.tv/?p=95696 to https://www.parables.tv/video/out-of-time/
+19:27:13	Warning: 	Moved Permanently for https://www.parables.tv/?p=95693
+19:27:13	Warning: 	File has moved from https://www.parables.tv/?p=95693 to https://www.parables.tv/video/old-rugged-cross/
+19:27:15	Warning: 	Moved Permanently for https://www.parables.tv/?p=95694
+19:27:15	Warning: 	File has moved from https://www.parables.tv/?p=95694 to https://www.parables.tv/video/the-unexpected-bar-mitzvah/
+19:27:16	Warning: 	Moved Permanently for https://www.parables.tv/?p=95690
+19:27:16	Warning: 	File has moved from https://www.parables.tv/?p=95690 to https://www.parables.tv/video/best-friends-genetically-modified/
+19:27:18	Warning: 	Moved Permanently for https://www.parables.tv/?p=95691
+19:27:18	Warning: 	File has moved from https://www.parables.tv/?p=95691 to https://www.parables.tv/video/gramps-goes-to-college/
+19:27:19	Warning: 	Moved Permanently for https://www.parables.tv/?p=95692
+19:27:19	Warning: 	File has moved from https://www.parables.tv/?p=95692 to https://www.parables.tv/video/mission-improbable/
+19:27:20	Warning: 	Moved Permanently for https://www.parables.tv/?p=95689
+19:27:20	Warning: 	File has moved from https://www.parables.tv/?p=95689 to https://www.parables.tv/video/best-friends-eternally/
+19:27:20	Warning: 	Moved Permanently for https://www.parables.tv/?p=95654
+19:27:20	Warning: 	File has moved from https://www.parables.tv/?p=95654 to https://www.parables.tv/video/for-loves-sake-2/
+19:27:25	Warning: 	Moved Permanently for https://www.parables.tv/?p=94457
+19:27:25	Warning: 	File has moved from https://www.parables.tv/?p=94457 to https://www.parables.tv/video/kings-faith/
+19:27:26	Warning: 	Moved Permanently for https://www.parables.tv/?p=94458
+19:27:26	Warning: 	File has moved from https://www.parables.tv/?p=94458 to https://www.parables.tv/video/polycarp/
+19:27:27	Warning: 	Moved Permanently for https://www.parables.tv/?p=85407
+19:27:27	Warning: 	File has moved from https://www.parables.tv/?p=85407 to https://www.parables.tv/series/mustard-pancakes/
+19:27:29	Warning: 	Moved Permanently for https://www.parables.tv/?p=84586
+19:27:29	Warning: 	File has moved from https://www.parables.tv/?p=84586 to https://www.parables.tv/video/dog-jack/
+19:27:31	Warning: 	Moved Permanently for https://www.parables.tv/?p=87186
+19:27:31	Warning: 	File has moved from https://www.parables.tv/?p=87186 to https://www.parables.tv/video/wednesday-morning/
+19:27:34	Warning: 	Moved Permanently for https://www.parables.tv/?p=84778
+19:27:34	Warning: 	File has moved from https://www.parables.tv/?p=84778 to https://www.parables.tv/video/foster-care/
+19:27:34	Warning: 	Moved Permanently for https://www.parables.tv/?p=84373
+19:27:34	Warning: 	File has moved from https://www.parables.tv/?p=84373 to https://www.parables.tv/series/cheyenne-country/
+19:27:36	Warning: 	Moved Permanently for https://www.parables.tv/?p=85344
+19:27:36	Warning: 	File has moved from https://www.parables.tv/?p=85344 to https://www.parables.tv/series/miracles-around-us/
+19:27:37	Warning: 	Moved Permanently for https://www.parables.tv/?p=83957
+19:27:37	Warning: 	File has moved from https://www.parables.tv/?p=83957 to https://www.parables.tv/video/apocalypse-and-the-end-times/
+19:27:37	Warning: 	Moved Permanently for https://www.parables.tv/?p=84354
+19:27:37	Warning: 	File has moved from https://www.parables.tv/?p=84354 to https://www.parables.tv/series/changed/
+19:27:37	Warning: 	Moved Permanently for https://www.parables.tv/?p=84734
+19:27:37	Warning: 	File has moved from https://www.parables.tv/?p=84734 to https://www.parables.tv/tv-special/faith-in-the-white-house/
+19:27:38	Warning: 	Moved Permanently for https://www.parables.tv/?p=83824
+19:27:38	Warning: 	File has moved from https://www.parables.tv/?p=83824 to https://www.parables.tv/series/ancient-secrets-of-the-bible/
+19:27:38	Warning: 	Moved Permanently for https://www.parables.tv/?p=84061
+19:27:38	Warning: 	File has moved from https://www.parables.tv/?p=84061 to https://www.parables.tv/series/biblical-collectors-series/
+19:27:38	Warning: 	Moved Permanently for https://www.parables.tv/?p=83952
+19:27:38	Warning: 	File has moved from https://www.parables.tv/?p=83952 to https://www.parables.tv/video/another-perfect-stranger-in-spanish/
+19:27:41	Warning: 	Moved Permanently for https://www.parables.tv/?p=84023
+19:27:41	Warning: 	File has moved from https://www.parables.tv/?p=84023 to https://www.parables.tv/video/believe-the-misfit-pawn-in-spanish/
+19:27:52	Warning: 	Moved Permanently for https://www.parables.tv/?p=84226
+19:27:52	Warning: 	File has moved from https://www.parables.tv/?p=84226 to https://www.parables.tv/video/broken-in-spanish/
+19:27:59	Warning: 	Moved Permanently for https://www.parables.tv/?p=84311
+19:27:59	Warning: 	File has moved from https://www.parables.tv/?p=84311 to https://www.parables.tv/video/c-me-dance-in-spanish/
+19:28:01	Warning: 	Moved Permanently for https://www.parables.tv/?p=84451
+19:28:01	Warning: 	File has moved from https://www.parables.tv/?p=84451 to https://www.parables.tv/video/clancy-in-spanish/
+19:28:01	Warning: 	Moved Permanently for https://www.parables.tv/?p=86791
+19:28:01	Warning: 	File has moved from https://www.parables.tv/?p=86791 to https://www.parables.tv/video/the-perfect-stranger-in-spanish/
+19:28:03	Warning: 	Moved Permanently for https://www.parables.tv/?p=86871
+19:28:03	Warning: 	File has moved from https://www.parables.tv/?p=86871 to https://www.parables.tv/video/the-way-back-home-in-spanish/
+19:28:07	Warning: 	Moved Permanently for https://www.parables.tv/?p=86884
+19:28:07	Warning: 	File has moved from https://www.parables.tv/?p=86884 to https://www.parables.tv/video/through-a-mothers-eyes-in-spanish/
+19:28:09	Warning: 	Moved Permanently for https://www.parables.tv/?p=87198
+19:28:09	Warning: 	File has moved from https://www.parables.tv/?p=87198 to https://www.parables.tv/video/welcome-to-inspiration-in-spanish/
+19:28:12	Warning: 	Moved Permanently for https://www.parables.tv/?p=87203
+19:28:12	Warning: 	File has moved from https://www.parables.tv/?p=87203 to https://www.parables.tv/video/welcome-to-paradise-in-spanish/
+19:28:17	Warning: 	Moved Permanently for https://www.parables.tv/?p=86291
+19:28:17	Warning: 	File has moved from https://www.parables.tv/?p=86291 to https://www.parables.tv/video/soldier-of-destiny/
+19:28:19	Warning: 	Moved Permanently for https://www.parables.tv/?p=84817
+19:28:19	Warning: 	File has moved from https://www.parables.tv/?p=84817 to https://www.parables.tv/video/gospel-writers-autograph/
+19:28:20	Warning: 	Moved Permanently for https://www.parables.tv/?p=84456
+19:28:20	Warning: 	File has moved from https://www.parables.tv/?p=84456 to https://www.parables.tv/video/clerical-errors/
+19:28:21	Warning: 	Moved Permanently for https://www.parables.tv/?p=84048
+19:28:21	Warning: 	File has moved from https://www.parables.tv/?p=84048 to https://www.parables.tv/video/best-friends-recycled/
+19:28:24	Warning: 	Moved Permanently for https://www.parables.tv/?p=86343
+19:28:24	Warning: 	File has moved from https://www.parables.tv/?p=86343 to https://www.parables.tv/video/the-accidental-missionary/
+19:31:16	Warning: 	Moved Permanently for https://www.parables.tv/?p=94519
+19:31:16	Warning: 	File has moved from https://www.parables.tv/?p=94519 to https://www.parables.tv/video/hope/
+19:31:22	Warning: 	Moved Permanently for https://www.parables.tv/?p=94462
+19:31:22	Warning: 	File has moved from https://www.parables.tv/?p=94462 to https://www.parables.tv/video/space-guardians-2/
+19:31:25	Warning: 	Moved Permanently for https://www.parables.tv/?p=94463
+19:31:25	Warning: 	File has moved from https://www.parables.tv/?p=94463 to https://www.parables.tv/video/amazing-racer/
+19:31:26	Warning: 	Moved Permanently for https://www.parables.tv/?p=94460
+19:31:26	Warning: 	File has moved from https://www.parables.tv/?p=94460 to https://www.parables.tv/video/finding-home/
+19:31:28	Warning: 	Moved Permanently for https://www.parables.tv/?p=94459
+19:31:28	Warning: 	File has moved from https://www.parables.tv/?p=94459 to https://www.parables.tv/video/wildflower/
+19:31:30	Warning: 	Moved Permanently for https://www.parables.tv/?p=86779
+19:31:30	Warning: 	File has moved from https://www.parables.tv/?p=86779 to https://www.parables.tv/video/the-perfect-gift/
+19:31:30	Warning: 	Moved Permanently for https://www.parables.tv/?p=87208
+19:31:30	Warning: 	File has moved from https://www.parables.tv/?p=87208 to https://www.parables.tv/video/when-crisis-strikes/
+19:31:31	Warning: 	Moved Permanently for https://www.parables.tv/?p=89876
+19:31:31	Warning: 	File has moved from https://www.parables.tv/?p=89876 to https://www.parables.tv/video/the-gospel-writers-autograph/
+19:31:31	Warning: 	Moved Permanently for https://www.parables.tv/?p=84307
+19:31:31	Warning: 	File has moved from https://www.parables.tv/?p=84307 to https://www.parables.tv/video/c-me-dance/
+19:31:31	Warning: 	Moved Permanently for https://www.parables.tv/?p=85547
+19:31:31	Warning: 	File has moved from https://www.parables.tv/?p=85547 to https://www.parables.tv/video/objects-of-wrath/
+19:31:33	Warning: 	Moved Permanently for https://www.parables.tv/?p=87199
+19:31:33	Warning: 	File has moved from https://www.parables.tv/?p=87199 to https://www.parables.tv/video/welcome-to-paradise/
+19:31:33	Warning: 	Moved Permanently for https://www.parables.tv/?p=86863
+19:31:33	Warning: 	File has moved from https://www.parables.tv/?p=86863 to https://www.parables.tv/video/the-watchers-revelation/
+19:31:45	Warning: 	Moved Permanently for https://www.parables.tv/?p=87033
+19:31:45	Warning: 	File has moved from https://www.parables.tv/?p=87033 to https://www.parables.tv/video/virtuous/
+19:31:49	Warning: 	Moved Permanently for https://www.parables.tv/?p=84578
+19:31:49	Warning: 	File has moved from https://www.parables.tv/?p=84578 to https://www.parables.tv/video/destiny-road/
+19:31:51	Warning: 	Moved Permanently for https://www.parables.tv/?p=87222
+19:31:51	Warning: 	File has moved from https://www.parables.tv/?p=87222 to https://www.parables.tv/video/wholly-broken/
+19:31:53	Warning: 	Moved Permanently for https://www.parables.tv/?p=84574
+19:31:53	Warning: 	File has moved from https://www.parables.tv/?p=84574 to https://www.parables.tv/video/dawn/
+19:31:55	Warning: 	Moved Permanently for https://www.parables.tv/?p=86331
+19:31:55	Warning: 	File has moved from https://www.parables.tv/?p=86331 to https://www.parables.tv/video/taneycomo/
+19:31:57	Warning: 	Moved Permanently for https://www.parables.tv/?p=87220
+19:31:57	Warning: 	File has moved from https://www.parables.tv/?p=87220 to https://www.parables.tv/video/who-will-move-the-stone/
+19:31:59	Warning: 	Moved Permanently for https://www.parables.tv/?p=84548
+19:31:59	Warning: 	File has moved from https://www.parables.tv/?p=84548 to https://www.parables.tv/series/daily-bread/
+19:32:05	Warning: 	Moved Permanently for https://www.parables.tv/?p=86363
+19:32:05	Warning: 	File has moved from https://www.parables.tv/?p=86363 to https://www.parables.tv/video/the-broken-road/
+19:32:07	Warning: 	Moved Permanently for https://www.parables.tv/?p=84368
+19:32:07	Warning: 	File has moved from https://www.parables.tv/?p=84368 to https://www.parables.tv/video/charlie/
+19:32:09	Warning: 	Moved Permanently for https://www.parables.tv/?p=83791
+19:32:09	Warning: 	File has moved from https://www.parables.tv/?p=83791 to https://www.parables.tv/video/a-little-christmas-business/
+19:32:11	Warning: 	Moved Permanently for https://www.parables.tv/?p=86218
+19:32:11	Warning: 	File has moved from https://www.parables.tv/?p=86218 to https://www.parables.tv/video/savannah/
+19:32:13	Warning: 	Moved Permanently for https://www.parables.tv/?p=87017
+19:32:13	Warning: 	File has moved from https://www.parables.tv/?p=87017 to https://www.parables.tv/video/uncommon/
+19:32:15	Warning: 	Moved Permanently for https://www.parables.tv/?p=86295
+19:32:15	Warning: 	File has moved from https://www.parables.tv/?p=86295 to https://www.parables.tv/video/south-of-swan-creek/
+19:32:18	Warning: 	Moved Permanently for https://www.parables.tv/?p=84090
+19:32:18	Warning: 	File has moved from https://www.parables.tv/?p=84090 to https://www.parables.tv/series/bjs-teddy-bear-club-and-bible-stories/
+19:32:19	Warning: 	Moved Permanently for https://www.parables.tv/?p=86990
+19:32:19	Warning: 	File has moved from https://www.parables.tv/?p=86990 to https://www.parables.tv/series/tween-you-and-me/
+19:32:23	Warning: 	Moved Permanently for https://www.parables.tv/?p=86026
+19:32:23	Warning: 	File has moved from https://www.parables.tv/?p=86026 to https://www.parables.tv/series/raggs/
+19:32:25	Warning: 	Moved Permanently for https://www.parables.tv/?p=84886
+19:32:25	Warning: 	File has moved from https://www.parables.tv/?p=84886 to https://www.parables.tv/series/ignite-your-light-kidz/
+19:32:25	Warning: 	Moved Permanently for https://www.parables.tv/?p=84590
+19:32:25	Warning: 	File has moved from https://www.parables.tv/?p=84590 to https://www.parables.tv/series/dooley-and-pals/
+19:32:31	Warning: 	Moved Permanently for https://www.parables.tv/?p=94520
+19:32:31	Warning: 	File has moved from https://www.parables.tv/?p=94520 to https://www.parables.tv/video/an-evergreen-christmas/
+19:32:33	Warning: 	Moved Permanently for https://www.parables.tv/?p=94517
+19:32:33	Warning: 	File has moved from https://www.parables.tv/?p=94517 to https://www.parables.tv/video/this-is-our-christmas/
+19:32:35	Warning: 	Moved Permanently for https://www.parables.tv/?p=84997
+19:32:35	Warning: 	File has moved from https://www.parables.tv/?p=84997 to https://www.parables.tv/series/joni-and-friends/
+19:32:35	Warning: 	Moved Permanently for https://www.parables.tv/?p=84934
+19:32:35	Warning: 	File has moved from https://www.parables.tv/?p=84934 to https://www.parables.tv/video/in-the-mirror-dimly/
+19:32:41	Warning: 	Moved Permanently for https://www.parables.tv/?p=84447
+19:32:41	Warning: 	File has moved from https://www.parables.tv/?p=84447 to https://www.parables.tv/video/clancy/
+19:32:41	Warning: 	Moved Permanently for https://www.parables.tv/?p=87037
+19:32:41	Warning: 	File has moved from https://www.parables.tv/?p=87037 to https://www.parables.tv/series/visibly-fit/
+19:32:42	Warning: 	Moved Permanently for https://www.parables.tv/?p=86701
+19:32:42	Warning: 	File has moved from https://www.parables.tv/?p=86701 to https://www.parables.tv/series/the-national-bible-bee-game-show/
+19:32:43	Warning: 	Moved Permanently for https://www.parables.tv/?p=85311
+19:32:43	Warning: 	File has moved from https://www.parables.tv/?p=85311 to https://www.parables.tv/video/lion-of-judah/
+19:32:46	Warning: 	Moved Permanently for https://www.parables.tv/?p=85028
+19:32:46	Warning: 	File has moved from https://www.parables.tv/?p=85028 to https://www.parables.tv/video/joseph-beloved-son-rejected-slave-exalted-ruler/
+19:32:47	Warning: 	Moved Permanently for https://www.parables.tv/?p=83986
+19:32:47	Warning: 	File has moved from https://www.parables.tv/?p=83986 to https://www.parables.tv/series/awesome-bible-adventures/
+19:32:50	Warning: 	Moved Permanently for https://www.parables.tv/?p=87127
+19:32:50	Warning: 	File has moved from https://www.parables.tv/?p=87127 to https://www.parables.tv/series/way-of-the-master/
+19:32:51	Warning: 	Moved Permanently for https://www.parables.tv/?p=84149
+19:32:51	Warning: 	File has moved from https://www.parables.tv/?p=84149 to https://www.parables.tv/series/bloom-today/
+19:32:51	Warning: 	Moved Permanently for https://www.parables.tv/?p=85470
+19:32:51	Warning: 	File has moved from https://www.parables.tv/?p=85470 to https://www.parables.tv/series/my-gospel-music/
+19:32:51	Warning: 	Moved Permanently for https://www.parables.tv/?p=86677
+19:32:51	Warning: 	File has moved from https://www.parables.tv/?p=86677 to https://www.parables.tv/series/the-music-city-show/
+19:33:01	Warning: 	Moved Permanently for https://www.parables.tv/?p=85056
+19:33:01	Warning: 	File has moved from https://www.parables.tv/?p=85056 to https://www.parables.tv/video/less-hell-more-angels/
+19:33:01	Warning: 	Moved Permanently for https://www.parables.tv/?p=90022
+19:33:01	Warning: 	File has moved from https://www.parables.tv/?p=90022 to https://www.parables.tv/series/laws-of-life-court-tv/
+19:33:01	Warning: 	Moved Permanently for https://www.parables.tv/?p=86671
+19:33:01	Warning: 	File has moved from https://www.parables.tv/?p=86671 to https://www.parables.tv/video/the-making-of-daily-bread/
+19:33:02	Warning: 	Moved Permanently for https://www.parables.tv/?p=85384
+19:33:02	Warning: 	File has moved from https://www.parables.tv/?p=85384 to https://www.parables.tv/series/mission-reality/
+19:33:03	Warning: 	Moved Permanently for https://www.parables.tv/?p=85563
+19:33:03	Warning: 	File has moved from https://www.parables.tv/?p=85563 to https://www.parables.tv/video/open-my-eyes/
+19:33:05	Warning: 	Moved Permanently for https://www.parables.tv/?p=86897
+19:33:05	Warning: 	File has moved from https://www.parables.tv/?p=86897 to https://www.parables.tv/series/true-view/
+19:33:05	Warning: 	Moved Permanently for https://www.parables.tv/?p=84317
+19:33:05	Warning: 	File has moved from https://www.parables.tv/?p=84317 to https://www.parables.tv/series/change-tv/
+19:33:07	Warning: 	Moved Permanently for https://www.parables.tv/?p=86347
+19:33:07	Warning: 	File has moved from https://www.parables.tv/?p=86347 to https://www.parables.tv/video/the-basement/
+19:33:18	Warning: 	Moved Permanently for https://www.parables.tv/?p=87216
+19:33:18	Warning: 	File has moved from https://www.parables.tv/?p=87216 to https://www.parables.tv/video/where-was-god/
+19:33:21	Warning: 	Moved Permanently for https://www.parables.tv/?p=84946
+19:33:21	Warning: 	File has moved from https://www.parables.tv/?p=84946 to https://www.parables.tv/video/infidel/
+19:33:25	Warning: 	Moved Permanently for https://www.parables.tv/?p=87076
+19:33:25	Warning: 	File has moved from https://www.parables.tv/?p=87076 to https://www.parables.tv/series/walk-on-water/
+19:33:27	Warning: 	Moved Permanently for https://www.parables.tv/?p=86824
+19:33:27	Warning: 	File has moved from https://www.parables.tv/?p=86824 to https://www.parables.tv/series/the-stranger-series/
+19:33:31	Warning: 	Moved Permanently for https://www.parables.tv/?p=86270
+19:33:31	Warning: 	File has moved from https://www.parables.tv/?p=86270 to https://www.parables.tv/series/small-miracles/
+19:33:32	Warning: 	Moved Permanently for https://www.parables.tv/?p=84028
+19:33:32	Warning: 	File has moved from https://www.parables.tv/?p=84028 to https://www.parables.tv/series/believers-among-us/
+19:33:35	Warning: 	Moved Permanently for https://www.parables.tv/?p=83918
+19:33:35	Warning: 	File has moved from https://www.parables.tv/?p=83918 to https://www.parables.tv/series/angels-in-disguise/
+19:33:35	Warning: 	Moved Permanently for https://www.parables.tv/?p=68692
+19:33:35	Warning: 	File has moved from https://www.parables.tv/?p=68692 to https://www.parables.tv/register/
+19:33:40	Warning: 	Moved Permanently for https://www.parables.tv/?p=84668
+19:33:40	Warning: 	File has moved from https://www.parables.tv/?p=84668 to https://www.parables.tv/tv-special/end-times-how-close-are-we/
+19:33:43	Warning: 	Moved Permanently for https://www.parables.tv/?p=83811
+19:33:43	Warning: 	File has moved from https://www.parables.tv/?p=83811 to https://www.parables.tv/video/alisons-choice/
+19:33:44	Warning: 	Moved Permanently for https://www.parables.tv/?p=87194
+19:33:44	Warning: 	File has moved from https://www.parables.tv/?p=87194 to https://www.parables.tv/video/welcome-to-inspiration/
+19:33:44	Warning: 	Moved Permanently for https://www.parables.tv/?p=86880
+19:33:44	Warning: 	File has moved from https://www.parables.tv/?p=86880 to https://www.parables.tv/video/through-a-mothers-eyes/
+19:33:57	Warning: 	Moved Permanently for https://www.parables.tv/?p=86867
+19:33:57	Warning: 	File has moved from https://www.parables.tv/?p=86867 to https://www.parables.tv/video/the-way-back-home/
+19:33:59	Warning: 	Moved Permanently for https://www.parables.tv/?p=86820
+19:33:59	Warning: 	File has moved from https://www.parables.tv/?p=86820 to https://www.parables.tv/video/the-saber/
+19:34:00	Warning: 	Moved Permanently for https://www.parables.tv/?p=86812
+19:34:00	Warning: 	File has moved from https://www.parables.tv/?p=86812 to https://www.parables.tv/video/the-ride-a-christmas-eve-parables/
+19:34:02	Warning: 	Moved Permanently for https://www.parables.tv/?p=86766
+19:34:02	Warning: 	File has moved from https://www.parables.tv/?p=86766 to https://www.parables.tv/video/the-path-of-the-wind/
+19:34:10	Warning: 	Moved Permanently for https://www.parables.tv/?p=86658
+19:34:10	Warning: 	File has moved from https://www.parables.tv/?p=86658 to https://www.parables.tv/video/the-last-straw/
+19:34:12	Warning: 	Moved Permanently for https://www.parables.tv/?p=86617
+19:34:12	Warning: 	File has moved from https://www.parables.tv/?p=86617 to https://www.parables.tv/video/the-heart-of-a-dancer/
+19:34:14	Warning: 	Moved Permanently for https://www.parables.tv/?p=86613
+19:34:14	Warning: 	File has moved from https://www.parables.tv/?p=86613 to https://www.parables.tv/video/the-guardian/
+19:34:15	Warning: 	Moved Permanently for https://www.parables.tv/?p=86537
+19:34:15	Warning: 	File has moved from https://www.parables.tv/?p=86537 to https://www.parables.tv/video/the-christmas-reunion/
+19:34:17	Warning: 	Moved Permanently for https://www.parables.tv/?p=86327
+19:34:17	Warning: 	File has moved from https://www.parables.tv/?p=86327 to https://www.parables.tv/video/superheroes-dont-need-capes/
+19:34:20	Warning: 	Moved Permanently for https://www.parables.tv/?p=86287
+19:34:20	Warning: 	File has moved from https://www.parables.tv/?p=86287 to https://www.parables.tv/video/soda-springs/
+19:34:22	Warning: 	Moved Permanently for https://www.parables.tv/?p=86258
+19:34:22	Warning: 	File has moved from https://www.parables.tv/?p=86258 to https://www.parables.tv/video/sidewalk-singer/
+19:34:30	Warning: 	Moved Permanently for https://www.parables.tv/?p=86109
+19:34:30	Warning: 	File has moved from https://www.parables.tv/?p=86109 to https://www.parables.tv/video/reading-kate/
+19:34:31	Warning: 	Moved Permanently for https://www.parables.tv/?p=85555
+19:34:31	Warning: 	File has moved from https://www.parables.tv/?p=85555 to https://www.parables.tv/video/once-we-were-slaves/
+19:34:33	Warning: 	Moved Permanently for https://www.parables.tv/?p=85551
+19:34:33	Warning: 	File has moved from https://www.parables.tv/?p=85551 to https://www.parables.tv/video/on-the-edge-2009/
+19:34:33	Warning: 	Moved Permanently for https://www.parables.tv/?p=85535
+19:34:33	Warning: 	File has moved from https://www.parables.tv/?p=85535 to https://www.parables.tv/video/nikki-and-the-perfect-stranger/
+19:34:34	Warning: 	Moved Permanently for https://www.parables.tv/?p=85499
+19:34:34	Warning: 	File has moved from https://www.parables.tv/?p=85499 to https://www.parables.tv/video/my-son-my-savior/
+19:34:36	Warning: 	Moved Permanently for https://www.parables.tv/?p=85340
+19:34:36	Warning: 	File has moved from https://www.parables.tv/?p=85340 to https://www.parables.tv/video/milltown-pride/
+19:34:41	Warning: 	Moved Permanently for https://www.parables.tv/?p=85324
+19:34:41	Warning: 	File has moved from https://www.parables.tv/?p=85324 to https://www.parables.tv/video/love-waits/
+19:34:42	Warning: 	Moved Permanently for https://www.parables.tv/?p=84921
+19:34:42	Warning: 	File has moved from https://www.parables.tv/?p=84921 to https://www.parables.tv/video/in-gramps-shoes/
+19:34:44	Warning: 	Moved Permanently for https://www.parables.tv/?p=84833
+19:34:44	Warning: 	File has moved from https://www.parables.tv/?p=84833 to https://www.parables.tv/video/heart-of-stone/
+19:34:45	Warning: 	Moved Permanently for https://www.parables.tv/?p=84825
+19:34:45	Warning: 	File has moved from https://www.parables.tv/?p=84825 to https://www.parables.tv/video/hansie/
+19:34:51	Warning: 	Moved Permanently for https://www.parables.tv/?p=84804
+19:34:51	Warning: 	File has moved from https://www.parables.tv/?p=84804 to https://www.parables.tv/video/episode-2/
+19:34:52	Warning: 	Moved Permanently for https://www.parables.tv/?p=84790
+19:34:52	Warning: 	File has moved from https://www.parables.tv/?p=84790 to https://www.parables.tv/video/gallows-road/
+19:34:56	Warning: 	Moved Permanently for https://www.parables.tv/?p=84786
+19:34:56	Warning: 	File has moved from https://www.parables.tv/?p=84786 to https://www.parables.tv/video/friends-for-life/
+19:34:58	Warning: 	Moved Permanently for https://www.parables.tv/?p=84782
+19:34:58	Warning: 	File has moved from https://www.parables.tv/?p=84782 to https://www.parables.tv/video/freetown/
+19:35:00	Warning: 	Moved Permanently for https://www.parables.tv/?p=84766
+19:35:00	Warning: 	File has moved from https://www.parables.tv/?p=84766 to https://www.parables.tv/video/for-the-glory/
+19:35:01	Warning: 	Moved Permanently for https://www.parables.tv/?p=84758
+19:35:01	Warning: 	File has moved from https://www.parables.tv/?p=84758 to https://www.parables.tv/video/footprints/
+19:35:03	Warning: 	Moved Permanently for https://www.parables.tv/?p=84750
+19:35:03	Warning: 	File has moved from https://www.parables.tv/?p=84750 to https://www.parables.tv/video/first-love-breathe-talk-to-god-listen/
+19:35:05	Warning: 	Moved Permanently for https://www.parables.tv/?p=84754
+19:35:05	Warning: 	File has moved from https://www.parables.tv/?p=84754 to https://www.parables.tv/video/flowers-for-fannie/
+19:35:10	Warning: 	Moved Permanently for https://www.parables.tv/?p=84648
+19:35:10	Warning: 	File has moved from https://www.parables.tv/?p=84648 to https://www.parables.tv/video/dovid-meyer/
+19:35:12	Warning: 	Moved Permanently for https://www.parables.tv/?p=84439
+19:35:12	Warning: 	File has moved from https://www.parables.tv/?p=84439 to https://www.parables.tv/video/christmas-oranges/
+19:35:15	Warning: 	Moved Permanently for https://www.parables.tv/?p=84313
+19:35:15	Warning: 	File has moved from https://www.parables.tv/?p=84313 to https://www.parables.tv/video/catching-hearts/
+19:35:17	Warning: 	Moved Permanently for https://www.parables.tv/?p=84222
+19:35:17	Warning: 	File has moved from https://www.parables.tv/?p=84222 to https://www.parables.tv/video/broken/
+19:35:17	Warning: 	Moved Permanently for https://www.parables.tv/?p=84194
+19:35:17	Warning: 	File has moved from https://www.parables.tv/?p=84194 to https://www.parables.tv/video/borrowed-christmas/
+19:35:19	Warning: 	Moved Permanently for https://www.parables.tv/?p=83948
+19:35:19	Warning: 	File has moved from https://www.parables.tv/?p=83948 to https://www.parables.tv/video/another-perfect-stranger/
+19:35:19	Warning: 	Moved Permanently for https://www.parables.tv/?p=83799
+19:35:19	Warning: 	File has moved from https://www.parables.tv/?p=83799 to https://www.parables.tv/video/a-love-that-hurts/
+19:35:28	Warning: 	Moved Permanently for https://www.parables.tv/?p=89873
+19:35:28	Warning: 	File has moved from https://www.parables.tv/?p=89873 to https://www.parables.tv/video/the-salvation-kingdom/
+19:35:34	Warning: 	Moved Permanently for https://www.parables.tv/?p=83732
+19:35:34	Warning: 	File has moved from https://www.parables.tv/?p=83732 to https://www.parables.tv/video/1-message/
+19:35:38	Warning: 	Moved Permanently for https://www.parables.tv/?p=85704
+19:35:38	Warning: 	File has moved from https://www.parables.tv/?p=85704 to https://www.parables.tv/series/quick-study-year-1/
+19:35:40	Warning: 	Moved Permanently for https://www.parables.tv/?p=83795
+19:35:40	Warning: 	File has moved from https://www.parables.tv/?p=83795 to https://www.parables.tv/video/a-long-way-off/
+19:35:42	Warning: 	Moved Permanently for https://www.parables.tv/?p=86226
+19:35:42	Warning: 	File has moved from https://www.parables.tv/?p=86226 to https://www.parables.tv/video/scattered/
+19:35:46	Warning: 	HTML file (619193 bytes) retransferred due to lack of cache: https://www.parables.tv/wp-json/
+19:35:46	Warning: 	HTML file (1008 bytes) retransferred due to lack of cache: codeorigin.jquery.com/wp-json/
+19:35:47	Warning: 	HTML file (4541 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/action/feed/
+19:35:47	Warning: 	HTML file (3461 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/adventure/feed/
+19:35:48	Warning: 	HTML file (14520 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/comedy/feed/
+19:35:48	Warning: 	HTML file (12201 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/drama/feed/
+19:35:48	Warning: 	HTML file (14575 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/educational/feed/
+19:35:49	Warning: 	HTML file (11850 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/family/feed/
+19:35:51	Warning: 	HTML file (2468 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/health-and-fitness/feed/
+19:35:51	Warning: 	HTML file (15749 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/kids/feed/
+19:35:52	Warning: 	HTML file (3524 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/ministry/feed/
+19:35:52	Warning: 	HTML file (9746 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/musical/feed/
+19:35:52	Warning: 	HTML file (13161 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/reality/feed/
+19:35:53	Warning: 	HTML file (5147 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/romance/feed/
+19:35:54	Warning: 	HTML file (4936 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/talk-show/feed/
+19:35:54	Warning: 	HTML file (4463 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/thriller/feed/
+19:35:54	Warning: 	file not stored in cache due to bogus state (incomplete type with OK (200), size 111): code.jquery.com/ui/1.10.0/themes/base/images/ui-bg_glass_75_dadada_1x400.png
+19:35:55	Warning: 	file not stored in cache due to bogus state (incomplete type with OK (200), size 105): code.jquery.com/ui/1.10.0/themes/base/images/ui-bg_glass_65_ffffff_1x400.png
+19:35:58	Warning: 	HTML file (4177 bytes) retransferred due to lack of cache: https://www.parables.tv/plans/feed/
+19:37:25	Warning: 	HTML file (12731 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/documentary/feed/
+19:37:25	Warning: 	HTML file (3302 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/political/feed/
+19:37:25	Warning: 	HTML file (1897 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/brad-hauter/feed/
+19:37:26	Warning: 	HTML file (1892 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/cultural/feed/
+19:37:26	Warning: 	HTML file (12959 bytes) retransferred due to lack of cache: https://www.parables.tv/rating/tv-g/feed/
+19:37:27	Warning: 	HTML file (2216 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/eglas/feed/
+19:37:27	Warning: 	HTML file (2252 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ghafoer-tatar-rasj-sjoe/feed/
+19:37:28	Warning: 	HTML file (2246 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/maryana-dawood-najef/feed/
+19:37:28	Warning: 	HTML file (2244 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/qasim-ibrahim-ahmed/feed/
+19:37:30	Warning: 	HTML file (2149 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/lars-peters/feed/
+19:37:30	Warning: 	HTML file (2146 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/biography/feed/
+19:37:30	Warning: 	HTML file (2305 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/chelsey-lauren/feed/
+19:37:31	Warning: 	HTML file (3594 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/barry-britnell/feed/
+19:37:31	Warning: 	HTML file (2325 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/craig-dehut/feed/
+19:37:32	Warning: 	HTML file (5766 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/history/feed/
+19:37:32	Warning: 	HTML file (12132 bytes) retransferred due to lack of cache: https://www.parables.tv/rating/tv-pg/feed/
+19:37:33	Warning: 	HTML file (2263 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/carl-wesley-anderson/feed/
+19:37:33	Warning: 	HTML file (2296 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/curt-landry/feed/
+19:37:34	Warning: 	HTML file (2287 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/travel/feed/
+19:37:34	Warning: 	HTML file (2273 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/michael-parker/feed/
+19:37:34	Warning: 	HTML file (2263 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/tim-keyes/feed/
+19:37:34	Warning: 	HTML file (2331 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/antwaan-randle-el/feed/
+19:37:35	Warning: 	HTML file (2323 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/brent-kassian/feed/
+19:37:35	Warning: 	HTML file (2341 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/chris-the-guide/feed/
+19:37:35	Warning: 	HTML file (2323 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/landen-dorsch/feed/
+19:37:37	Warning: 	HTML file (2316 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/lifestyle/feed/
+19:37:37	Warning: 	HTML file (2310 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/nature/feed/
+19:37:37	Warning: 	HTML file (2153 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/isaac-hernandez/feed/
+19:37:38	Warning: 	HTML file (2472 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/chris-christian/feed/
+19:37:38	Warning: 	HTML file (2463 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/janee-hill/feed/
+19:37:39	Warning: 	HTML file (2396 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/evonna-surrette/feed/
+19:37:39	Warning: 	HTML file (2386 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ginny-priz/feed/
+19:37:40	Warning: 	HTML file (2406 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/paula-mosher-wallace/feed/
+19:37:40	Warning: 	HTML file (2312 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jo-marie-payton/feed/
+19:37:42	Warning: 	HTML file (2306 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/john-petritz/feed/
+19:37:42	Warning: 	HTML file (2316 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/tommy-tiny-lister/feed/
+19:37:42	Warning: 	HTML file (2372 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/cameron-stewart/feed/
+19:37:43	Warning: 	HTML file (2372 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/roark-critchlow/feed/
+19:37:43	Warning: 	HTML file (2380 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/savannah-mcreynolds/feed/
+19:37:44	Warning: 	HTML file (2341 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/brent-reed/feed/
+19:37:46	Warning: 	HTML file (2351 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/kathryn-boswell/feed/
+19:37:46	Warning: 	HTML file (2345 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/lee-roessler/feed/
+19:37:46	Warning: 	HTML file (2398 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jaime-jorge/feed/
+19:37:46	Warning: 	HTML file (2406 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/larnelle-harris/feed/
+19:37:47	Warning: 	HTML file (2400 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/michael-card/feed/
+19:37:47	Warning: 	HTML file (2399 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/amy-lancaster/feed/
+19:37:47	Warning: 	HTML file (2408 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/deena-vant-hul/feed/
+19:37:48	Warning: 	HTML file (2395 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/heidi-baker/feed/
+19:37:48	Warning: 	HTML file (2192 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/dan-meyer/feed/
+19:37:48	Warning: 	HTML file (2323 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/erwin-lutzer/feed/
+19:37:48	Warning: 	HTML file (2329 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/steve-kellmeyer/feed/
+19:37:49	Warning: 	HTML file (2586 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/brad-mattes/feed/
+19:37:49	Warning: 	HTML file (2607 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/darren-mcgavin/feed/
+19:37:49	Warning: 	HTML file (1124 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/dennis-weaver/feed/
+19:37:50	Warning: 	HTML file (1122 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jesse-bennet/feed/
+19:37:50	Warning: 	HTML file (1124 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/wayne-brennan/feed/
+19:37:50	Warning: 	HTML file (1126 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/william-devane/feed/
+19:37:50	Warning: 	HTML file (2245 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/michelle-murray/feed/
+19:37:51	Warning: 	HTML file (2237 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/sam-schmidt/feed/
+19:37:51	Warning: 	HTML file (2110 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/angela-tesch/feed/
+19:37:52	Warning: 	HTML file (2106 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/peter-xifo/feed/
+19:37:52	Warning: 	HTML file (2108 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/tori-london/feed/
+19:37:52	Warning: 	HTML file (2827 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/gregory-robbins/feed/
+19:37:52	Warning: 	HTML file (2823 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/marion-moreno/feed/
+19:37:53	Warning: 	HTML file (2823 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/peter-johnson/feed/
+19:37:53	Warning: 	HTML file (2821 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/sara-falcone/feed/
+19:37:53	Warning: 	HTML file (2577 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/simon-j-woodstock/feed/
+19:37:54	Warning: 	HTML file (2487 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/richard-blair/feed/
+19:37:54	Warning: 	HTML file (2489 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/elise-angell/feed/
+19:37:54	Warning: 	HTML file (2493 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/eric-lauritzen/feed/
+19:37:54	Warning: 	HTML file (2493 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/grant-mclellan/feed/
+19:37:55	Warning: 	HTML file (2491 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/vince-donvito/feed/
+19:37:55	Warning: 	HTML file (2626 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/george-blagden/feed/
+19:37:55	Warning: 	HTML file (3819 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/april-oberlin/feed/
+19:37:56	Warning: 	HTML file (2560 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/chris-caldwell/feed/
+19:37:56	Warning: 	HTML file (5105 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/larry-bower/feed/
+19:37:57	Warning: 	HTML file (2428 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/susan-macke-miller/feed/
+19:37:59	Warning: 	HTML file (2414 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/tim-brazeal/feed/
+19:37:59	Warning: 	HTML file (2410 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/tim-steed/feed/
+19:37:59	Warning: 	HTML file (2544 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/cameron-bancroft/feed/
+19:38:00	Warning: 	HTML file (2544 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/cameron-grierson/feed/
+19:38:00	Warning: 	HTML file (2532 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/iris-quinn/feed/
+19:38:01	Warning: 	HTML file (2536 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/lauren-holly/feed/
+19:38:01	Warning: 	HTML file (2375 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/elise-neal/feed/
+19:38:01	Warning: 	HTML file (2387 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/lavelle-crawford/feed/
+19:38:03	Warning: 	HTML file (2387 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/morgan-patterson/feed/
+19:38:03	Warning: 	HTML file (2385 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/tiffany-haddish/feed/
+19:38:03	Warning: 	HTML file (2356 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/alan-baer/feed/
+19:38:04	Warning: 	HTML file (2362 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/kim-hamilton/feed/
+19:38:04	Warning: 	HTML file (2372 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/logan-dondanville/feed/
+19:38:04	Warning: 	HTML file (2364 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/matt-massella/feed/
+19:38:05	Warning: 	HTML file (2140 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/denise-hyer/feed/
+19:38:05	Warning: 	HTML file (2136 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jeff-hyer/feed/
+19:38:05	Warning: 	HTML file (2146 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/maria-scheffel/feed/
+19:38:06	Warning: 	HTML file (2142 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/nathan-blair/feed/
+19:38:07	Warning: 	HTML file (2140 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/zach-miller/feed/
+19:38:07	Warning: 	HTML file (12963 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/short-film/feed/
+19:38:07	Warning: 	HTML file (3796 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/brianne-blowers/feed/
+19:38:08	Warning: 	HTML file (2703 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/caleb-goldberg/feed/
+19:38:08	Warning: 	HTML file (3792 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/dustin-dailey/feed/
+19:38:08	Warning: 	HTML file (2699 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/kibwe-dorsey/feed/
+19:38:10	Warning: 	HTML file (2701 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/peaches-brown/feed/
+19:38:10	Warning: 	HTML file (13491 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/teen/feed/
+19:38:10	Warning: 	HTML file (2301 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/anders-baasmo-christiansen/feed/
+19:38:12	Warning: 	HTML file (2273 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/becky-wright/feed/
+19:38:12	Warning: 	HTML file (2279 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/fridtjov-saheim/feed/
+19:38:12	Warning: 	HTML file (2273 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/tuva-novotny/feed/
+19:38:12	Warning: 	HTML file (2376 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/christie-osterhus-micah-brown/feed/
+19:38:13	Warning: 	HTML file (2339 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/paul-wilson/feed/
+19:38:13	Warning: 	HTML file (2345 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/sterling-hurst/feed/
+19:38:13	Warning: 	HTML file (2781 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ashlin-malik/feed/
+19:38:14	Warning: 	HTML file (2781 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jason-cermak/feed/
+19:38:14	Warning: 	HTML file (2779 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/pete-seadon/feed/
+19:38:14	Warning: 	HTML file (2445 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/david-leisure/feed/
+19:38:14	Warning: 	HTML file (2441 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/john-carmen/feed/
+19:38:15	Warning: 	HTML file (2447 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jomarie-payton/feed/
+19:38:15	Warning: 	HTML file (2443 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/tommy-lister/feed/
+19:38:16	Warning: 	HTML file (2470 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/brandon-hardesty/feed/
+19:38:16	Warning: 	HTML file (2460 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/danny-trejo/feed/
+19:38:16	Warning: 	HTML file (2472 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/elisabeth-omilami/feed/
+19:38:17	Warning: 	HTML file (2458 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/gary-moore/feed/
+19:38:17	Warning: 	HTML file (2458 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ron-kenoly/feed/
+19:38:17	Warning: 	HTML file (10920 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jefferson-moore/feed/
+19:38:17	Warning: 	HTML file (2318 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/keith-mcgill/feed/
+19:38:18	Warning: 	HTML file (2322 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/kristian-karis/feed/
+19:38:18	Warning: 	HTML file (6388 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/matt-wallace/feed/
+19:38:18	Warning: 	HTML file (2320 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/melissa-combs/feed/
+19:38:19	Warning: 	HTML file (2377 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/alan-heyman/feed/
+19:38:20	Warning: 	HTML file (2389 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/amedeo-falgiatore/feed/
+19:38:20	Warning: 	HTML file (2385 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/braxton-wallace/feed/
+19:38:20	Warning: 	HTML file (2381 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/butch-konover/feed/
+19:38:20	Warning: 	HTML file (2381 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/eric-fifelski/feed/
+19:38:21	Warning: 	HTML file (3618 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/frank-mckinney/feed/
+19:38:21	Warning: 	HTML file (2385 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/george-monteiro/feed/
+19:38:21	Warning: 	HTML file (2383 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/haley-magalnik/feed/
+19:38:21	Warning: 	HTML file (2379 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jay-leopardi/feed/
+19:38:22	Warning: 	HTML file (2377 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/kahra-keyes/feed/
+19:38:23	Warning: 	HTML file (2381 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/mac-mcconnell/feed/
+19:38:23	Warning: 	HTML file (2379 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/richard-sosa/feed/
+19:38:23	Warning: 	HTML file (2375 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/scott-getz/feed/
+19:38:23	Warning: 	HTML file (2383 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/sharon-pfeffer/feed/
+19:38:24	Warning: 	HTML file (199 bytes) retransferred due to lack of cache: https://www.parables.tv/wordpress/xmlrpc.php?rsd
+19:38:24	Warning: 	HTML file (2375 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/tom-hinton/feed/
+19:38:24	Warning: 	HTML file (2193 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/brandon-deyoung/feed/
+19:38:26	Error: 	"Forbidden" (403) at link https://www.parables.tv/wordpress/xmlrpc.php?rsd (from https://www.parables.tv/)
+19:38:26	Warning: 	HTML file (2191 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/elizabeth-byrd/feed/
+19:38:26	Warning: 	HTML file (2187 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/rozie-curtis/feed/
+19:38:26	Warning: 	HTML file (2128 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/chirstie-cantu/feed/
+19:38:26	Warning: 	HTML file (2119 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/joe-george/feed/
+19:38:27	Warning: 	HTML file (2294 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/colby-conway/feed/
+19:38:27	Warning: 	HTML file (2296 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/emily-collins/feed/
+19:38:27	Warning: 	HTML file (2300 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/januell-carroll/feed/
+19:38:28	Warning: 	HTML file (2314 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/freddie-de-grate/feed/
+19:38:28	Warning: 	HTML file (2308 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/karen-mcclain/feed/
+19:38:28	Warning: 	HTML file (2293 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/faith/feed/
+19:38:28	Warning: 	HTML file (2307 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/spirituality/feed/
+19:38:29	Warning: 	HTML file (51340 bytes) retransferred due to lack of cache: https://www.parables.tv/premium-plans
+19:38:30	Warning: 	HTML file (2201 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/david-bickford/feed/
+19:38:30	Warning: 	HTML file (2197 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/michael-gier/feed/
+19:38:30	Warning: 	HTML file (4714 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/nancy-stafford/feed/
+19:38:31	Error: 	"Not Found" (404) at link https://www.parables.tv/premium-plans (from https://www.parables.tv/)
+19:38:31	Warning: 	HTML file (2206 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/nate-melton/feed/
+19:38:31	Warning: 	HTML file (13673 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/suspense/feed/
+19:38:31	Warning: 	HTML file (2239 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/kijana-crues/feed/
+19:38:31	Warning: 	HTML file (2241 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/monox-ragland/feed/
+19:38:32	Warning: 	HTML file (2241 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/silk-mitchell/feed/
+19:38:32	Warning: 	HTML file (2153 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/celia-isla/feed/
+19:38:32	Warning: 	HTML file (2153 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jorge-diaz/feed/
+19:38:32	Warning: 	HTML file (2161 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/shonna-bedford/feed/
+19:38:34	Warning: 	HTML file (2053 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/patty-mark/feed/
+19:38:34	Warning: 	HTML file (2257 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/cory-kays/feed/
+19:38:34	Warning: 	HTML file (2265 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/david-shifter/feed/
+19:38:34	Warning: 	HTML file (2261 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/hanna-jones/feed/
+19:38:35	Warning: 	HTML file (2555 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/abraham-suarez/feed/
+19:38:35	Warning: 	HTML file (2553 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/amy-fatzinger/feed/
+19:38:35	Warning: 	HTML file (2543 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/benny-yu/feed/
+19:38:35	Warning: 	HTML file (2257 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/giovanni-marzouca/feed/
+19:38:37	Warning: 	HTML file (2243 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/juan-netts/feed/
+19:38:37	Warning: 	HTML file (2247 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/kahlid-tapia/feed/
+19:38:37	Warning: 	HTML file (2471 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/c-k-park/feed/
+19:38:37	Warning: 	HTML file (2484 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/pastor-kim-hite/feed/
+19:38:38	Warning: 	HTML file (2474 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/tim-peters/feed/
+19:38:38	Warning: 	HTML file (2261 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jason-tillman/feed/
+19:38:38	Warning: 	HTML file (2256 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/tv-special/feed/
+19:38:38	Warning: 	HTML file (2359 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/alyssa-taylor/feed/
+19:38:40	Warning: 	HTML file (2355 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/bryson-funk/feed/
+19:38:40	Warning: 	HTML file (2353 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/dary-hayes/feed/
+19:38:40	Warning: 	HTML file (2353 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ryan-brown/feed/
+19:38:40	Warning: 	HTML file (2313 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/danny-bliss/feed/
+19:38:41	Warning: 	HTML file (2317 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/faith-treague/feed/
+19:38:41	Warning: 	HTML file (2317 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/steve-treague/feed/
+19:38:41	Warning: 	HTML file (2385 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jeremy-dehut/feed/
+19:38:43	Warning: 	HTML file (2382 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/docuseries/feed/
+19:38:43	Warning: 	HTML file (2200 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/david-martelli/feed/
+19:38:43	Warning: 	HTML file (2198 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/john-martelli/feed/
+19:38:43	Warning: 	HTML file (2202 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/marsha-martelli/feed/
+19:38:44	Warning: 	HTML file (2204 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/valerie-martelli/feed/
+19:38:44	Warning: 	HTML file (2300 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/dennis-lavalle/feed/
+19:38:45	Warning: 	HTML file (2290 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jen-brown/feed/
+19:38:45	Warning: 	HTML file (2302 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/steve-greenberg/feed/
+19:38:45	Warning: 	HTML file (2251 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/matt-thomsen/feed/
+19:38:46	Warning: 	HTML file (2259 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/stephanie-weaver/feed/
+19:38:46	Warning: 	HTML file (2251 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/wes-hamilton/feed/
+19:38:46	Warning: 	HTML file (2105 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/dennis-marburger/feed/
+19:38:46	Warning: 	HTML file (2099 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/kathy-sanders/feed/
+19:38:47	Warning: 	HTML file (2097 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/richard-zane/feed/
+19:38:47	Warning: 	HTML file (2307 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/dieter-schwingel/feed/
+19:38:47	Warning: 	HTML file (2311 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/heinrich-schwingel/feed/
+19:38:49	Warning: 	HTML file (2293 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/john-cobb/feed/
+19:38:49	Warning: 	HTML file (2509 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/hayle-d-berry/feed/
+19:38:49	Warning: 	HTML file (2508 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jerome-gerard/feed/
+19:38:49	Warning: 	HTML file (3492 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ransom-s-hester/feed/
+19:38:50	Warning: 	HTML file (2508 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/rich-heinrich/feed/
+19:38:50	Warning: 	HTML file (2510 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/scott-robinson/feed/
+19:38:50	Warning: 	HTML file (2393 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ladonna-pettijohn/feed/
+19:38:50	Warning: 	HTML file (2389 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/michael-wilhelm/feed/
+19:38:52	Warning: 	HTML file (3675 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/natalie-weese/feed/
+19:38:52	Warning: 	HTML file (2389 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/tommy-beardmore/feed/
+19:38:52	Warning: 	HTML file (2235 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/shelby-lynn/feed/
+19:38:52	Warning: 	HTML file (2245 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/sherzad-shinzari/feed/
+19:38:53	Warning: 	HTML file (2244 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/amelia-mann/feed/
+19:38:53	Warning: 	HTML file (2246 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/james-alcorn/feed/
+19:38:53	Warning: 	HTML file (3524 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/juli-tapken/feed/
+19:38:53	Warning: 	HTML file (2273 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/callan-wilson/feed/
+19:38:55	Warning: 	HTML file (2269 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/donna-botts/feed/
+19:38:55	Warning: 	HTML file (6285 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jeff-rose/feed/
+19:38:55	Warning: 	HTML file (6172 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/donald-james-parker/feed/
+19:38:55	Warning: 	HTML file (3836 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/marcy-conway/feed/
+19:38:56	Warning: 	HTML file (2531 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/tiffany-burns/feed/
+19:38:56	Warning: 	HTML file (3992 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/kera-obryon/feed/
+19:38:56	Warning: 	HTML file (2171 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/rusty-martin-jr/feed/
+19:38:56	Warning: 	HTML file (2406 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/cameron-arnett/feed/
+19:38:58	Warning: 	HTML file (2406 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/robert-gobelet/feed/
+19:38:58	Warning: 	HTML file (2424 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/wanda-morganstern/feed/
+19:38:58	Warning: 	HTML file (2518 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/claire-walkington/feed/
+19:38:58	Warning: 	HTML file (2506 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/luke-foxall/feed/
+19:38:59	Warning: 	HTML file (2512 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/nina-stratford/feed/
+19:38:59	Warning: 	HTML file (2504 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ray-lonnen/feed/
+19:38:59	Warning: 	HTML file (2524 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/richard-brimblecombe/feed/
+19:38:59	Warning: 	HTML file (2513 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/robert-j-purdy/feed/
+19:39:01	Warning: 	HTML file (2558 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/special-appearance-by-bruce-marchiano/feed/
+19:39:01	Warning: 	HTML file (2502 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/tara-ward/feed/
+19:39:01	Warning: 	HTML file (2514 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/william-wenlock/feed/
+19:39:01	Warning: 	HTML file (2780 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/brendan-king/feed/
+19:39:02	Warning: 	HTML file (2786 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/crawford-wilson/feed/
+19:39:02	Warning: 	HTML file (2705 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/eliya-hurt/feed/
+19:39:02	Warning: 	HTML file (2709 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/garry-nation/feed/
+19:39:02	Warning: 	HTML file (2709 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/rusty-martin/feed/
+19:39:04	Warning: 	HTML file (2607 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/courtney-campbell/feed/
+19:39:04	Warning: 	HTML file (2607 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/frank-meschkuleit/feed/
+19:39:04	Warning: 	HTML file (2599 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/lee-armstrong/feed/
+19:39:04	Warning: 	HTML file (2597 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/trish-leeper/feed/
+19:39:05	Error: 	"Not Found" (404) at link codeorigin.jquery.com/jquery-wp-content/themes/codeorigin.jquery.com/i/favicon.ico (from code.jquery.com/)
+19:39:05	Warning: 	HTML file (2971 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ben-gardner-jr/feed/
+19:39:05	Warning: 	Warning: store text/css without scan: /home/oem/websites/parables/jquery-wp-content/themes/jquery/css/base3860.css
+19:39:05	Warning: 	HTML file (2960 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ken-craig/feed/
+19:39:05	Warning: 	HTML file (2968 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/louis-gossett/feed/
+19:39:05	Warning: 	HTML file (4236 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/inspirational/feed/
+19:39:07	Warning: 	Warning: store text/css without scan: /home/oem/websites/parables/jquery-wp-content/themes/codeorigin.jquery.com/style.css
+19:39:07	Warning: 	HTML file (2575 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/amanda-barber/feed/
+19:39:07	Warning: 	HTML file (2569 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/david-cade/feed/
+19:39:07	Warning: 	HTML file (2575 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/david-maysick/feed/
+19:39:07	Warning: 	HTML file (2571 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/hans-willer/feed/
+19:39:08	Warning: 	Warning: store text/css without scan: /home/oem/websites/parables/npm/docsearch.js@2/dist/cdn/docsearch.min.css
+19:39:08	Warning: 	HTML file (2579 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/stacey-bradshaw/feed/
+19:39:08	Warning: 	HTML file (2575 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/werner-riedel/feed/
+19:39:08	Warning: 	Warning: store text/css without scan: /home/oem/websites/parables/jquery-wp-content/themes/jquery/css/docsearch.css
+19:39:08	Warning: 	HTML file (3462 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/bill-traylor/feed/
+19:39:08	Warning: 	HTML file (2339 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/harrison-tyner/feed/
+19:39:10	Warning: 	Warning: store text/css without scan: /home/oem/websites/parables/ui/1.11.4/themes/ui-lightness/jquery-ui3428.css
+19:39:10	Warning: 	HTML file (2341 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jennifer-herron/feed/
+19:39:10	Warning: 	HTML file (2331 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/rich-price/feed/
+19:39:10	Warning: 	HTML file (13787 bytes) retransferred due to lack of cache: https://www.parables.tv/rating/not-rated/feed/
+19:39:10	Warning: 	HTML file (2636 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/chloe-allen/feed/
+19:39:11	Warning: 	Warning: store text/css without scan: /home/oem/websites/parables/jquery-wp-content/themes/jquery/css/sri-modal3428.css
+19:39:12	Warning: 	HTML file (2648 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/christina-browder/feed/
+19:39:12	Warning: 	HTML file (2646 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ruby-marie-lewis/feed/
+19:39:12	Warning: 	HTML file (2632 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/tim-kelly/feed/
+19:39:12	Warning: 	HTML file (2346 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/adam-burnett/feed/
+19:39:13	Warning: 	HTML file (2350 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/annie-anderson/feed/
+19:39:13	Warning: 	HTML file (2348 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/anthony-scott/feed/
+19:39:13	Warning: 	HTML file (2346 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/azariah-cain/feed/
+19:39:13	Warning: 	HTML file (2350 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/bobby-sirounis/feed/
+19:39:15	Warning: 	HTML file (2350 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/daniel-ahlfeld/feed/
+19:39:15	Warning: 	HTML file (2360 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/dashaun-blankenship/feed/
+19:39:15	Warning: 	HTML file (2344 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/denny-jiosa/feed/
+19:39:15	Warning: 	HTML file (2348 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/frank-nielsen/feed/
+19:39:16	Warning: 	HTML file (2352 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/georgiana-jianu/feed/
+19:39:16	Warning: 	HTML file (56594 bytes) retransferred due to lack of cache: https://www.parables.tv/video/dinosaur-heart/
+19:39:16	Warning: 	HTML file (2344 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jon-pupillo/feed/
+19:39:16	Warning: 	HTML file (2352 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jonathon-pettis/feed/
+19:39:18	Warning: 	HTML file (2342 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/kim-nygren/feed/
+19:39:18	Warning: 	HTML file (2344 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/lisa-raclaw/feed/
+19:39:18	Warning: 	HTML file (2344 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/pete-krajci/feed/
+19:39:18	Warning: 	HTML file (2344 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/regina-hill/feed/
+19:39:19	Warning: 	HTML file (2348 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/reginald-hill/feed/
+19:39:19	Warning: 	HTML file (56910 bytes) retransferred due to lack of cache: https://www.parables.tv/video/soldier-of-destiny/
+19:39:19	Warning: 	HTML file (2352 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/sara-wessendorf/feed/
+19:39:19	Warning: 	HTML file (2342 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/sonja-hill/feed/
+19:39:21	Warning: 	HTML file (56936 bytes) retransferred due to lack of cache: https://www.parables.tv/video/gospel-writers-autograph/
+19:39:21	Warning: 	HTML file (2350 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/spiro-megremis/feed/
+19:39:21	Warning: 	HTML file (2350 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/vera-milensnic/feed/
+19:39:21	Warning: 	HTML file (2346 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/yvette-jones/feed/
+19:39:22	Warning: 	HTML file (3731 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/august-caimi/feed/
+19:39:22	Warning: 	HTML file (3735 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/bailey-borders/feed/
+19:39:22	Warning: 	HTML file (5108 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/brad-stine/feed/
+19:39:22	Warning: 	HTML file (56550 bytes) retransferred due to lack of cache: https://www.parables.tv/video/hope/
+19:39:24	Warning: 	HTML file (3737 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/corbin-timbrook/feed/
+19:39:24	Warning: 	HTML file (3727 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/felix-ryan/feed/
+19:39:24	Warning: 	HTML file (3729 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jill-renner/feed/
+19:39:25	Warning: 	HTML file (101793 bytes) retransferred due to lack of cache: https://www.parables.tv/series/bjs-teddy-bear-club-and-bible-stories/
+19:39:25	Warning: 	HTML file (3729 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/joe-stevens/feed/
+19:39:25	Warning: 	HTML file (3731 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/paul-douglas/feed/
+19:39:25	Warning: 	HTML file (3735 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/randall-franks/feed/
+19:39:26	Warning: 	HTML file (3727 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/sho-baraka/feed/
+19:39:26	Warning: 	HTML file (3731 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/soren-fulton/feed/
+19:39:26	Warning: 	HTML file (6715 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/whitney-goin/feed/
+19:39:27	Warning: 	HTML file (57392 bytes) retransferred due to lack of cache: https://www.parables.tv/video/an-evergreen-christmas/
+19:39:28	Warning: 	HTML file (3733 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/william-white/feed/
+19:39:28	Warning: 	HTML file (4725 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/christina-demarco/feed/
+19:39:28	Warning: 	HTML file (4715 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/greg-robbins/feed/
+19:39:29	Warning: 	HTML file (101808 bytes) retransferred due to lack of cache: https://www.parables.tv/series/the-national-bible-bee-game-show/
+19:39:29	Warning: 	HTML file (4713 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/laura-romeo/feed/
+19:39:29	Warning: 	HTML file (4845 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/peter-kent/feed/
+19:39:30	Warning: 	HTML file (2798 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/dennis-martin/feed/
+19:39:31	Warning: 	HTML file (56459 bytes) retransferred due to lack of cache: https://www.parables.tv/series/bloom-today/
+19:39:31	Warning: 	HTML file (2800 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/pamela-brumley/feed/
+19:39:31	Warning: 	HTML file (2796 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/stella-davis/feed/
+19:39:31	Warning: 	HTML file (5460 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/tom-luce/feed/
+19:39:32	Warning: 	HTML file (74557 bytes) retransferred due to lack of cache: https://www.parables.tv/series/my-gospel-music/
+19:39:32	Warning: 	HTML file (2515 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/amy-landers/feed/
+19:39:32	Warning: 	HTML file (2515 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/danny-nucci/feed/
+19:39:32	Warning: 	HTML file (2509 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/deezer-d/feed/
+19:39:33	Warning: 	HTML file (3655 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/julie-harris/feed/
+19:39:33	Warning: 	HTML file (2522 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/michael-h-king/feed/
+19:39:33	Warning: 	HTML file (57043 bytes) retransferred due to lack of cache: https://www.parables.tv/video/less-hell-more-angels/
+19:39:33	Warning: 	HTML file (2513 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/mina-badie/feed/
+19:39:35	Warning: 	HTML file (56905 bytes) retransferred due to lack of cache: https://www.parables.tv/video/open-my-eyes/
+19:39:35	Warning: 	HTML file (2517 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/robert-scott/feed/
+19:39:35	Warning: 	HTML file (3647 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ruby-dee/feed/
+19:39:35	Warning: 	HTML file (2523 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/tessie-santiago/feed/
+19:39:36	Warning: 	HTML file (3698 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/merle-shenk/feed/
+19:39:36	Warning: 	HTML file (2542 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/tyler-pongratz/feed/
+19:39:36	Warning: 	HTML file (2546 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/zukhanye-sigwela/feed/
+19:39:36	Warning: 	HTML file (80056 bytes) retransferred due to lack of cache: https://www.parables.tv/series/change-tv/
+19:39:38	Warning: 	HTML file (4106 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/britt-george/feed/
+19:39:38	Warning: 	HTML file (4118 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/christy-sutherland/feed/
+19:39:38	Warning: 	HTML file (4110 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jackie-stewart/feed/
+19:39:38	Warning: 	HTML file (58320 bytes) retransferred due to lack of cache: https://www.parables.tv/video/the-basement/
+19:39:39	Warning: 	HTML file (5745 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jason-crabb/feed/
+19:39:39	Warning: 	HTML file (4106 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/larry-gatlin/feed/
+19:39:39	Warning: 	HTML file (4110 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/regina-mccrary/feed/
+19:39:40	Warning: 	HTML file (129758 bytes) retransferred due to lack of cache: https://www.parables.tv/browse/movies/recently-added/
+19:39:41	Warning: 	HTML file (2499 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/beth-grant/feed/
+19:39:41	Warning: 	HTML file (2501 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/bobby-edner/feed/
+19:39:41	Warning: 	HTML file (3726 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/brian-dennehy/feed/
+19:39:42	Warning: 	HTML file (86117 bytes) retransferred due to lack of cache: https://www.parables.tv/browse/tv-shows/recently-added/
+19:39:42	Warning: 	HTML file (2499 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/connie-ray/feed/
+19:39:42	Warning: 	HTML file (3730 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/crystal-bernard/feed/
+19:39:42	Warning: 	HTML file (2506 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jim-oheirn/feed/
+19:39:43	Warning: 	HTML file (2484 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jr/feed/
+19:39:43	Warning: 	HTML file (2499 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/lou-beatty/feed/
+19:39:43	Warning: 	HTML file (2511 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/william-shockley/feed/
+19:39:43	Warning: 	HTML file (2286 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/amy-van-eeden/feed/
+19:39:45	Warning: 	HTML file (2288 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/claire-winters/feed/
+19:39:45	Warning: 	HTML file (2292 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jonathan-pienaar/feed/
+19:39:45	Warning: 	HTML file (2290 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/stephen-preston/feed/
+19:39:45	Warning: 	HTML file (4078 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jeb-phillips/feed/
+19:39:46	Warning: 	HTML file (4080 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/mardell-elmer/feed/
+19:39:46	Warning: 	HTML file (4082 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/michael-warren/feed/
+19:39:46	Warning: 	HTML file (2414 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/donny-offerle/feed/
+19:39:47	Warning: 	HTML file (2411 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/mark-s-esch/feed/
+19:39:48	Warning: 	HTML file (2427 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/amy-crowley/feed/
+19:39:48	Warning: 	HTML file (2429 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/diana-lenska/feed/
+19:39:48	Warning: 	HTML file (3751 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/diana-schmitt/feed/
+19:39:48	Error: 	"Not Found" (404) at link https://www.parables.tv/wp-content/uploads/elementor/css/post-68670.css?ver=1582480817 (from https://www.parables.tv/about-us/)
+19:39:48	Warning: 	HTML file (2423 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/kira-cupp/feed/
+19:39:49	Error: 	"Not Found" (404) at link https://www.parables.tv/wp-content/uploads/elementor/css/post-68680.css?ver=1582489362 (from https://www.parables.tv/faqs/)
+19:39:49	Warning: 	HTML file (2427 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/royce-henry/feed/
+19:39:49	Warning: 	HTML file (2441 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/valorie-neal-white/feed/
+19:39:49	Warning: 	HTML file (2684 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/avery-adair/feed/
+19:39:49	Error: 	"Not Found" (404) at link https://www.parables.tv/wp-content/uploads/elementor/css/post-68697.css?ver=1582490530 (from https://www.parables.tv/troubleshooting-problems-with-streaming/)
+19:39:49	Warning: 	HTML file (2684 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/mendy-adair/feed/
+19:39:50	Error: 	"Not Found" (404) at link https://www.parables.tv/wp-content/uploads/elementor/css/post-68672.css?ver=1582490520 (from https://www.parables.tv/affiliate-portal/)
+19:39:50	Warning: 	HTML file (3956 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/seth-adair/feed/
+19:39:54	Error: 	"Not Found" (404) at link https://www.parables.tv/wp-content/uploads/elementor/css/post-68696.css?ver=1582501457 (from https://www.parables.tv/testimonials-from-parables-tv-customers/)
+19:39:57	Error: 	"Not Found" (404) at link https://www.parables.tv/wp-content/uploads/elementor/css/post-68679.css?ver=1582480817 (from https://www.parables.tv/contact-us/)
+19:40:06	Warning: 	HTML file (2187 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/carlos-sepulveda/feed/
+19:40:06	Warning: 	HTML file (3271 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/lemarc-johnson/feed/
+19:40:07	Warning: 	HTML file (2178 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/sarah-dashun/feed/
+19:40:07	Warning: 	HTML file (2182 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/timeca-seretti/feed/
+19:40:07	Warning: 	HTML file (2117 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/james-kane/feed/
+19:40:07	Warning: 	HTML file (2117 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/nat-margol/feed/
+19:40:08	Warning: 	HTML file (2119 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/sam-hilbert/feed/
+19:40:08	Warning: 	HTML file (2127 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/stephanie-magee/feed/
+19:40:08	Warning: 	HTML file (2403 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/daryl-hannah/feed/
+19:40:08	Warning: 	HTML file (2413 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/julianne-michelle/feed/
+19:40:10	Warning: 	HTML file (4212 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/michael-madsen/feed/
+19:40:10	Warning: 	HTML file (2050 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/amber-patee-adams/feed/
+19:40:10	Warning: 	HTML file (2036 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/joseph-cox/feed/
+19:40:10	Warning: 	HTML file (2042 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/terrie-batson/feed/
+19:40:11	Warning: 	HTML file (539 bytes) retransferred due to lack of cache: https://www.parables.tv/?p=84465
+19:40:11	Warning: 	HTML file (2208 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/alex-steele/feed/
+19:40:11	Warning: 	HTML file (2206 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/cody-longo/feed/
+19:40:11	Warning: 	HTML file (2214 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/nathalia-ramos/feed/
+19:40:13	Warning: 	Moved Permanently for https://www.parables.tv/?p=84465
+19:40:13	Warning: 	File has moved from https://www.parables.tv/?p=84465 to https://www.parables.tv/series/coop-dreams/
+19:40:13	Warning: 	HTML file (53828 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/brad-hauter/
+19:40:13	Warning: 	HTML file (2208 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/shari-rigby/feed/
+19:40:13	Warning: 	HTML file (3799 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/christina-fougnie/feed/
+19:40:13	Warning: 	HTML file (2099 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/dale-palkki/feed/
+19:40:14	Warning: 	HTML file (2101 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jackie-jones/feed/
+19:40:14	Warning: 	HTML file (2388 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/dan-arthur/feed/
+19:40:14	Warning: 	HTML file (2392 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/erika-arthur/feed/
+19:40:14	Warning: 	HTML file (2398 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/lysander-abadia/feed/
+19:40:16	Warning: 	HTML file (3234 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/angela-tomaselli/feed/
+19:40:16	Warning: 	HTML file (3230 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/annie-williams/feed/
+19:40:16	Warning: 	HTML file (3231 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/carissa-dallis/feed/
+19:40:16	Warning: 	HTML file (3230 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/carly-rohrbach/feed/
+19:40:17	Warning: 	HTML file (3228 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/daisy-aspiras/feed/
+19:40:17	Warning: 	HTML file (3226 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/david-gaylor/feed/
+19:40:17	Warning: 	HTML file (3230 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/demoine-kinney/feed/
+19:40:17	Warning: 	HTML file (3226 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/donnie-piper/feed/
+19:40:19	Warning: 	HTML file (3232 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/eugene-pridgett/feed/
+19:40:19	Warning: 	HTML file (3234 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/floyd-schierholt/feed/
+19:40:19	Warning: 	HTML file (3244 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/gregory-patrick-agnew/feed/
+19:40:19	Warning: 	HTML file (3228 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jenna-hoskins/feed/
+19:40:20	Warning: 	HTML file (3226 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/john-grewell/feed/
+19:40:20	Warning: 	HTML file (3226 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/kaitlin-lory/feed/
+19:40:20	Warning: 	HTML file (3220 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/kyle-hotz/feed/
+19:40:20	Warning: 	HTML file (3230 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/michelle-piper/feed/
+19:40:22	Warning: 	HTML file (3232 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/patti-dale-wood/feed/
+19:40:22	Warning: 	HTML file (3232 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/rachel-barkalow/feed/
+19:40:22	Warning: 	HTML file (3234 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/russell-williams/feed/
+19:40:22	Warning: 	HTML file (3228 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/shannon-combs/feed/
+19:40:23	Warning: 	HTML file (53923 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/eglas/
+19:40:23	Warning: 	HTML file (3228 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/theus-aspiras/feed/
+19:40:23	Warning: 	HTML file (3232 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/titus-wolverton/feed/
+19:40:23	Warning: 	HTML file (3244 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/titus-young-wolverton/feed/
+19:40:25	Warning: 	HTML file (53913 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/lars-peters/
+19:40:25	Warning: 	HTML file (3224 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/tyler-trent/feed/
+19:40:25	Warning: 	HTML file (3226 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/walter-croft/feed/
+19:40:25	Warning: 	HTML file (2951 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/angelita-nelson/feed/
+19:40:26	Warning: 	HTML file (54022 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/chelsey-lauren/
+19:40:26	Warning: 	HTML file (4582 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ben-davies/feed/
+19:40:26	Warning: 	HTML file (2949 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/brandy-allison/feed/
+19:40:26	Warning: 	HTML file (2941 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/don-brooks/feed/
+19:40:28	Warning: 	HTML file (4586 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/erik-estrada/feed/
+19:40:28	Warning: 	HTML file (2943 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/erin-bethea/feed/
+19:40:28	Warning: 	HTML file (2947 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jessica-lynch/feed/
+19:40:29	Warning: 	HTML file (4584 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/vanessa-ore/feed/
+19:40:29	Warning: 	HTML file (2246 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/daniel-zacapa/feed/
+19:40:29	Warning: 	HTML file (2250 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/traci-dinwiddie/feed/
+19:40:30	Warning: 	HTML file (55888 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/barry-britnell/
+19:40:31	Warning: 	HTML file (2238 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/zoe-myers/feed/
+19:40:31	Warning: 	HTML file (2223 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/alicia-minshew/feed/
+19:40:31	Warning: 	HTML file (2217 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/martha-wash/feed/
+19:40:31	Warning: 	HTML file (2215 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/terri-conn/feed/
+19:40:32	Warning: 	HTML file (2217 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/tom-humbert/feed/
+19:40:32	Warning: 	HTML file (2381 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/erin-nordseth/feed/
+19:40:32	Warning: 	HTML file (2385 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/michael-singler/feed/
+19:40:32	Warning: 	HTML file (4898 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/patrick-vann/feed/
+19:40:34	Warning: 	HTML file (2128 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jennifer-lofton/feed/
+19:40:34	Warning: 	HTML file (2118 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/john-judah/feed/
+19:40:34	Warning: 	HTML file (2124 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/smith-wheeler/feed/
+19:40:34	Warning: 	HTML file (2122 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/steven-brown/feed/
+19:40:35	Warning: 	HTML file (2468 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/angelo-fleece/feed/
+19:40:35	Warning: 	HTML file (2476 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/george-avgoustis/feed/
+19:40:35	Warning: 	HTML file (2466 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/rhodes-short/feed/
+19:40:35	Warning: 	HTML file (2212 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/alissa-dellork/feed/
+19:40:37	Warning: 	HTML file (2210 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/brianna-tyson/feed/
+19:40:37	Warning: 	HTML file (2208 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/eliza-kelley/feed/
+19:40:37	Warning: 	HTML file (2220 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/francesca-finnerty/feed/
+19:40:37	Warning: 	HTML file (2224 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/gabriela-kostadinova/feed/
+19:40:38	Warning: 	HTML file (2217 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/k-victoria-chase/feed/
+19:40:38	Warning: 	HTML file (2216 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/katherine-caruso/feed/
+19:40:38	Warning: 	HTML file (2208 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/mark-arnoldi/feed/
+19:40:38	Warning: 	HTML file (2218 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/michael-patterson/feed/
+19:40:40	Warning: 	HTML file (2214 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/mikayla-mulgrew/feed/
+19:40:40	Warning: 	HTML file (2208 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/paola-torres/feed/
+19:40:40	Warning: 	HTML file (2212 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/sandy-belforte/feed/
+19:40:40	Warning: 	HTML file (2214 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/sheila-avellino/feed/
+19:40:41	Warning: 	HTML file (3132 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/skip-lipman/feed/
+19:40:41	Warning: 	HTML file (2693 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jascha-updike/feed/
+19:40:41	Warning: 	HTML file (2698 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jeremy-n-fisher/feed/
+19:40:41	Warning: 	HTML file (2701 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/kathryn-reinhardt/feed/
+19:40:43	Warning: 	HTML file (2150 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jenn-gotzon/feed/
+19:40:43	Warning: 	HTML file (2152 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jonathan-von/feed/
+19:40:43	Warning: 	HTML file (2154 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/monet-coleman/feed/
+19:40:43	Warning: 	HTML file (2146 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/sunny-red/feed/
+19:40:44	Warning: 	HTML file (2148 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/tad-sowers/feed/
+19:40:44	Warning: 	HTML file (2507 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/bo-hopkins/feed/
+19:40:44	Warning: 	HTML file (2515 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/daniel-baldwin/feed/
+19:40:46	Warning: 	HTML file (2513 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/lorenzo-lamas/feed/
+19:40:46	Warning: 	HTML file (2507 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/tammy-barr/feed/
+19:40:46	Warning: 	HTML file (2725 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/bradley-whitfore/feed/
+19:40:46	Warning: 	HTML file (54093 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/carl-wesley-anderson/
+19:40:47	Warning: 	HTML file (2727 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/chiwetel-ejiorfor/feed/
+19:40:47	Warning: 	HTML file (2725 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jaimie-alexander/feed/
+19:40:47	Warning: 	HTML file (2717 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jim-caveziel/feed/
+19:40:47	Warning: 	HTML file (2765 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/courtney-buck/feed/
+19:40:48	Warning: 	HTML file (2762 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/irma-p-hall/feed/
+19:40:48	Warning: 	HTML file (2190 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/david-barnett/feed/
+19:40:48	Warning: 	HTML file (2196 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/debbie-sutcliffe/feed/
+19:40:48	Warning: 	HTML file (2194 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/gina-tichelkamp/feed/
+19:40:50	Warning: 	HTML file (2200 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jerry-mac-johnston/feed/
+19:40:50	Warning: 	HTML file (2188 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/meggie-jenny/feed/
+19:40:50	Warning: 	HTML file (2190 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/micaiah-bruce/feed/
+19:40:50	Warning: 	HTML file (2184 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/tony-teebo/feed/
+19:40:51	Warning: 	HTML file (2793 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/alex-madera/feed/
+19:40:51	Warning: 	HTML file (53981 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/curt-landry/
+19:40:52	Warning: 	HTML file (2807 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/catherine-thornton/feed/
+19:40:52	Warning: 	HTML file (2799 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/morgan-lambert/feed/
+19:40:53	Warning: 	HTML file (2672 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/aaron-conklin/feed/
+19:40:53	Warning: 	HTML file (2672 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/austin-prince/feed/
+19:40:53	Warning: 	HTML file (2672 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/brian-coleman/feed/
+19:40:53	Warning: 	HTML file (2672 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/joseph-wilson/feed/
+19:40:54	Warning: 	HTML file (2670 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/josh-feldman/feed/
+19:40:54	Warning: 	HTML file (2678 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/payton-alexander/feed/
+19:40:55	Warning: 	HTML file (2678 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/rebekah-mitchell/feed/
+19:40:55	Warning: 	HTML file (2668 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/stone-kiker/feed/
+19:40:55	Warning: 	HTML file (2411 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/di-adams/feed/
+19:40:56	Warning: 	HTML file (2421 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/paula-morrell/feed/
+19:40:56	Warning: 	HTML file (2425 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/thomas-bromhead/feed/
+19:40:57	Warning: 	HTML file (2544 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/whitey-lynn/feed/
+19:40:57	Warning: 	HTML file (2478 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/arvid-edward-ii/feed/
+19:40:57	Warning: 	HTML file (2481 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/caitlin-ofray/feed/
+19:40:58	Warning: 	HTML file (2468 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/david-mada/feed/
+19:40:58	Warning: 	HTML file (2478 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/davonda-simmons/feed/
+19:40:58	Warning: 	HTML file (2470 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/eric-battle/feed/
+19:40:58	Warning: 	HTML file (2488 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/erika-brooke-bradley/feed/
+19:40:59	Warning: 	HTML file (54043 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/michael-parker/
+19:40:59	Warning: 	HTML file (2488 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ginger-lee-mcdermott/feed/
+19:41:00	Warning: 	HTML file (2482 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/joshua-sangelhoff/feed/
+19:41:00	Warning: 	HTML file (2478 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/justenn-notario/feed/
+19:41:01	Warning: 	HTML file (2478 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/michael-stevens/feed/
+19:41:01	Warning: 	HTML file (2474 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/nicole-marion/feed/
+19:41:01	Warning: 	HTML file (54060 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/antwaan-randle-el/
+19:41:01	Warning: 	HTML file (2904 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/charleene-closshey/feed/
+19:41:02	Warning: 	HTML file (2892 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jake-sandvig/feed/
+19:41:02	Warning: 	HTML file (2894 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/robert-loggia/feed/
+19:41:03	Warning: 	HTML file (2892 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/tyler-ritter/feed/
+19:41:03	Warning: 	HTML file (2414 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/aaron-oconnell/feed/
+19:41:03	Warning: 	HTML file (53975 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/isaac-hernandez/
+19:41:03	Warning: 	HTML file (2415 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/kira-reed-lorsch/feed/
+19:41:04	Warning: 	HTML file (2416 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/margaret-obrien/feed/
+19:41:04	Warning: 	HTML file (2401 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ronn-moss/feed/
+19:41:05	Warning: 	HTML file (54203 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/chris-christian/
+19:41:05	Warning: 	HTML file (2907 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/host-joni-eareckson-tada/feed/
+19:41:06	Warning: 	HTML file (2404 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/amy-campbell/feed/
+19:41:06	Warning: 	HTML file (2404 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/andy-ingalls/feed/
+19:41:06	Warning: 	HTML file (3766 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/chandler-roberts/feed/
+19:41:06	Warning: 	HTML file (2406 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/david-hathway/feed/
+19:41:07	Warning: 	HTML file (54077 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/evonna-surrette/
+19:41:07	Warning: 	HTML file (2410 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/dennis-lawrence/feed/
+19:41:07	Warning: 	HTML file (2398 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ed-sparks/feed/
+19:41:07	Warning: 	HTML file (2410 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/elizabeth-yates/feed/
+19:41:08	Warning: 	HTML file (2406 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/holly-burgess/feed/
+19:41:08	Warning: 	HTML file (2412 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jennifer-laporte/feed/
+19:41:08	Warning: 	HTML file (2396 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/kat-moon/feed/
+19:41:08	Warning: 	HTML file (2406 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/kellie-koppel/feed/
+19:41:10	Warning: 	HTML file (2399 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/l-a-young/feed/
+19:41:10	Warning: 	HTML file (2453 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/wendie-pett/feed/
+19:41:10	Warning: 	HTML file (2480 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/kelly-greyson/feed/
+19:41:10	Warning: 	HTML file (3851 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/kirk-cameron/feed/
+19:41:11	Warning: 	HTML file (2478 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/michele-band/feed/
+19:41:11	Warning: 	HTML file (5462 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/bruce-marchiano/feed/
+19:41:12	Warning: 	HTML file (2933 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ernest-borgnine/feed/
+19:41:12	Warning: 	HTML file (2935 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/georgina-cordova/feed/
+19:41:13	Warning: 	HTML file (2925 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/omar-miller/feed/
+19:41:13	Warning: 	HTML file (2925 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/sandy-patty/feed/
+19:41:13	Warning: 	HTML file (4545 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/biblical/feed/
+19:41:13	Warning: 	HTML file (2377 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/emily/feed/
+19:41:14	Warning: 	HTML file (2383 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jonathan/feed/
+19:41:14	Warning: 	HTML file (2377 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/julie/feed/
+19:41:14	Warning: 	HTML file (2377 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/katie/feed/
+19:41:14	Warning: 	HTML file (2377 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/maria/feed/
+19:41:16	Warning: 	HTML file (53976 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jo-marie-payton/
+19:41:16	Warning: 	HTML file (2375 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ryan/feed/
+19:41:16	Warning: 	HTML file (2377 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/teddy/feed/
+19:41:16	Warning: 	HTML file (2493 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ray-comfort/feed/
+19:41:17	Warning: 	HTML file (2154 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ginni-priz/feed/
+19:41:17	Warning: 	HTML file (2160 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/paula-wallace/feed/
+19:41:17	Warning: 	HTML file (2446 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/blue-jean-band/feed/
+19:41:17	Warning: 	HTML file (2440 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jim-sheldon/feed/
+19:41:18	Warning: 	HTML file (54017 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/cameron-stewart/
+19:41:18	Warning: 	HTML file (2446 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/radio-ramblers/feed/
+19:41:18	Warning: 	HTML file (2442 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/tim-lovelace/feed/
+19:41:18	Warning: 	HTML file (1140 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/mark-trammell-quartet/feed/
+19:41:20	Warning: 	HTML file (53954 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/brent-reed/
+19:41:20	Warning: 	HTML file (1124 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/the-whisnants/feed/
+19:41:20	Warning: 	HTML file (1114 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/don-moen/feed/
+19:41:20	Warning: 	HTML file (1128 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/michael-english/feed/
+19:41:21	Warning: 	HTML file (54109 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jaime-jorge/
+19:41:21	Warning: 	HTML file (1124 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/allison-speer/feed/
+19:41:21	Warning: 	HTML file (1120 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/gordon-mote/feed/
+19:41:21	Warning: 	HTML file (1122 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/the-freemans/feed/
+19:41:23	Warning: 	HTML file (1128 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/freedom-singers/feed/
+19:41:23	Warning: 	HTML file (1122 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/aaron-tippin/feed/
+19:41:23	Warning: 	HTML file (1112 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/hoppers/feed/
+19:41:24	Warning: 	HTML file (53997 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/amy-lancaster/
+19:41:24	Warning: 	HTML file (1126 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/rhonda-vincent/feed/
+19:41:24	Warning: 	HTML file (1124 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/lauren-talley/feed/
+19:41:24	Warning: 	HTML file (1118 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/triumphant/feed/
+19:41:25	Warning: 	HTML file (53951 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/dan-meyer/
+19:41:25	Warning: 	HTML file (1118 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/john-berry/feed/
+19:41:25	Warning: 	HTML file (1104 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/bfa/feed/
+19:41:25	Warning: 	HTML file (2446 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/judge-fred-mosely/feed/
+19:41:27	Warning: 	HTML file (2040 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/nina-may/feed/
+19:41:27	Warning: 	HTML file (2357 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/christopher-inman/feed/
+19:41:27	Warning: 	HTML file (557 bytes) retransferred due to lack of cache: https://www.parables.tv/?p=97560
+19:41:27	Warning: 	HTML file (2343 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/tammy-lane/feed/
+19:41:28	Warning: 	Moved Permanently for https://www.parables.tv/?p=97560
+19:41:28	Warning: 	File has moved from https://www.parables.tv/?p=97560 to https://www.parables.tv/video/last-supper-artifacts/
+19:41:28	Warning: 	HTML file (54059 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/erwin-lutzer/
+19:41:28	Warning: 	HTML file (2316 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/dominick-labanca/feed/
+19:41:28	Warning: 	HTML file (2310 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/heloisa-alves/feed/
+19:41:30	Warning: 	HTML file (567 bytes) retransferred due to lack of cache: https://www.parables.tv/?p=84218
+19:41:30	Warning: 	HTML file (2312 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jeannie-garcia/feed/
+19:41:30	Warning: 	HTML file (2249 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jamie-shaver/feed/
+19:41:30	Warning: 	HTML file (2253 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/julie-van-gorp/feed/
+19:41:31	Warning: 	Moved Permanently for https://www.parables.tv/?p=84218
+19:41:31	Warning: 	File has moved from https://www.parables.tv/?p=84218 to https://www.parables.tv/video/breaking-the-da-vinci-code/
+19:41:31	Warning: 	HTML file (567 bytes) retransferred due to lack of cache: https://www.parables.tv/?p=86783
+19:41:31	Warning: 	HTML file (2780 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/david-manning/feed/
+19:41:31	Warning: 	HTML file (2772 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/humble-me/feed/
+19:41:31	Warning: 	HTML file (2364 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/alexis-vann/feed/
+19:41:32	Warning: 	Moved Permanently for https://www.parables.tv/?p=86783
+19:41:32	Warning: 	File has moved from https://www.parables.tv/?p=86783 to https://www.parables.tv/tv-special/the-perfect-sacrifice/
+19:41:32	Warning: 	HTML file (555 bytes) retransferred due to lack of cache: https://www.parables.tv/?p=84680
+19:41:33	Warning: 	HTML file (2368 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/angie-scuderi/feed/
+19:41:33	Warning: 	HTML file (2372 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/aryanna-jackson/feed/
+19:41:33	Warning: 	HTML file (2366 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/burt-laposka/feed/
+19:41:33	Warning: 	Moved Permanently for https://www.parables.tv/?p=84680
+19:41:33	Warning: 	File has moved from https://www.parables.tv/?p=84680 to https://www.parables.tv/series/facing-life-head-on/
+19:41:33	Warning: 	HTML file (53993 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/brad-mattes/
+19:41:34	Warning: 	HTML file (2368 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/chris-lythgoe/feed/
+19:41:34	Warning: 	HTML file (2374 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/christian-holmes/feed/
+19:41:34	Warning: 	HTML file (3639 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/debra-ovall/feed/
+19:41:35	Warning: 	HTML file (2380 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/denise-villahermosa/feed/
+19:41:35	Warning: 	HTML file (625 bytes) retransferred due to lack of cache: https://www.parables.tv/?p=85040
+19:41:35	Warning: 	HTML file (2370 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/denisse-zapata/feed/
+19:41:35	Warning: 	HTML file (2362 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/james-hunt/feed/
+19:41:37	Warning: 	Moved Permanently for https://www.parables.tv/?p=85040
+19:41:37	Warning: 	File has moved from https://www.parables.tv/?p=85040 to https://www.parables.tv/video/last-supper-artifacts-mary-magdalene-and-the-holy-grail/
+19:41:37	Warning: 	HTML file (54101 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/darren-mcgavin/
+19:41:37	Warning: 	HTML file (2362 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jeff-ovall/feed/
+19:41:37	Warning: 	HTML file (2366 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/kevin-wright/feed/
+19:41:37	Warning: 	HTML file (2378 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/melvin-whittenberg/feed/
+19:41:38	Warning: 	HTML file (2370 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/michael-joiner/feed/
+19:41:38	Warning: 	HTML file (2372 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/nicolas-wallace/feed/
+19:41:38	Warning: 	HTML file (2368 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/rhonda-oliver/feed/
+19:41:38	Warning: 	HTML file (2378 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/sidney-whittenberg/feed/
+19:41:40	Warning: 	HTML file (623 bytes) retransferred due to lack of cache: https://www.parables.tv/?p=85691
+19:41:40	Warning: 	HTML file (2376 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/sylvester-jackson/feed/
+19:41:40	Warning: 	HTML file (2362 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/toni-jones/feed/
+19:41:40	Warning: 	HTML file (2370 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/tony-claiborne/feed/
+19:41:41	Warning: 	Moved Permanently for https://www.parables.tv/?p=85691
+19:41:41	Warning: 	File has moved from https://www.parables.tv/?p=85691 to https://www.parables.tv/tv-special/portrait-of-courage-the-untold-story-of-flight-93/
+19:41:41	Warning: 	HTML file (553 bytes) retransferred due to lack of cache: https://www.parables.tv/?p=85380
+19:41:41	Warning: 	HTML file (2366 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/tony-merritt/feed/
+19:41:41	Warning: 	HTML file (2372 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/trish-lassinger/feed/
+19:41:41	Warning: 	HTML file (2362 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/vic-suderi/feed/
+19:41:42	Warning: 	Moved Permanently for https://www.parables.tv/?p=85380
+19:41:42	Warning: 	File has moved from https://www.parables.tv/?p=85380 to https://www.parables.tv/video/miraculous-messages/
+19:41:42	Warning: 	HTML file (579 bytes) retransferred due to lack of cache: https://www.parables.tv/?p=87190
+19:41:43	Warning: 	HTML file (2398 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/chip-rossetti/feed/
+19:41:43	Warning: 	HTML file (2392 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/david-ross/feed/
+19:41:43	Warning: 	HTML file (2398 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/kaitlin-borst/feed/
+19:41:43	Warning: 	Moved Permanently for https://www.parables.tv/?p=87190
+19:41:43	Warning: 	File has moved from https://www.parables.tv/?p=87190 to https://www.parables.tv/tv-special/week-that-changed-the-world/
+19:41:43	Warning: 	HTML file (543 bytes) retransferred due to lack of cache: https://www.parables.tv/?p=97561
+19:41:44	Warning: 	Moved Permanently for https://www.parables.tv/?p=97561
+19:41:44	Warning: 	File has moved from https://www.parables.tv/?p=97561 to https://www.parables.tv/video/my-finish-line/
+19:41:44	Warning: 	HTML file (54024 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/michelle-murray/
+19:41:44	Warning: 	HTML file (2398 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/kristi-miller/feed/
+19:41:44	Warning: 	HTML file (2410 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/timothy-paul-taylor/feed/
+19:41:44	Warning: 	HTML file (2367 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/alan-myles-heyman/feed/
+19:41:45	Warning: 	HTML file (557 bytes) retransferred due to lack of cache: https://www.parables.tv/?p=85376
+19:41:45	Warning: 	HTML file (2363 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/arturo-ferreira/feed/
+19:41:45	Warning: 	HTML file (2367 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/blesi-tchividjian/feed/
+19:41:45	Warning: 	HTML file (2361 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/brandi-rudicil/feed/
+19:41:47	Warning: 	Moved Permanently for https://www.parables.tv/?p=85376
+19:41:47	Warning: 	File has moved from https://www.parables.tv/?p=85376 to https://www.parables.tv/video/miracles-in-our-midst/
+19:41:47	Warning: 	HTML file (56768 bytes) retransferred due to lack of cache: https://www.parables.tv/tv-special/end-times-how-close-are-we/
+19:41:47	Warning: 	HTML file (2365 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/lenin-valladares/feed/
+19:41:47	Warning: 	HTML file (2367 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/pastor-ron-bramos/feed/
+19:41:47	Warning: 	HTML file (2363 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/sharon-pfeiffer/feed/
+19:41:48	Warning: 	HTML file (53934 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/angela-tesch/
+19:41:48	Warning: 	HTML file (2353 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/todd-bruno/feed/
+19:41:48	Warning: 	HTML file (2215 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/bruce-blowers/feed/
+19:41:48	Warning: 	HTML file (2217 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/heather-fusari/feed/
+19:41:50	Warning: 	HTML file (54020 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/gregory-robbins/
+19:41:50	Warning: 	HTML file (2213 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jessica-rowe/feed/
+19:41:50	Warning: 	HTML file (2217 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/steve-kowalski/feed/
+19:41:50	Warning: 	HTML file (2386 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/alexis-l-hughes/feed/
+19:41:51	Warning: 	HTML file (54057 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/simon-j-woodstock/
+19:41:51	Warning: 	HTML file (2363 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/kyle/feed/
+19:41:51	Warning: 	HTML file (2367 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/leslie/feed/
+19:41:51	Warning: 	HTML file (1132 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/stephanie-vickers/feed/
+19:41:53	Warning: 	HTML file (1122 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/brad-jackson/feed/
+19:41:53	Warning: 	HTML file (1128 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/christina-karis/feed/
+19:41:53	Warning: 	HTML file (1128 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/pattie-crawford/feed/
+19:41:53	Warning: 	HTML file (581 bytes) retransferred due to lack of cache: https://www.parables.tv/?p=87204
+19:41:54	Warning: 	Moved Permanently for https://www.parables.tv/?p=87204
+19:41:54	Warning: 	File has moved from https://www.parables.tv/?p=87204 to https://www.parables.tv/tv-special/what-the-bible-code-predicts/
+19:41:54	Warning: 	HTML file (589 bytes) retransferred due to lack of cache: https://www.parables.tv/?p=87021
+19:41:54	Warning: 	HTML file (1114 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/amy-hess/feed/
+19:41:54	Warning: 	HTML file (1124 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/percy-metcalf/feed/
+19:41:54	Warning: 	HTML file (2185 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/judd-hirsch/feed/
+19:41:55	Warning: 	Moved Permanently for https://www.parables.tv/?p=87021
+19:41:55	Warning: 	File has moved from https://www.parables.tv/?p=87021 to https://www.parables.tv/tv-special/uncovering-the-truth-about-jesus/
+19:41:55	Warning: 	HTML file (559 bytes) retransferred due to lack of cache: https://www.parables.tv/?p=86859
+19:41:55	Warning: 	HTML file (2189 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/kathryn-kates/feed/
+19:41:55	Warning: 	HTML file (2253 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ashley-smith/feed/
+19:41:55	Warning: 	HTML file (2259 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/matt-marraccini/feed/
+19:41:57	Warning: 	Moved Permanently for https://www.parables.tv/?p=86859
+19:41:57	Warning: 	File has moved from https://www.parables.tv/?p=86859 to https://www.parables.tv/tv-special/the-truth-exposed/
+19:41:57	Warning: 	HTML file (571 bytes) retransferred due to lack of cache: https://www.parables.tv/?p=86796
+19:41:57	Warning: 	HTML file (2257 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/merilee-brasch/feed/
+19:41:57	Warning: 	HTML file (2269 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/micheal-blain-rozgay/feed/
+19:41:57	Warning: 	HTML file (2259 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/yvonne-maverick/feed/
+19:41:58	Warning: 	Moved Permanently for https://www.parables.tv/?p=86796
+19:41:58	Warning: 	File has moved from https://www.parables.tv/?p=86796 to https://www.parables.tv/tv-special/the-quest-for-noahs-ark/
+19:41:58	Warning: 	HTML file (54059 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/richard-blair/
+19:41:58	Warning: 	HTML file (3831 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/michael-flynn/feed/
+19:41:59	Warning: 	HTML file (561 bytes) retransferred due to lack of cache: https://www.parables.tv/?p=86572
+19:42:00	Warning: 	Moved Permanently for https://www.parables.tv/?p=86572
+19:42:00	Warning: 	File has moved from https://www.parables.tv/?p=86572 to https://www.parables.tv/tv-special/the-fabric-of-time/
+19:42:00	Warning: 	HTML file (571 bytes) retransferred due to lack of cache: https://www.parables.tv/?p=86568
+19:42:01	Warning: 	HTML file (2533 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/documentar/feed/
+19:42:02	Warning: 	Moved Permanently for https://www.parables.tv/?p=86568
+19:42:02	Warning: 	File has moved from https://www.parables.tv/?p=86568 to https://www.parables.tv/tv-special/the-evidence-for-heaven/
+19:42:02	Warning: 	HTML file (549 bytes) retransferred due to lack of cache: https://www.parables.tv/?p=84809
+19:42:03	Warning: 	Moved Permanently for https://www.parables.tv/?p=84809
+19:42:03	Warning: 	File has moved from https://www.parables.tv/?p=84809 to https://www.parables.tv/tv-special/god-provides/
+19:42:03	Warning: 	HTML file (553 bytes) retransferred due to lack of cache: https://www.parables.tv/?p=94518
+19:42:03	Warning: 	HTML file (2428 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/alicia-monet-caldwell/feed/
+19:42:03	Warning: 	HTML file (2416 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/chanel-marriott/feed/
+19:42:04	Warning: 	Moved Permanently for https://www.parables.tv/?p=94518
+19:42:04	Warning: 	File has moved from https://www.parables.tv/?p=94518 to https://www.parables.tv/video/how-to-beat-a-bully/
+19:42:04	Warning: 	HTML file (54008 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/elise-angell/
+19:42:04	Warning: 	HTML file (2410 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/gregg-wayans/feed/
+19:42:04	Warning: 	HTML file (2503 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/eddie-mekka/feed/
+19:42:05	Warning: 	HTML file (54041 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/george-blagden/
+19:42:05	Warning: 	HTML file (2517 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/elizabeth-houlihan/feed/
+19:42:05	Warning: 	HTML file (2513 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jason-john-beebe/feed/
+19:42:06	Warning: 	HTML file (55826 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/april-oberlin/
+19:42:06	Warning: 	HTML file (2276 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/michael-houston-king/feed/
+19:42:07	Warning: 	HTML file (2478 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/chris-wessner/feed/
+19:42:08	Warning: 	HTML file (54048 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/susan-macke-miller/
+19:42:08	Warning: 	HTML file (2474 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/zac-klammer/feed/
+19:42:08	Warning: 	HTML file (2599 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/brad-heller/feed/
+19:42:08	Warning: 	HTML file (2607 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/kirk-b-r-woller/feed/
+19:42:09	Warning: 	HTML file (54125 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/cameron-bancroft/
+19:42:09	Warning: 	HTML file (2603 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/patrck-gagnon/feed/
+19:42:09	Warning: 	HTML file (2551 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/dave-lemoyne/feed/
+19:42:09	Warning: 	HTML file (2553 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/glen-greenway/feed/
+19:42:11	Warning: 	HTML file (54036 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/elise-neal/
+19:42:11	Warning: 	HTML file (2553 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jennifer-rose/feed/
+19:42:11	Warning: 	HTML file (2547 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/joe-rowley/feed/
+19:42:11	Warning: 	HTML file (2551 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/justin-tatum/feed/
+19:42:12	Warning: 	HTML file (53966 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/alan-baer/
+19:42:12	Warning: 	HTML file (2559 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/kristina-morales/feed/
+19:42:12	Warning: 	HTML file (2547 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/liz-duchez/feed/
+19:42:12	Warning: 	HTML file (2549 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/mark-rabant/feed/
+19:42:14	Warning: 	HTML file (53940 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/denise-hyer/
+19:42:14	Warning: 	HTML file (2553 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/nancy-sparlin/feed/
+19:42:14	Warning: 	HTML file (2557 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/rick-montgomery/feed/
+19:42:14	Warning: 	HTML file (2551 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/sean-szaller/feed/
+19:42:15	Warning: 	HTML file (55888 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/brianne-blowers/
+19:42:15	Warning: 	HTML file (2557 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/wilford-brimley/feed/
+19:42:15	Warning: 	HTML file (2458 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/adam-johnson/feed/
+19:42:15	Warning: 	HTML file (2464 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/britani-bateman/feed/
+19:42:17	Warning: 	HTML file (2462 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/corbin-bernsen/feed/
+19:42:17	Warning: 	HTML file (2541 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/chere-bernhard/feed/
+19:42:17	Warning: 	HTML file (2545 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/dominic-altmeier/feed/
+19:42:17	Warning: 	HTML file (54122 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/anders-baasmo-christiansen/
+19:42:18	Warning: 	HTML file (2543 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jason-applegate/feed/
+19:42:18	Warning: 	HTML file (2254 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/paige-creswell/feed/
+19:42:18	Warning: 	HTML file (2362 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/heather-lynch/feed/
+19:42:18	Warning: 	HTML file (54173 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/christie-osterhus-micah-brown/
+19:42:19	Warning: 	HTML file (2354 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/rick-bucy/feed/
+19:42:19	Warning: 	HTML file (2370 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/shanda-lee-munson/feed/
+19:42:19	Warning: 	HTML file (2479 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/aj-jabaji/feed/
+19:42:19	Warning: 	HTML file (53984 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ashlin-malik/
+19:42:20	Warning: 	HTML file (2489 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/demris-johnson/feed/
+19:42:21	Warning: 	HTML file (2496 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/gregory-p-robbins/feed/
+19:42:21	Warning: 	HTML file (2487 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jon-southwell/feed/
+19:42:21	Warning: 	HTML file (53983 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/david-leisure/
+19:42:22	Warning: 	HTML file (2213 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jay-pickett/feed/
+19:42:22	Warning: 	HTML file (2215 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/tom-skerritt/feed/
+19:42:22	Warning: 	HTML file (2219 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/victoria-pratt/feed/
+19:42:23	Warning: 	HTML file (54062 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/brandon-hardesty/
+19:42:24	Warning: 	HTML file (2388 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/alan-maki/feed/
+19:42:24	Warning: 	HTML file (2390 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ann-briggs/feed/
+19:42:24	Warning: 	HTML file (2398 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/caren-rienstra/feed/
+19:42:24	Warning: 	HTML file (65454 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jefferson-moore/
+19:42:25	Warning: 	HTML file (2394 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/gary-jenkins/feed/
+19:42:25	Warning: 	HTML file (2394 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jason-carter/feed/
+19:42:25	Warning: 	HTML file (2392 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/joshua-haze/feed/
+19:42:25	Warning: 	HTML file (53986 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/alan-heyman/
+19:42:27	Warning: 	HTML file (2406 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/mikah-scott-carter/feed/
+19:42:27	Warning: 	HTML file (2396 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/nigel-vessels/feed/
+19:42:27	Warning: 	HTML file (2398 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/scott-campbell/feed/
+19:42:27	Warning: 	HTML file (53951 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/brandon-deyoung/
+19:42:28	Warning: 	HTML file (2390 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/shaun-maki/feed/
+19:42:28	Warning: 	HTML file (2400 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/sherzad-sinjari/feed/
+19:42:28	Warning: 	HTML file (2408 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/stuart-grant-walker/feed/
+19:42:28	Warning: 	HTML file (53908 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/chirstie-cantu/
+19:42:30	Warning: 	HTML file (53986 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/colby-conway/
+19:42:30	Warning: 	HTML file (2394 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/megan-massie/feed/
+19:42:30	Warning: 	HTML file (2394 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/molly-cooley/feed/
+19:42:30	Warning: 	HTML file (2677 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/christopher-maleki/feed/
+19:42:31	Warning: 	HTML file (54003 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/freddie-de-grate/
+19:42:31	Warning: 	HTML file (2671 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jonathan-roumie/feed/
+19:42:31	Warning: 	HTML file (2669 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/stelio-savante/feed/
+19:42:31	Warning: 	HTML file (2579 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/georgette-kleier/feed/
+19:42:33	Warning: 	HTML file (53914 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/david-bickford/
+19:42:33	Warning: 	HTML file (3794 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/juliana-allen/feed/
+19:42:33	Warning: 	HTML file (2365 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/corrina-crade/feed/
+19:42:33	Warning: 	HTML file (2367 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/steven-koehler/feed/
+19:42:34	Warning: 	HTML file (53988 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/nate-melton/
+19:42:34	Warning: 	HTML file (2409 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/becca-kaser/feed/
+19:42:34	Warning: 	HTML file (2417 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/benjamin-ascher/feed/
+19:42:34	Warning: 	HTML file (2409 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/chuck-binns/feed/
+19:42:36	Warning: 	HTML file (54003 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/kijana-crues/
+19:42:36	Warning: 	HTML file (2413 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/darren-lawson/feed/
+19:42:36	Warning: 	HTML file (2409 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/david-burke/feed/
+19:42:36	Warning: 	HTML file (2405 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ken-hines/feed/
+19:42:37	Warning: 	HTML file (2415 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/logan-phillips/feed/
+19:42:37	Warning: 	HTML file (2411 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/thomas-sneed/feed/
+19:42:37	Warning: 	HTML file (2137 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/collin-alexander-brown/feed/
+19:42:37	Warning: 	HTML file (53878 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/celia-isla/
+19:42:39	Warning: 	HTML file (2133 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/courtney-lee-simpson/feed/
+19:42:39	Warning: 	HTML file (2459 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/andrew-wilson-williams/feed/
+19:42:39	Warning: 	HTML file (2445 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/brittany-blades/feed/
+19:42:39	Warning: 	HTML file (53872 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/patty-mark/
+19:42:40	Warning: 	HTML file (2443 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/francine-locke/feed/
+19:42:40	Warning: 	HTML file (2481 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/grace-etzkorn-donald-james-parker/feed/
+19:42:40	Warning: 	HTML file (2111 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ben-harney/feed/
+19:42:40	Warning: 	HTML file (53917 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/cory-kays/
+19:42:41	Warning: 	HTML file (2117 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/clifton-davis/feed/
+19:42:41	Warning: 	HTML file (2115 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/nicoye-banks/feed/
+19:42:41	Warning: 	HTML file (2311 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/alistair-moulton-black/feed/
+19:42:41	Warning: 	HTML file (54199 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/abraham-suarez/
+19:42:43	Warning: 	HTML file (2293 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/brandon-auret/feed/
+19:42:43	Warning: 	HTML file (2300 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/candice-darcy/feed/
+19:42:43	Warning: 	HTML file (2303 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/chris-van-rensburg/feed/
+19:42:43	Warning: 	HTML file (54006 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/giovanni-marzouca/
+19:42:44	Warning: 	HTML file (2299 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/frank-rautenbach/feed/
+19:42:44	Warning: 	HTML file (2297 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jonathan-hearns/feed/
+19:42:44	Warning: 	HTML file (2309 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/matthew-dylan-roberts/feed/
+19:42:44	Warning: 	HTML file (54096 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/c-k-park/
+19:42:45	Warning: 	HTML file (2309 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/regardt-van-den-bergh/feed/
+19:42:45	Warning: 	HTML file (2291 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ricky-botsis/feed/
+19:42:45	Warning: 	HTML file (2295 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/sarah-thompson/feed/
+19:42:45	Warning: 	HTML file (53958 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jason-tillman/
+19:42:47	Warning: 	HTML file (2295 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/stephen-hughes/feed/
+19:42:47	Warning: 	HTML file (2215 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/aliyauna-nykol/feed/
+19:42:47	Warning: 	HTML file (2215 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/sarah-dashburn/feed/
+19:42:47	Warning: 	HTML file (53932 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/alyssa-taylor/
+19:42:48	Warning: 	HTML file (2217 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/timeca-serettin/feed/
+19:42:48	Warning: 	HTML file (2318 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/bill-mcadams-jr/feed/
+19:42:48	Warning: 	HTML file (2315 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/brent-anderson/feed/
+19:42:48	Warning: 	HTML file (54009 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/danny-bliss/
+19:42:50	Warning: 	HTML file (2311 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ernie-hudson/feed/
+19:42:50	Warning: 	HTML file (2311 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/frank-mosely/feed/
+19:42:50	Warning: 	HTML file (2309 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/kevin-sorbo/feed/
+19:42:50	Warning: 	HTML file (2320 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/marcus-m-mauldin/feed/
+19:42:51	Warning: 	HTML file (54016 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jeremy-dehut/
+19:42:51	Warning: 	HTML file (2311 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/rett-terrell/feed/
+19:42:51	Warning: 	HTML file (2464 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/david-nibley/feed/
+19:42:51	Warning: 	HTML file (2464 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/emily-moffat/feed/
+19:42:52	Warning: 	HTML file (2464 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jimmy-chunga/feed/
+19:42:52	Warning: 	HTML file (2462 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/tayva-patch/feed/
+19:42:52	Warning: 	HTML file (2466 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/tim-shoemaker/feed/
+19:42:52	Warning: 	HTML file (2386 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/alphonse-menyo/feed/
+19:42:54	Warning: 	HTML file (2380 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/henry-adofo/feed/
+19:42:54	Warning: 	HTML file (2386 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/michael-attram/feed/
+19:42:54	Warning: 	HTML file (2400 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/chelsie-casagrande/feed/
+19:42:54	Warning: 	HTML file (2388 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jason-burkey/feed/
+19:42:55	Warning: 	HTML file (2396 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jean-paul-chreky/feed/
+19:42:55	Warning: 	HTML file (2183 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/alexa-cahill/feed/
+19:42:55	Warning: 	HTML file (2185 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/chris-faherty/feed/
+19:42:55	Warning: 	HTML file (2187 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/susan-buttrick/feed/
+19:42:57	Warning: 	HTML file (53981 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/david-martelli/
+19:42:57	Warning: 	HTML file (3055 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/austin-murray/feed/
+19:42:57	Warning: 	HTML file (3053 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/don-ortolano/feed/
+19:42:57	Warning: 	HTML file (3057 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/rachel-schardt/feed/
+19:42:58	Warning: 	HTML file (3088 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ulises-larramendi-jamie-higgs/feed/
+19:42:58	Warning: 	HTML file (2557 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/brittany-wilharm/feed/
+19:42:58	Warning: 	HTML file (2551 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/danny-atchley/feed/
+19:42:58	Warning: 	HTML file (2551 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/david-chattam/feed/
+19:43:00	Warning: 	HTML file (2557 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jonathan-everett/feed/
+19:43:00	Warning: 	HTML file (2570 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jr-pattinicole-wheeler/feed/
+19:43:00	Warning: 	HTML file (2543 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/lois-berg/feed/
+19:43:00	Warning: 	HTML file (2545 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/matt-plunk/feed/
+19:43:01	Warning: 	HTML file (2547 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/pat-binkley/feed/
+19:43:01	Warning: 	HTML file (2543 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/rob-wilds/feed/
+19:43:01	Warning: 	HTML file (2549 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/robert-baker/feed/
+19:43:01	Warning: 	HTML file (2553 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/roger-eldridge/feed/
+19:43:03	Warning: 	HTML file (2407 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ethan-haberfield/feed/
+19:43:03	Warning: 	HTML file (2405 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jonathan-tindle/feed/
+19:43:03	Warning: 	HTML file (2403 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ted-sutherland/feed/
+19:43:03	Warning: 	HTML file (2276 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/bailee-johnson/feed/
+19:43:04	Warning: 	HTML file (2274 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/bruce-newbold/feed/
+19:43:04	Warning: 	HTML file (2278 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/edward-herrmann/feed/
+19:43:04	Warning: 	HTML file (2286 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/savanna-kylie-lewis/feed/
+19:43:04	Warning: 	HTML file (2276 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/syndey-peebler/feed/
+19:43:06	Warning: 	HTML file (2272 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/yolanda-wood/feed/
+19:43:06	Warning: 	HTML file (2697 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jada-sanders/feed/
+19:43:06	Warning: 	HTML file (2693 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/julie-moss/feed/
+19:43:06	Warning: 	HTML file (2699 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/laura-johnson/feed/
+19:43:07	Warning: 	HTML file (2700 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/mark-a-marple/feed/
+19:43:07	Warning: 	HTML file (2699 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/michael-varde/feed/
+19:43:07	Warning: 	HTML file (2444 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/craig-belwood/feed/
+19:43:07	Warning: 	HTML file (2444 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/doris-collier/feed/
+19:43:09	Warning: 	HTML file (2444 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/sherry-morris/feed/
+19:43:09	Warning: 	HTML file (2551 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ruby-lewis/feed/
+19:43:09	Warning: 	HTML file (2286 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ayanna-fullilove/feed/
+19:43:09	Warning: 	HTML file (2284 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/delorean-cotton/feed/
+19:43:10	Warning: 	HTML file (54075 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/dennis-lavalle/
+19:43:10	Warning: 	HTML file (2282 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/delores-harris/feed/
+19:43:10	Warning: 	HTML file (2287 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/mathew-j-boucher/feed/
+19:43:10	Warning: 	HTML file (2284 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/rocco-guirlanda/feed/
+19:43:12	Warning: 	HTML file (53919 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/matt-thomsen/
+19:43:12	Warning: 	HTML file (2278 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/t-j-hemphill/feed/
+19:43:12	Warning: 	HTML file (2280 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/victoria-army/feed/
+19:43:13	Warning: 	HTML file (2668 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/connie-burton/feed/
+19:43:13	Warning: 	HTML file (2669 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/entertainment/feed/
+19:43:13	Warning: 	HTML file (53906 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/dennis-marburger/
+19:43:13	Warning: 	HTML file (2653 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/music/feed/
+19:43:15	Warning: 	HTML file (2353 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ashley-kate-adams/feed/
+19:43:15	Warning: 	HTML file (2306 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/bible-teaching/feed/
+19:43:15	Warning: 	HTML file (1126 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/janice-hembree/feed/
+19:43:15	Warning: 	HTML file (1120 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/rod-hembree/feed/
+19:43:16	Warning: 	HTML file (54016 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/dieter-schwingel/
+19:43:16	Warning: 	HTML file (2425 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/edie-mcclurg/feed/
+19:43:16	Warning: 	HTML file (2421 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/john-diehl/feed/
+19:43:16	Warning: 	HTML file (2423 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/robert-davi/feed/
+19:43:18	Warning: 	HTML file (54065 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/hayle-d-berry/
+19:43:18	Warning: 	HTML file (2403 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/anastasia-brunk/feed/
+19:43:18	Warning: 	HTML file (2401 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/damia-torhagen/feed/
+19:43:18	Warning: 	HTML file (2391 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/erin-rose/feed/
+19:43:19	Warning: 	HTML file (2400 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/mike-r-tinker/feed/
+19:43:19	Warning: 	HTML file (2399 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/raian-stanley/feed/
+19:43:19	Warning: 	HTML file (2395 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/smitty-chai/feed/
+19:43:19	Warning: 	HTML file (54029 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ladonna-pettijohn/
+19:43:20	Warning: 	HTML file (2401 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/willem-krumich/feed/
+19:43:20	Warning: 	HTML file (53952 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/shelby-lynn/
+19:43:21	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.parables.tv/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.6.2
+19:43:21	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.parables.tv/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff2?5.6.2
+19:43:22	Warning: 	HTML file (53925 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/amelia-mann/
+19:43:23	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.parables.tv/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff?5.6.2
+19:43:24	Warning: 	HTML file (53989 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/callan-wilson/
+19:43:24	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.parables.tv/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.ttf?5.6.2
+19:43:24	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.parables.tv/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.eot
+19:43:25	Warning: 	HTML file (59602 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/donald-james-parker/
+19:43:25	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.parables.tv/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.eot?
+19:43:26	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.parables.tv/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.woff2
+19:43:27	Warning: 	HTML file (55814 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/kera-obryon/
+19:43:27	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.parables.tv/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.woff
+19:43:28	Warning: 	HTML file (53996 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/cameron-arnett/
+19:43:29	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.parables.tv/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.ttf
+19:43:30	Warning: 	HTML file (54078 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/wanda-morganstern/
+19:43:31	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.parables.tv/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.eot
+19:43:31	Warning: 	HTML file (53974 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/claire-walkington/
+19:43:32	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.parables.tv/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.eot?
+19:43:33	Warning: 	HTML file (54008 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/brendan-king/
+19:43:33	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.parables.tv/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.woff2
+19:43:34	Warning: 	HTML file (53965 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/eliya-hurt/
+19:43:35	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.parables.tv/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.woff
+19:43:36	Warning: 	HTML file (54060 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/courtney-campbell/
+19:43:36	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.parables.tv/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.ttf
+19:43:45	Warning: 	HTML file (53943 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ben-gardner-jr/
+19:43:48	Warning: 	HTML file (54067 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/amanda-barber/
+19:43:49	Warning: 	HTML file (549 bytes) retransferred due to lack of cache: https://www.parables.tv/?p=84373
+19:43:51	Warning: 	Moved Permanently for https://www.parables.tv/?p=84373
+19:43:51	Warning: 	File has moved from https://www.parables.tv/?p=84373 to https://www.parables.tv/series/cheyenne-country/
+19:43:51	Warning: 	HTML file (55878 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/bill-traylor/
+19:44:45	Warning: 	HTML file (531 bytes) retransferred due to lack of cache: https://www.parables.tv/?p=84354
+19:44:46	Warning: 	Moved Permanently for https://www.parables.tv/?p=84354
+19:44:46	Warning: 	File has moved from https://www.parables.tv/?p=84354 to https://www.parables.tv/series/changed/
+19:44:46	Warning: 	HTML file (573 bytes) retransferred due to lack of cache: https://www.parables.tv/?p=83824
+19:44:47	Warning: 	Moved Permanently for https://www.parables.tv/?p=83824
+19:44:47	Warning: 	File has moved from https://www.parables.tv/?p=83824 to https://www.parables.tv/series/ancient-secrets-of-the-bible/
+19:44:47	Warning: 	HTML file (54131 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/chloe-allen/
+19:44:48	Warning: 	HTML file (54070 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/adam-burnett/
+19:44:49	Warning: 	HTML file (55818 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/august-caimi/
+19:44:50	Warning: 	HTML file (55842 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/christina-demarco/
+19:44:51	Warning: 	HTML file (577 bytes) retransferred due to lack of cache: https://www.parables.tv/?p=86791
+19:44:52	Warning: 	Moved Permanently for https://www.parables.tv/?p=86791
+19:44:52	Warning: 	File has moved from https://www.parables.tv/?p=86791 to https://www.parables.tv/video/the-perfect-stranger-in-spanish/
+19:44:52	Warning: 	HTML file (54107 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/dennis-martin/
+19:44:53	Warning: 	HTML file (54085 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/amy-landers/
+19:44:54	Warning: 	HTML file (55860 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/merle-shenk/
+19:44:55	Warning: 	HTML file (55937 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/britt-george/
+19:44:56	Warning: 	HTML file (54074 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/beth-grant/
+19:44:57	Warning: 	HTML file (53983 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/amy-van-eeden/
+19:44:58	Warning: 	HTML file (55963 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jeb-phillips/
+19:44:59	Warning: 	HTML file (54011 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/donny-offerle/
+19:45:00	Warning: 	HTML file (54015 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/amy-crowley/
+19:45:01	Warning: 	HTML file (54050 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/avery-adair/
+19:45:02	Warning: 	HTML file (53981 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/carlos-sepulveda/
+19:45:03	Warning: 	HTML file (53943 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/james-kane/
+19:45:04	Warning: 	HTML file (54000 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/daryl-hannah/
+19:45:05	Warning: 	HTML file (53947 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/amber-patee-adams/
+19:45:06	Warning: 	HTML file (53980 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/alex-steele/
+19:45:07	Warning: 	HTML file (55915 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/christina-fougnie/
+19:45:08	Warning: 	HTML file (53951 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/dale-palkki/
+19:45:09	Warning: 	HTML file (535 bytes) retransferred due to lack of cache: https://www.parables.tv/?p=84307
+19:45:10	Warning: 	Moved Permanently for https://www.parables.tv/?p=84307
+19:45:10	Warning: 	File has moved from https://www.parables.tv/?p=84307 to https://www.parables.tv/video/c-me-dance/
+19:45:10	Warning: 	HTML file (53977 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/dan-arthur/
+19:45:11	Warning: 	HTML file (54123 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/angela-tomaselli/
+19:45:12	Warning: 	HTML file (54012 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/angelita-nelson/
+19:45:13	Warning: 	HTML file (54016 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/daniel-zacapa/
+19:45:14	Warning: 	HTML file (54008 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/alicia-minshew/
+19:45:15	Warning: 	HTML file (53965 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/erin-nordseth/
+19:45:16	Warning: 	HTML file (53907 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jennifer-lofton/
+19:45:17	Warning: 	HTML file (54070 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/angelo-fleece/
+19:45:18	Warning: 	HTML file (54011 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/alissa-dellork/
+19:45:19	Warning: 	HTML file (53992 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jascha-updike/
+19:45:20	Warning: 	HTML file (53947 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jenn-gotzon/
+19:45:21	Warning: 	HTML file (54076 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/bo-hopkins/
+19:45:22	Warning: 	HTML file (53991 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/bradley-whitfore/
+19:45:23	Warning: 	HTML file (53943 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/courtney-buck/
+19:45:24	Warning: 	HTML file (54008 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/david-barnett/
+19:45:25	Warning: 	HTML file (54155 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/alex-madera/
+19:45:26	Warning: 	HTML file (54026 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/aaron-conklin/
+19:45:27	Warning: 	HTML file (53916 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/di-adams/
+19:45:28	Warning: 	HTML file (54052 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/whitey-lynn/
+19:45:29	Warning: 	HTML file (54031 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/arvid-edward-ii/
+19:45:30	Warning: 	HTML file (54101 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/charleene-closshey/
+19:45:31	Warning: 	HTML file (54082 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/aaron-oconnell/
+19:45:32	Warning: 	HTML file (54129 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/host-joni-eareckson-tada/
+19:45:33	Warning: 	HTML file (54037 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/amy-campbell/
+19:45:34	Warning: 	HTML file (53969 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/wendie-pett/
+19:45:35	Warning: 	HTML file (54126 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/kelly-greyson/
+19:45:36	Warning: 	HTML file (57705 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/bruce-marchiano/
+19:45:37	Warning: 	HTML file (55711 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/biblical/
+19:45:38	Warning: 	HTML file (54011 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/emily/
+19:45:39	Warning: 	HTML file (53971 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ray-comfort/
+19:45:40	Warning: 	HTML file (53954 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ginni-priz/
+19:45:41	Warning: 	HTML file (54035 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/blue-jean-band/
+19:45:42	Warning: 	HTML file (559 bytes) retransferred due to lack of cache: https://www.parables.tv/?p=90022
+19:45:43	Warning: 	Moved Permanently for https://www.parables.tv/?p=90022
+19:45:43	Warning: 	File has moved from https://www.parables.tv/?p=90022 to https://www.parables.tv/series/laws-of-life-court-tv/
+19:45:43	Warning: 	HTML file (53917 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/nina-may/
+19:45:44	Warning: 	HTML file (53974 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/christopher-inman/
+19:45:45	Warning: 	HTML file (54014 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/dominick-labanca/
+19:45:46	Warning: 	HTML file (53925 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jamie-shaver/
+19:45:47	Warning: 	HTML file (53979 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/david-manning/
+19:45:48	Warning: 	HTML file (53990 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/alexis-vann/
+19:45:49	Warning: 	HTML file (53988 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/chip-rossetti/
+19:45:50	Warning: 	HTML file (54001 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/alan-myles-heyman/
+19:45:51	Warning: 	HTML file (53935 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/bruce-blowers/
+19:45:52	Warning: 	HTML file (54081 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/alexis-l-hughes/
+19:45:53	Warning: 	HTML file (53964 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/judd-hirsch/
+19:45:54	Warning: 	HTML file (53994 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ashley-smith/
+19:45:55	Warning: 	HTML file (55916 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/michael-flynn/
+19:45:57	Warning: 	HTML file (145398 bytes) retransferred due to lack of cache: https://www.parables.tv/rating/tv-pg/page/2/
+19:45:58	Warning: 	HTML file (57004 bytes) retransferred due to lack of cache: https://www.parables.tv/video/the-salvation-kingdom/
+19:45:59	Warning: 	HTML file (577 bytes) retransferred due to lack of cache: https://www.parables.tv/?p=84668
+19:46:00	Warning: 	Moved Permanently for https://www.parables.tv/?p=84668
+19:46:00	Warning: 	File has moved from https://www.parables.tv/?p=84668 to https://www.parables.tv/tv-special/end-times-how-close-are-we/
+19:46:00	Warning: 	HTML file (53804 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/documentar/
+19:46:01	Warning: 	HTML file (56857 bytes) retransferred due to lack of cache: https://www.parables.tv/video/1-message/
+19:46:02	Warning: 	HTML file (543 bytes) retransferred due to lack of cache: https://www.parables.tv/?p=83811
+19:46:03	Warning: 	Moved Permanently for https://www.parables.tv/?p=83811
+19:46:03	Warning: 	File has moved from https://www.parables.tv/?p=83811 to https://www.parables.tv/video/alisons-choice/
+19:46:03	Warning: 	HTML file (54057 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/alicia-monet-caldwell/
+19:46:04	Warning: 	HTML file (66272 bytes) retransferred due to lack of cache: https://www.parables.tv/rating/not-rated/page/2/
+19:46:05	Warning: 	HTML file (471666 bytes) retransferred due to lack of cache: https://www.parables.tv/series/quick-study-year-1/
+19:46:06	Warning: 	HTML file (56956 bytes) retransferred due to lack of cache: https://www.parables.tv/video/a-long-way-off/
+19:46:08	Warning: 	HTML file (54013 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/chris-wessner/
+19:46:09	Warning: 	HTML file (54106 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/brad-heller/
+19:46:10	Warning: 	HTML file (54034 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/dave-lemoyne/
+19:46:11	Warning: 	HTML file (53995 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/adam-johnson/
+19:46:12	Warning: 	HTML file (54069 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/chere-bernhard/
+19:46:13	Warning: 	HTML file (53977 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/paige-creswell/
+19:46:14	Warning: 	HTML file (54017 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/heather-lynch/
+19:46:15	Warning: 	HTML file (54096 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/aj-jabaji/
+19:46:16	Warning: 	HTML file (53942 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jay-pickett/
+19:46:17	Warning: 	HTML file (53972 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/alan-maki/
+19:46:18	Warning: 	HTML file (53988 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/megan-massie/
+19:46:19	Warning: 	HTML file (54080 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/christopher-maleki/
+19:46:20	Warning: 	HTML file (575 bytes) retransferred due to lack of cache: https://www.parables.tv/?p=85535
+19:46:21	Warning: 	Moved Permanently for https://www.parables.tv/?p=85535
+19:46:21	Warning: 	File has moved from https://www.parables.tv/?p=85535 to https://www.parables.tv/video/nikki-and-the-perfect-stranger/
+19:46:21	Warning: 	HTML file (54145 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/georgette-kleier/
+19:46:22	Warning: 	HTML file (54003 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/corrina-crade/
+19:46:23	Warning: 	HTML file (53961 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/becca-kaser/
+19:46:24	Warning: 	HTML file (54021 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/collin-alexander-brown/
+19:46:25	Warning: 	HTML file (54100 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/andrew-wilson-williams/
+19:46:26	Warning: 	HTML file (53939 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ben-harney/
+19:46:27	Warning: 	HTML file (54008 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/alistair-moulton-black/
+19:46:28	Warning: 	HTML file (53940 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/bill-mcadams-jr/
+19:46:29	Warning: 	HTML file (54022 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/david-nibley/
+19:46:30	Warning: 	HTML file (53974 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/alphonse-menyo/
+19:46:31	Warning: 	HTML file (53955 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/chelsie-casagrande/
+19:46:32	Warning: 	HTML file (53981 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/alexa-cahill/
+19:46:33	Warning: 	HTML file (54175 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/austin-murray/
+19:46:34	Warning: 	HTML file (54043 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/brittany-wilharm/
+19:46:35	Warning: 	HTML file (54006 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ethan-haberfield/
+19:46:36	Warning: 	HTML file (54010 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/bailee-johnson/
+19:46:37	Warning: 	HTML file (54017 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/jada-sanders/
+19:46:38	Warning: 	HTML file (54031 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/craig-belwood/
+19:46:39	Warning: 	HTML file (53985 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ayanna-fullilove/
+19:46:40	Warning: 	HTML file (57329 bytes) retransferred due to lack of cache: https://www.parables.tv/video/scattered/
+19:46:41	Warning: 	HTML file (557 bytes) retransferred due to lack of cache: https://www.parables.tv/?p=89873
+19:46:42	Warning: 	Moved Permanently for https://www.parables.tv/?p=89873
+19:46:42	Warning: 	File has moved from https://www.parables.tv/?p=89873 to https://www.parables.tv/video/the-salvation-kingdom/
+19:46:42	Warning: 	HTML file (54074 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/connie-burton/
+19:46:43	Warning: 	HTML file (533 bytes) retransferred due to lack of cache: https://www.parables.tv/?p=83732
+19:46:44	Warning: 	Moved Permanently for https://www.parables.tv/?p=83732
+19:46:44	Warning: 	File has moved from https://www.parables.tv/?p=83732 to https://www.parables.tv/video/1-message/
+19:46:44	Warning: 	HTML file (54011 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/ashley-kate-adams/
+19:46:45	Warning: 	HTML file (553 bytes) retransferred due to lack of cache: https://www.parables.tv/?p=85704
+19:46:46	Warning: 	Moved Permanently for https://www.parables.tv/?p=85704
+19:46:46	Warning: 	File has moved from https://www.parables.tv/?p=85704 to https://www.parables.tv/series/quick-study-year-1/
+19:46:46	Warning: 	HTML file (53771 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/bible-teaching/
+19:46:47	Warning: 	HTML file (54010 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/edie-mcclurg/
+19:46:48	Warning: 	HTML file (533 bytes) retransferred due to lack of cache: https://www.parables.tv/?p=86226
+19:46:49	Warning: 	Moved Permanently for https://www.parables.tv/?p=86226
+19:46:49	Warning: 	File has moved from https://www.parables.tv/?p=86226 to https://www.parables.tv/video/scattered/
+19:46:49	Warning: 	HTML file (54015 bytes) retransferred due to lack of cache: https://www.parables.tv/cast/anastasia-brunk/
+19:46:50	Warning: 	HTML file (2386 bytes) retransferred due to lack of cache: https://www.parables.tv/genre/horror/feed/
+19:46:51	Error: 	"Not Found" (404) at link https://www.parables.tv/get (from https://www.parables.tv/wordpress/wp-includes/js/plupload/moxie.min.js?ver=1.3.5)
+19:46:51	Error: 	"Not Found" (404) at link https://www.parables.tv/post (from https://www.parables.tv/wordpress/wp-includes/js/plupload/plupload.min.js?ver=2.1.9)
+19:46:51	Error: 	"Not Found" (404) at link https://www.parables.tv/Trident/ (from https://www.parables.tv/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=2.9.2)
+19:46:51	Error: 	"Not Found" (404) at link https://www.parables.tv/POST (from https://connect.facebook.net/en_US/fbevents.js)
+19:46:51	Error: 	"Not Found" (404) at link https://www.parables.tv/scripts/ (from https://www.parables.tv/wp-content/themes/parables/frontend-boilerplate/scripts/index.js?ver=2.0.0)
+19:46:51	Error: 	"Not Found" (404) at link https://www.parables.tv/+ response.bgimage + (from https://www.parables.tv/wp-content/themes/parables/frontend-boilerplate/scripts/index.js?ver=2.0.0)
+19:46:51	Error: 	"Not Found" (404) at link https://www.parables.tv/$&/ (from https://www.parables.tv/wp-content/themes/parables/frontend-boilerplate/scripts/index.js?ver=2.0.0)
+19:46:51	Error: 	"Not Found" (404) at link https://www.parables.tv/Edge/ (from https://www.parables.tv/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.0)
+19:46:51	Error: 	"Not Found" (404) at link https://www.parables.tv/Gecko/ (from https://www.parables.tv/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.0)
+19:46:51	Error: 	"Not Found" (404) at link https://www.parables.tv/Firefox/ (from https://www.parables.tv/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.0)
+19:46:51	Error: 	"Not Found" (404) at link https://www.parables.tv/Version/ (from https://www.parables.tv/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.0)
+19:46:51	Error: 	"Not Found" (404) at link https://www.parables.tv/version/ (from https://www.parables.tv/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.0)
+
+HTTrack Website Copier/3.49-2 mirror complete in 46 minutes 18 seconds : 3357 links scanned, 4111 files written (363134159 bytes overall) [307262448 bytes received at 110605 bytes/sec], 79815890 bytes transferred using HTTP compression in 1763 files, ratio 23%, 4.0 requests per connection
+(27 errors, 1634 warnings, 0 messages)

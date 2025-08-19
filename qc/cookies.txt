@@ -1,0 +1,11 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.facebook.com	TRUE	/	FALSE	1999999999	fr	00ZE5GejAPUyTB7p9..Beq2bV...1.0.Beq2bV.
+.jquery.org	TRUE	/	FALSE	1999999999	__cfduid	d2efa49202feb11ef44dd02aaad6b0e1b1588291351
+jquery.org	TRUE	/	FALSE	1999999999	SameSite	Lax
+.pinterest.com	TRUE	/	FALSE	1999999999	__cfduid	d0be25789ad0dba133fbfe6ded173e2fd1588291571
+assets.pinterest.com	TRUE	/	FALSE	1999999999	SameSite	Lax
+www.parables.tv	TRUE	/	FALSE	1999999999	AWSALB	5pSdomLyothW5DMbhShvIyjwt6DcQy6w5nf/20NL9LmKZXG0u2dn1DHY44q9qqBY8flYdubI+XnTX1zewbLLp5Y9HULKRxo0HNfaRYWeRYV5sloD7b6Tzrf0D/1H
+www.parables.tv	TRUE	/	FALSE	1999999999	AWSALBCORS	5pSdomLyothW5DMbhShvIyjwt6DcQy6w5nf/20NL9LmKZXG0u2dn1DHY44q9qqBY8flYdubI+XnTX1zewbLLp5Y9HULKRxo0HNfaRYWeRYV5sloD7b6Tzrf0D/1H
+www.parables.tv	TRUE	/	FALSE	1999999999	SameSite	None
+

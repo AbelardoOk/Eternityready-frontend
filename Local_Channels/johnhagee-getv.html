@@ -1,0 +1,422 @@
+
+							
+    <script src="https://media.jhm.info/Scripts/flowplayer-3.2.12/flowplayer-3.2.12.min.js" type="text/javascript"></script>
+<script src="https://media.jhm.info/Scripts/flowplayer-3.2.12/flowplayer.ipad-3.2.12.min.js" type="text/javascript"></script>
+<script src="https://media.jhm.info/Scripts/flowplayer-3.2.11/flowplayer-controller-config.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    var shouldTrackProgress = false;
+    var videoStartPoint = 0;
+    
+    var userBandwidth = 0;
+    var startTime;
+    var endTime;
+    var imgSize = 34453;
+    var loadTimeInSec;
+    var startingBitrate = 200000;
+    
+
+    function DoBandwidthDetection() {
+        var testImage = new Image();
+        startTime = (new Date()).getTime();
+        testImage.src = "https://media.jhm.info/Images/getv_logo_small.jpg";   //TODO:  BANDWIDTH CHECK - Look into why we are doing this | Yes this is cached but need to come from stable server
+        //testImage.src = "https://media.jhm.info/Content/images/getv_logo_small.jpg?t=" + escape(startTime);   
+        testImage.onload = CreateDelegate(testImage, DoneWithTest);
+    }
+
+    function DoneWithTest() {
+        endTime = (new Date()).getTime();
+        userBandwidth = (Math.floor((((imgSize * 8) / ((endTime - startTime) / 1000)) / 1024) * 10) / 10);
+        if(userBandwidth > 500 ) {
+            startingBitrate = 2500000;
+        }
+    }
+
+    function CreateDelegate(contextObject, delegateMethod){
+        return function() {
+            return delegateMethod.apply(contextObject, arguments);
+        };
+    }
+    
+    jQuery(document).ready(function () {
+        DoBandwidthDetection();
+    });
+    
+    function showBandwidth(bandwidth) {
+        alert("Bandwidth: " + bandwidth);
+    }
+
+</script>
+<span id="testData"></span>
+            <a href="javascript:void(0);" style="display: block; width: 625px; height: 352px;" id="player" class="bordered"></a>
+<script type="text/javascript" language="JavaScript">
+
+    function playFromBeginning() {
+        videoStartPoint = 0;
+    }
+
+    function startIsLiveCheck() {
+        var p = "id=875da7ae-9771-4796-be30-1adee4db0620";
+        jQuery.ajax({
+            url: '/Videos/IsVideoCurrentlyLive',
+            type: "POST",
+            data: p,
+            success: function (result) {
+                if(result.isCurrentlyLive) {
+                    hideWaitingDialog();
+                    window.location.reload();
+                }
+                else {
+                    showWaitingDialog();
+                    setTimeout("startIsLiveCheck()",10000);
+                }
+            },
+            error: function(req, status, error) {
+                alert("An unexpected error ocurred. Please try again later: " + error);
+                window.location.reload();
+            }
+        });
+
+    }
+</script>
+    <script type="text/javascript" language="JavaScript">
+        var shouldKeepTracking = false;
+        var trackingFrequency = 10;
+        window.onload = function() {
+            if (!document.getElementById("player")) return;
+            flowplayer( 
+                "player",
+                {
+                	src: "https://media.jhm.info/Scripts/flowplayer-3.2.12/flowplayer.commercial-3.2.16.swf",
+                    wmode: "opaque"
+                },
+                {
+                    version: [11, 0],
+                    onFail: function() {
+                        alert("You need the latest Flash version to watch the streaming video. Your version is " + this.getVersion());
+                    },
+                    key: '#@b09afb4452348160fee',
+                    // Apparently debug mode does not work on IE
+                    debug: false,
+                    log:
+                        {
+                            level: 'warn'
+                        },
+
+                    canvas:
+                        {
+                            backgroundGradient: "none",
+                            backgroundColor: "#000000"
+                        },
+                    clip:
+                        {
+
+                        	url: "manifest.f4m",
+                        	// URL of M3U8 playlist for iOS
+                        	ipadUrl: 'http://getvhdflash-f.akamaihd.net/i/GETV_CHANNEL1@36799/master.m3u8',
+                        	baseUrl: 'http://getvhdflash-f.akamaihd.net/z/GETV_CHANNEL1@36799',
+                            live: true,
+                            autoPlay: true,
+                            provider: 'akamai',
+                            type: 'video',
+                            scaling: 'fit',
+                            isAd: false,
+                            videoTitle: "247GETVStream",
+                            adTitle: "",
+                            videoId: "875da7ae-9771-4796-be30-1adee4db0620",
+                            stopLiveOnPause: true,
+
+                            onCuepoint: [0, function(clip, cuepoint) {
+                                if (!clip.isAd && !shouldKeepTracking) {
+                                    startTrackingProgress(clip);
+                                }
+                            }], 
+                            onStart: function(clip) {
+                                this.setVolume(100);
+                                var skipAd = flowplayer().getPlugin("skipAd");
+                                if (clip.isAd) {
+                                    flowplayer().getControls().hide();
+                                    var plugin = flowplayer().getPlugin("adContent");
+                                       
+                                            plugin.hide();
+                                        
+                                    _tracker._trackEvent("VideoAds", "Start", clip.adTitle, parseInt(this.getTime()));
+                                } 
+                                else {
+                                    flowplayer().getControls().show();
+                                    _tracker._trackEvent("Videos", "Start", clip.videoTitle, parseInt(this.getTime()));
+                                    if (videoStartPoint > 10) {
+                                        
+                                        setTimeout(function() { flowplayer().seek(videoStartPoint - 10); }, 1000);
+                                        _tracker._trackEvent("Videos", "ResumedFromPreviouslyWatched", clip.videoTitle, parseInt(videoStartPoint));
+                                    }
+                                    else {
+                                        startTrackingProgress(clip);
+                                    }
+                                    _gaq.push(['_trackEvent', clip.videoTitle, 'Started']);
+                                    skipAd.hide();
+                                }
+                                
+                            },
+                           
+                            // track pause event for this clip. time (in seconds) is also tracked
+                            onPause: function(clip) {
+                                _tracker._trackEvent(clip.isAd ? "VideoAds" : "Videos", "Pause", clip.isAd ? clip.adTitle : clip.videoTitle, parseInt(this.getTime()));
+                                _gaq.push(['_trackEvent', clip.videoTitle, 'Paused']);
+                                stopTrackingProgress();
+                            },
+
+                            onResume: function(clip) {
+                                _tracker._trackEvent(clip.isAd ? "VideoAds" : "Videos", "Resume", clip.isAd ? clip.adTitle : clip.videoTitle, parseInt(this.getTime()));
+                                _gaq.push(['_trackEvent', clip.videoTitle, 'Resumed']);
+                                startTrackingProgress(clip);
+                            },
+
+                            // track stop event for this clip. time is also tracked
+                            onStop: function(clip) {
+                                _tracker._trackEvent("Videos", "Stop", clip.videoTitle, parseInt(this.getTime()));
+                                _gaq.push(['_trackEvent', clip.videoTitle, 'Stopped']);
+                                stopTrackingProgress();
+                            },
+
+                            onBeforeSeek: function(clip) {
+                                stopTrackingProgress();
+                            },
+
+                            onSeek: function(clip) {
+                                startTrackingProgress(clip);
+                            },
+                           
+                            // track finish event for this clip
+                            onFinish: function(clip) {
+                                stopTrackingProgress();
+                                if (clip.isAd) {
+                                    //if pre-roll just ran, show controls and load the main clip
+                                    //set custom_IsAd = false
+                                    
+                                    flowplayer().setClip(
+                                        {
+                                            provider: 'akamai',
+                                            isAd: false,
+                                            autoPlay: true,
+                                            start: videoStartPoint,
+                                            ipadUrl: 'http://getvhdflash-f.akamaihd.net/i/GETV_CHANNEL1@36799/master.m3u8',
+                                            baseUrl: 'http://getvhdflash-f.akamaihd.net/z/GETV_CHANNEL1@36799',
+                                        	videoId: '875da7ae-9771-4796-be30-1adee4db0620',
+                                            stopLiveOnPause: false
+                                        }
+                                    );
+
+                                    //start main video right after pre-roll
+                                    flowplayer().play();
+                                    
+                                    _tracker._trackEvent("VideoAds", "Finish", clip.adTitle, parseInt(this.getTime()));
+                                } else {
+                                    _tracker._trackEvent("Videos", "Finish", clip.videoTitle, parseInt(this.getTime()));
+                                }
+                                finishedWatchingVideo(clip);
+                                _gaq.push(['_trackEvent', clip.videoTitle, 'Finished']);
+                            }
+                        },
+
+                    plugins:
+                        {
+                            //controls:controlObject,
+                            akamai:
+                                {
+                                	url:'https://media.jhm.info/Scripts/flowplayer-3.2.12/AkamaiFlowPlugin_v3.2.swf',
+                                	startingBufferTime: '5.00',
+                                    useMBRStartupBandwidthCheck: { duration: 4 },
+                                    akamaiMediaType:'akamai-hdn-adobe-http', //akamai-live-streaming,akamai-hdn-multi-bitrate                                    
+                                    enableAlternateServerMapping:'false',
+                                    enableEndUserMapping:'true' ,
+                                    enableLargeBuffersForLongFormContent: 'true',
+                                	enableLogStringOnFragments: 'false',
+        							fragmentRetryAttemptsForLostConnectivity:'75'                                    
+                                },
+                            adContent: {
+                                url: 'https://media.jhm.info/Content/flash/flowplayer.content-3.2.8.swf',
+                                // some display properties
+                                height: '14%',
+                                top: '92%',
+                                padding: 0,
+                                backgroundColor: '#112233',
+                                opacity: 0.8,
+                                display: 'none',
+                                //backgroundColor: 'transparent',
+                                backgroundGradient: 'none',
+                                border: 0,
+                                textDecoration: 'outline',
+                                // fetch the actual HTML inside a DIV element on the page
+                                html: '<a href="#"><span><table><tr><td style="width:30px"><img src="https://media.jhm.info/Content/images/GETV_AdLink.png" height="30" alt="test" /></td><td align="left"><br/><br/><br/><br/>.</td></tr></table></span></a>',
+                                style: {
+                                    body: {
+                                        fontSize: 18,
+                                        fontFamily: 'Arial',
+                                        textAlign: 'center',
+                                        color: '#ffff00'
+                                    }
+                                },
+                                onClick: function() {
+                                    window.open('');
+                                },
+                                onMouseOver: function() {
+                                    //this.css({border:'1px solid #ffffff'});
+                                },
+                                onMouseOut: function() {
+                                    //this.css({border:'0'});
+                                }
+                            },
+                            shortMessage: {
+                                url: 'https://media.jhm.info/Content/flash/flowplayer.content-3.2.8.swf',
+                                height: 30,
+                                top: 0,
+                                padding: 0,
+                                backgroundColor: '#DFDFDF',
+                                opacity: 0.9,
+                                display: 'none',
+                                backgroundGradient: 'none',
+                                border: 0,
+                                html: '',
+                                style: {
+                                    body: {
+                                        fontSize: 16,
+                                        fontFamily: 'Arial',
+                                        textAlign: 'center',
+                                        color: '#000000'
+                                    }
+                                }
+                            },
+                            skipAd: {
+                                url: 'https://media.jhm.info/Content/flash/flowplayer.content-3.2.8.swf',
+                                closeButton: true,
+                                left: 10,
+                                height: 30,
+                                width: 160,
+                                top: 0,
+                                padding: 4,
+                                backgroundColor: '#FF0000',
+                                opacity: 0.9,
+                                display: 'none',
+                                backgroundGradient: 'none',
+                                border: 0,
+                                html: '<a href="#">SKIP THIS AD</a>',
+                                style: {
+                                    body: {
+                                        fontSize: 16,
+                                        fontFamily: 'Arial',
+                                        textAlign: 'center',
+                                        color: '#FFFF00',
+                                        fontWeight: 'bold'
+                                    }
+                                },
+                                onClick: function() {
+                                    flowplayer().seek(flowplayer().getClip().duration);
+                                }
+                            },
+                            seriesOptions: {
+                                url: 'https://media.jhm.info/Content/flash/flowplayer.content-3.2.8.swf',
+                                height: 40,
+                                width: 300,
+                                top: '70%',
+                                left: '52%',
+                                padding: '20%',
+                                opacity: 1,
+                                backgroundColor: '#000000',
+                                display: 'none',
+                                backgroundGradient: 'none',
+                                border: 2,
+                                html: '<a href="#"><table><tr><td><img src="https://media.jhm.info/Content/images/Arrow32_moved.png" height="32" alt="test" />&nbsp;Play Next Video<br /><br /><br /></td></tr></table></a>',
+                                style: {
+                                    body: {
+                                        fontSize: 30,
+                                        fontFamily: 'Arial',
+                                        textAlign: 'center',
+                                        color: '#AAAAAA'
+                            }
+                                },
+                                onClick: function() {
+                                    window.location.replace('');
+                        }
+                }
+                        }
+                }
+            ).ipad();
+        };
+        
+        var pendingTrackingCall;
+
+        function startTrackingProgress(clip) {
+            if (pendingTrackingCall != null || !shouldKeepTracking || clip.isAd) {
+                return;
+            }
+            shouldTrackProgress = true;
+            trackProgressLater(clip);
+            jQuery('#trackerTest').html("tracking STARTED"+" - isTrackingCallPending = "+(pendingTrackingCall != null));
+        }
+        
+        function trackProgressLater(clip) {
+            pendingTrackingCall = setTimeout(function () {
+                trackViewProgress(clip);
+            },1000 * trackingFrequency);
+        }
+        
+        function trackViewProgress(clip){
+            if (!shouldTrackProgress || clip.isAd) {
+                return;
+            }
+            var p = "id=875da7ae-9771-4796-be30-1adee4db0620&seconds="+parseInt(flowplayer().getTime());
+            jQuery.ajax({
+                url: '/Videos/TrackVideoProgress',
+                type: "POST",
+                data: p,
+                success: function (result) {
+                    shouldKeepTracking = result.keepTracking;
+                    trackingFrequency = result.trackingFrequency;
+                    jQuery('#trackerTest').html("Tracking " + clip.videoTitle + " at " + flowplayer().getTime()+" - result: "+result.success +" - trackingFrequency: "+trackingFrequency );
+                    if ( shouldKeepTracking ) {
+                        trackProgressLater(clip);
+                    }
+                    else {
+                        stopTrackingProgress();
+                        _tracker._trackEvent("Videos", "TrackingStoppedFromServer", clip.videoTitle, parseInt(flowplayer().getTime()));
+                    }
+                },
+                error: function(req, status, error) {
+                    _tracker._trackEvent("Videos", "TrackingError", clip.videoTitle +" ["+ error +" ]", parseInt(flowplayer().getTime()));
+                }
+            });
+            
+            //jQuery('#trackerTest').html("tracking " + clip.videoTitle + " at " + flowplayer().getTime()+" - isTrackingCallPending = "+(pendingTrackingCall != null));
+        }
+        
+        function finishedWatchingVideo(clip){
+            var p = "id="+clip.videoId;
+            jQuery.ajax({
+                url: '/Videos/FinishedWatchingVideo',
+                type: "POST",
+                data: p,
+                success: function (result) {
+                    jQuery('#trackerTest').html("Finished Watching " + clip.videoTitle +" - result: "+result.success +" - views count: "+result.viewsCount );
+                },
+                error: function(req, status, error) {
+                    _tracker._trackEvent("Videos", "ViewsCountError", clip.videoTitle +" ["+ error +" ]", parseInt(flowplayer().getTime()));
+                }
+            });
+            
+            //jQuery('#trackerTest').html("tracking " + clip.videoTitle + " at " + flowplayer().getTime()+" - isTrackingCallPending = "+(pendingTrackingCall != null));
+        }
+        
+        function stopTrackingProgress() {
+            shouldTrackProgress = false;
+            if ( pendingTrackingCall != null ) {
+                clearTimeout(pendingTrackingCall);
+                pendingTrackingCall = null;
+            }
+            jQuery('#trackerTest').html("tracking STOPPED"+" - isTrackingCallPending = "+(pendingTrackingCall != null));
+        }
+
+    </script>
+
+    
+

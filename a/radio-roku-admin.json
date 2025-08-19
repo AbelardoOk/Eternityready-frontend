@@ -1,0 +1,244 @@
+{
+	"providerName": "Eternity Radio",
+	"language": "en-US",
+	"lastUpdated": "2025-01-14T02:01:00+02:00",
+	
+	   " ": [
+
+		{
+			"longDescription": "Eternity Ready Radio  is a channel that provides gospel content for all age ranges. We help propagate the gospel with our content.",
+			"thumbnail": "https://listen.eternityready.com/api/public/stations/thumbnail/eternityRadio.png",
+			"releaseDate": "2020-01-15",
+			"genres": [
+				"religion"
+			],
+			"tags": [
+				"religion,family"
+			],
+			"id": "er",
+			"shortDescription": "Eternity Ready Radio",
+			"title": "Eternity Ready Radio",
+			"text1":"Donate @ paypal.me/eternityready",
+			"text2":"Positive and Family Friendly. In 20 plus countries.",
+			"text3":"Web Site @ eternityreadyradio.com",
+			"text4":"Watch TV @ eternityready.tv",
+			"text5":"Facbook @ eternityready.",
+			"content": {
+				"duration": 0,
+				"videos": [{
+					"videoType": "MP3",
+					"url": "https://mp3.eternityready.com/stream",
+					"quality": "HD"
+				}],
+				"language": "en-us",
+				"dateAdded": "2020-01-29T02:39:11Z"
+			}
+		},
+		{
+			"longDescription": "Heaven's Country provides gospel content for all age ranges. We help propagate the gospel with our content.",
+			"thumbnail": "https://listen.eternityready.com/api/public/stations/thumbnail/Heaven'sCountry_thumbnail.png",
+			"releaseDate": "2020-01-15",
+			"genres": [
+				"religion"
+			],
+			"tags": [
+				"religion,family"
+			],
+			"id": "er",
+			"shortDescription": "Heaven's Country",
+			"title": "Heaven's Country",
+			"text1":"Donate @ paypal.me/eternityready",
+			"text2":"Positive and Family Friendly. In 1 plus countries.",
+			"text3":"Web Site @ eternityreadyradio.com",
+			"text4":"Watch TV @ eternityready.tv",
+			"text5":"Facbook @ eternityready.",
+			"content": {
+				"duration": 0,
+				"videos": [{
+					"videoType": "MP3",
+					"url": "https://das-edge11-live365-dal03.cdnstream.com/a66385",
+					"quality": "HD"
+				}],
+				"language": "en-us",
+				"dateAdded": "2020-01-29T02:39:11Z"
+			}
+		},
+		{
+			"longDescription": "Affirm Southern Gospel Radio  is a channel that provides gospel content for all age ranges. We help propagate the gospel with our content.",
+			"thumbnail": "https://listen.eternityready.com/api/public/stations/thumbnail/AffirmSouthernGospelRadio_thumbnail.png",
+			"releaseDate": "2020-01-15",
+			"genres": [
+				"religion"
+			],
+			"tags": [
+				"religion,family"
+			],
+			"id": "aff",
+			"shortDescription": "Affirm Southern Gospel Radio",
+			"title": "Affirm Southern Gospel Radio",
+			"text1":"Donate @ paypal.me/eternityready",
+			"text2":"Positive and Family Friendly. In 20 plus countries.",
+			"text3":"Web Site @ eternityreadyradio.com",
+			"text4":"Watch TV @ eternityready.tv",
+			"text5":"Facbook @ eternityready.",
+			"content": {
+				"duration": 0,
+				"videos": [{
+					"videoType": "MP3",
+					"url": "https://das-edge12-live365-dal02.cdnstream.com/a38333",
+					"quality": "HD"
+				}],
+				"language": "en-us",
+				"dateAdded": "2020-01-29T02:39:11Z"
+			}
+		}],
+	"  ":[
+		{
+			"longDescription": "The Worship Channel  is a channel that provides gospel content for all age ranges. We help propagate the gospel with our content.",
+			"thumbnail": "https://listen.eternityready.com/api/public/stations/thumbnail/theWorshipChannel.png",
+			"releaseDate": "2020-01-15",
+			"genres": [
+				"religion"
+			],
+			"tags": [
+				"religion,family"
+			],
+			"id": "er",
+			"shortDescription": "The Worship Channel",
+			"title": "The Worship Channel",
+			"text1":"Donate @ paypal.me/eternityready",
+			"text2":"Positive and Family Friendly. In 20 plus countries.",
+			"text3":"Web Site @ eternityreadyradio.com",
+			"text4":"Watch TV @ eternityready.tv",
+			"text5":"Facbook @ eternityready.",
+			"content": {
+				"duration": 0,
+				"videos": [{
+					"videoType": "MP3",
+					"url": "https://das-edge10-live365-dal03.cdnstream.com/a45950",
+					"quality": "HD"
+				}],
+				"language": "en-us",
+				"dateAdded": "2020-01-29T02:39:11Z"
+			}
+		},
+		{
+			"longDescription": "VertiZontal Radio  is a channel that provides gospel content for all age ranges. We help propagate the gospel with our content.",
+			"thumbnail": "https://listen.eternityready.com/api/public/stations/thumbnail/VertiZontalRadio_thumbnail.png",
+			"releaseDate": "2020-01-15",
+			"genres": [
+				"religion"
+			],
+			"tags": [
+				"religion,family"
+			],
+			"id": "er",
+			"shortDescription": "VertiZontal Radio",
+			"title": "VertiZontal Radio",
+			"text1":"Donate @ paypal.me/eternityready",
+			"text2":"Positive and Family Friendly. In 20 plus countries.",
+			"text3":"Web Site @ eternityreadyradio.com",
+			"text4":"Watch TV @ eternityready.tv",
+			"text5":"Facbook @ eternityready.",
+			"content": {
+				"duration": 0,
+				"videos": [{
+					"videoType": "MP3",
+					"url": "https://mp3.vertizontalradio.com/stream",
+					"quality": "HD"
+				}],
+				"language": "en-us",
+				"dateAdded": "2020-01-29T02:39:11Z"
+			}
+		},
+		{
+			"longDescription": "KJOL FM, Grand Junction, Colorado  is a channel that provides gospel content for all age ranges. We help propagate the gospel with our content.",
+			"thumbnail": "https://listen.eternityready.com/api/public/stations/thumbnail/KJOL_thumbnail.png",
+			"releaseDate": "2020-01-15",
+			"genres": [
+				"religion"
+			],
+			"tags": [
+				"religion,family"
+			],
+			"id": "er",
+			"shortDescription": "KJOL FM, Grand Junction, Colorado",
+			"title": "KJOL FM, Grand Junction, Colorado",
+			"text1":"Donate @ paypal.me/eternityready",
+			"text2":"Positive and Family Friendly. In 20 plus countries.",
+			"text3":"Web Site @ eternityreadyradio.com",
+			"text4":"Watch TV @ eternityready.tv",
+			"text5":"Facbook @ eternityready.",
+			"content": {
+				"duration": 0,
+				"videos": [{
+					"videoType": "MP3",
+					"url": "https://radio.finetuneradio.com/listen/fine_tune_radio/radio.mp3",
+					"quality": "HD"
+				}],
+				"language": "en-us",
+				"dateAdded": "2020-01-29T02:39:11Z"
+			}
+		}],
+	"   ":[
+		{
+			"longDescription": "WBLB Family, Pulaski, Virginia  is a channel that provides gospel content for all age ranges. We help propagate the gospel with our content.",
+			"thumbnail": "https://listen.eternityready.com/api/public/stations/thumbnail/WBLBFamily1340_thumbnail.png",
+			"releaseDate": "2020-01-15",
+			"genres": [
+				"religion"
+			],
+			"tags": [
+				"religion,family"
+			],
+			"id": "er",
+			"shortDescription": "WBLB Family, Pulaski, Virginia",
+			"title": "WBLB Family, Pulaski, Virginia",
+			"text1":"Donate @ paypal.me/eternityready",
+			"text2":"Positive and Family Friendly. In 20 plus countries.",
+			"text3":"Web Site @ eternityreadyradio.com",
+			"text4":"Watch TV @ eternityready.tv",
+			"text5":"Facbook @ eternityready.",
+			"content": {
+				"duration": 0,
+				"videos": [{
+					"videoType": "MP3",
+					"url": "https://das-edge10-live365-dal03.cdnstream.com/a88004",
+					"quality": "HD"
+				}],
+				"language": "en-us",
+				"dateAdded": "2020-01-29T02:39:11Z"
+			}
+		},
+		{
+			"longDescription": "Serene Radio is a channel that provides gospel content for all age ranges. We help propagate the gospel with our content.",
+			"thumbnail": "https://raw.githubusercontent.com/mobilipia/er/refs/heads/main/Serene.png",
+			"releaseDate": "2020-01-15",
+			"genres": [
+				"religion"
+			],
+			"tags": [
+				"religion,family"
+			],
+			"id": "er",
+			"shortDescription": "Eternity Ready Radio",
+			"title": "Eternity Ready Radio",
+			"text1":"Donate @ paypal.me/eternityready",
+			"text2":"Positive and Family Friendly. In 20 plus countries.",
+			"text3":"Web Site @ eternityreadyradio.com",
+			"text4":"Watch TV @ eternityready.tv",
+			"text5":"Facbook @ eternityready.",
+			"content": {
+				"duration": 0,
+				"videos": [{
+					"videoType": "MP3",
+					"url": "https://s6.reliastream.com/proxy/serene?mp=/stream",
+					"quality": "HD"
+				}],
+				"language": "en-us",
+				"dateAdded": "2020-01-29T02:39:11Z"
+			}
+		}
+	   ]
+
+}

@@ -1,0 +1,190 @@
+{
+  "Title": "Guide - Eternity Ready Radio & Music",
+  "Number of channels": 13,
+  "channels": [
+    {
+      "name": "Eternity Ready Radio",
+      "description": "Alternative Christian radio station focusing on Generation Z and music from the 1990s and 2000s.",
+      "src": "https://mp3.eternityready.com/stream",
+      "logo": "https://www.eternityreadyradio.com/api/public/stations/thumbnail/eternityRadio.png",
+      "tags": [
+        "sister",
+        "featured"
+      ],
+      "rating": 5,
+      "categories": [
+        "Eternity Ready Radio",
+        "Family Friendly"
+      ]
+    },
+    {
+      "name": "RRR",
+      "description": "Radio station belonging to the Eternity Ready group, with contemporary Christian programming.",
+      "src": "https://azura.eternityready.com/listen/rapture_ready_radio/radio.mp3",
+      "logo": "https://www.eternityreadyradio.com/api/public/stations/thumbnail/RRR_thumbnail.png",
+      "tags": [
+        "sister",
+        "featured"
+      ],
+      "rating": 4,
+      "categories": [
+        "Rapture ready radio",
+        "Bible prophecy"
+      ]
+    },
+    {
+      "name": "Keys for Kids Radio",
+      "description": "Children's radio station with educational Christian songs and stories.",
+      "src": "https://das-edge14-live365-dal02.cdnstream.com/a78246_2",
+      "logo": "https://www.eternityreadyradio.com/api/public/stations/thumbnail/KeysforKidsRadio_thumbnail.png",
+      "tags": [
+        "sister",
+        "featured"
+      ],
+      "rating": 4,
+      "categories": [
+        "Family & Kids"
+      ]
+    },
+    {
+      "name": "Christian Mix 106",
+      "description": "24/7 Christian Music and Programming geared to bring people to Jesus!",
+      "src": "https://das-edge15-live365-dal02.cdnstream.com/a94308",
+      "logo": "https://www.eternityreadyradio.com/api/public/stations/thumbnail/ChristianMix106_thumbnail.png",
+      "tags": [
+        "sister",
+        "featured"
+      ],
+      "rating": 4,
+      "categories": [
+        "Christian Radio"
+      ]
+    },
+    {
+      "name": "88.3 FM The Journey",
+      "description": "FM station focusing on uplifting Christian music.",
+      "src": "https://ice42.securenetsystems.net/KJRN?playSessionID=B3FC37CC-0E07-DBB4-26521C9BFA0A4AF7",
+      "logo": "https://www.eternityreadyradio.com/api/public/stations/thumbnail/88.3FMTheJourney_thumbnail.png",
+      "tags": [
+        "sister",
+        "featured"
+      ],
+      "rating": 3,
+      "categories": [
+        "Christian Radio"
+      ]
+    },
+    {
+      "name": "Crossroads Radio",
+      "description": "Station mixing modern praise & worship with all types of music.",
+      "src": "https://das-edge12-live365-dal02.cdnstream.com/a27545",
+      "logo": "https://www.eternityreadyradio.com/api/public/stations/thumbnail/CrossroadsRadio_thumbnail.png",
+      "tags": [
+        "sister",
+        "featured"
+      ],
+      "rating": 4,
+      "categories": [
+        "Christian Radio"
+      ]
+    },
+    {
+      "name": "VertiZontal Radio",
+      "description": "Combination of vertical worship and horizontal messages for life.",
+      "src": "https://das-edge16-live365-dal02.cdnstream.com/a34398",
+      "logo": "https://www.eternityreadyradio.com/api/public/stations/thumbnail/VertiZontalRadio_thumbnail.png",
+      "tags": [
+        "sister",
+        "featured"
+      ],
+      "rating": 3,
+      "categories": [
+        "Christian Mix"
+      ]
+    },
+    {
+      "name": "The Worship Channel",
+      "description": "Christian worship songs 24 hours a day.",
+      "src": "https://das-edge17-live365-dal02.cdnstream.com/a45950",
+      "logo": "https://www.eternityreadyradio.com/api/public/stations/thumbnail/theWorshipChannel.png",
+      "tags": [
+        "sister",
+        "featured"
+      ],
+      "rating": 3,
+      "categories": [
+        "Worship Radio"
+      ]
+    },
+    {
+      "name": "KJOL",
+      "description": "Christian broadcast focusing on biblical encouragement.",
+      "src": "https://14993.live.streamtheworld.com/KJOLFMAAC.aac",
+      "logo": "https://www.eternityreadyradio.com/api/public/stations/thumbnail/KJOL_thumbnail.png",
+      "tags": [
+        "sister",
+        "featured"
+      ],
+      "rating": 3,
+      "categories": [
+        "Christian Radio"
+      ]
+    },
+    {
+      "name": "Affirm Southern Gospel Radio",
+      "description": "Traditional and contemporary Southern gospel.",
+      "src": "https://das-edge12-live365-dal02.cdnstream.com/a38333",
+      "logo": "https://www.eternityreadyradio.com/api/public/stations/thumbnail/AffirmSouthernGospelRadio_thumbnail.png",
+      "tags": [
+        "sister",
+        "featured"
+      ],
+      "rating": 4,
+      "categories": [
+        "Southern Gospel"
+      ]
+    },
+    {
+      "name": "Serene Radio",
+      "description": "Soft, relaxing music with Christian messages.",
+      "src": "https://s6.reliastream.com/proxy/serene?mp=/stream&1728581430735",
+      "logo": "https://www.eternityreadyradio.com/api/public/stations/thumbnail/SereneRadio_thumbnail.png",
+      "tags": [
+        "sister",
+        "featured"
+      ],
+      "rating": 3,
+      "categories": [
+        "Relaxing Music"
+      ]
+    },
+    {
+      "name": "Heaven's Country",
+      "description": "Christian country music 24 hours a day.",
+      "src": "https://das-edge11-live365-dal03.cdnstream.com/a66385",
+      "logo": "https://www.eternityreadyradio.com/api/public/stations/thumbnail/Heaven'sCountry_thumbnail.png",
+      "tags": [
+        "sister",
+        "featured"
+      ],
+      "rating": 4,
+      "categories": [
+        "Christian Country"
+      ]
+    },
+    {
+      "name": "WBLB Family 1340",
+      "description": "Family Christian station with varied gospel programming.",
+      "src": "https://das-edge17-live365-dal02.cdnstream.com/a88004",
+      "logo": "https://www.eternityreadyradio.com/api/public/stations/thumbnail/WBLBFamily1340_thumbnail.png",
+      "tags": [
+        "sister",
+        "featured"
+      ],
+      "rating": 3,
+      "categories": [
+        "Family Radio"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+-q -%i -w https://www.parables.tv/ -O "/home/oem/websites/parables" -n -%P -N100 -s2 -o -p7 -D -a -K0 -c4 -%k -A350000 -F "" -%F "" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -%s -%u
+File generated automatically on Thu, 30 Apr 2020 19:00:33, do NOT edit
+
+To update a mirror, just launch httrack without any parameters
+The existing cache will be used (and modified)
+To have other options, retype all parameters and launch HTTrack
+To continue an interrupted mirror, just launch httrack without any parameters
+

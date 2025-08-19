@@ -1,0 +1,1118 @@
+{
+  "Title": "Guide - Eternity Ready TV",
+  "Number of channels": 81,
+  "channels": [
+    {
+      "name": "KSCE Life! End Times TV",
+      "logo": "https://tv.eternityready.com/img/logos_2/8.jpg",
+      "link": "",
+      "embed": "https://c.streamhoster.com/embed/media/WasBNU/iTTH7tResIN/Sphza9sAhEW_5?preview=1",
+      "keywords": [
+        "beatles"
+      ],
+      "rating": 4,
+      "categories": [
+        "Bible Prophecy",
+        "Mideast",
+        "News + Opinions"
+      ],
+      "tags": [
+        "featured"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://lifeendtimes.tv/' target='_blank'>KSCE Life! End Times TV</a>"
+    },
+    {
+      "name": "Impact Network",
+      "logo": "https://tv.eternityready.com/img/logos_2/9.jpg",
+      "link": "",
+      "embed": "https://www.omnimediacast.net/streamline/player/plyr.php?c=impactroku1&plat=live&w=100%&h=100%",
+      "keywords": [
+        ""
+      ],
+      "rating": 3,
+      "categories": [
+        "Lifestyle + Others"
+      ],
+      "tags": [
+        "featured"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://watchimpact.com/' target='_blank'>Impact Network</a>"
+    },
+    {
+      "name": "Amazing Facts TV",
+      "logo": "https://tv.eternityready.com/img/logos_2/10.jpg",
+      "link": "",
+      "embed": "https://www.youtube.com/embed/live_stream?channel=UC6VJE6cD8ZPpe6ZOtVtlBTA&rel=0&autoplay=1",
+      "keywords": [
+        ""
+      ],
+      "rating": 3,
+      "categories": [
+        "Lifestyle + Others"
+      ],
+      "tags": [
+        "featured"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.amazingfacts.org/media-library/watch/archives/o/Amazing-Facts-TV' target='_blank'>Amazing Facts TV</a>"
+    },
+    {
+      "name": "THE WALK TV",
+      "logo": "https://tv.eternityready.com/img/logos_2/11.jpg",
+      "link": "",
+      "embed": "https://player2.streamspot.com/?playerId=783913b5",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Lifestyle + Others"
+      ],
+      "tags": [
+        "featured"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://thewalktv.com/' target='_blank'>THE WALK TV</a>"
+    },
+    {
+      "name": "MNN SPIRIT CHANNEL",
+      "logo": "https://tv.eternityready.com/img/logos_2/13.jpg",
+      "link": "",
+      "embed": "https://vimeo.com/event/4896466/embed?autoplay=1",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Lifestyle + Others"
+      ],
+      "tags": [
+        "featured"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.mnn.org/watch/channels/spirit' target='_blank'>MNN SPIRIT CHANNEL</a>"
+    },
+    {
+      "name": "3ABN Russia",
+      "logo": "https://tv.eternityready.com/img/logos_2/14.jpg",
+      "link": "",
+      "embed": "https://eternityready.com/Local_Channels/3abn-russia.html",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "International"
+      ],
+      "tags": [
+        "featured"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://3abnrussia.org/' target='_blank'>3ABN Russia</a>"
+    },
+    {
+      "name": "Ihop (24/7 Prayer & Worship)",
+      "logo": "https://tv.eternityready.com/img/logos_2/74.jpg",
+      "link": "",
+      "embed": "https://www.youtube.com/embed/0uaZ30NEHLU",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Bible Prophecy"
+      ],
+      "tags": [
+        "popular"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.ihopkc.org/prayerroom/' target='_blank'>Ihop (24/7 Prayer & Worship)</a>"
+    },
+    {
+      "name": "SAT7 PARS",
+      "logo": "https://tv.eternityready.com/img/logos_2/15.jpg",
+      "link": "",
+      "embed": "https://sat7.org/wp-content/themes/sat7/streaming/pars_streaming.html",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "International"
+      ],
+      "tags": [
+        "popular"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://sat7pars.com/' target='_blank'>SAT7 PARS</a>"
+    },
+    {
+      "name": "SAT7 TURK",
+      "logo": "https://tv.eternityready.com/img/logos_2/16.jpg",
+      "link": "",
+      "embed": "https://sat7.org/wp-content/themes/sat7/streaming/turk_streaming.html",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "International",
+        "Mideast"
+      ],
+      "tags": [
+        "popular"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://turk.sat7.org/' target='_blank'>SAT7 TURK</a>"
+    },
+    {
+      "name": "SAT7 ARABIC",
+      "logo": "https://tv.eternityready.com/img/logos_2/17.jpg",
+      "link": "",
+      "embed": "https://sat7.org/wp-content/themes/sat7/streaming/arabic_streaming.html",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "International",
+        "Mideast"
+      ],
+      "tags": [
+        "popular"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://arabic.sat7.org/' target='_blank'>SAT7 ARABIC</a>"
+    },
+    {
+      "name": "GOOD LIFE 45",
+      "logo": "https://tv.eternityready.com/img/logos_2/18.jpg",
+      "link": "",
+      "embed": "https://c.streamhoster.com/embed/media/WtsdYa/itqAFggxsea/ISO0NXsckKu_5",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Lifestyle + Others"
+      ],
+      "tags": [
+        "popular"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.goodlife45.com/' target='_blank'>GOOD LIFE 45</a>"
+    },
+    {
+      "name": "Spirit TV",
+      "logo": "https://tv.eternityready.com/img/logos_2/19.jpg",
+      "link": "",
+      "embed": "https://bradmax.com/client/embed-player/190c06d4b7b219e16686ff4e6093a4191f5d3b59_4372?mediaUrl=https%3A%2F%2Fcdnlive.myspirit.tv%2FLS-ATL-43240-2%2Findex.m3u8&title=Spirit%20",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Top Networks"
+      ],
+      "tags": [
+        "popular"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://myspirit.tv/' target='_blank'>Spirit TV</a>"
+    },
+    {
+      "name": "GEB America",
+      "logo": "https://tv.eternityready.com/img/logos_2/20.jpg",
+      "link": "",
+      "embed": "https://www.eternityready.com/Local_Channels/gebamerica.html",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Top Networks"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.gebamerica.com/' target='_blank'>GEB America</a>"
+    },
+    {
+      "name": "SonLife TV",
+      "logo": "https://tv.eternityready.com/img/logos_2/21.jpg",
+      "link": "",
+      "embed": "https://www.youtube.com/embed/V227leGVon0",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Top Networks"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.sonlifetv.com/' target='_blank'>SonLife TV</a>"
+    },
+    {
+      "name": "World Harvest Television",
+      "logo": "https://tv.eternityready.com/img/logos_2/22.jpg",
+      "link": "",
+      "embed": "https://www.eternityready.com/Local_Channels/worldharvest.html",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Top Networks"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.wht.org/' target='_blank'>World Harvest Television</a>"
+    },
+    {
+      "name": "Living Faith TV",
+      "logo": "https://tv.eternityready.com/img/logos_2/23.jpg",
+      "link": "",
+      "embed": "https://player2.streamspot.com/?playerId=91e7e124",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Lifestyle + Others"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://livingfaithtv.com/' target='_blank'>Living Faith TV</a>"
+    },
+    {
+      "name": "Firstlight",
+      "logo": "https://tv.eternityready.com/img/logos_2/24.jpg",
+      "link": "",
+      "embed": "https://tulixdvr1.tulix.tv/?gid=firstlight",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Lifestyle + Others"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.firstlight.org.nz/' target='_blank'>Firstlight</a>"
+    },
+    {
+      "name": "Day Star",
+      "logo": "https://tv.eternityready.com/img/logos_2/25.jpg",
+      "link": "",
+      "embed": "https://www.lightcast.com/embed/player.php?id=37099&type=live&multiBitrate=1",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Top Networks"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.daystar.com/' target='_blank'>Day Star</a>"
+    },
+    {
+      "name": "3ABN",
+      "logo": "https://tv.eternityready.com/img/logos_2/26.jpg",
+      "link": "",
+      "embed": "https://www.eternityready.com/Local_Channels/3abn.html",
+      "keywords": [
+        "help"
+      ],
+      "rating": 5,
+      "categories": [
+        "Top Networks"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://3abn.org/' target='_blank'>3ABN</a>"
+    },
+    {
+      "name": "Smart Life Style TV",
+      "logo": "https://tv.eternityready.com/img/logos_2/27.jpg",
+      "link": "",
+      "embed": "https://videoplayer.telvue.com/player/Qi73aT9dEJFz7UvP1dk1JJTvT1-vlgtM/stream/941?showtabssearch=false&autostart=false&fullscreen=true",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Lifestyle + Others"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://smartlifestyletv.com/' target='_blank'>Smart Life Style TV</a>"
+    },
+    {
+      "name": "TCT HD",
+      "logo": "https://tv.eternityready.com/img/logos_2/28.jpg",
+      "link": "",
+      "embed": "https://embed.vhx.tv/videos/3642977?api=1&autoplay",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Top Networks"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.tct.tv/' target='_blank'>TCT HD</a>"
+    },
+    {
+      "name": "Christian Television Network",
+      "logo": "https://tv.eternityready.com/img/logos_2/29.jpg",
+      "link": "",
+      "embed": "https://www.eternityready.com/Local_Channels/ctn.html",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Top Networks"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.ctnonline.com/' target='_blank'>Christian Television Network</a>"
+    },
+    {
+      "name": "God's Learning Channel",
+      "logo": "https://tv.eternityready.com/img/logos_2/30.jpg",
+      "link": "",
+      "embed": "https://c.streamhoster.com/embed/media/WXsBd3/coxIFDmysTM/9pX2kDscoHH_5",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Lifestyle + Others"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.glc.us.com/' target='_blank'>God's Learning Channel</a>"
+    },
+    {
+      "name": "Emmanuel TV",
+      "logo": "https://tv.eternityready.com/img/logos_2/31.jpg",
+      "link": "",
+      "embed": "https://www.stream.emmanuel.tv/bf1e3fb0-476f-4737-b028-5d89ed2e99f5",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Lifestyle + Others"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://emmanuel.tv/' target='_blank'>Emmanuel TV</a>"
+    },
+    {
+      "name": "NEW HOPE TV",
+      "logo": "https://tv.eternityready.com/img/logos_2/32.jpg",
+      "link": "",
+      "embed": "https://eternityready.com/Local_Channels/newhopetv.html",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Lifestyle + Others"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://nhtv.com/' target='_blank'>NEW HOPE TV</a>"
+    },
+    {
+      "name": "Bible Discovery TV",
+      "logo": "https://tv.eternityready.com/img/logos_2/33.jpg",
+      "link": "",
+      "embed": "https://c.streamhoster.com/embed/media/WasBNU/iTTH7tResIN/v4AR5fsAUDR_5",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Lifestyle + Others"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://biblediscoverytv.com/' target='_blank'>Bible Discovery TV</a>"
+    },
+    {
+      "name": "WOCB",
+      "logo": "https://tv.eternityready.com/img/logos_2/34.jpg",
+      "link": "",
+      "embed": "https://swf.tulix.tv/iframe/coacb/index.php",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Lifestyle + Others"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.wocb.org/' target='_blank'>WOCB</a>"
+    },
+    {
+      "name": "3ABN Francias",
+      "logo": "https://tv.eternityready.com/img/logos_2/35.jpg",
+      "link": "",
+      "embed": "https://eternityready.com/Local_Channels/3abn-francis.html",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "International"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://3abnfrancais.org/' target='_blank'>3ABN Francias</a>"
+    },
+    {
+      "name": "3ABN Latino",
+      "logo": "https://tv.eternityready.com/img/logos_2/36.jpg",
+      "link": "",
+      "embed": "https://www.eternityready.com/Local_Channels/3abn-latino.html",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "International"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://3abnlatino.org/' target='_blank'>3ABN Latino</a>"
+    },
+    {
+      "name": "3ABN International",
+      "logo": "https://tv.eternityready.com/img/logos_2/37.jpg",
+      "link": "",
+      "embed": "https://eternityready.com/Local_Channels/3abn-international.html",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "International"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://3abninternational.org/' target='_blank'>3ABN International</a>"
+    },
+    {
+      "name": "LOVEWORLD TV",
+      "logo": "https://tv.eternityready.com/img/logos_2/38.jpg",
+      "link": "",
+      "embed": "https://www.brighteon.com/embed/317fbe94-aef1-4e65-969c-a4ec0fe3c684",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Lifestyle + Others"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://loveworldtv.co.uk/' target='_blank'>LOVEWORLD TV</a>"
+    },
+    {
+      "name": "SuperChannel Orlando",
+      "logo": "https://tv.eternityready.com/img/logos_2/39.jpg",
+      "link": "",
+      "embed": "https://eternityready.com/Local_Channels/superchannelorlando.html",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Lifestyle + Others",
+        "Top Networks"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.superchannel.com/' target='_blank'>SuperChannel  (WACX -DTV Orlando, Florida)</a>"
+    },
+    {
+      "name": "God Television (Asia)",
+      "logo": "https://tv.eternityready.com/img/logos_2/40.jpg",
+      "link": "",
+      "embed": "https://www.lightcast.com/embed/player.php?responsive=1&skinColor=000000&autoPlay=1&playlistPos=inside&playlistSize=350&tvButtonID=lightcast&id=50862&type=live&appId=5282&from_site=WebApp&site=webapp&autoStart=1&skipPreviewPlayer=1",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "International"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.god.tv/live/asia/' target='_blank'>God Television (Asia)</a>"
+    },
+    {
+      "name": "ICFN",
+      "logo": "https://tv.eternityready.com/img/logos_2/12.jpg",
+      "link": "",
+      "embed": "https://stream.streampathway.link/embed/video/?width=640&height=430&autoPlay=true&mute=false",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Lifestyle + Others"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://icfn.tv/' target='_blank'>ICFN</a>"
+    },
+    {
+      "name": "God Television (Africa- Satellite Live)",
+      "logo": "https://tv.eternityready.com/img/logos_2/41.jpg",
+      "link": "",
+      "embed": "https://www.lightcast.com/embed/player.php?responsive=1&skinColor=000000&autoPlay=1&playlistPos=inside&playlistSize=350&tvButtonID=lightcast&id=50861&type=live&appId=5282&from_site=WebApp&site=webapp&autoStart=1&skipPreviewPlayer=1",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "International"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.god.tv/live/africa/' target='_blank'>God Television (Africa- Satellite Live)</a>"
+    },
+    {
+      "name": "God Television (Australia)",
+      "logo": "https://tv.eternityready.com/img/logos_2/42.jpg",
+      "link": "",
+      "embed": "https://www.lightcast.com/embed/player.php?responsive=1&skinColor=000000&autoPlay=1&playlistPos=inside&playlistSize=350&tvButtonID=lightcast&id=50863&type=live&appId=5282&from_site=WebApp&site=webapp&autoStart=1&skipPreviewPlayer=1",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "International"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.god.tv/live/australasia/' target='_blank'>God Television (Australia)</a>"
+    },
+    {
+      "name": "God Television (UK - Satellite Live)",
+      "logo": "https://tv.eternityready.com/img/logos_2/43.jpg",
+      "link": "",
+      "embed": "https://www.lightcast.com/embed/player.php?responsive=1&skinColor=000000&autoPlay=1&playlistPos=inside&playlistSize=350&tvButtonID=lightcast&id=50860&type=live&appId=5282&from_site=WebApp&site=webapp&autoStart=1&skipPreviewPlayer=1",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Top Networks",
+        "International"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.god.tv/live/uk-europe/' target='_blank'>God Television (UK - Satellite Live)</a>"
+    },
+    {
+      "name": "God Television (USA- Main Flagship Live)",
+      "logo": "https://tv.eternityready.com/img/logos_2/44.jpg",
+      "link": "",
+      "embed": "https://www.lightcast.com/embed/player.php?responsive=1&skinColor=000000&autoPlay=1&playlistPos=inside&playlistSize=350&tvButtonID=lightcast&id=50859&type=live&appId=5282&from_site=WebApp&site=webapp&autoStart=1&skipPreviewPlayer=1",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Top Networks"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.god.tv/live/usa/' target='_blank'>God Television (USA- Main Flagship Live)</a>"
+    },
+    {
+      "name": "CBN Family",
+      "logo": "https://tv.eternityready.com/img/logos_2/45.jpg",
+      "link": "",
+      "embed": "https://eternityready.com/Local_Channels/cbnfamily.html",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Top Networks"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.cbn.com/family/app' target='_blank'>CBN Family</a>"
+    },
+    {
+      "name": "Safe TV",
+      "logo": "https://tv.eternityready.com/img/logos_2/46.jpg",
+      "link": "",
+      "embed": "https://player.lightcast.com/live/EDMyUDM",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Kids & Family"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.safetv.org/' target='_blank'>Safe TV</a>"
+    },
+    {
+      "name": "LLBN LATINO",
+      "logo": "https://tv.eternityready.com/img/logos_2/47.jpg",
+      "link": "",
+      "embed": "https://videoplayer.telvue.com/player/T_fCOiT-3rZePDmGgMxnW3yTZjmC9rQ6/stream/893?fullscreen=true&showtabssearch=false&autostart=false",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "International"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://llbnlatino.tv/' target='_blank'>LLBN LATINO</a>"
+    },
+    {
+      "name": "LLBN Asia",
+      "logo": "https://tv.eternityready.com/img/logos_2/48.jpg",
+      "link": "",
+      "embed": "https://videoplayer.telvue.com/player/JmOz_6DCG82WYwCMyVhd7-KGuMTGVbtS/stream/898?fullscreen=true&showtabssearch=false&autostart=false",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "International"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://llbn.asia/' target='_blank'>LLBN Asia</a>"
+    },
+    {
+      "name": "LLBN Arabic",
+      "logo": "https://tv.eternityready.com/img/logos_2/49.jpg",
+      "link": "",
+      "embed": "https://videoplayer.telvue.com/player/rgqdi-qt9sKNlbcKFyqs3aHWm7zT_uYi/stream/894?fullscreen=true&showtabssearch=false&autostart=false",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "International"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://llbnarabic.tv/' target='_blank'>LLBN Arabic</a>"
+    },
+    {
+      "name": "3ABN Kids",
+      "logo": "https://tv.eternityready.com/img/logos_2/51.jpg",
+      "link": "",
+      "embed": "https://eternityready.com/Local_Channels/3abn-kids.html",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Kids & Family"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://3abnkids.tv/' target='_blank'>3ABN Kids</a>"
+    },
+    {
+      "name": "Gospel Broadcasting Network",
+      "logo": "https://tv.eternityready.com/img/logos_2/52.jpg",
+      "link": "",
+      "embed": "https://subsplash.com/+2c93/embed/mi/+d47b5c1?video&audio&info&embeddable&shareable&logo_watermark",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Lifestyle + Others"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://gbnlive.org/' target='_blank'>Gospel Broadcasting Network</a>"
+    },
+    {
+      "name": "The Word Network",
+      "logo": "https://tv.eternityready.com/img/logos_2/53.jpg",
+      "link": "",
+      "embed": "https://www.eternityready.com/Local_Channels/thewordnetwork.html",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Top Networks"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.thewordnetwork.org/' target='_blank'>The Word Network</a>"
+    },
+    {
+      "name": "Hope Channel",
+      "logo": "https://tv.eternityready.com/img/logos_2/54.jpg",
+      "link": "",
+      "embed": "https://jstre.am/embed/jsl:0sUSK6VA7GTNxQaY8E8L",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Top Networks"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.hopetv.org/' target='_blank'>Hope Channel</a>"
+    },
+    {
+      "name": "Corner Stone TV",
+      "logo": "https://tv.eternityready.com/img/logos_2/55.jpg",
+      "link": "",
+      "embed": "https://c.themediacdn.com/embed/media/Wds3pI/iobd0rFsA0g/ixLVvXs4X4r_5",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Top Networks"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.ctvn.org/' target='_blank'>Corner Stone TV</a>"
+    },
+    {
+      "name": "LLBN",
+      "logo": "https://tv.eternityready.com/img/logos_2/56.jpg",
+      "link": "",
+      "embed": "https://videoplayer.telvue.com/player/3bmvm0bG4uy-gY_p1LqHX_ily5P839LA/stream/869?fullscreen=true&showtabssearch=false&autostart=false&jwsource=cl",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Top Networks"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://llbn.tv/' target='_blank'>LLBN</a>"
+    },
+    {
+      "name": "Son Broadcasting Network",
+      "logo": "https://tv.eternityready.com/img/logos_2/57.jpg",
+      "link": "",
+      "embed": "https://www.youtube.com/embed/V227leGVon0?si=pKYpu8jnwl2AAShS",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Top Networks"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.kchftv.org' target='_blank'>Son Broadcasting Network</a>"
+    },
+    {
+      "name": "ABN AFRICA",
+      "logo": "https://tv.eternityready.com/img/logos_2/59.jpg",
+      "link": "",
+      "embed": "https://vidmgr.abnvideos.com/embed/abnafrica",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "International"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://abnafrica.com/' target='_blank'>ABN AFRICA</a>"
+    },
+    {
+      "name": "Sid Roth Network",
+      "logo": "https://tv.eternityready.com/img/logos_2/60.jpg",
+      "link": "",
+      "embed": "https://players.brightcove.net/6057940587001/default_default/index.html?videoId=6066990457001",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Top Networks",
+        "Bible Prophecy"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://sidroth.org/' target='_blank'>Sid Roth Network</a>"
+    },
+    {
+      "name": "JLTV",
+      "logo": "https://tv.eternityready.com/img/logos_2/61.jpg",
+      "link": "",
+      "embed": "https://www.parsatv.com/embed.php?name=Jewish-Life-TV&auto=false",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "International",
+        "Mideast"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.jltv.tv/' target='_blank'>JLTV</a>"
+    },
+    {
+      "name": "Press TV",
+      "logo": "https://tv.eternityready.com/img/logos_2/62.jpg",
+      "link": "",
+      "embed": "https://odysee.com/$/embed/@PressTV:2/Presstvlivestream:e?r=",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "News + Opinions"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.presstv.ir/' target='_blank'>Press TV</a>"
+    },
+    {
+      "name": "Nejat TV",
+      "logo": "https://tv.eternityready.com/img/logos_2/63.jpg",
+      "link": "",
+      "embed": "https://www.parsatv.com/embed.php?name=Nejat-TV&auto=false",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "International"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.nejat.tv/' target='_blank'>Nejat TV</a>"
+    },
+    {
+      "name": "Jewish Broadcasting",
+      "logo": "https://tv.eternityready.com/img/logos_2/64.jpg",
+      "link": "",
+      "embed": "https://www.streamwebtown.com/iframe/shalomtv/index.php",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "International",
+        "Mideast"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://jbstv.org/' target='_blank'>Jewish Broadcasting</a>"
+    },
+    {
+      "name": "RT News",
+      "logo": "https://tv.eternityready.com/img/logos_2/66.jpg",
+      "link": "",
+      "embed": "https://rumble.com/embed/v33aw1a/?pub=4",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "News + Opinions",
+        "International"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.rt.com/' target='_blank'>RT News</a>"
+    },
+    {
+      "name": "Newsmax",
+      "logo": "https://tv.eternityready.com/img/logos_2/67.jpg",
+      "link": "",
+      "embed": "https://www.eternityready.com/Local_Channels/newsmax.html",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Top Networks",
+        "News + Opinions"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.newsmaxtv.com/' target='_blank'>Newsmax</a>"
+    },
+    {
+      "name": "Family TV",
+      "logo": "https://tv.eternityready.com/img/logos_2/68.jpg",
+      "link": "",
+      "embed": "https://player.castr.com/live_6c33b9a069cf11eebe6363d9db657015",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Kids & Family"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.familytv.com/' target='_blank'>Family TV</a>"
+    },
+    {
+      "name": "3ABN! Dare to Dream",
+      "logo": "https://tv.eternityready.com/img/logos_2/70.jpg",
+      "link": "",
+      "embed": "https://www.eternityready.com/Local_Channels/3abn-daretodream.html",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Top Networks"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://daretodream.tv/' target='_blank'>3ABN! Dare to Dream</a>"
+    },
+    {
+      "name": "3ABN Proclaim",
+      "logo": "https://tv.eternityready.com/img/logos_2/71.jpg",
+      "link": "",
+      "embed": "https://eternityready.com/Local_Channels/3abn-proclaim.html",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Top Networks"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://3abnproclaim.org/' target='_blank'>3ABN Proclaim</a>"
+    },
+    {
+      "name": "His Channel",
+      "logo": "https://tv.eternityready.com/img/logos_2/73.jpg",
+      "link": "",
+      "embed": "https://www.hischannel.com/ChristianLiveTv/LiveTvHD",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Lifestyle + Others"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.hischannel.com/' target='_blank'>His Channel</a>"
+    },
+    {
+      "name": "Believers Voice of Victory",
+      "logo": "https://tv.eternityready.com/img/logos_2/75.jpg",
+      "link": "",
+      "embed": "https://eternityready.com/Local_Channels/bvov.html",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Top Networks"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.kcm.org/watch/believers-voice-of-victory-network' target='_blank'>Believers Voice of Victory</a>"
+    },
+    {
+      "name": "VertiZontal Media",
+      "logo": "https://tv.eternityready.com/img/logos_2/76.jpg",
+      "link": "",
+      "embed": "https://www.youtube.com/embed/videoseries?list=PLjGwr9KYUCAdiQcIF21STFXyomkUma2KT",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Top Networks"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://vertizontalmedia.com/' target='_blank'>VertiZontal Media</a>"
+    },
+    {
+      "name": "HARVEST TV",
+      "logo": "https://tv.eternityready.com/img/logos_2/77.jpg",
+      "link": "",
+      "embed": "https://www.eternityready.com/Local_Channels/harvestv.html",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Top Networks"
+      ],
+      "description": "Learn more @ <a href='https://harvesttv.in/' target='_blank'>HARVEST TV</a>"
+    },
+    {
+      "name": "SAT 7 Kids",
+      "logo": "https://tv.eternityready.com/img/logos_2/78.jpg",
+      "link": "",
+      "embed": "https://sat7.org/wp-content/themes/sat7/streaming/kids_streaming.html",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Kids & Family"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://kids.sat7.org/' target='_blank'>SAT 7 Kids</a>"
+    },
+    {
+      "name": "Family Friendly Entertainment",
+      "logo": "https://tv.eternityready.com/img/logos_2/79.jpg",
+      "link": "",
+      "embed": "https://www.lightcast.com/embed/player.php?&id=51429&type=live",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Kids & Family"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://familyfriendlye.com/' target='_blank'>Family Friendly Entertainment</a>"
+    },
+    {
+      "name": "Amazing Discoveries TV",
+      "logo": "https://tv.eternityready.com/img/logos_2/80.jpg",
+      "link": "",
+      "embed": "https://www.streamwebtown.com/iframe/amazingdtv/index.php",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Bible Prophecy"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://amazingdiscoveries.tv/' target='_blank'>Amazing Discoveries TV</a>"
+    },
+    {
+      "name": "KSCE-TV Life!",
+      "logo": "https://tv.eternityready.com/img/logos_2/81.jpg",
+      "link": "",
+      "embed": "https://c.streamhoster.com/embed/media/WasBNU/qR5lbecsOqY/EjoV2oscnhO_5",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Top Networks"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://kscetv.com/' target='_blank'>KSCE-TV Life!</a>"
+    },
+    {
+      "name": "Gospel Truth TV",
+      "logo": "https://tv.eternityready.com/img/logos_2/1.jpg",
+      "link": "",
+      "embed": "https://www.eternityready.com/Local_Channels/gospeltruthtv.html",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Lifestyle + Others"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.gospeltruth.tv/' target='_blank'>Gospel Truth TV</a>"
+    },
+    {
+      "name": "NRB Network",
+      "logo": "https://tv.eternityready.com/img/logos_2/2.jpg",
+      "link": "",
+      "embed": "https://swf.tulix.tv/iframe/nrblive/index.php",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Top Networks"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://nrbtv.org/' target='_blank'>NRB Network</a>"
+    },
+    {
+      "name": "CBN News",
+      "logo": "https://tv.eternityready.com/img/logos_2/3.jpg",
+      "link": "",
+      "embed": "https://www1.cbn.com/sites/all/libraries/html5player/html5player.php?auto_play=true&videoId=5721888200001",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Top Networks",
+        "Bible Prophecy",
+        "Mideast"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.cbnnews.com/' target='_blank'>CBN News</a>"
+    },
+    {
+      "name": "Mission TV",
+      "logo": "https://tv.eternityready.com/img/logos_2/4.jpg",
+      "link": "",
+      "embed": "https://www.eternityready.com/Local_Channels/missiontv.html",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Top Networks",
+        "News + Opinions"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://missiontv.com/' target='_blank'>Mission TV</a>"
+    },
+    {
+      "name": "Christian Youth Channel",
+      "logo": "https://tv.eternityready.com/img/logos_2/5.jpg",
+      "link": "",
+      "embed": "https://smccdn.com/cycnow.com/websiteSSL.html",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Kids & Family",
+        "Mideast"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.cycnow.com/' target='_blank'>Christian Youth Channel</a>"
+    },
+    {
+      "name": "Total Living Network",
+      "logo": "https://tv.eternityready.com/img/logos_2/6.jpg",
+      "link": "",
+      "embed": "https://www.lightcast.com/embed/player.php?width=640&height=430&skinColor=000000&autoStart=0&tvButtonID=lightcast&id=14763&type=live",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Lifestyle + Others"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://tln.com/' target='_blank'>Total Living Network</a>"
+    },
+    {
+      "name": "Wylie Gospel TV",
+      "logo": "https://tv.eternityready.com/img/logos_2/wylie-gospel-tv.webp",
+      "link": "",
+      "embed": "https://www.christianworldmedia.com/4404-4345-/embed-html5/f7/livestream.html",
+      "keywords": [],
+      "rating": 5,
+      "categories": [
+        "Christian Gospel"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.wotgtvnetwork.com/' target='_blank'>Wylie Gospel</a>"
+    },
+    {
+      "name": "Branson Gospel TV",
+      "logo": "https://tv.eternityready.com/img/logos_2/branson-gospel-tv.webp",
+      "link": "",
+      "embed": "https://www.christianworldmedia.com/4197-4137-/embed-html5/f7/livestream.html",
+      "keywords": [],
+      "rating": 5,
+      "categories": [
+        "Christian Gospel"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.wotgtvnetwork.com/' target='_blank'>Branson Gospel</a>"
+    },
+    {
+      "name": "WGHC TV",
+      "logo": "https://tv.eternityready.com/img/logos_2/wghc-tv.webp",
+      "link": "",
+      "embed": "https://www.christianworldmedia.com/4175-4115-/embed-html5/f7/livestream.html",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Christian Gospel"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.wotgtvnetwork.com/' target='_blank'>WGHC TV</a>"
+    },
+    {
+      "name": "Ohio Valley Gospel TV",
+      "logo": "https://tv.eternityready.com/img/logos_2/ohio-valley-gospel.webp",
+      "link": "",
+      "embed": "https://www.christianworldmedia.com/4443-4384-/embed-html5/f7/livestream.html",
+      "keywords": [],
+      "rating": 3,
+      "categories": [
+        "Christian Gospel"
+      ],
+      "status": "ON",
+      "description": "Learn more @ <a href='https://www.wotgtvnetwork.com/' target='_blank'>Ohio Valley Gospel</a>"
+    },
+    {
+      "name": "Kulture TV",
+      "logo": "https://tv.eternityready.com/img/logos_2/kulture-tv.jpg",
+      "link": "",
+      "embed": "https://www.lightcast.com/embed/player.php?&id=53137&type=live",
+      "keywords": [],
+      "rating": 5,
+      "categories": [
+        "Lifestyle + Others"
+      ],
+      "status": "ON",
+      "description": "Kulture TV is dedicated to bridging the cultural gaps that separate us as believers and to being one united body of Christ. Learn more @ <a href='https://goodvuenetwork.com/' target='_blank'>GoodVue Network</a>"
+    },
+    {
+      "name": "Apologetics 24/7",
+      "logo": "https://tv.eternityready.com/img/logos_2/apologetics-tv.jpg",
+      "link": "",
+      "embed": "https://www.lightcast.com/embed/player.php?&id=53089&type=live",
+      "keywords": [],
+      "rating": 5,
+      "categories": [
+        "Lifestyle + Others"
+      ],
+      "status": "ON",
+      "description": "Now more than ever we need to defend our faith. Apologetics 24/7 equips you with the tools you need to build a strong foundation for defense. Learn more @ <a href='https://goodvuenetwork.com/' target='_blank'>GoodVue Network</a>"
+    }
+    
+  ]
+}

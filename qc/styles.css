@@ -1,0 +1,225 @@
+body {
+  background-color: #000000e8 !important;
+  font-family: "Poppins" !important;
+  margin: 0 !important;
+}
+.navbar-dark {
+}
+#navbarCollapse {
+  justify-content: flex-end;
+}
+.bs-example {
+  padding: 10px 10%;
+  background-color: black !important;
+}
+#register {
+  background-color: #1bbc9b !important;
+  border-color: #1bbc9b !important;
+  border-radius: 30px;
+  padding: 10px 25px !important;
+}
+#sign-in {
+  background-color: #af2020 !important;
+  border-color: #af2020 !important;
+  border-radius: 30px;
+  padding: 10px 25px !important;
+  margin-right: 10px;
+}
+.img-logo {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px !important;
+}
+a {
+  color: white !important;
+  text-decoration: none !important;
+}
+h1 {
+  font-weight: 800 !important;
+  font-size: 2.7rem !important;
+  color: white;
+}
+h2 {
+  font-weight: 700 !important;
+  font-size: 2.5rem !important;
+  color: #af2020;
+}
+p {
+  padding: 10px 0;
+  color: #ffffffc9 !important;
+  font-size: 1rem !important;
+}
+.who-we-are {
+  background-color: black;
+  padding: 5% 10%;
+  text-align: center;
+}
+.who-we-are p {
+  font-size: 18px !important;
+}
+#who-we-are-h4 {
+  color: white;
+  padding: 2% 10%;
+  font-weight: 600;
+  text-align: center;
+}
+
+.features {
+  padding: 5% 10%;
+  text-align: center;
+}
+.lead {
+  font-size: 18px !important;
+}
+.lead2 {
+  padding: 2% 5%;
+}
+.icon-box {
+  padding: 30px;
+}
+.icon-text {
+  color: white;
+  padding-top: 20px;
+}
+.icon {
+  border-radius: 50%;
+  background-color: #af2020;
+  padding: 20px;
+  color: white;
+  font-size: 22px !important;
+}
+
+.cta {
+  background-color: #12163c !important;
+  padding: 3% 12%;
+}
+.cta-heading {
+  color: white;
+  font-weight: 600;
+  line-height: 40px;
+  font-size: 32px !important;
+}
+.cta-para {
+  color: #ffffffc9 !important;
+  font-size: 18px !important;
+}
+.order-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.order-now-btn {
+  padding: 15px 40px;
+  font-size: 22px;
+  background-color: #1bbc9b;
+  color: white;
+  border-radius: 30px;
+  border: none;
+}
+.order-now-btn-red {
+  padding: 15px 40px;
+  font-size: 22px;
+  background-color: #af2020;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  display: block;
+  margin: 0 auto;
+}
+.list-box {
+  padding-top: 30px;
+  padding-left: 2% !important;
+}
+.list-icons {
+  color: #af2020;
+}
+li {
+  color: white;
+  text-align: left;
+  font-size: 17px;
+  line-height: 30px;
+  padding-bottom: 17px;
+}
+.footer {
+  background-color: black;
+}
+.footer-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.footer-list-icon {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.footer-list li {
+  float: left;
+  font-size: 14px;
+  margin-right: 20px !important;
+}
+.footer-list-icon li {
+  float: right;
+  font-size: 16px;
+  margin-right: 20px !important;
+  margin-left: 20px !important;
+}
+#footer-para {
+  float: left;
+  font-size: 14px !important;
+  color: white !important;
+  margin-top: -10px;
+}
+.footer-section {
+  padding-top: 1%;
+  padding-left: 12% !important;
+}
+.footer-section1 {
+  padding-top: 1%;
+  padding-right: 12% !important;
+}
+.footer-icons {
+  float: left;
+}
+
+@media only screen and (max-width: 480px) {
+  #sign-in {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .bs-example {
+    padding: 10px 5%;
+  }
+  .who-we-are {
+    padding: 15% 2%;
+  }
+  #who-we-are-h4 {
+    font-size: 22px;
+    color: white;
+    padding: 5% 0%;
+    font-weight: 600;
+    text-align: center;
+  }
+  .cta {
+    padding: 10% 2%;
+  }
+  .cta-heading {
+    text-align: center;
+    font-size: 28px !important;
+  }
+  .cta-para {
+    text-align: center;
+  }
+  .order-now-btn {
+    font-size: 20px;
+  }
+  .order-now-btn-red {
+    font-size: 20px;
+  }
+  .footer-section1 {
+    display: none;
+  }
+}

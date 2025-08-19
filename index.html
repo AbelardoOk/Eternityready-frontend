@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1"
+    />
+    <title>Eternity Ready</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-?qXv587Op+TN2fPLwKdTkciOc0/nZ0hpqbvBxXqyFfpu7H2Qnz+Wc+vlV5jJ2fr4RkBuWsR+S1pWQgf0RX+vRg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css?v=1" />
+  </head>
+  <body>
+    <!-- BACKDROP FOR SLIDE-IN MENU -->
+    <div class="menu-overlay"></div>
+
+    <!-- HEADER (desktop) -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="logo">
+          <img
+            src="images/logo1USE-THIS.png"
+            alt="Flame Logo"
+            class="logo-icon"
+          />
+        </div>
+
+        <!-- Desktop Nav -->
+        <nav class="site-nav desktop-nav">
+          <a href="#" class="active">Home</a>
+          <a href="#">New</a>
+          <a href="#">Popular</a>
+          <a href="#">Web Pages</a>
+        </nav>
+
+        <div class="search-container">
+          <input
+            id="search-input"
+            type="text"
+            placeholder="Search for movies, radio, podcasts or TV shows"
+            autocomplete="off"
+          />
+          <i class="fa-solid fa-search"></i>
+          <div id="search-dropdown">
+            <!-- existing dropdown markup -->
+            <div id="history-section" class="dropdown-section">
+              <p id="no-history" class="empty-text">No recent searches</p>
+              <ul id="history-list" class="history-list"></ul>
+            </div>
+            <div id="categories-section" class="dropdown-section">
+              <p class="section-label">Filter searches by categories</p>
+              <div id="categories-list" class="chip-list"></div>
+            </div>
+            <div id="media-section" class="dropdown-section">
+              <p class="section-label">MOVIES &amp; TV SHOWS</p>
+              <ul id="media-list" class="media-list"></ul>
+            </div>
+            <div id="trending-section" class="dropdown-section">
+              <p class="section-label">Trending searches</p>
+              <div id="trending-list" class="chip-list"></div>
+            </div>
+            <div class="search-footer">
+              <a href="#" id="see-all">See all results »</a>
+            </div>
+          </div>
+        </div>
+        <a
+          class="btn-radio"
+          role="button"
+          href="https://eternityreadyradio.com/"
+          ><span class="text">Radio</span></a
+        >
+        <!--<a class="btn-radio" href = "https://eternityreadyradio.com/">Radio</a>-->
+        <button class="btn-menu" aria-label="Open menu">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect y="4" width="24" height="2" />
+            <rect y="11" width="24" height="2" />
+            <rect y="18" width="24" height="2" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- MOBILE SLIDE-IN NAV -->
+    <nav class="site-nav mobile-nav">
+      <div class="mobile-nav-header">
+        <span class="menu-title">Menu</span>
+        <button class="btn-nav-close" aria-label="Close menu">&times;</button>
+      </div>
+
+      <!-- Donate CTA -->
+      <button class="btn-donate">Donate</button>
+
+      <div class="mobile-nav-list">
+        <div class="nav-group">
+          <a href="#">ON-DEMAND <i class="fa fa-chevron-down"></i></a>
+          <ul class="submenu">
+            <li><a href="#">Feature Films</a></li>
+            <li><a href="#">Drama Series</a></li>
+            <li><a href="#">Comedy Series</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-group">
+          <a href="#">PODCASTS <i class="fa fa-chevron-down"></i></a>
+          <ul class="submenu">
+            <li><a href="#">Latest Episodes</a></li>
+            <li><a href="#">Top Charts</a></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-group">
+          <a href="#">TV CHANNELS <i class="fa fa-chevron-down"></i></a>
+          <ul class="submenu">
+            <li><a href="#">Live Now</a></li>
+            <li><a href="#">All Channels</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-group">
+          <a href="#">AFFILIATES</a>
+        </div>
+
+        <div class="nav-group">
+          <a href="#">ABOUT US <i class="fa fa-chevron-down"></i></a>
+          <ul class="submenu">
+            <li><a href="#">Donate</a></li>
+            <li><a href="#">Contact &amp; Help</a></li>
+            <li><a href="#">Mission, Beliefs</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-card">
+          <video
+            class="hero-bg"
+            src="images/My Fault_ London - Official Trailer _ Prime Video.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+          ></video>
+          <div class="hero-gradient"></div>
+          <div class="hero-content">
+            <div class="hero-logo-img">
+              <img src="images/My-Fault.png" alt="Hero Logo" />
+            </div>
+            <div class="hero-langs">
+              <a href="#">English</a> |  <a href="#">Hindi</a> | 
+              <a href="#">Tamil</a> |  <a href="#">Telugu</a> | 
+              <a href="#">Malayalam</a> |  <a href="#">Kannada</a>
+            </div>
+            <p class="hero-tagline">NEW ORIGINAL MOVIE</p>
+            <div class="hero-stats">
+              <span class="trending">#Trending Now</span>
+              <span class="rating">★ 6.3</span>
+            </div>
+            <div class="hero-genres">
+              <span class="genre">Action</span>
+              <span class="genre">Adventure</span>
+              <span class="genre">Thriller</span>
+            </div>
+            <p class="hero-desc">
+              Kraven Kravinoff’s complex relationship with his ruthless gangster
+              father, Nikolai, starts him down a path of vengeance with brutal
+              consequences, motivating him to become not only the greatest
+              hunter in the world, but also one of its most feared.
+            </p>
+            <div class="hero-cta">
+              <button class="btn-play" aria-label="Watch Now">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path d="M8 5v14l11-7z"></path>
+                </svg>
+                Watch Now
+              </button>
+              <button class="btn-icon" aria-label="Bookmark">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M6 4h12v18l-6-5-6 5z"></path>
+                </svg>
+              </button>
+              <button class="btn-icon" aria-label="More info">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 6h.01m-1 4h2v6h-2z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="hero-media-wrap">
+            <video
+              class="hero-preview"
+              src="path/to/your/outofthisworld.mov"
+              muted
+              loop
+              playsinline
+            ></video>
+            <div class="video-info">
+              <div class="info-bubble">
+                <img
+                  src="images/toppng.com-donna-picarro-dummy-avatar-768x768.png"
+                  alt=""
+                  class="info-avatar"
+                />
+                <span>outofthisworld.mov</span>
+              </div>
+              <div class="info-bubble info-from">
+                <span>from Studio Mars</span>
+              </div>
+            </div>
+            <div class="aside-icons">
+              <button class="btn-like" aria-label="Like">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 21l-1-1C5 15 2 12 2 8a5 5 0 0 1 10 0
+             5 5 0 0 1 10 0c0 4-3 7-9 12l-1 1z"
+                  />
+                </svg>
+              </button>
+
+              <button aria-label="Watch later">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M12 6v6l4 2"></path>
+                </svg>
+              </button>
+              <button aria-label="Go back">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M20 11H7.83l5.58-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div class="hero-controls">
+              <button class="control-play" aria-label="Play/Pause">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path d="M8 5v14l11-7z"></path>
+                </svg>
+              </button>
+              <input
+                type="range"
+                class="control-progress"
+                min="0"
+                max="100"
+                value="0"
+                aria-label="Video progress"
+              />
+              <div class="control-actions">
+                <button class="control-settings" aria-label="Settings">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8zm7.43 4a7.43 7.43 0 0 0-.13-1l2.11-1.65-2-3.46-2.49 1a7.36 7.36 0 0 0-1.7-.99l-.38-2.65h-4l-.38 2.65a7.36 7.36 0 0 0-1.7.99l-2.49-1-2 3.46 2.11 1.65c-.05.33-.08.66-.08 1s.03.67.08 1L2.52 15.65l2 3.46 2.49-1c.5.4 1.05.73 1.7.99l.38 2.65h4l.38-2.65c.65-.26 1.2-.59 1.7-.99l2.49 1 2-3.46-2.11-1.65c.1-.33.13-.66.13-1z"
+                    />
+                  </svg>
+                </button>
+                <button
+                  class="control-fullscreen"
+                  aria-label="Toggle Fullscreen"
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M7 14H5v5h5v-2H7v-3zm0-4h2V7h3V5H7v5zm10 4h2v3h-3v2h5v-5zm-2-4V5h-5v2h3v3h2z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Settings Menu -->
+            <div id="settings-menu" class="settings-menu">
+              <ul>
+                <li class="setting-item" data-speed="0.5">0.5× Speed</li>
+                <li class="setting-item" data-speed="1">1× Speed</li>
+                <li class="setting-item" data-speed="1.5">1.5× Speed</li>
+                <li class="setting-item" data-speed="2">2× Speed</li>
+                <li class="setting-item toggle-mute">Mute</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- VIDEO MODAL OVERLAY -->
+    <div id="video-modal" class="video-modal">
+      <button
+        id="video-modal-close"
+        class="video-modal-close"
+        aria-label="Close fullscreen"
+      >
+        ×
+      </button>
+      <video
+        id="modal-video"
+        class="modal-video-element"
+        src=""
+        controls
+        autoplay
+        playsinline
+      ></video>
+    </div>
+
+    <!-- DISCOVER CONTENT SECTION -->
+    <section class="discover-section">
+      <div class="container">
+        <h2 class="section-title">Discover Content</h2>
+        <p class="section-subtitle">
+          Explore our diverse range of faith-building content across multiple
+          formats
+        </p>
+
+        <!-- Top Row: Gradient Cards -->
+        <div class="discover-grid top-row">
+          <div class="card gradient purple">
+            <h3>Feature<br />Films</h3>
+          </div>
+          <div class="card gradient green">
+            <h3>Nonfiction<br />Films &amp; Series</h3>
+          </div>
+          <div class="card gradient gold">
+            <h3>Kids &amp;<br />Family</h3>
+          </div>
+          <div class="card gradient blue">
+            <h3>Drama<br />Series</h3>
+          </div>
+          <div class="card gradient teal">
+            <h3>Comedy<br />Series</h3>
+          </div>
+        </div>
+
+        <!-- Bottom Row: Image-backed Media Cards -->
+        <div class="discover-grid bottom-row">
+          <a href="https://eternityready.tv/">
+            <div class="card media tv">
+              <i class="fa fa-tv"></i>
+              <h4>Eternity Ready Television</h4>
+              <p>Faith-based shows &amp; series</p>
+              <img
+                alt="Christian TV"
+                class="cd-item__image"
+                src="images/index.jpg"
+              />
+            </div>
+          </a>
+          <a href="https://eternityready.com/radio/">
+            <div class="card media radio">
+              <i class="fa fa-broadcast-tower"></i>
+              <h4>Radio &amp; Music</h4>
+              <p>24/7 inspiration &amp; worship</p>
+              <img
+                alt="Christian TV"
+                class="cd-item__image"
+                src="images/3.webp"
+              />
+            </div>
+          </a>
+          <a href="http://podcasts.eternityready.com/">
+            <div class="card media podcast">
+              <i class="fa fa-podcast"></i>
+              <h4>Podcasts</h4>
+              <p>Discussions &amp; teachings</p>
+              <img
+                alt="Christian TV"
+                class="cd-item__image"
+                src="images/6.webp"
+              />
+            </div>
+          </a>
+          <div class="card media movies">
+            <i class="fa fa-music"></i>
+            <h4>Movies &amp; Music</h4>
+            <p>Films &amp; music videos</p>
+            <img
+              alt="Christian TV"
+              class="cd-item__image"
+              src="images/2.webp"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THIRD SECTION: TOP 10 TV SHOWS & NEWEST STUFF -->
+    <section class="media-section">
+      <div class="container">
+        <!-- Top 10 TV Shows -->
+        <div class="section-header">
+          <h2 class="section-title"><a href="#">Top 10 TV Shows</a></h2>
+          <a href="#" class="section-link"
+            ><i class="fa fa-chevron-right"></i
+          ></a>
+        </div>
+
+        <div class="slider-wrapper">
+          <button class="slider-arrow prev" aria-label="Previous">
+            <i class="fa fa-chevron-left"></i>
+          </button>
+
+          <div class="media-grid top10">
+            <!-- Card 1 -->
+            <div class="media-card">
+              <div class="media-thumb">
+                <img src="images/stick.jpeg" alt="Stick" />
+                <span class="media-duration">30:00</span>
+              </div>
+              <div class="media-info">
+                <span class="media-rank">1</span>
+                <div class="media-text">
+                  <p class="media-title">Stick</p>
+                  <p class="media-genre">Comedy</p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="media-card">
+              <div class="media-thumb">
+                <img src="images/smoke.jpeg" alt="Smoke" />
+                <span class="media-duration">30:00</span>
+              </div>
+              <div class="media-info">
+                <span class="media-rank">2</span>
+                <div class="media-text">
+                  <p class="media-title">Smoke</p>
+                  <p class="media-genre">Thriller</p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="media-card">
+              <div class="media-thumb">
+                <img src="images/murder.jpeg" alt="Murderbot" />
+                <span class="media-duration">30:00</span>
+              </div>
+              <div class="media-info">
+                <span class="media-rank">3</span>
+                <div class="media-text">
+                  <p class="media-title">Murderbot</p>
+                  <p class="media-genre">Sci-Fi</p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="media-card">
+              <div class="media-thumb">
+                <img src="images/your.jpeg" alt="Your Friends & Neighbors" />
+                <span class="media-duration">30:00</span>
+              </div>
+              <div class="media-info">
+                <span class="media-rank">4</span>
+                <div class="media-text">
+                  <p class="media-title">Your Friends &amp; Neighbors</p>
+                  <p class="media-genre">Drama</p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="media-card">
+              <div class="media-thumb">
+                <img src="images/ted.jpeg" alt="Ted Lasso" />
+                <span class="media-duration">30:00</span>
+              </div>
+              <div class="media-info">
+                <span class="media-rank">5</span>
+                <div class="media-text">
+                  <p class="media-title">Ted Lasso</p>
+                  <p class="media-genre">Comedy</p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="media-card">
+              <div class="media-thumb">
+                <img src="images/your.jpeg" alt="Your Friends & Neighbors" />
+                <span class="media-duration">30:00</span>
+              </div>
+              <div class="media-info">
+                <span class="media-rank">6</span>
+                <div class="media-text">
+                  <p class="media-title">Your Friends &amp; Neighbors</p>
+                  <p class="media-genre">Drama</p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 7 -->
+            <div class="media-card">
+              <div class="media-thumb">
+                <img src="images/ted.jpeg" alt="Ted Lasso" />
+                <span class="media-duration">30:00</span>
+              </div>
+              <div class="media-info">
+                <span class="media-rank">7</span>
+                <div class="media-text">
+                  <p class="media-title">Ted Lasso</p>
+                  <p class="media-genre">Comedy</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="slider-arrow next" aria-label="Next">
+            <i class="fa fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <hr class="media-separator" />
+
+        <!-- Newest Stuff -->
+        <div class="newest-section">
+          <div class="section-header">
+            <h2 class="section-title">Newest Stuff</h2>
+            <a href="#" class="section-link"
+              ><i class="fa fa-chevron-right"></i
+            ></a>
+          </div>
+
+          <div class="slider-wrapper">
+            <button class="slider-arrow prev" aria-label="Previous">
+              <i class="fa fa-chevron-left"></i>
+            </button>
+
+            <div class="media-grid newest">
+              <!-- Card 1 -->
+              <div class="media-card">
+                <div class="media-thumb">
+                  <img src="images/stick.jpeg" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="media-card">
+                <div class="media-thumb">
+                  <img src="images/smoke.jpeg" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="media-card">
+                <div class="media-thumb">
+                  <img src="images/murder.jpeg" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 4 -->
+              <div class="media-card">
+                <div class="media-thumb">
+                  <img src="images/your.jpeg" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 5 -->
+              <div class="media-card">
+                <div class="media-thumb">
+                  <img src="images/ted.jpeg" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 6 -->
+              <div class="media-card">
+                <div class="media-thumb">
+                  <img src="images/your.jpeg" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 7 -->
+              <div class="media-card">
+                <div class="media-thumb">
+                  <img src="images/ted.jpeg" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="slider-arrow next" aria-label="Next">
+              <i class="fa fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!--Bible Profecy-->
+        <div class="bible-section">
+          <div class="section-header">
+            <h2 class="section-title">
+              <a href="#" class="section-link"
+                >Rapture Ready <i class="fa fa-chevron-right"></i>
+              </a>
+            </h2>
+          </div>
+
+          <div class="slider-wrapper">
+            <button class="slider-arrow prev" aria-label="Previous">
+              <i class="fa fa-chevron-left"></i>
+            </button>
+
+            <div class="media-grid bible">
+              <!-- Card 1 -->
+              <div class="media-card">
+                <div class="media-thumb">
+                  <img src="images/stick.jpeg" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="media-card">
+                <div class="media-thumb">
+                  <img src="images/smoke.jpeg" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="media-card">
+                <div class="media-thumb">
+                  <img src="images/murder.jpeg" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 4 -->
+              <div class="media-card">
+                <div class="media-thumb">
+                  <img src="images/your.jpeg" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 5 -->
+              <div class="media-card">
+                <div class="media-thumb">
+                  <img src="images/ted.jpeg" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 6 -->
+              <div class="media-card">
+                <div class="media-thumb">
+                  <img src="images/your.jpeg" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 7 -->
+              <div class="media-card">
+                <div class="media-thumb">
+                  <img src="images/ted.jpeg" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="slider-arrow next" aria-label="Next">
+              <i class="fa fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!--Television-->
+        <div class="television-section">
+          <div class="section-header">
+            <h2 class="section-title">Television</h2>
+            <a href="#" class="section-link"
+              ><i class="fa fa-chevron-right"></i
+            ></a>
+          </div>
+
+          <div class="slider-wrapper">
+            <button class="slider-arrow prev" aria-label="Previous">
+              <i class="fa fa-chevron-left"></i>
+            </button>
+
+            <div class="media-grid television">
+              <!-- Card 1 -->
+              <div class="media-card">
+                <div class="media-thumb">
+                  <img src="images/stick.jpeg" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="media-card">
+                <div class="media-thumb">
+                  <img src="images/smoke.jpeg" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="media-card">
+                <div class="media-thumb">
+                  <img src="images/murder.jpeg" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 4 -->
+              <div class="media-card">
+                <div class="media-thumb">
+                  <img src="images/your.jpeg" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 5 -->
+              <div class="media-card">
+                <div class="media-thumb">
+                  <img src="images/ted.jpeg" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 6 -->
+              <div class="media-card">
+                <div class="media-thumb">
+                  <img src="images/your.jpeg" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 7 -->
+              <div class="media-card">
+                <div class="media-thumb">
+                  <img src="images/ted.jpeg" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="slider-arrow next" aria-label="Next">
+              <i class="fa fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!--Radio-->
+        <div class="radio-section">
+          <div class="section-header">
+            <h2 class="section-title">Radio</h2>
+            <a href="#" class="section-link"
+              ><i class="fa fa-chevron-right"></i
+            ></a>
+          </div>
+
+          <div class="slider-wrapper">
+            <button class="slider-arrow prev" aria-label="Previous">
+              <i class="fa fa-chevron-left"></i>
+            </button>
+
+            <div class="media-grid radio">
+              <!-- Card 1 -->
+              <div class="media-card">
+                <div class="media-thumb">
+                  <img src="crop.png" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="media-card">
+                <div class="media-thumb">
+                  <img src="images/smoke.jpeg" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="media-card">
+                <div class="media-thumb">
+                  <img src="images/murder.jpeg" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 4 -->
+              <div class="media-card">
+                <div class="media-thumb">
+                  <img src="images/your.jpeg" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 5 -->
+              <div class="media-card">
+                <div class="media-thumb">
+                  <img src="images/ted.jpeg" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 6 -->
+              <div class="media-card">
+                <div class="media-thumb">
+                  <img src="images/your.jpeg" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 7 -->
+              <div class="media-card">
+                <div class="media-thumb">
+                  <img src="images/ted.jpeg" alt="Songs in the Night" />
+                  <span class="media-badge">New</span>
+                  <span class="media-duration">30:00</span>
+                </div>
+                <div class="media-info-col">
+                  <p class="media-title">
+                    Nicole C. Mullen – Songs in the Night
+                  </p>
+                  <div class="media-subinfo">
+                    <p class="media-genre">Comedy</p>
+                    <p class="media-by">
+                      by <span class="media-author">eternityready</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="slider-arrow next" aria-label="Next">
+              <i class="fa fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOURTH SECTION: BROWSE BY SERVICE -->
+    <section class="browse-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Browse By Service</h2>
+          <a href="#" class="section-link"
+            ><i class="fa fa-chevron-right"></i
+          ></a>
+        </div>
+
+        <div class="slider-wrapper">
+          <button class="slider-arrow prev" aria-label="Previous">
+            <i class="fa fa-chevron-left"></i>
+          </button>
+
+          <div class="browse-slider">
+            <div class="service-card">
+              <div class="service-header">
+                <div class="service-label free">FREE</div>
+                <h3 class="service-title">Best of What’s Free</h3>
+              </div>
+              <div class="service-thumbs">
+                <div class="thumb">
+                  <img src="images/sticklong.jpeg" alt="Stick" />
+                  <span class="tv-badge">TV</span>
+                </div>
+                <div class="thumb">
+                  <img src="images/thebetter.jpeg" alt="The Better Sister" />
+                  <span class="tv-badge">TV</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-card">
+              <div class="service-header">
+                <div class="service-label netflix"><span>Netflix</span></div>
+                <h3 class="service-title">Best of Netflix</h3>
+              </div>
+              <div class="service-thumbs">
+                <div class="thumb">
+                  <img src="images/sticklong.jpeg" alt="Dept. Q" />
+                  <span class="tv-badge">TV</span>
+                </div>
+                <div class="thumb">
+                  <img src="images/thebetter.jpeg" alt="The Waterfront" />
+                  <span class="tv-badge">TV</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-card">
+              <div class="service-header">
+                <div class="service-label hulu"><span>Hulu</span></div>
+                <h3 class="service-title">Best of Hulu</h3>
+              </div>
+              <div class="service-thumbs">
+                <div class="thumb">
+                  <img src="images/sticklong.jpeg" alt="Love Island" />
+                  <span class="tv-badge">TV</span>
+                </div>
+                <div class="thumb">
+                  <img src="images/thebetter.jpeg" alt="The Bear" />
+                  <span class="tv-badge">TV</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-card">
+              <div class="service-header">
+                <div class="service-label primevideo">
+                  <span>Prime Video</span>
+                </div>
+                <h3 class="service-title">Best of Prime Video</h3>
+              </div>
+              <div class="service-thumbs">
+                <div class="thumb">
+                  <img src="images/sticklong.jpeg" alt="Stick" />
+                  <span class="tv-badge">TV</span>
+                </div>
+                <div class="thumb">
+                  <img src="images/thebetter.jpeg" alt="The Better Sister" />
+                  <span class="tv-badge">TV</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-card">
+              <div class="service-header">
+                <div class="service-label directv">
+                  <span>DIRECTV<br />Stream</span>
+                </div>
+                <h3 class="service-title">Best of DIRECTV Stream</h3>
+              </div>
+              <div class="service-thumbs">
+                <div class="thumb">
+                  <img src="images/sticklong.jpeg" alt="Resident Alien" />
+                  <span class="tv-badge">TV</span>
+                </div>
+                <div class="thumb">
+                  <img src="images/thebetter.jpeg" alt="Another Show" />
+                  <span class="tv-badge">TV</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="slider-arrow next" aria-label="Next">
+            <i class="fa fa-chevron-right"></i>
+          </button>
+        </div>
+        <hr class="media-separator" />
+      </div>
+    </section>
+
+    <!-- FIFTH SECTION: POPULAR ACTORS & DIRECTORS -->
+    <section class="people-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Popular Actors & Directors</h2>
+          <i class="fa fa-chevron-right"></i>
+        </div>
+
+        <div class="slider-wrapper">
+          <button class="slider-arrow prev" aria-label="Previous">
+            <i class="fa fa-chevron-left"></i>
+          </button>
+
+          <div class="people-slider">
+            <div
+              class="person-card"
+              style="background: #161d25; border-radius: 12px"
+            >
+              <div
+                class="avatar"
+                style="background: linear-gradient(60deg, #fbff00, #4a6625)"
+              >
+                MG
+              </div>
+              <p class="name">Manuel Garcia-Rulfo</p>
+            </div>
+            <div class="person-card">
+              <div
+                class="avatar"
+                style="background: linear-gradient(60deg, #026244, #97f5cf)"
+              >
+                TH
+              </div>
+              <p class="name">Tom Holland</p>
+            </div>
+            <div class="person-card">
+              <div
+                class="avatar"
+                style="background: linear-gradient(60deg, #9800fd, #25baff)"
+              >
+                DS
+              </div>
+              <p class="name">Daniel Scheinert</p>
+            </div>
+            <div class="person-card">
+              <div
+                class="avatar"
+                style="background: linear-gradient(60deg, #f7f26e, #24e61a)"
+              >
+                TC
+              </div>
+              <p class="name">Tom Cruise</p>
+            </div>
+            <div class="person-card">
+              <div
+                class="avatar"
+                style="background: linear-gradient(60deg, #ff3300, #f9d339)"
+              >
+                DR
+              </div>
+              <p class="name">Daniel Radcliffe</p>
+            </div>
+            <div class="person-card">
+              <div
+                class="avatar"
+                style="background: linear-gradient(60deg, #f34141, #c90b77)"
+              >
+                BC
+              </div>
+              <p class="name">Benedict Cumberbatch</p>
+            </div>
+            <div class="person-card">
+              <div
+                class="avatar"
+                style="background: linear-gradient(60deg, #8c00ff, #253eff)"
+              >
+                CT
+              </div>
+              <p class="name">Channing Tatum</p>
+            </div>
+            <div class="person-card">
+              <div
+                class="avatar"
+                style="background: linear-gradient(60deg, #9c074f, #ff2d11)"
+              >
+                AS
+              </div>
+              <p class="name">Alexander Skarsgård</p>
+            </div>
+            <div class="person-card">
+              <div
+                class="avatar"
+                style="background: linear-gradient(135deg, #ff5252, #ff217b)"
+              >
+                JL
+              </div>
+              <p class="name">Jared Leto</p>
+            </div>
+            <div class="person-card">
+              <div
+                class="avatar"
+                style="background: linear-gradient(135deg, #db00f1, #8b00a3)"
+              >
+                TP
+              </div>
+              <p class="name">Trey Parker</p>
+            </div>
+            <div class="person-card">
+              <div
+                class="avatar"
+                style="background: linear-gradient(135deg, #d400ff, #ff6fdb)"
+              >
+                AN
+              </div>
+              <p class="name">Adam Nee</p>
+            </div>
+            <div class="person-card">
+              <div
+                class="avatar"
+                style="background: linear-gradient(135deg, #d1b51e, #f5db3f)"
+              >
+                DA
+              </div>
+              <p class="name">David Attenborough</p>
+            </div>
+          </div>
+
+          <button class="slider-arrow next" aria-label="Next">
+            <i class="fa fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="bottom_most_section free-container">
+      <div class="content_wrapper">
+        <div class="free-content">
+          <h3>Are You Eternity Ready?</h3>
+          <h4>If not learn how</h4>
+          <a href="https://www.eternityready.com/salvation" class="button"
+            >Learn More</a
+          >
+        </div>
+      </div>
+      <div class="red_fitler"></div>
+      <img
+        src="public/if-not.webp"
+        alt="Eternity Ready promotional content"
+        width="1921"
+        height="656"
+      />
+    </div>
+
+    <footer class="footer-section">
+      <!--<hr class="footer-divider" />-->
+      <div class="subfooter">
+        <div class="container">
+          <div class="footer-connect">
+            <h3>Connect with us</h3>
+            <ul class="social-list">
+              <li>
+                <a
+                  href="https://www.facebook.com/eternityready"
+                  target="_blank"
+                  class="social-facebook"
+                >
+                  <i class="fab fa-facebook-f"></i> Facebook
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.eternityready.com/#"
+                  target="_blank"
+                  class="social-twitter"
+                >
+                  <i class="fab fa-x-twitter"></i> x.com
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.eternityready.com/#"
+                  target="_blank"
+                  class="social-youtube"
+                >
+                  <i class="fab fa-youtube"></i> YouTube
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/jeremiahfarris/"
+                  target="_blank"
+                  class="social-instagram"
+                >
+                  <i class="fab fa-instagram"></i> Instagram
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="footer-divider" />
+
+        <div class="footer-links-box">
+          <div class="container">
+            <div class="footer-content">
+              <!-- All columns on desktop in a row, on mobile use .footer-cols-wrap grid -->
+              <div class="footer-col footer-apps">
+                <h4>Our Apps</h4>
+                <div class="app-buttons">
+                  <a href="#" class="app-btn">
+                    <img
+                      src="images/pngegg (1).png"
+                      alt="Get it on Google Play"
+                    />
+                  </a>
+                  <a href="#" class="app-btn">
+                    <img
+                      src="images/pngegg.png"
+                      alt="Download on the App Store"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="footer-stack-col">
+                <div class="footer-col">
+                  <h4>Useful Links</h4>
+                  <ul>
+                    <li><a href="#">Radio Schedule</a></li>
+                    <li><a href="#">Ways to Listen</a></li>
+                    <li><a href="#">Donate</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>Our Brands</h4>
+                  <ul>
+                    <li><a href="#">Corporate</a></li>
+                    <li><a href="#">Eternity Ready TV</a></li>
+                    <li><a href="#">Rapture Ready TV</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>About</h4>
+                  <ul>
+                    <li><a href="#">Team &amp; Culture</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Media Kit</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>Help</h4>
+                  <ul>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy &amp; Legal</a></li>
+                    <li><a href="#">Contact &amp; Help</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="media-separator" />
+        <div class="container">
+          <div class="footer-bottom">
+            <div class="footer-brand">
+              <img
+                src="images/logo1USE-THIS.png"
+                alt="Eternity Logo"
+                class="logo-icon"
+              />
+            </div>
+            <p class="footer-copy">
+              © 2012–2025 Eternity Ready LLC, All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

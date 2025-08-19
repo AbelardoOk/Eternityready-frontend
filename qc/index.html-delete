@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- HTML Charset -->
+
+
+<!-- Windows 10 Browser Edge Compatible -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Boostrap Viewports -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Title -->
+<title>Rapture Ready TV</title>
+
+<!-- Description -->
+<meta name="description" content="">
+
+<!-- Keywords -->
+<meta name="keywords" content="">
+
+<!-- Author -->
+<meta name="author" content="//eternityready.com">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js2/bootstrap.min.js"></script>
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/style.css" />
+
+<!-- RS5.0 Main Stylesheet -->
+<link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
+ 
+<!-- RS5.0 Layers and Navigation Styles -->
+<link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
+<link rel="stylesheet" type="text/css" href="revolution/css/navigation.css">	
+
+    <!-- RS5.0 Core JS Files -->
+    <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
+    <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
+    
+		<script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+		<script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+		<script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+		<script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+		<script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+		<script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+		<script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+		<script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+		<script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+
+<style>
+#header {
+    background:transparent;
+    transition:all .2s;
+}
+.navbar-collapse.collapse {
+  display: block!important;
+}
+
+.navbar-nav>li, .navbar-nav {
+  float: left !important;
+}
+
+.navbar-nav.navbar-right:last-child {
+  margin-right: -15px !important;
+}
+
+.navbar-nav li {
+    margin-top:-37px;
+    margin-right:45px;
+    padding-bottom:3px;
+}
+
+.navbar-right {
+  float: right!important;
+}
+
+.navbar-nav {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 10px;
+}
+
+@media (min-width: 768px) {
+    .signin {
+        font-size:16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .signin {
+        font-size:15px;
+    }
+}
+
+
+.rev_slider_wrapper {
+    padding-top: 0px;
+}
+
+body.scrolled #header {
+  opacity: 0.2;
+  transition: opacity .2s;
+}
+body.scrolled #main-menu:hover {
+  opacity: 1.0;
+  transition: opacity .2s;
+}
+
+</style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <nav class="navbar navbar-default">
+          <div class="container">
+              <a class="navbar-brand" href="#"><img src="images/logo.png" id="logo" alt="Eternity Ready"></a>
+            </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/index.php" class="btn btn-danger signin">Start</a></li>
+          </ul>
+          </div><!-- /.container-fluid -->
+        </nav>
+    </header>
+
+
+
+
+
+
+<!-- START REVOLUTION SLIDER 5.0 -->
+<div class="rev_slider_wrapper">
+ <div id="slider1" class="rev_slider"  data-version="5.0">
+  <ul>		
+   <li data-transition="fade">			
+     <!-- MAIN IMAGE data-transition="3dcurtain-horizontal" -->
+     <img src="images/rapturereadtvwindow.jpg"  alt=""  width="1280" height="720">			 
+   </li>
+ 
+   <li data-transition="fade">			
+     <!-- MAIN IMAGE data-transition="3dcurtain-vertical" -->
+     <img src="images/3.jpg"  alt=""  width="1920" height="1280">
+   </li>
+   
+   <li data-transition="fade">			
+     <!-- MAIN IMAGE data-transition="cube" -->
+     <img src="images/image-slider-3.jpg"  alt=""  width="1280" height="500"> 
+   </li>
+  </ul>				
+ </div><!-- END REVOLUTION SLIDER -->
+</div><!-- END OF SLIDER WRAPPER -->
+<div class="free-trial">
+			<h1 class="title">Are you Rapture Ready?</h1>
+			<span class="mobile-small"><h3 class="subtitle"></br>
+			</h3></span>
+	
+<a href="/index.php" class="btn btn-danger" align="middle">CLICK HERE TO START</a>
+		</div>	
+
+
+
+
+
+
+    <div class="bg-none description">
+        <div class="container">
+         
+        <div class="row">
+
+            <div class="col-md-5"><a href="http://www.raptureready.tv"><img src="images/logo2.png" class="img-responsive" alt="A SMARTWATCH WITH STYLE"></a> </div>
+
+           
+             <!--<div class="col-md-3"><img src="images/erradio.jpeg" class="img-responsive" alt="A SMARTWATCH WITH STYLE"> </div> --->
+
+            
+            
+        </div>
+
+
+
+
+
+        </div>
+    </div>
+	
+
+
+    
+    <footer class="footer">
+    <div class="container">
+        <div class="col-xs-6 col-md-4 bg-primary">
+        <h4><a href="https://www.paypal.me/eternityready" target="_blank"><font color="white">Donate</a></h4>
+        
+        </div>
+        
+        <div class="col-xs-6 col-md-4 bg-primary">
+        <h4><a href="#"><font color="white">Contact</a></h4>
+        
+        </div>
+        
+        <div class="col-xs-6 col-md-4 bg-primary">
+        <h4><a href="#"><font color="white">Company</a></h4>
+        </font>
+        </div>
+    </div>
+    </footer>
+
+
+<script>	
+jQuery(document).ready(function() {		
+   jQuery("#slider1").revolution({
+      sliderType:"standard",
+      sliderLayout:"fullwidth",
+      delay:6000,
+      navigation: {
+          arrows:{enable:false},	
+		  onHoverStop:"off"			
+      },
+	  disableProgressBar:"on",
+	  spinner:"off",
+	  			
+      gridwidth:1280,
+      gridheight:840		
+    });		
+
+    window.addEventListener('scroll', function () {
+       if(window.scrollY > 20) {
+        $('#header').css('background','rgba(0,0,0,0.60)');
+       } else {
+        $('#header').css('background','transparent');
+       }
+    });
+
+
+});	
+</script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <title>Filmon TV Live</title>
+  <style>
+    html, body {
+      margin: 0; padding: 0; height: 100%;
+      background: black;
+    }
+    video {
+      width: 100%; 
+      height: 100%; 
+      display: block;
+      background: black;
+    }
+  </style>
+</head>
+<body>
+
+  <video id="video" controls autoplay></video>
+
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <script>
+    const video = document.getElementById('video');
+    const videoSrc = 'https://edge1346.filmon.com/live/27.low.stream/playlist.m3u8';
+
+    if (Hls.isSupported()) {
+      const hls = new Hls();
+      hls.loadSource(videoSrc);
+      hls.attachMedia(video);
+      hls.on(Hls.Events.MANIFEST_PARSED, () => {
+        video.play();
+      });
+    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+      video.src = videoSrc;
+      video.addEventListener('loadedmetadata', () => {
+        video.play();
+      });
+    } else {
+      console.error('HLS não suportado neste navegador.');
+    }
+  </script>
+
+</body>
+</html>

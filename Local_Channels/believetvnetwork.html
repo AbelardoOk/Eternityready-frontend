@@ -1,0 +1,56 @@
+<p><!-- begin embedded player file... --></p>
+<table border='0' cellpadding='0' align="center">
+<tr>
+<td>
+<p align="center" style="margin:0;">
+<p><script type="text/javascript" src="http://awooze.com/jwplayer.js"></script></p>
+<div id='mediaplayer'></div>
+<p><script type="text/javascript">
+  jwplayer('mediaplayer').setup({
+    'id': 'playerID',
+    'width': '400',
+    'height': '400',
+    'provider': 'rtmp',
+    'streamer': 'rtmp://awooze.com/edge3/BelieveTV',
+    'file': 'BelieveTV',
+    'autostart': 'false',
+    'stretching': 'exactfit',
+    'logo.file': 'http://www.awooze.com/images/awoozethumb.jpg',
+    'logo.position': 'top-right',
+    'logo.hide':'true',
+    'logo.link':'http://awoozetalk.com',
+    'image': 'http://www.awooze.com/pics/believeTV.jpg',
+    'plugins': {
+    '': {
+        "": "",
+     },
+     "gapro-2": {
+        "trackstarts": true,
+        "trackpercentage": true,
+        "trackseconds": true
+      }
+    },
+    'modes': [
+        {type: 'flash', src: 'http://awooze.com/player.swf'},
+        {
+          type: 'html5',
+          config: {
+           'file': 'http://ios.streamserver01.com:8080/believeTV/mystream.m3u8',
+           'provider': 'video'
+          }
+        },
+        {
+          type: 'download',
+          config: {
+           'file': 'http://ios.streamserver01.com:8080/believeTV/mystream.m3u8',
+           'provider': 'video'
+          }
+        }
+            ]
+  });
+</script>
+</div>
+</td>
+</tr>
+</table>
+<p> <!-- END embedded player file... --></p>

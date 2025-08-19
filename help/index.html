@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content" />
+      <title>About Us</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="styles.css" />
+      <link rel="preload" as="image" href="public/transformers.jpg" />
+      <link rel="preload" as="image" href="public/transformers_logo.webp" />
+      <link rel="preload" as="image" href="public/indian.jpg" />
+      <link rel="preload" as="image" href="public/shanghai.webp" />
+      <link rel="preload" as="image" href="public/cars.jpg" />
+      <link rel="preload" as="image" href="public/myfault.webp" />
+      <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div id="main_header">
+         <div class="logo" onClick="window.open('https://eternityready.com/', '_self')" style="cursor: pointer">
+            <img src="public/logo1USE-THIS.png" alt="logo" width="420" height="140" />
+         </div>
+         <div class="centered_menu">
+            <ul>
+                    <li onClick="window.open('https://www.eternityready.com/newvideos.php','_self')">
+                        <span>Demand</span>
+                    </li>
+                    <li onclick="window.open('https://podcasts.eternityready.com/', '_self')">
+                        <span>Podcast</span>
+                    </li>
+                    <li onClick="window.open('https://tv.eternityready.com/', '_self')">
+                        <span>Tv Series</span>
+                    </li>
+                    <li onClick="window.open('https://www.eternityready.com/radio', '_self')">
+                        <span>Music & Radio</span>
+                    </li>
+            </ul>
+         </div>
+         <div class="right">
+            <button onclick="window.open('https://eternityreadyradio.com/', '_self')">Radio</button>
+            <div id="burger_menu">
+               <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="35"
+                  height="35"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-menu text-white cursor-pointer"
+                  >
+                  <line x1="4" x2="20" y1="12" y2="12"></line>
+                  <line x1="4" x2="20" y1="6" y2="6"></line>
+                  <line x1="4" x2="20" y1="18" y2="18"></line>
+               </svg>
+            </div>
+         </div>
+      </div>
+      <div id="side_menu">
+         <div class="bar">
+            <div class="inner">
+               <div class="top">
+                  <h2>Menu</h2>
+                  <button id="side_menu_close_button">
+                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path
+                           fill="currentColor"
+                           d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                           ></path>
+                     </svg>
+                  </button>
+               </div>
+               <ul>
+                    <li class="item menuButton"><a href="https://www.eternityready.com/donate" target="_self">Donate</a></li>
+                    <li class="item"><a href="https://www.eternityready.com/radio" target="_self">Music & Radio</a></li>
+                    <li class="item"><a href="https://podcasts.eternityready.com/" target="_self">Podcasts</a></li>
+                    <li class="item"><a href="https://tv.eternityready.com/" target="__self">TV & Movies</a></li>
+                    <li class="item dropdown">
+                        <a href="#" id="dropdown-btn" target="_self">More Options  &#9662;</a>
+                        <ul class="dropdown-content" id="dropdown-menu">
+                            <li><a href="/link-submenu-1">Sub-item 1</a></li>
+                            <li><a href="/link-submenu-2">Sub-item 2</a></li>
+                            <li><a href="/link-submenu-3">Sub-item 3</a></li>
+                        </ul>
+                    </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div id="mobile_fixed_menu">
+         <div class="inner">
+            <button class="item selected" tabindex="0" onclick="window.open('https://www.eternityready.com/', '_self')">
+               <div class="icon">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"
+                        ></path>
+                  </svg>
+               </div>
+               <div class="text">
+                  Home
+               </div>
+            </button>
+            <button class="item" tabindex="0" onclick="window.open('https://www.eternityready.com/movies/', '_self')">
+               <div class="icon">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M488 64h-8v20c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12V64H96v20c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12V64h-8C10.7 64 0 74.7 0 88v336c0 13.3 10.7 24 24 24h8v-20c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v20h320v-20c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v20h8c13.3 0 24-10.7 24-24V88c0-13.3-10.7-24-24-24zM96 372c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12H44c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm272 208c0 6.6-5.4 12-12 12H156c-6.6 0-12-5.4-12-12v-96c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v96zm0-168c0 6.6-5.4 12-12 12H156c-6.6 0-12-5.4-12-12v-96c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v96zm112 152c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40zm0-96c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40z"
+                        ></path>
+                  </svg>
+               </div>
+               <div class="text">
+                  Movies
+               </div>
+            </button>
+            <button class="item" tabindex="0" onclick="window.open('https://www.eternityready.com/movies/', '_self')">
+               <div class="icon">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M592 0H48A48 48 0 0 0 0 48v320a48 48 0 0 0 48 48h240v32H112a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16H352v-32h240a48 48 0 0 0 48-48V48a48 48 0 0 0-48-48zm-16 352H64V64h512z"
+                        ></path>
+                  </svg>
+               </div>
+               <div class="text">
+                  Series
+               </div>
+            </button>
+            <button class="item" tabindex="0" onclick="window.open('https://podcasts.eternityready.com/', '_self')">
+               <div class="icon">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M267.429 488.563C262.286 507.573 242.858 512 224 512c-18.857 0-38.286-4.427-43.428-23.437C172.927 460.134 160 388.898 160 355.75c0-35.156 31.142-43.75 64-43.75s64 8.594 64 43.75c0 32.949-12.871 104.179-20.571 132.813zM156.867 288.554c-18.693-18.308-29.958-44.173-28.784-72.599 2.054-49.724 42.395-89.956 92.124-91.881C274.862 121.958 320 165.807 320 220c0 26.827-11.064 51.116-28.866 68.552-2.675 2.62-2.401 6.986.628 9.187 9.312 6.765 16.46 15.343 21.234 25.363 1.741 3.654 6.497 4.66 9.449 1.891 28.826-27.043 46.553-65.783 45.511-108.565-1.855-76.206-63.595-138.208-139.793-140.369C146.869 73.753 80 139.215 80 220c0 41.361 17.532 78.7 45.55 104.989 2.953 2.771 7.711 1.77 9.453-1.887 4.774-10.021 11.923-18.598 21.235-25.363 3.029-2.2 3.304-6.566.629-9.185zM224 0C100.204 0 0 100.185 0 224c0 89.992 52.602 165.647 125.739 201.408 4.333 2.118 9.267-1.544 8.535-6.31-2.382-15.512-4.342-30.946-5.406-44.339-.146-1.836-1.149-3.486-2.678-4.512-47.4-31.806-78.564-86.016-78.187-147.347.592-96.237 79.29-174.648 175.529-174.899C320.793 47.747 400 126.797 400 224c0 61.932-32.158 116.49-80.65 147.867-.999 14.037-3.069 30.588-5.624 47.23-.732 4.767 4.203 8.429 8.535 6.31C395.227 389.727 448 314.187 448 224 448 100.205 347.815 0 224 0zm0 160c-35.346 0-64 28.654-64 64s28.654 64 64 64 64-28.654 64-64-28.654-64-64-64z"
+                        ></path>
+                  </svg>
+               </div>
+               <div class="text">
+                  Podcast
+               </div>
+            </button>
+            <button class="item" tabindex="0" onclick="window.open('https://www.eternityreadyradio.com/', '_self')">
+               <div class="icon">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M494.8 47c12.7-3.7 20-17.1 16.3-29.8S494-2.8 481.2 1L51.7 126.9c-9.4 2.7-17.9 7.3-25.1 13.2C10.5 151.7 0 170.6 0 192l0 4L0 304 0 448c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64l-229.5 0L494.8 47zM368 240a80 80 0 1 1 0 160 80 80 0 1 1 0-160zM80 256c0-8.8 7.2-16 16-16l96 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-96 0c-8.8 0-16-7.2-16-16zM64 320c0-8.8 7.2-16 16-16l128 0c8.8 0 16 7.2 16 16s-7.2 16-16 16L80 336c-8.8 0-16-7.2-16-16zm16 64c0-8.8 7.2-16 16-16l96 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-96 0c-8.8 0-16-7.2-16-16z"
+                        ></path>
+                  </svg>
+               </div>
+               <div class="text">
+                  Radio
+               </div>
+            </button>
+         </div>
+      </div>
+      <!-- start here -->
+      <div class="hero">Eternity Ready Help Page</div>
+      <section class="our-journey-section">
+         <h2 class="section-title">How can we help you?</h2>
+         <div class="section_dunga"></div>
+         <p class="section_paragraph">
+            Connect with Eternity Ready through any method below! To get you to the team who can best serve you, here are some of the areas we connect people to most frequently.
+         </p>
+      </section>
+      <section class="contact-section">
+         <div style="position: absolute; inset: 0; background: radial-gradient(circle at 70% 30%, rgba(255, 60, 60, 0.15) 0%, transparent 60%); opacity: 0.5; pointer-events: none; animation: pulse 10s infinite ease-in-out;"></div>
+         <div class="contact-container">
+            <h2 style="text-align: center;" class="section-title">Help & Communications</h2>
+            <div class="section_dunga"></div>
+            <div class="contact-grid">
+               <div class="contact-method fade-in">
+                  <div class="head">
+                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                     </svg>
+                     <h2>Call Us</h2>
+                  </div>
+                  <p>Need a real-time response or personal help? Call us and speak directly with a support rep.</p>
+                  <a href="tel:+19132517857" onclick="chamarTelefone('tel:+19132517857');">Call 913-251-7857</a>
+               </div>
+               <div class="contact-method fade-in">
+                  <div class="head">
+                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                     </svg>
+                     <h2>Email Us</h2>
+                  </div>
+                  <p>Have questions or need documentation? Reach us via email and we’ll get back within 24 hours.</p>
+                  <a href="mailto:help@eternityready.com" onclick="chamarEmail('help@eternityready.com')">Email help@eternityready.com</a>
+               </div>
+               <div class="contact-method fade-in">
+                  <div class="head">
+                     <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                     </svg>
+                     <h2>Facebook Chat</h2>
+                  </div>
+                  <p>Message us on Facebook Messenger for casual, quick support on-the-go.</p>
+                  <a href="https://m.me/eternityready" target="_blank">Chat on Facebook</a>
+               </div>
+               <div class="contact-method fade-in">
+                  <div class="head">
+                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                     </svg>
+                     <h2>Text Us</h2>
+                  </div>
+                  <p>Prefer texting? Send us a message directly from your phone and we’ll reply promptly.</p>
+                  <a href="sms:9704256118?body=Hello%20Eternity%20Ready%20LLC.%20I%20am%20contacting%20you%20from%20your%20help%20center.%20I%20have%20a%20question,%20comment,%20concern,%20or%20need%20some%20other%20help.%20Will%20you%20please%20contact%20me!">Text 970-425-6118</a>
+               </div>
+               <div class="contact-method fade-in">
+                  <div class="head">
+                     <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M16.75 13.96c.25.13.41.2.46.3.06.11.04.61-.21 1.18-.2.56-1.24 1.1-1.7 1.12-.46.02-.47.36-2.96-.73-2.49-.9-3.85-3.24-4.04-3.49-.19-.25-1.48-1.94-1.48-3.71s.89-2.97 1.21-3.38c.32-.41.98-.47 1.31-.47.33 0 .66.03.88.28.22.25.86 1.02.86 2.5 0 1.48-.65 2.06-.81 2.27-.16.21-1.84 2.92 2.81 5.05 4.65 2.13 4.95-.65 5.67-.92zM12 2a10 10 0 0 0-10 10 10 10 0 0 0 3.05 7.3L3 22l2.7-1.05A10 10 0 0 0 12 22a10 10 0 0 0 10-10A10 10 0 0 0 12 2z"></path>
+                     </svg>
+                     <h2>WhatsApp Chat</h2>
+                  </div>
+                  <p>Prefer WhatsApp? Send us a message directly, and we’ll reply promptly.</p>
+                  <a href="https://api.whatsapp.com/send?phone=19707024020&text=Hello%20Eternity%20Ready%20LLC.%20I%20am%20contacting%20you%20from%20your%20help%20center.%20I%20have%20a%20question,%20comment,%20concern,%20or%20need%20some%20other%20help.%20Will%20you%20please%20contact%20me!">Message on WhatsApp</a>
+               </div>
+               <div class="contact-method fade-in">
+                  <div class="head">
+                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                        <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                        <path d="M9 12h6m-6 4h6"></path>
+                     </svg>
+                     <h2>Support Ticket</h2>
+                  </div>
+                  <p>Need a formal response or follow-up? Submit a ticket and track your request with ease.</p>
+                  <a href="https://help.eternityready.com/submit-ticket" target="_blank">Submit Ticket</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="company-sec" style="padding: 6rem 2rem;  position: relative; overflow: hidden;">
+         <div style="position: absolute; inset: 0; background: radial-gradient(circle at 30% 20%, rgba(255, 60, 60, 0.15) 0%, transparent 60%); opacity: 0.6; pointer-events: none; animation: mapPulse 12s infinite ease-in-out;"></div>
+         <div style="max-width: 1200px; margin: 0 auto; position: relative; z-index: 1;">
+            <h2 style="text-align: center;" class="section-title">Company Headquarters</h2>
+            <div class="section_dunga"></div>
+            <div class="hq-card">
+               <div class="hq-section">
+                  <h3 style="color: #ff3c3c; font-size: 1.75rem; display: flex; align-items: center; gap: 0.5rem;">
+                     <svg style="width: 24px; height: 24px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                     </svg>
+                     Address
+                  </h3>
+                  <p style="color: #d1d1d1; margin-top: 0.75rem; font-size: 1.1rem; line-height: 1.6;">
+                     Eternity Ready LLC<br/>4635 N Winchester Ave<br/>Kansas City, MO 64117
+                  </p>
+               </div>
+               <div class="hq-section">
+                  <h3 style="color: #ff3c3c; font-size: 1.75rem; display: flex; align-items: center; gap: 0.5rem;">
+                     <svg style="width: 24px; height: 24px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                     </svg>
+                     Hours of Operation
+                  </h3>
+                  <ul style="color: #d1d1d1; list-style: none; padding: 0; margin-top: 0.75rem; font-size: 1.1rem; line-height: 1.8;">
+                     <li>Monday: 3:00 PM – 5:00 PM</li>
+                     <li>Tuesday - Wednesday: Closed</li>
+                     <li>Thursday - Friday: 3:00 PM – 5:00 PM</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="map-sec" style="padding: 4rem 2rem; background-color: #111;">
+         <div style="max-width: 1100px; margin: 0 auto;">
+            <div style="display: flex; flex-direction: column; gap: 2rem;">
+               <div style="border-radius: 16px; overflow: hidden; box-shadow: 0 0 40px rgba(255, 0, 0, 0.08); border: 1px solid rgba(255, 60, 60, 0.2);">
+                  <iframe 
+                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3107.129592394015!2d-94.38454018465096!3d38.85239047957758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x48054f3fc714c593!2sEternity%20Ready%20LLC!5e0!3m2!1sen!2sus!4v1644534345061!5m2!1sen!2sus" 
+                     width="100%" 
+                     height="450" 
+                     style="border:0;" 
+                     allowfullscreen="" 
+                     loading="lazy" 
+                     referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="form-section" id="contact-form">
+         <div class="form-container">
+            <h2 class="section-title" style="text-align: center;">Get in Touch</h2>
+            <div class="section_dunga"></div>
+            <form action="https://formspree.io/f/mzzrjazq" method="POST" class="contact-form">
+               <label class="form-label">
+               <span>Your Email</span>
+               <input type="email" name="email" required placeholder="Enter your email" aria-label="Email address">
+               </label>
+               <label class="form-label">
+               <span>Your Message</span>
+               <textarea name="message" required placeholder="Write your message here..." aria-label="Message" rows="6"></textarea>
+               </label>
+               <button type="submit" class="submit-button">Send Message</button>
+            </form>
+         </div>
+      </section>
+      <section class="faq-sec" style="padding: 6rem 2rem; background: linear-gradient(180deg, #0b0b0c 0%, #1a1a1b 100%); position: relative; overflow: hidden;">
+         <div style="position: absolute; inset: 0; background: radial-gradient(circle at 50% 50%, rgba(255, 60, 60, 0.1) 0%, transparent 70%); opacity: 0.5; pointer-events: none; animation: pulse 15s infinite ease-in-out;"></div>
+         <div style="max-width: 1100px; margin: auto; position: relative; z-index: 1;">
+            <h2 class="section-title" style="text-align: center;">Frequently Asked Questions</h2>
+            <div class="section_dunga"></div>
+            <div class="faq-grid">
+               <div class="faq-item">
+                  <button class="faq-question" onclick="toggleFAQ(this)">
+                     <span style="font-size: 1.25rem; font-weight: 600;">What is Eternity Ready?</span>
+                     <svg class="icon" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M7,10L12,15L17,10H7Z" />
+                     </svg>
+                  </button>
+                  <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, id optio ab fuga impedit hic eligendi! Modi adipisci atque est voluptates, natus fugiat, expedita ullam, optio veniam ad voluptatem dolores! FAQ 1.</div>
+               </div>
+               <div class="faq-item">
+                  <button class="faq-question" onclick="toggleFAQ(this)">
+                     <span style="font-size: 1.25rem; font-weight: 600;">How can I contact support?</span>
+                     <svg class="icon" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M7,10L12,15L17,10H7Z" />
+                     </svg>
+                  </button>
+                  <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, id optio ab fuga impedit hic eligendi! Modi adipisci atque est voluptates, natus fugiat, expedita ullam, optio veniam ad voluptatem dolores! FAQ 2.</div>
+               </div>
+               <div class="faq-item">
+                  <button class="faq-question" onclick="toggleFAQ(this)">
+                     <span style="font-size: 1.25rem; font-weight: 600;">Where is your company located?</span>
+                     <svg class="icon" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M7,10L12,15L17,10H7Z" />
+                     </svg>
+                  </button>
+                  <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, id optio ab fuga impedit hic eligendi! Modi adipisci atque est voluptates, natus fugiat, expedita ullam, optio veniam ad voluptatem dolores! FAQ 3.</div>
+               </div>
+               <div class="faq-item">
+                  <button class="faq-question" onclick="toggleFAQ(this)">
+                     <span style="font-size: 1.25rem; font-weight: 600;">What services do you provide?</span>
+                     <svg class="icon" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M7,10L12,15L17,10H7Z" />
+                     </svg>
+                  </button>
+                  <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, id optio ab fuga impedit hic eligendi! Modi adipisci atque est voluptates, natus fugiat, expedita ullam, optio veniam ad voluptatem dolores! FAQ 4.</div>
+               </div>
+               <div class="faq-item">
+                  <button class="faq-question" onclick="toggleFAQ(this)">
+                     <span style="font-size: 1.25rem; font-weight: 600;">How do I submit a ticket?</span>
+                     <svg class="icon" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M7,10L12,15L17,10H7Z" />
+                     </svg>
+                  </button>
+                  <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, id optio ab fuga impedit hic eligendi! Modi adipisci atque est voluptates, natus fugiat, expedita ullam, optio veniam ad voluptatem dolores! FAQ 5.</div>
+               </div>
+               <div class="faq-item">
+                  <button class="faq-question" onclick="toggleFAQ(this)">
+                     <span style="font-size: 1.25rem; font-weight: 600;">Can I chat with a live agent?</span>
+                     <svg class="icon" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M7,10L12,15L17,10H7Z" />
+                     </svg>
+                  </button>
+                  <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, id optio ab fuga impedit hic eligendi! Modi adipisci atque est voluptates, natus fugiat, expedita ullam, optio veniam ad voluptatem dolores! FAQ 6.</div>
+               </div>
+               <div class="faq-item">
+                  <button class="faq-question" onclick="toggleFAQ(this)">
+                     <span style="font-size: 1.25rem; font-weight: 600;">Do you offer services nationwide?</span>
+                     <svg class="icon" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M7,10L12,15L17,10H7Z" />
+                     </svg>
+                  </button>
+                  <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, id optio ab fuga impedit hic eligendi! Modi adipisci atque est voluptates, natus fugiat, expedita ullam, optio veniam ad voluptatem dolores! FAQ 7.</div>
+               </div>
+               <div class="faq-item">
+                  <button class="faq-question" onclick="toggleFAQ(this)">
+                     <span style="font-size: 1.25rem; font-weight: 600;">What payment methods are accepted?</span>
+                     <svg class="icon" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M7,10L12,15L17,10H7Z" />
+                     </svg>
+                  </button>
+                  <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, id optio ab fuga impedit hic eligendi! Modi adipisci atque est voluptates, natus fugiat, expedita ullam, optio veniam ad voluptatem dolores! FAQ 8.</div>
+               </div>
+               <div class="faq-item">
+                  <button class="faq-question" onclick="toggleFAQ(this)">
+                     <span style="font-size: 1.25rem; font-weight: 600;">Is there a mobile app?</span>
+                     <svg class="icon" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M7,10L12,15L17,10H7Z" />
+                     </svg>
+                  </button>
+                  <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, id optio ab fuga impedit hic eligendi! Modi adipisci atque est voluptates, natus fugiat, expedita ullam, optio veniam ad voluptatem dolores! FAQ 9.</div>
+               </div>
+               <div class="faq-item">
+                  <button class="faq-question" onclick="toggleFAQ(this)">
+                     <span style="font-size: 1.25rem; font-weight: 600;">What is your refund policy?</span>
+                     <svg class="icon" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M7,10L12,15L17,10H7Z" />
+                     </svg>
+                  </button>
+                  <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, id optio ab fuga impedit hic eligendi! Modi adipisci atque est voluptates, natus fugiat, expedita ullam, optio veniam ad voluptatem dolores! FAQ 10.</div>
+               </div>
+               <div class="faq-item">
+                  <button class="faq-question" onclick="toggleFAQ(this)">
+                     <span style="font-size: 1.25rem; font-weight: 600;">How can I become a partner?</span>
+                     <svg class="icon" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M7,10L12,15L17,10H7Z" />
+                     </svg>
+                  </button>
+                  <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, id optio ab fuga impedit hic eligendi! Modi adipisci atque est voluptates, natus fugiat, expedita ullam, optio veniam ad voluptatem dolores! FAQ 11.</div>
+               </div>
+               <div class="faq-item">
+                  <button class="faq-question" onclick="toggleFAQ(this)">
+                     <span style="font-size: 1.25rem; font-weight: 600;">Is my data safe?</span>
+                     <svg class="icon" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M7,10L12,15L17,10H7Z" />
+                     </svg>
+                  </button>
+                  <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, id optio ab fuga impedit hic eligendi! Modi adipisci atque est voluptates, natus fugiat, expedita ullam, optio veniam ad voluptatem dolores! FAQ 12.</div>
+               </div>
+               <div class="faq-item">
+                  <button class="faq-question" onclick="toggleFAQ(this)">
+                     <span style="font-size: 1.25rem; font-weight: 600;">How do I reset my password?</span>
+                     <svg class="icon" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M7,10L12,15L17,10H7Z" />
+                     </svg>
+                  </button>
+                  <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, id optio ab fuga impedit hic eligendi! Modi adipisci atque est voluptates, natus fugiat, expedita ullam, optio veniam ad voluptatem dolores! FAQ 13.</div>
+               </div>
+               <div class="faq-item">
+                  <button class="faq-question" onclick="toggleFAQ(this)">
+                     <span style="font-size: 1.25rem; font-weight: 600;">Can I get a demo?</span>
+                     <svg class="icon" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M7,10L12,15L17,10H7Z" />
+                     </svg>
+                  </button>
+                  <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, id optio ab fuga impedit hic eligendi! Modi adipisci atque est voluptates, natus fugiat, expedita ullam, optio veniam ad voluptatem dolores! FAQ 14.</div>
+               </div>
+               <div class="faq-item">
+                  <button class="faq-question" onclick="toggleFAQ(this)">
+                     <span style="font-size: 1.25rem; font-weight: 600;">Do you have tutorials or documentation?</span>
+                     <svg class="icon" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M7,10L12,15L17,10H7Z" />
+                     </svg>
+                  </button>
+                  <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, id optio ab fuga impedit hic eligendi! Modi adipisci atque est voluptates, natus fugiat, expedita ullam, optio veniam ad voluptatem dolores! FAQ 15.</div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <div class="bottom_most_section">
+         <div class="content_wrapper">
+            <div class="content">
+               <h3>Are You Eternity Ready?</h3>
+               <h4>If not learn how</h4>
+               <a href="https://eternityready.com/salvation/" class="button">Learn More</a>
+            </div>
+         </div>
+         <div class="red_fitler"></div>
+         <img src="public/if-not.webp" alt="Eternity Ready promotional content" width="1921" height="656" />
+      </div>
+      <div id="main_footer">
+         <div class="title">Connect with us</div>
+         <div class="social_items">
+            <ul>
+               <li class="facebook" onclick="window.open('https://www.facebook.com/eternityready', '_blank')">
+                  <div>
+                     <svg stroke="currentColor" fill="#576EEE" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+                           ></path>
+                     </svg>
+                  </div>
+                  <span>Facebook</span>
+               </li>
+               <li class="twitter">
+                  <div>
+                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path>
+                     </svg>
+                  </div>
+                  <span>x.com</span>
+               </li>
+               <li class="youtube">
+                  <div>
+                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
+                           ></path>
+                     </svg>
+                  </div>
+                  <span>Youtube</span>
+               </li>
+               <li class="instagram" onclick="window.open('https://www.instagram.com/jeremiahfarris/', '_blank')">
+                  <div>
+                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                           ></path>
+                     </svg>
+                  </div>
+                  <span>Instagram</span>
+               </li>
+            </ul>
+         </div>
+         <div class="hr_break"></div>
+         <div class="two_main_columns">
+            <div class="left">
+               <div class="footer_title">Our Apps</div>
+                <img onclick="window.open('https://play.google.com/store/apps/details?id=com.wEternityReadyRadio&hl=en_US&gl=US', '_blank')" alt="Play Store" src="public/gp.png" width="300" heigth="88">
+				<img onclick="window.open('https://apps.apple.com/us/app/rapture-ready/id6504677632', '_blank')" alt="App Store" src="public/app-store.png" width="300" heigth="88">
+            </div>
+            <div class="four_columns">
+               <div>
+                  <div class="footer_title">Useful Links</div>
+                  <ul>
+						<li onclick="window.open('https://www.eternityready.com/radio', '_self')">Radio Schedule</li>
+						<li onclick="window.open('https://www.eternityready.com/page.php?p=11', '_self')">Ways to Listen</li>
+						<li onclick="window.open('https://www.eternityready.com/donate', '_self')">Donate</li>
+                  </ul>
+               </div>
+               <div>
+                  <div class="footer_title">Our Brands</div>
+					<ul>
+						<li onclick="window.open('https://www.eternityready.com/', '_self')">Corporate</li>
+						<li onclick="window.open('http://www.eternityready.tv/', '_self')">Eternity Ready TV</li>
+						<li onclick="window.open('http://www.raptureready.tv/', '_self')">Rapture Ready TV</li>
+					</ul>
+               </div>
+               <div>
+                  <div class="footer_title">About</div>
+                  <ul>
+					<ul>
+						<li onclick="window.open('', '_self')">Team & Culture</li>
+						<li onclick="window.open('', '_self')">About Us</li>
+						<li onclick="window.open('https://www.eternityready.com/EternityReadyMedia.pdf', '_self')">Our Media Kit</li>
+					</ul>
+               </div>
+               <div>
+                  <div class="footer_title">Help</div>
+					<ul>
+						<li onclick="window.open('https://eternityready.com/page.php?p=1', '_self')">Terms of use</li>
+						<li onclick="window.open('https://www.eternityready.com/page.php?p=7', '_self')">Privacy & Legal</li>
+						<li onclick="window.open('https://help.eternityready.com/', '_self')">Contact & Help</li>
+					</ul>
+               </div>
+            </div>
+         </div>
+         <div class="copyright_row">
+            <div><img src="public/logo1USE-THIS.png" alt="logo" width="420" height="140" /></div>
+            <div>&copy; 2012-2025 Eternity Ready LLC, All Rights Reserved.</div>
+         </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script>
+      
+      document.addEventListener('DOMContentLoaded', function() {
+
+              const dropdownBtn = document.getElementById("dropdown-btn");
+              const dropdownMenu = document.getElementById("dropdown-menu");
+            
+              dropdownBtn.addEventListener("click", function(event) {
+                event.preventDefault(); 
+                dropdownMenu.classList.toggle("show");
+              });
+            
+              window.addEventListener("click", function(event) {
+                if (!dropdownBtn.contains(event.target)) {
+                  if (dropdownMenu.classList.contains('show')) {
+                    dropdownMenu.classList.remove('show');
+                  }
+                }
+              });
+      
+         function toggleFAQ(button) {
+             const faqItem = button.parentElement;
+             const isOpen = faqItem.classList.contains('open');
+             
+             document.querySelectorAll('.faq-item').forEach(item => {
+             item.classList.remove('open');
+             item.querySelector('.faq-answer').style.display = 'none';
+             });
+         
+             if (!isOpen) {
+             faqItem.classList.add('open');
+             faqItem.querySelector('.faq-answer').style.display = 'block';
+             }
+         }
+         
+         document.getElementById("burger_menu").addEventListener("click", () => {
+             document.getElementById("side_menu").classList.toggle("open");
+             document.body.classList.toggle("overflow_hidden");
+         });
+         
+         document.getElementById("side_menu_close_button").addEventListener("click", () => {
+             document.getElementById("side_menu").classList.toggle("open");
+             document.body.classList.toggle("overflow_hidden");
+         });
+         
+    function chamarTelefone(numero) {
+        window.location.href = 'tel:' + numero;
+        
+        setTimeout(() => {
+            console.log('Trying call to: ' + numero);
+        }, 100);
+    }
+    
+    function chamarEmail(mail) {
+        window.location.href = 'mailto:' + mail;
+        
+        setTimeout(() => {
+            console.log('Trying mailing to: ' + mail);
+        }, 100);
+    }
+    
+         
+      </script>
+      <!--Start of Tawk.to Script-->
+      <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+      <script type="text/javascript">
+         var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+         (function () {
+             var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+             s1.async = true;
+             s1.src = 'https://embed.tawk.to/6205ef4c9bd1f31184dc1213/1frjitgsu';
+             s1.charset = 'UTF-8';
+             s1.setAttribute('crossorigin', '*');
+             s0.parentNode.insertBefore(s1, s0);
+         })();
+      </script>
+      <!--End of Tawk.to Script-->
+   </body>
+</html>

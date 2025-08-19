@@ -1,0 +1,117 @@
+{
+    "channels": [
+      {
+        "name": "ESPN",
+        "image": "https://us-east1-aws.api.snapchat.com/web-capture/www.snapchat.com/add/espnuk/preview/square.jpeg",
+        "link": "https://espn.com",
+        "embed": "",
+        "categories": ["Sports", "News"]
+      },
+      {
+        "name": "CNN",
+        "image": "https://m.media-amazon.com/images/M/MV5BOWM0NDNkOTUtODgyMC00MDE1LThlYmItMmNiNWI3MWY3NWYyXkEyXkFqcGdeQXVyMjE5MzM3MjA@._V1_.jpg",
+        "link": "https://cnn.com",
+        "embed": "",
+        "categories": ["News"]
+      },
+      {
+        "name": "MTV",
+        "image": "https://artsy-media-uploads.s3.amazonaws.com/nFAlCibjXnpH7AiardiJcw/Screen+Shot+2018-07-31+at+5.36.03+PM.png",
+        "link": "https://mtv.com",
+        "embed": "",
+        "categories": ["Music"]
+      },
+      {
+        "name": "BBC News",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/BBC_News_2019.svg/1200px-BBC_News_2019.svg.png",
+        "link": "https://bbc.com/news",
+        "embed": "",
+        "categories": ["News"]
+      },
+      {
+        "name": "YouTube Music",
+        "image": "https://d500.epimg.net/cincodias/imagenes/2019/09/23/lifestyle/1569235005_248484_1569235358_noticia_normal_recorte1.jpg",
+        "link": "https://music.youtube.com",
+        "embed": "",
+        "categories": ["Music"]
+      },
+      {
+        "name": "Netflix",
+        "image": "https://i.ytimg.com/vi/mtEE--PmOYA/maxresdefault.jpg",
+        "link": "https://netflix.com",
+        "embed": "",
+        "categories": ["Movies", "TV Shows"]
+      },
+      {
+        "name": "HBO Max",
+        "image": "https://avatars.mds.yandex.net/i?id=dc28c050a41cbf8f6ea776839d6b0807b1a1fa07-11030990-images-thumbs&n=13",
+        "link": "https://hbomax.com",
+        "embed": "",
+        "categories": ["Movies", "TV Shows"]
+      },
+      {
+        "name": "National Geographic",
+        "image": "https://m.media-amazon.com/images/M/MV5BZWJjODBjY2MtOGY1OC00ZjExLThhZjMtOTRlMTBiNTYyNDVjXkEyXkFqcGdeQXVyNjYxODIwODQ@._V1_.jpg",
+        "link": "https://nationalgeographic.com",
+        "embed": "",
+        "categories": ["Documentary", "Science"]
+      },
+      {
+        "name": "ESPN",
+        "image": "https://us-east1-aws.api.snapchat.com/web-capture/www.snapchat.com/add/espnuk/preview/square.jpeg",
+        "link": "https://espn.com",
+        "embed": "",
+        "categories": ["Sports", "News"]
+      },
+      {
+        "name": "CNN",
+        "image": "https://m.media-amazon.com/images/M/MV5BOWM0NDNkOTUtODgyMC00MDE1LThlYmItMmNiNWI3MWY3NWYyXkEyXkFqcGdeQXVyMjE5MzM3MjA@._V1_.jpg",
+        "link": "https://cnn.com",
+        "embed": "",
+        "categories": ["News"]
+      },
+      {
+        "name": "MTV",
+        "image": "https://artsy-media-uploads.s3.amazonaws.com/nFAlCibjXnpH7AiardiJcw/Screen+Shot+2018-07-31+at+5.36.03+PM.png",
+        "link": "https://mtv.com",
+        "embed": "",
+        "categories": ["Music"]
+      },
+      {
+        "name": "BBC News",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/BBC_News_2019.svg/1200px-BBC_News_2019.svg.png",
+        "link": "https://bbc.com/news",
+        "embed": "",
+        "categories": ["News"]
+      },
+      {
+        "name": "YouTube Music",
+        "image": "https://d500.epimg.net/cincodias/imagenes/2019/09/23/lifestyle/1569235005_248484_1569235358_noticia_normal_recorte1.jpg",
+        "link": "https://music.youtube.com",
+        "embed": "",
+        "categories": ["Music"]
+      },
+      {
+        "name": "Netflix",
+        "image": "https://i.ytimg.com/vi/mtEE--PmOYA/maxresdefault.jpg",
+        "link": "https://netflix.com",
+        "embed": "",
+        "categories": ["Movies", "TV Shows"]
+      },
+      {
+        "name": "HBO Max",
+        "image": "https://avatars.mds.yandex.net/i?id=dc28c050a41cbf8f6ea776839d6b0807b1a1fa07-11030990-images-thumbs&n=13",
+        "link": "https://hbomax.com",
+        "embed": "",
+        "categories": ["Movies", "TV Shows"]
+      },
+      {
+        "name": "National Geographic",
+        "image": "https://m.media-amazon.com/images/M/MV5BZWJjODBjY2MtOGY1OC00ZjExLThhZjMtOTRlMTBiNTYyNDVjXkEyXkFqcGdeQXVyNjYxODIwODQ@._V1_.jpg",
+        "link": "https://nationalgeographic.com",
+        "embed": "",
+        "categories": ["Documentary", "Science"]
+      }
+    ]
+  }
+  

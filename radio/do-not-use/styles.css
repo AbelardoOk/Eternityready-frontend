@@ -1,0 +1,161 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #101010;  /* Dark background */
+    color: #E0E0E0;  /* Light text */
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #3c3c3c, #222222);
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+header .logo-container h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#searchBar {
+    margin-top: 15px;
+    padding: 12px 20px;
+    width: 80%;
+    max-width: 450px;
+    font-size: 1.2em;
+    border-radius: 50px;
+    border: 2px solid #555;
+    background-color: #222;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#searchBar::placeholder {
+    color: #888;
+}
+
+#searchBar:focus {
+    border-color: #ff6f61;
+}
+
+/* TV Grid */
+.tv-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    max-width: 1200px; /* Set a max-width to control the grid's size */
+    margin: 0 auto; /* Center the grid horizontally */
+    transition: all 0.3s ease;
+}
+
+/* TV Channel Styling */
+.tv-channel {
+    background-color: #2a2a2a;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tv-channel img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.tv-channel p {
+    margin: 15px 0;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #fff;
+}
+
+.tv-channel:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.tv-channel:hover img {
+    transform: scale(1.1);  /* Zoom effect on image */
+}
+
+.tv-channel:hover p {
+    color: #ff6f61;  /* Highlight text on hover */
+}
+
+/* Video iframe container */
+.iframe-container {
+    display: none;
+    padding: 20px;
+    text-align: center;
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    border-radius: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .tv-grid {
+        padding: 20px; /* Adjust padding for larger screens */
+    }
+}
+
+@media (max-width: 768px) {
+    #searchBar {
+        width: 85%;
+    }
+
+    .tv-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Make grid more compact */
+    }
+
+    iframe {
+        height: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .tv-channel p {
+        font-size: 1em;
+    }
+
+    #searchBar {
+        width: 100%;
+    }
+
+    .tv-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Even smaller columns */
+    }
+}

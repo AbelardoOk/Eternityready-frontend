@@ -1,0 +1,253 @@
+/* ────────────────────────────────────────────────────────────────────────── */
+/* 1. Overlay */
+#eternity-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.10); /* MODIFIED: 10% opacity black */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9998; /* This will be overridden by JS Z_INDEX_OVERLAY if different */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* 2. Popup container */
+#eternity-popup-container { /* ID changed from eternity-popup */
+  position: relative;
+  width: 464px;                          /* exact screenshot width */
+  background-color: rgba(0, 0, 0, 0.0); /* MODIFIED: Effectively transparent - This will be overridden by JS POPUP_BG_OPACITY if different */
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  color: #FFFFFF;
+  z-index: 9999; /* This will be overridden by JS Z_INDEX_POPUP if different */
+}
+
+/* 3. Top bar: Logo & Close “×” */
+#eternity-popup-topbar {
+  position: relative; 
+  width: 100%;
+  height: 75px;      /* exact height */
+  background-color: #000000;    /* fully opaque black */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 0 16px;              /* left/right padding at 16px */
+  box-sizing: border-box;
+}
+
+/* Logo container in top bar */
+#eternity-popup-logo-container {
+  height: 32px; 
+  display: flex; 
+  align-items: center;
+}
+#eternity-popup-logo-container img {
+  display: block;
+  height: 50px; /* exactly 32px tall */
+  width: auto;
+}
+
+/* Red “×” circle in top bar */
+#eternity-popup-close-container { 
+  width: 24px;                   /* exact 24×24 px circle */
+  height: 24px;
+  background-color: #F90304;     /* exact hex sampled from popup.png red circle */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#eternity-popup-close-container span { 
+  font-size: 16px;               /* exact “×” size */
+  color: #FFFFFF;
+  line-height: 1; 
+  user-select: none;
+}
+#eternity-popup-close-container:hover {
+  background-color: #D00202;     /* darker red for hover—exact hex */
+}
+
+/* 4. Content area (slightly transparent) */
+#eternity-popup-content {
+  background-color: rgba(0, 0, 0, 0.70); /* MODIFIED: 50% black - Set by JS: CONTENT_BG_OPACITY */
+  padding: 24px 32px;   /* exact top/bottom 24px, left/right 32px */
+  text-align: center;
+}
+
+/* 4.1 Headings */
+#eternity-popup-heading {
+  font-size: 20px;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-top: 0;
+  margin-bottom: 12px;  /* exact gap down to subheading */
+}
+#eternity-popup-subheading {
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFFFFF;
+  margin-top: 0;
+  margin-bottom: 16px;  /* exact gap down to email container */
+}
+
+/* 4.2 Email + Sign Up */
+#eternity-popup-email-container {
+  display: flex;
+  width: 388px;       /* exact total: 280px input + 100px button + 8px gap */
+  margin: 0 auto 16px auto; 
+  gap: 8px;           /* ensure 8px between input and button */
+}
+
+#eternity-popup-email {
+  width: 350px;       /* exact input width */
+  height: 36px;       /* exact input height */
+  background-color: #FFFFFF;
+  color: #333333;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px 0 0 4px; /* left corners rounded */
+  font-size: 14px;
+  box-sizing: border-box;
+  padding-left: 8px; /* As per spec, padding: 0 8px was in prev. replace, but spec says padding-left: 8px */
+}
+#eternity-popup-email::placeholder {
+  color: #9E9E9E;
+}
+#eternity-popup-email:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(3, 169, 244, 0.3);
+}
+
+#eternity-popup-signup {
+  width: 130px;                 /* exact button width */
+  height: 36px;                 /* exact button height */
+  background-color: #2FB190;    /* exact teal-green hex sampled from popup.png */
+  border: none;
+  border-radius: 4px 4px 4px 4px;    /* round only the right corners */
+  font-size: 14px;
+  font-weight: 600;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 0;
+  margin-left: -6px;
+}
+#eternity-popup-signup:hover {
+  background-color: #279B82;    /* slightly darker teal for hover—exact hex */
+}
+
+/* 4.3 “Donate” Button */
+#eternity-popup-donate {
+  width: 150px;               /* exact fixed width */
+  height: 40px;               /* exact fixed height */
+  background-color: #4593CC;  /* exact blue hex sampled from popup.png */
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #FFFFFF;
+  display: inline-flex; 
+  align-items: center;
+  justify-content: center;
+  gap: 8px;                   /* 8px between icon and “Donate” text */
+  cursor: pointer;
+  margin: 0 auto 16px auto; 
+  padding: 0 12px;            /* left/right padding inside button */
+  box-sizing: border-box;
+}
+#eternity-popup-donate:hover {
+  background-color: #3A7CB8;  /* slightly darker blue for hover—exact hex */
+}
+#eternity-popup-donate-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block; 
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23FFFFFF"><path d="M12 2c-2.21 0-4 .89-4 2v2H5c-1.66 0-3 1.34-3 3v3h18V9c0-1.66-1.34-3-3-3h-3V4c0-1.11-1.79-2-4-2zm6 8v2H6v-2h12zm-6 4c1.1 0 2 .9 2 2v3H8v-3c0-1.1.9-2 2-2z"/></svg>');
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+}
+
+/* 4.4 Bottom Red “Close” Button */
+#eternity-popup-close-button {
+  width: 150px;               /* exact fixed width */
+  height: 40px;               /* exact fixed height */
+  background-color: #F90304;  /* exact red hex sampled from popup.png */
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #FFFFFF;
+  cursor: pointer;
+  margin: 0 auto 16px auto;   /* for centering under donate */
+  display: block;             /* so margin auto works */
+  box-sizing: border-box;
+  padding: 0; 
+}
+#eternity-popup-close-button:hover {
+  background-color: #D00202;  /* slightly darker red for hover—exact hex */
+}
+
+/* 4.5 “Don’t show again” Checkbox */
+#eternity-popup-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 16px;  /* exact gap under the “Close” button */
+}
+#eternity-popup-never {
+  width: 16px;
+  height: 16px;
+  accent-color: #2FB190; /* match the teal-green accent for checked box */
+  cursor: pointer;
+  margin: 0; 
+}
+#eternity-popup-never-label {
+  font-size: 12px;
+  font-weight: 400;
+  color: #FFFFFF;
+  user-select: none;
+  cursor: pointer;
+}
+
+/* 5. Mobile Styles (Leave Unchanged as per instruction, but ensure it's exactly what user provided) */
+@media (max-width: 480px) {
+  #eternity-popup-container {
+    width: 90vw;
+  }
+  #eternity-popup-content {
+    padding: 16px 16px;
+  }
+  #eternity-popup-heading {
+    font-size: 18px;
+  }
+  #eternity-popup-subheading {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  #eternity-popup-email-container {
+    width: 100%; /* Changed from max-width to ensure it uses full available space in flex column */
+    flex-direction: column;
+    gap: 8px;
+  }
+  #eternity-popup-email {
+    width: 100%; /* Ensure email input takes full width when stacked */
+    border-radius: 4px;
+  }
+  #eternity-popup-signup {
+    width: 100%;
+    border-radius: 4px;
+  }
+  #eternity-popup-donate,
+  #eternity-popup-close-button {
+    width: 100%; /* Ensure buttons take full width when stacked */
+    max-width: 100%; /* Override desktop fixed width */
+  }
+}
