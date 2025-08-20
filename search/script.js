@@ -19,6 +19,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const API_BASE_URL = "https://api.eternityready.com";
   const dynamicContentArea = document.getElementById("dynamic-content-area");
 
+  const params = new URLSearchParams(window.location.search);
+  const queryValue = params.get("query");
+
   /**
    * Cria o HTML para um único card de vídeo.
    * @param {object} video - O objeto de vídeo da API.
@@ -36,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (videos.length === 0) {
       mediaList.innerHTML =
-        '<li class="search-feedback">Nenhum resultado encontrado.</li>';
+        '<li class="search-feedback">No results found.</li>';
       return;
     }
 
@@ -166,11 +169,7 @@ document.addEventListener("DOMContentLoaded", () => {
       '<a class="backHome-Button" href="/">Back Home</a>';
 
     try {
-      const url = `${API_BASE_URL}/api/search`;
-      const response = await fetch(url);
-      if (!response.ok) throw new Error("Failed featching videos");
-
-      const data = await response.json();
+      const data = await searchMidia(queryValue);
       const allVideos = Array.isArray(data) ? data : data.videos || [];
 
       // 2. Agrupar vídeos por categoria
@@ -183,8 +182,6 @@ document.addEventListener("DOMContentLoaded", () => {
           videosByCategory[category.name].push(video);
         });
       });
-
-      console.log(videosByCategory);
 
       // 3. Gerar o HTML para cada slider e juntar tudo
       let finalHTML = "";
@@ -405,7 +402,7 @@ document.addEventListener("DOMContentLoaded", () => {
     renderTrending();
 
     seeAllLink.textContent = `See all results for ${query} »`;
-    seeAllLink.href = `#search?query=${encodeURIComponent(query)}`;
+    seeAllLink.href = `?query=${encodeURIComponent(query)}`;
   }
 
   function updateDropdown() {
@@ -414,9 +411,7 @@ document.addEventListener("DOMContentLoaded", () => {
     else renderResults(q);
   }
 
-  const performLiveSearch = async (event) => {
-    const query = event.target.value.trim();
-
+  const performLiveSearch = async () => {
     // Se o campo estiver vazio, volta a mostrar o histórico/categorias
     if (query.length < 2) {
       renderEmpty(); // Função que você já tem para mostrar histórico, etc.
@@ -429,12 +424,12 @@ document.addEventListener("DOMContentLoaded", () => {
     historySection.style.display = "none";
     mediaList.innerHTML = '<li class="search-feedback">Buscando...</li>';
 
-    const results = await searchMidia(query);
+    const results = await searchMidia(queryValue);
     renderLiveResults(results);
 
     // Atualiza o link "See all results"
     seeAllLink.textContent = `See all results for ${query} »`;
-    seeAllLink.href = `#search?query=${encodeURIComponent(query)}`;
+    seeAllLink.href = `?query=${encodeURIComponent(query)}`;
   };
 
   const debouncedSearch = debounce(performLiveSearch, 400);
@@ -584,6 +579,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const url = `${API_BASE_URL}/api/search?search_query=${encodeURIComponent(
         query
       )}`;
+
       const response = await fetch(url);
       if (!response.ok) {
         throw new Error(
@@ -600,14 +596,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   async function searchFromUrlParams() {
-    const params = new URLSearchParams(window.location.search);
-    const queryFromUrl = params.get("search_query"); // Parâmetro atualizado
-
-    if (queryFromUrl) {
-      input.value = queryFromUrl;
+    if (queryValue) {
+      input.value = queryValue;
       dropdown.style.display = "block";
-      const results = await searchMidia(queryFromUrl);
-      renderResults(queryFromUrl, results);
+      const results = await searchMidia(queryValue);
+      renderResults(queryValue, results);
     }
   }
 
