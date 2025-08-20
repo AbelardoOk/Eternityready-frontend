@@ -599,10 +599,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   // Search
   async function searchMidia(query) {
     try {
-      // Usa o parâmetro 'search_query' esperado pela sua API
       const url = `${API_BASE_URL}/api/search?search_query=${encodeURIComponent(
         query
       )}`;
+      console.log(searchMidia);
 
       const response = await fetch(url);
 

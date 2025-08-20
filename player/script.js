@@ -18,7 +18,7 @@ function debounce(func, delay) {
 
 document.addEventListener("DOMContentLoaded", async () => {
   // --- CONFIGURAÇÕES GLOBAIS ---
-  const API_BASE_URL = "https://api.eternityready.com";
+  const API_BASE_URL = "https://api.eternityready.com/";
 
   // =======================================================================
   // --- LÓGICA DA PÁGINA DO PLAYER ---
@@ -91,7 +91,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   async function searchMidia(query) {
-    if (!query) return [];
     try {
       const url = `${API_BASE_URL}api/search?search_query=${encodeURIComponent(
         query
