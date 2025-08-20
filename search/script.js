@@ -15,7 +15,7 @@ function debounce(func, delay) {
   };
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
   const API_BASE_URL = "https://api.eternityready.com";
   const dynamicContentArea = document.getElementById("dynamic-content-area");
 
@@ -277,6 +277,38 @@ document.addEventListener("DOMContentLoaded", () => {
   const trendingList = document.getElementById("trending-list");
   const seeAllLink = document.getElementById("see-all");
 
+  let avaliableCategories = [];
+  avaliableCategories = await fetchCategories();
+
+  async function fetchCategories() {
+    try {
+      const url = `${API_BASE_URL}/api/categories`;
+      const response = await fetch(url);
+      if (!response.ok)
+        throw new Error(`HTTP error! status: ${response.status}`);
+      const data = await response.json();
+      return data || [];
+    } catch (error) {
+      console.error("Falha ao buscar categorias:", error);
+      return [];
+    }
+  }
+
+  function renderCategories(categoriesData) {
+    if (!categoriesList) return;
+    categoriesList.innerHTML = "";
+    categoriesData.forEach((category) => {
+      const btn = document.createElement("button");
+      btn.className = "chip";
+      btn.textContent = category.name;
+      btn.onclick = () => {
+        input.value = category.name;
+        input.dispatchEvent(new Event("input", { bubbles: true }));
+      };
+      categoriesList.appendChild(btn);
+    });
+  }
+
   const categories = [
     "Movies",
     "Podcasts",
@@ -352,34 +384,26 @@ document.addEventListener("DOMContentLoaded", () => {
     categoriesSection.style.display = "block";
     historySection.style.display = "block";
     noHistory.style.display = history.length ? "none" : "block";
+
     historyList.innerHTML = "";
     history.forEach((term) => {
       const li = document.createElement("li");
       li.className = "history-item";
-      li.textContent = term;
-      li.onclick = () => {
+      li.innerHTML = `<a href="/search.html?query=${encodeURIComponent(
+        term
+      )}">${term}</a>`;
+      li.onclick = (e) => {
+        e.preventDefault();
         input.value = term;
-        input.dispatchEvent(new Event("input"));
+        window.location.href = `/search.html?query=${encodeURIComponent(term)}`;
       };
       historyList.appendChild(li);
     });
 
-    categoriesList.innerHTML = "";
-    categories.forEach((c) => {
-      const btn = document.createElement("button");
-      btn.className = "chip";
-      btn.textContent = c;
-      btn.onclick = () => {
-        input.value = c;
-        input.dispatchEvent(new Event("input"));
-      };
-      categoriesList.appendChild(btn);
-    });
+    renderCategories(avaliableCategories);
 
-    renderTrending();
-
-    seeAllLink.textContent = "See all results »";
-    seeAllLink.href = "#";
+    seeAllLink.textContent = "Ver todos os resultados »";
+    seeAllLink.href = "/search.html";
   }
 
   function renderResults(query) {

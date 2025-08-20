@@ -18,7 +18,7 @@ function debounce(func, delay) {
 
 document.addEventListener("DOMContentLoaded", async () => {
   // --- CONFIGURAÇÕES GLOBAIS ---
-  const API_BASE_URL = "http://localhost:3002/api";
+  const API_BASE_URL = "http://localhost:3002/";
 
   // =======================================================================
   // --- LÓGICA DA PÁGINA DO PLAYER ---
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   async function fetchVideo(videoId) {
     if (!videoId) return null;
     try {
-      const url = `${API_BASE_URL}/video/${videoId}`;
+      const url = `${API_BASE_URL}api/video/${videoId}`;
       const response = await fetch(url);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   async function fetchCategories() {
     try {
-      const url = `${API_BASE_URL}/categories`;
+      const url = `${API_BASE_URL}api/categories`;
       const response = await fetch(url);
       if (!response.ok)
         throw new Error(`HTTP error! status: ${response.status}`);
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   async function searchMidia(query) {
     if (!query) return [];
     try {
-      const url = `${API_BASE_URL}/search?search_query=${encodeURIComponent(
+      const url = `${API_BASE_URL}api/search?search_query=${encodeURIComponent(
         query
       )}`;
       const response = await fetch(url);
