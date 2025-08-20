@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const dynamicContentArea = document.getElementById("dynamic-content-area");
 
   const params = new URLSearchParams(window.location.search);
-  const queryValue = params.get("query");
+  const queryValue = params.get("query") || "";
 
   /**
    * Cria o HTML para um único card de vídeo.
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const li = document.createElement("li");
       li.className = "media-item";
-      const videoUrl = "/";
+      const videoUrl = `/player/?q=${video.id}`;
       li.innerHTML = `
         <img src="${imageUrl}" alt="${video.title}">
         <div class="media-info">
@@ -93,12 +93,14 @@ document.addEventListener("DOMContentLoaded", () => {
       ? `${API_BASE_URL}${video.thumbnail.url}`
       : "images/placeholder.jpg";
 
+    const videoUrl = `/player/?q=${video.id}`;
+
     const title = video.title;
     const author = video.author || "Eternity Ready";
     const categoriesText = video.categories.map((cat) => cat.name).join(", ");
 
     return `
-      <div class="media-card">
+      <div class="media-card" onclick="window.location.href='${videoUrl}'">
         <div class="media-thumb">
           <img src="${imageUrl}" alt="${title}" />
           <span class="media-badge">New</span>
@@ -411,8 +413,8 @@ document.addEventListener("DOMContentLoaded", () => {
     else renderResults(q);
   }
 
-  const performLiveSearch = async () => {
-    // Se o campo estiver vazio, volta a mostrar o histórico/categorias
+  const performLiveSearch = async (event) => {
+    const query = event.target.value.trim();
     if (query.length < 2) {
       renderEmpty(); // Função que você já tem para mostrar histórico, etc.
       return;
@@ -422,9 +424,9 @@ document.addEventListener("DOMContentLoaded", () => {
     mediaSection.style.display = "block";
     categoriesSection.style.display = "none";
     historySection.style.display = "none";
-    mediaList.innerHTML = '<li class="search-feedback">Buscando...</li>';
+    mediaList.innerHTML = '<li class="search-feedback">Searching...</li>';
 
-    const results = await searchMidia(queryValue);
+    const results = await searchMidia(query);
     renderLiveResults(results);
 
     // Atualiza o link "See all results"
@@ -572,8 +574,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Search
   async function searchMidia(query) {
-    if (!query) return [];
-
     try {
       // Usa o parâmetro 'search_query' esperado pela sua API
       const url = `${API_BASE_URL}/api/search?search_query=${encodeURIComponent(
@@ -581,6 +581,7 @@ document.addEventListener("DOMContentLoaded", () => {
       )}`;
 
       const response = await fetch(url);
+
       if (!response.ok) {
         throw new Error(
           `HTTP error! status: ${response.status} ${response.text()}`
@@ -596,11 +597,14 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   async function searchFromUrlParams() {
-    if (queryValue) {
-      input.value = queryValue;
+    const params = new URLSearchParams(window.location.search);
+    const queryFromUrl = params.get("search_query");
+
+    if (queryFromUrl) {
+      input.value = queryFromUrl;
       dropdown.style.display = "block";
-      const results = await searchMidia(queryValue);
-      renderResults(queryValue, results);
+      const results = await searchMidia(queryFromUrl);
+      renderResults(queryFromUrl, results);
     }
   }
 

@@ -1,6 +1,34 @@
 // script.js
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
+  const params = new URLSearchParams(window.location.search);
+  const queryValue = params.get("q");
+  console.log(queryValue);
+  const API_BASE_URL = "http://localhost:3002/api/video/";
+
+  async function fetchVideo() {
+    if (!queryValue) return [];
+
+    try {
+      const url = `${API_BASE_URL}${queryValue}`;
+      const response = await fetch(url);
+
+      if (!response.ok) {
+        throw new Error(
+          `HTTP error! status: ${response.status} ${response.text()}`
+        );
+      }
+
+      const data = await response.json();
+      console.log(data);
+
+      return data || [];
+    } catch (e) {
+      console.error(`Failed featching media: ${error}`);
+      return [];
+    }
+  }
+
   //
   // ─── SETTINGS MENU ───────────────────────────────────────────────────────────
   //
@@ -286,16 +314,15 @@ document.addEventListener("DOMContentLoaded", () => {
   closeBtn.addEventListener("click", toggleMobileNav);
   overlay.addEventListener("click", toggleMobileNav);
   // ─── ACCORDION TOGGLE FOR ALL MOBILE-NAV SUBMENUS ───────────────────────────
-document
-  .querySelectorAll(".mobile-nav .nav-group > a")
-  .forEach(link => {
+  document.querySelectorAll(".mobile-nav .nav-group > a").forEach((link) => {
     // only bind if there's a <ul class="submenu"> immediately after
     if (!link.nextElementSibling?.classList.contains("submenu")) return;
 
-    link.addEventListener("click", e => {
-      e.preventDefault();           // don’t actually navigate
+    link.addEventListener("click", (e) => {
+      e.preventDefault(); // don’t actually navigate
       link.classList.toggle("open");
     });
   });
 
+  await fetchVideo();
 });
