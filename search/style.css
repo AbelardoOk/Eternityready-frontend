@@ -1194,8 +1194,10 @@ a {
 /* 5-column grid */
 .media-section .media-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(265px, max-content));
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: calc(5 * 265px + 4 * 1rem);
 }
 
 /* CARD LAYOUT */
@@ -1996,6 +1998,7 @@ a {
   height: 72px;
   object-fit: cover;
   border-radius: 4px;
+  aspect-ratio: 16 / 9;
 }
 
 .media-info {
