@@ -2017,7 +2017,7 @@ a {
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 1.1rem;
-  min-height: calc(1.1em * 2);
+  min-height: calc(1.4em * 2);
 }
 
 .media-meta {

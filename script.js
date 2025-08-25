@@ -20,11 +20,24 @@ document.addEventListener("DOMContentLoaded", () => {
   // --- CONFIGURAÇÕES GLOBAIS ---
   const API_BASE_URL = "https://api.eternityready.com/";
 
+  // --- FUNÇÕES GERAIS DA API ---
+  async function fetchCategories() {
+    try {
+      const url = `${API_BASE_URL}api/categories`;
+      const response = await fetch(url);
+      if (!response.ok)
+        throw new Error(`HTTP error! status: ${response.status}`);
+      return (await response.json()) || [];
+    } catch (error) {
+      console.error("Falha ao buscar categorias:", error);
+      return [];
+    }
+  }
+
   //
-  // ─── LÓGICA DA BARRA DE PESQUISA (IMPLEMENTAÇÃO DINÂMICA) ───────────────────
+  // ─── LÓGICA DA BARRA DE PESQUISA ──────────────────────────────────────────────
   //
   async function initializeSearch() {
-    // Seletores do DOM
     const input = document.getElementById("search-input");
     const dropdown = document.getElementById("search-dropdown");
     const historyList = document.getElementById("history-list");
@@ -37,10 +50,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const trendingList = document.getElementById("trending-list");
     const seeAllLink = document.getElementById("see-all");
 
-    // Se algum elemento essencial da busca não existir, interrompe a execução.
     if (!input || !dropdown) return;
 
-    // Dados estáticos para "Trending" (mantido do segundo arquivo)
     const trending = [
       "Countdown",
       "Smoke",
@@ -52,24 +63,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Dept. Q",
       "Wicked",
     ];
-
-    // Estado
     let history = JSON.parse(localStorage.getItem("searchHistory") || "[]");
-    let availableCategories = [];
-
-    // --- FUNÇÕES DA API ---
-    async function fetchCategories() {
-      try {
-        const url = `${API_BASE_URL}api/categories`;
-        const response = await fetch(url);
-        if (!response.ok)
-          throw new Error(`HTTP error! status: ${response.status}`);
-        return (await response.json()) || [];
-      } catch (error) {
-        console.error("Falha ao buscar categorias:", error);
-        return [];
-      }
-    }
+    let availableCategories = await fetchCategories();
 
     async function searchMidia(query) {
       try {
@@ -87,7 +82,20 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
-    // --- FUNÇÕES DE RENDERIZAÇÃO ---
+    function renderTrending() {
+      /* ... implementação existente ... */
+    }
+    function renderCategories(categoriesData) {
+      /* ... implementação existente ... */
+    }
+    function renderLiveResults(videos) {
+      /* ... implementação existente ... */
+    }
+    function renderEmpty() {
+      /* ... implementação existente ... */
+    }
+
+    // (Cole aqui as implementações completas das funções de renderização da busca do seu código anterior)
     function renderTrending() {
       if (!trendingList) return;
       trendingList.innerHTML = "";
@@ -131,11 +139,10 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       videos.slice(0, 5).forEach((video) => {
-        // Usa a URL base da API para construir o caminho da imagem, caso seja um caminho relativo.
         const imageUrl = video.thumbnail?.url
           ? `${API_BASE_URL}${video.thumbnail.url.replace(/^\//, "")}`
           : "images/placeholder.jpg";
-        const videoUrl = `/player.html?q=${video.id}`; // Assumindo uma página player.html
+        const videoUrl = `/player.html?q=${video.id}`;
 
         const li = document.createElement("li");
         li.className = "media-item";
@@ -147,7 +154,6 @@ document.addEventListener("DOMContentLoaded", () => {
               .map((c) => c.name)
               .join(", ")}</p>
           </div>`;
-
         li.onclick = () => {
           window.location.href = videoUrl;
         };
@@ -182,58 +188,45 @@ document.addEventListener("DOMContentLoaded", () => {
       seeAllLink.href = "/search";
     }
 
-    // --- LÓGICA PRINCIPAL DA BUSCA ---
     const performLiveSearch = async (event) => {
       const query = event.target.value.trim();
-
       if (query) {
         seeAllLink.href = `/search?query=${encodeURIComponent(query)}`;
         seeAllLink.textContent = `Ver todos os resultados para "${query}" »`;
       }
-
       if (query.length < 2) {
         renderEmpty();
         return;
       }
-
       mediaSection.style.display = "block";
       categoriesSection.style.display = "none";
       historySection.style.display = "none";
       mediaList.innerHTML = '<li class="search-feedback">Buscando...</li>';
-
       const results = await searchMidia(query);
       renderLiveResults(results);
     };
 
-    // --- INICIALIZAÇÃO E EVENT LISTENERS ---
-    availableCategories = await fetchCategories();
     const debouncedSearch = debounce(performLiveSearch, 400);
-
     input.addEventListener("input", debouncedSearch);
-
     input.addEventListener("focus", () => {
       dropdown.style.display = "block";
       if (input.value.trim() === "") {
         renderEmpty();
       } else {
-        // Dispara a busca imediatamente se já houver texto ao focar
         performLiveSearch({ target: { value: input.value } });
       }
     });
-
     input.addEventListener("keydown", (e) => {
       if (e.key === "Enter") {
         e.preventDefault();
         const query = input.value.trim();
         if (query) {
-          // Adiciona ao histórico e redireciona
           history = [query, ...history.filter((h) => h !== query)].slice(0, 5);
           localStorage.setItem("searchHistory", JSON.stringify(history));
           window.location.href = `/search?query=${encodeURIComponent(query)}`;
         }
       }
     });
-
     document.addEventListener("click", (e) => {
       if (!document.querySelector(".search-container").contains(e.target)) {
         dropdown.style.display = "none";
@@ -242,114 +235,186 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   //
-  // ─── SETTINGS MENU ───────────────────────────────────────────────────────────
+  // ─── LÓGICA DOS SLIDERS DINÂMICOS ──────────────────────────────────────────
   //
-  const settingsBtn = document.querySelector(".control-settings");
-  const settingsMenu = document.getElementById("settings-menu");
 
-  if (settingsBtn && settingsMenu) {
-    settingsBtn.addEventListener("click", (e) => {
-      e.stopPropagation();
-      settingsMenu.style.display =
-        settingsMenu.style.display === "flex" ? "none" : "flex";
-    });
+  /** Busca vídeos de uma categoria específica. */
+  async function fetchVideosByCategory(categoryName) {
+    try {
+      const url = `${API_BASE_URL}api/search?category=${encodeURIComponent(
+        categoryName
+      )}`;
+      const response = await fetch(url);
+      if (!response.ok)
+        throw new Error(`HTTP error! status: ${response.status}`);
+      const data = await response.json();
+      return data.videos || [];
+    } catch (error) {
+      console.error(
+        `Falha ao buscar vídeos para a categoria ${categoryName}:`,
+        error
+      );
+      return [];
+    }
+  }
 
-    document.addEventListener("click", (e) => {
-      if (!settingsMenu.contains(e.target) && e.target !== settingsBtn) {
-        settingsMenu.style.display = "none";
+  /** Cria o HTML para um único slider. */
+  function createSliderHTML(category, videos) {
+    const videoCardsHTML = videos
+      .map((video) => {
+        const imageUrl = video.thumbnail?.url
+          ? `${API_BASE_URL}${video.thumbnail.url.replace(/^\//, "")}`
+          : "images/placeholder.jpg";
+        return `
+        <div class="media-card">
+          <div class="media-thumb">
+            <img src="${imageUrl}" alt="${video.title}" />
+            ${
+              video.duration
+                ? `<span class="media-duration">${video.duration}</span>`
+                : ""
+            }
+          </div>
+          <div class="media-info-col">
+            <p class="media-title">${video.title}</p>
+            <div class="media-subinfo">
+              <p class="media-genre">${video.categories
+                .map((c) => c.name)
+                .join(", ")}</p>
+              <p class="media-by">by <span class="media-author">${
+                video.author || "eternityready"
+              }</span></p>
+            </div>
+          </div>
+        </div>
+      `;
+      })
+      .join("");
+
+    return `
+      <div class="section-header">
+        <h2 class="section-title"><a href="#">${category.name}</a></h2>
+        <a href="#" class="section-link"><i class="fa fa-chevron-right"></i></a>
+      </div>
+      <div class="slider-wrapper">
+        <button class="slider-arrow prev" aria-label="Previous"><i class="fa fa-chevron-left"></i></button>
+        <div class="media-grid">${videoCardsHTML}</div>
+        <button class="slider-arrow next" aria-label="Next"><i class="fa fa-chevron-right"></i></button>
+      </div>
+      ${
+        category.name !== "Newest Stuff" ? '<hr class="media-separator" />' : ""
       }
-    });
+    `;
+  }
 
-    settingsMenu.querySelectorAll(".setting-item").forEach((item) => {
-      item.addEventListener("click", () => {
-        const heroVideo = document.querySelector(".hero-video"); // Assumindo que o vídeo tem essa classe
-        if (!heroVideo) return;
+  /** Função principal que busca dados e renderiza todos os sliders. */
+  async function initializeDynamicSliders() {
+    const slidersContainer = document.getElementById(
+      "dynamic-sliders-container"
+    );
+    if (!slidersContainer) {
+      console.error(
+        "Container para sliders dinâmicos (#dynamic-sliders-container) não encontrado."
+      );
+      return;
+    }
 
-        if (item.dataset.speed) {
-          heroVideo.playbackRate = parseFloat(item.dataset.speed);
-        }
-        if (item.classList.contains("toggle-mute")) {
-          heroVideo.muted = !heroVideo.muted;
-          item.textContent = heroVideo.muted ? "Unmute" : "Mute";
-        }
+    slidersContainer.innerHTML = "<p>Carregando conteúdo...</p>"; // Feedback visual
+    const categories = await fetchCategories();
+
+    if (categories.length === 0) {
+      slidersContainer.innerHTML = "<p>Nenhuma categoria encontrada.</p>";
+      return;
+    }
+
+    slidersContainer.innerHTML = ""; // Limpa o container antes de adicionar os sliders
+
+    for (const category of categories) {
+      const videos = await fetchVideosByCategory(category.name);
+      if (videos.length > 0) {
+        const sliderHTML = createSliderHTML(category, videos);
+        const sliderSection = document.createElement("div");
+        sliderSection.className = `category-section ${category.name
+          .toLowerCase()
+          .replace(/\s+/g, "-")}-section`;
+        sliderSection.innerHTML = sliderHTML;
+        slidersContainer.appendChild(sliderSection);
+      }
+    }
+
+    // Após adicionar todo o HTML, inicializa os scripts dos sliders
+    initializeSliderArrows();
+    initializeDragToScroll();
+  }
+
+  //
+  // ─── INICIALIZAÇÃO DOS COMPONENTES DE UI (SETAS, DRAG-SCROLL, ETC.) ─────────
+  //
+  function initializeSliderArrows() {
+    document.querySelectorAll(".slider-wrapper").forEach((wrapper) => {
+      const slider = wrapper.querySelector(
+        ".media-grid, .browse-slider, .people-slider"
+      );
+      const prevBtn = wrapper.querySelector(".slider-arrow.prev");
+      const nextBtn = wrapper.querySelector(".slider-arrow.next");
+      if (!slider || !prevBtn || !nextBtn) return;
+      const scrollAmount = slider.clientWidth * 0.8; // Rola 80% da largura visível
+      prevBtn.addEventListener("click", () => {
+        slider.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+      });
+      nextBtn.addEventListener("click", () => {
+        slider.scrollBy({ left: scrollAmount, behavior: "smooth" });
       });
     });
   }
 
-  //
-  // ─── DRAG-TO-SCROLL FOR TOP 10 CAROUSEL ─────────────────────────────────────
-  //
-  const top10 = document.querySelector(".media-grid.top10");
-  if (top10) {
-    let isDown = false,
-      startX,
-      scrollLeft;
+  function initializeDragToScroll() {
+    document.querySelectorAll(".media-grid").forEach((slider) => {
+      let isDown = false,
+        startX,
+        scrollLeft;
 
-    const startDrag = (x) => {
-      isDown = true;
-      top10.classList.add("dragging");
-      startX = x - top10.offsetLeft;
-      scrollLeft = top10.scrollLeft;
-    };
-    const moveDrag = (x) => {
-      if (!isDown) return;
-      const walk = (x - startX) * 1.5; // Multiplicador para acelerar o scroll
-      top10.scrollLeft = scrollLeft - walk;
-    };
-    const endDrag = () => {
-      isDown = false;
-      top10.classList.remove("dragging");
-    };
-
-    top10.addEventListener("mousedown", (e) => startDrag(e.pageX));
-    top10.addEventListener("mousemove", (e) => {
-      e.preventDefault();
-      moveDrag(e.pageX);
-    });
-    top10.addEventListener("mouseup", endDrag);
-    top10.addEventListener("mouseleave", endDrag);
-
-    top10.addEventListener("touchstart", (e) => startDrag(e.touches[0].pageX));
-    top10.addEventListener(
-      "touchmove",
-      (e) => {
+      const startDrag = (e) => {
+        isDown = true;
+        slider.classList.add("dragging");
+        startX = (e.pageX || e.touches[0].pageX) - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+      };
+      const moveDrag = (e) => {
+        if (!isDown) return;
         e.preventDefault();
-        moveDrag(e.touches[0].pageX);
-      },
-      { passive: false }
-    );
-    top10.addEventListener("touchend", endDrag);
+        const x = (e.pageX || e.touches[0].pageX) - slider.offsetLeft;
+        const walk = (x - startX) * 1.5;
+        slider.scrollLeft = scrollLeft - walk;
+      };
+      const endDrag = () => {
+        isDown = false;
+        slider.classList.remove("dragging");
+      };
+
+      slider.addEventListener("mousedown", startDrag);
+      slider.addEventListener("mousemove", moveDrag);
+      slider.addEventListener("mouseup", endDrag);
+      slider.addEventListener("mouseleave", endDrag);
+      slider.addEventListener("touchstart", startDrag, { passive: true });
+      slider.addEventListener("touchmove", moveDrag, { passive: false });
+      slider.addEventListener("touchend", endDrag);
+    });
   }
 
-  //
-  // ─── SLIDER ARROWS ────────────────────────────────────────────────────────────
-  //
-  document.querySelectorAll(".slider-wrapper").forEach((wrapper) => {
-    const slider = wrapper.querySelector(
-      ".media-grid, .browse-slider, .people-slider"
-    );
-    const prevBtn = wrapper.querySelector(".slider-arrow.prev");
-    const nextBtn = wrapper.querySelector(".slider-arrow.next");
-    if (!slider || !prevBtn || !nextBtn) return;
+  function initializeGeneralUI() {
+    /* ... implementação existente ... */
+  }
+  (function initializeSettingsMenu() {
+    /* ... implementação existente ... */
+  })();
 
-    const scrollAmount = slider.clientWidth;
-    prevBtn.addEventListener("click", () => {
-      slider.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-    });
-    nextBtn.addEventListener("click", () => {
-      slider.scrollBy({ left: scrollAmount, behavior: "smooth" });
-    });
-  });
-
-  //
-  // ─── MENU MOBILE ──────────────────────────────────────────────────────────────
-  //
+  // (Cole aqui as implementações das funções de UI do seu código anterior)
   function initializeGeneralUI() {
     const menuBtn = document.querySelector(".btn-menu");
     const overlay = document.querySelector(".menu-overlay");
     const mobileNav = document.querySelector(".mobile-nav");
     const closeBtn = document.querySelector(".btn-nav-close");
-
     if (menuBtn && overlay && mobileNav && closeBtn) {
       const toggleMobileNav = () => {
         mobileNav.classList.toggle("open");
@@ -359,7 +424,6 @@ document.addEventListener("DOMContentLoaded", () => {
       closeBtn.addEventListener("click", toggleMobileNav);
       overlay.addEventListener("click", toggleMobileNav);
     }
-
     document.querySelectorAll(".mobile-nav .nav-group > a").forEach((link) => {
       if (!link.nextElementSibling?.classList.contains("submenu")) return;
       link.addEventListener("click", (e) => {
@@ -369,7 +433,37 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  (function initializeSettingsMenu() {
+    const settingsBtn = document.querySelector(".control-settings");
+    const settingsMenu = document.getElementById("settings-menu");
+    if (settingsBtn && settingsMenu) {
+      settingsBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        settingsMenu.style.display =
+          settingsMenu.style.display === "flex" ? "none" : "flex";
+      });
+      document.addEventListener("click", (e) => {
+        if (!settingsMenu.contains(e.target) && e.target !== settingsBtn) {
+          settingsMenu.style.display = "none";
+        }
+      });
+      settingsMenu.querySelectorAll(".setting-item").forEach((item) => {
+        item.addEventListener("click", () => {
+          const heroVideo = document.querySelector(".hero-video");
+          if (!heroVideo) return;
+          if (item.dataset.speed)
+            heroVideo.playbackRate = parseFloat(item.dataset.speed);
+          if (item.classList.contains("toggle-mute")) {
+            heroVideo.muted = !heroVideo.muted;
+            item.textContent = heroVideo.muted ? "Unmute" : "Mute";
+          }
+        });
+      });
+    }
+  })();
+
   // --- PONTO DE ENTRADA ---
   initializeSearch();
+  initializeDynamicSliders();
   initializeGeneralUI();
 });

@@ -1196,6 +1196,7 @@ a {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 24px;
+  overflow: hidden;
 }
 
 /* CARD LAYOUT */
@@ -1214,6 +1215,7 @@ a {
 .media-section .media-thumb img {
   width: 100%;
   display: block;
+  aspect-ratio: 16 / 9;
 }
 
 .media-section .media-duration {
@@ -1396,6 +1398,15 @@ a {
   font-size: 0.785rem;
   font-weight: 200;
   font-family: "Roboto";
+
+  color: #fff;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.1rem;
+  min-height: calc(1.4em * 2);
 }
 
 .media-section .media-grid .media-genre {
