@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   function renderVideo(video) {
     const player = document.getElementById("video-player");
     const titleElement = document.getElementById("video-title");
+    const authorElement = document.getElementById("video-author");
     const descriptionElement = document.getElementById("video-description");
 
     if (!video || !player || !titleElement || !descriptionElement) {
@@ -57,6 +58,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     titleElement.textContent = video.title;
+    authorElement.textContent = video.author;
     descriptionElement.innerHTML = video.description.replace(/\n/g, "<br />");
   }
 

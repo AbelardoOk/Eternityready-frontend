@@ -2568,3 +2568,16 @@ a {
 .player-text > * {
   margin: 0;
 }
+
+#video-title {
+  margin-bottom: 0.5rem;
+}
+
+#video-author {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+#video-description {
+  color: #c3c3c3;
+}

@@ -389,13 +389,13 @@ document.addEventListener("DOMContentLoaded", async () => {
     history.forEach((term) => {
       const li = document.createElement("li");
       li.className = "history-item";
-      li.innerHTML = `<a href="/search.html?query=${encodeURIComponent(
+      li.innerHTML = `<a href="/search?query=${encodeURIComponent(
         term
       )}">${term}</a>`;
       li.onclick = (e) => {
         e.preventDefault();
         input.value = term;
-        window.location.href = `/search.html?query=${encodeURIComponent(term)}`;
+        window.location.href = `/search?query=${encodeURIComponent(term)}`;
       };
       historyList.appendChild(li);
     });
@@ -403,7 +403,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     renderCategories(avaliableCategories);
 
     seeAllLink.textContent = "Ver todos os resultados »";
-    seeAllLink.href = "/search.html";
+    seeAllLink.href = "/search";
   }
 
   function renderResults(query) {
@@ -482,8 +482,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       if (q) {
         history = [q, ...history.filter((h) => h !== q)].slice(0, 5);
         localStorage.setItem("searchHistory", JSON.stringify(history));
-        // Redirecionar para a página de busca, por exemplo:
-        // window.location.href = `/search?search_query=${encodeURIComponent(q)}`;
+        window.location.href = `/search?search_query=${encodeURIComponent(q)}`;
       }
       dropdown.style.display = "none";
     }
