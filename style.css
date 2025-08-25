@@ -1169,6 +1169,10 @@ a {
   margin-bottom: 30px;
 }
 
+.media-section .section-header:hover > * {
+  color: #d32f2f;
+}
+
 .media-section .section-title {
   font-size: 1.5rem;
   font-weight: 600;
@@ -1193,8 +1197,7 @@ a {
 
 /* 5-column grid */
 .media-section .media-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
   gap: 24px;
   overflow: hidden;
 }
@@ -2548,4 +2551,11 @@ a {
   transition: all 0.3s;
   cursor: pointer;
   text-decoration: none;
+}
+
+.media-card-link {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
 }

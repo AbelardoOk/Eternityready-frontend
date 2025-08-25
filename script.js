@@ -265,7 +265,11 @@ document.addEventListener("DOMContentLoaded", () => {
         const imageUrl = video.thumbnail?.url
           ? `${API_BASE_URL}${video.thumbnail.url.replace(/^\//, "")}`
           : "images/placeholder.jpg";
+
+        const playerUrl = `/player/?q=${video.id}`;
+
         return `
+      <a href="${playerUrl}" class="media-card-link">
         <div class="media-card">
           <div class="media-thumb">
             <img src="${imageUrl}" alt="${video.title}" />
@@ -287,13 +291,16 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
           </div>
         </div>
+      </a>
       `;
       })
       .join("");
 
     return `
       <div class="section-header">
-        <h2 class="section-title"><a href="#">${category.name}</a></h2>
+        <h2 class="section-title"><a href="http://127.0.0.1:5500/categories?category=${
+          category.id
+        }/">${category.name}</a></h2>
         <a href="#" class="section-link"><i class="fa fa-chevron-right"></i></a>
       </div>
       <div class="slider-wrapper">
@@ -319,11 +326,11 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    slidersContainer.innerHTML = "<p>Carregando conteúdo...</p>"; // Feedback visual
+    slidersContainer.innerHTML = "<p>Loading content...</p>"; // Feedback visual
     const categories = await fetchCategories();
 
     if (categories.length === 0) {
-      slidersContainer.innerHTML = "<p>Nenhuma categoria encontrada.</p>";
+      slidersContainer.innerHTML = "<p>No categories found.</p>";
       return;
     }
 
@@ -358,6 +365,18 @@ document.addEventListener("DOMContentLoaded", () => {
       const prevBtn = wrapper.querySelector(".slider-arrow.prev");
       const nextBtn = wrapper.querySelector(".slider-arrow.next");
       if (!slider || !prevBtn || !nextBtn) return;
+
+      const itemCount = slider.querySelectorAll(".media-card").length;
+
+      if (itemCount <= 5) {
+        prevBtn.style.display = "none";
+        nextBtn.style.display = "none";
+        return;
+      }
+
+      prevBtn.style.display = "";
+      nextBtn.style.display = "";
+
       const scrollAmount = slider.clientWidth * 0.8; // Rola 80% da largura visível
       prevBtn.addEventListener("click", () => {
         slider.scrollBy({ left: -scrollAmount, behavior: "smooth" });
