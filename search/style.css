@@ -1213,6 +1213,7 @@ a {
 
 .media-section .media-thumb img {
   width: 100%;
+  aspect-ratio: 16 / 9;
   display: block;
 }
 

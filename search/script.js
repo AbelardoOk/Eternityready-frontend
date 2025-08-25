@@ -175,15 +175,15 @@ document.addEventListener("DOMContentLoaded", async () => {
       const allVideos = Array.isArray(data) ? data : data.videos || [];
 
       // 2. Agrupar vídeos por categoria
-      const videosByCategory = {};
-      allVideos.forEach((video) => {
-        video.categories.forEach((category) => {
-          if (!videosByCategory[category.name]) {
-            videosByCategory[category.name] = [];
-          }
-          videosByCategory[category.name].push(video);
-        });
-      });
+      // const videosByCategory = {};
+      // allVideos.forEach((video) => {
+      //   video.categories.forEach((category) => {
+      //     if (!videosByCategory[category.name]) {
+      //       videosByCategory[category.name] = [];
+      //     }
+      //     videosByCategory[category.name].push(video);
+      //   });
+      // });
 
       // 3. Gerar o HTML para cada slider e juntar tudo
       let finalHTML = "";
@@ -195,14 +195,14 @@ document.addEventListener("DOMContentLoaded", async () => {
         );
       }
 
-      for (const categoryName in videosByCategory) {
-        if (videosByCategory[categoryName].length >= 3) {
-          finalHTML += createSliderSectionHTML(
-            categoryName,
-            videosByCategory[categoryName]
-          );
-        }
-      }
+      // for (const categoryName in videosByCategory) {
+      //   if (videosByCategory[categoryName].length >= 3) {
+      //     finalHTML += createSliderSectionHTML(
+      //       categoryName,
+      //       videosByCategory[categoryName]
+      //     );
+      //   }
+      // }
 
       // 4. Inserir o HTML gerado no contêiner da página
       if (finalHTML) {
