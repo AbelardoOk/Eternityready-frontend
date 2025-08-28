@@ -1160,7 +1160,7 @@ a {
    ==================================== */
 .media-section {
   background: #060d17;
-  padding: 2rem 0 0 0;
+  padding: 2rem 0 60px 0;
 }
 
 .media-section .section-header {
@@ -1382,7 +1382,6 @@ a {
   width: 265px;
   /* Match card width with layout */
   scroll-snap-align: start;
-  margin-bottom: 2rem;
 }
 
 .media-section .media-info-col {
