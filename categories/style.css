@@ -21,7 +21,7 @@ a {
 }
 
 /* ================================
-   CONTAINER UTILS
+   CONTAINER UTILSsection-title
    ================================ */
 .container {
   width: 90%;
@@ -154,16 +154,21 @@ a {
   padding: 4px 12px;
   border-radius: 10px;
   background: #eb3700;
-  background: linear-gradient(330deg,rgba(235, 0, 0, 1) 0%, rgba(245, 122, 22, 1) 50%, rgba(255, 0, 0, 1) 100%);
+  background: linear-gradient(
+    330deg,
+    rgba(235, 0, 0, 1) 0%,
+    rgba(245, 122, 22, 1) 50%,
+    rgba(255, 0, 0, 1) 100%
+  );
   color: #fff;
   font-size: 18px;
   line-height: 28px;
   font-weight: 600;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   transition: all 0.3s;
   cursor: pointer;
 }
-
 
 .btn-radio:active,
 .btn-radio:hover {
@@ -171,13 +176,13 @@ a {
 }
 
 .btn-radio span {
-    /*background-color: rgb(5, 6, 45);*/
-    padding: 4px 10px;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    transition: 300ms;
-    border-radius: .4rem;
+  /*background-color: rgb(5, 6, 45);*/
+  padding: 4px 10px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+  border-radius: 0.4rem;
 }
 
 .btn-radio:hover span {
@@ -419,7 +424,7 @@ a {
 
 .mobile-nav .nav-group .submenu li a {
   display: block;
-  font-size: 0.9rem;   /* a bit smaller than the main items */
+  font-size: 0.9rem; /* a bit smaller than the main items */
   color: #ccc;
   padding: 6px 0;
   border-bottom: 1px solid rgb(22 29 37) !important;
@@ -905,165 +910,6 @@ a {
   height: 18px;
 }
 
-/* ================================
-   DISCOVER CONTENT STYLES
-   ================================ */
-.discover-section {
-  background: #060d17;
-  padding: 50px 0;
-}
-
-.discover-section .container {
-  text-align: center;
-}
-
-.section-title {
-  font-size: 2.5rem;
-  margin: 0 auto 8px;
-  display: inline-block;
-  position: relative;
-}
-
-.section-subtitle {
-  opacity: 0.7;
-  margin-bottom: 40px;
-}
-
-/* Top Row – five gradient cards, exact radial gradients */
-.discover-grid.top-row {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 24px;
-  text-align: left;
-  margin-bottom: 40px;
-  overflow-x: unset;
-}
-
-/* Base Card Styling */
-.card.gradient {
-  height: 140px;
-  border-radius: 16px;
-  padding: 20px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-  position: relative;
-  overflow: hidden;
-}
-
-/* Transparent Text Effect */
-.card.gradient h3 {
-  margin: 0;
-  font-size: 1.4rem;
-  font-weight: 600;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-  line-height: 1.3;
-  z-index: 100;
-  position: relative;
-}
-
-.card.gradient.purple h3 {
-  background: linear-gradient(135deg, #e3c1ff 0%, #b277e1 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-
-.card.gradient.green h3 {
-  background: linear-gradient(135deg, #eaff8c 0%, #8cbe00 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-
-.card.gradient.gold h3 {
-  background: linear-gradient(135deg, #950505 0%, #ffd744 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-
-.card.gradient.blue h3 {
-  background: linear-gradient(135deg, #8edfff 0%, #227fde 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-
-.card.gradient.teal h3 {
-  background: linear-gradient(135deg, #62ffdd 0%, #00cdb5 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-
-/* Optional soft overlay for improved readability 
-.card.gradient::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: 16px;
-  background: rgba(0, 0, 0, 0.25);
-  z-index: 0;
-}*/
-
-/* =========================
-   Gradient Variants (Refined)
-   ========================= */
-
-/* — Feature Films (Purple) — */
-.card.gradient.purple {
-  background: radial-gradient(
-    circle at top right,
-    #a87ccf 0%,
-    #7b4faa 45%,
-    #3c1f5c 75%,
-    #0e0012 100%
-  );
-}
-
-/* — Nonfiction Films & Series (Green) — */
-.card.gradient.green {
-  background: radial-gradient(
-    circle at top right,
-    #c1f832 0%,
-    #6eaa10 45%,
-    #264900 75%,
-    #091700 100%
-  );
-}
-
-/* — Kids & Family (Gold → Red) — */
-.card.gradient.gold {
-  background: radial-gradient(
-    circle at top right,
-    #781f00 0%,
-    #c25802 45%,
-    #fac75c 85%,
-    #fde396 100%
-  );
-}
-
-/* — Drama Series (Blue) — */
-.card.gradient.blue {
-  background: radial-gradient(
-    circle at top right,
-    #6ac7f0 0%,
-    #1483c9 45%,
-    #004061 75%,
-    #00162d 100%
-  );
-}
-
-/* — Comedy Series (Teal) — */
-.card.gradient.teal {
-  background: radial-gradient(
-    circle at top right,
-    #2affb0 0%,
-    #00a07a 45%,
-    #00353f 80%,
-    #001e26 100%
-  );
-}
-
 /* Bottom Row – centered strip of 4 media cards with red icons */
 .discover-grid.bottom-row {
   display: flex;
@@ -1073,7 +919,6 @@ a {
   width: auto;
   margin: 0 auto;
 }
-
 
 .card.media {
   position: relative;
@@ -1139,17 +984,16 @@ a {
 /*  background: url("images/2.webp") center/cover no-repeat;*/
 /*}*/
 
-.card.media img{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+.card.media img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card.media:hover img {
-    transform: scale(1.1);
-    
+  transform: scale(1.1);
 }
 
 /* ====================================
@@ -1189,11 +1033,12 @@ a {
 }
 
 /* 5-column grid */
-.media-section .media-grid{
+.media-section .media-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(265px, 2fr));
-  gap: 1.5rem;
-  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(265px, max-content));
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: calc(5 * 265px + 4 * 1rem);
 }
 /* CARD LAYOUT */
 .media-section .media-card {
@@ -1210,6 +1055,7 @@ a {
 
 .media-section .media-thumb img {
   width: 100%;
+  aspect-ratio: 16 / 9;
   display: block;
 }
 
@@ -1236,106 +1082,22 @@ a {
   text-transform: uppercase;
 }
 
-/* TOP 10 ROW META */
-.media-section .media-grid.top10 {
-  display: flex !important;
-  flex-direction: row;
-  overflow-x: auto;
-  gap: 24px;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  padding-bottom: 12px;
-  /* hide scrollbar by default */
-  scrollbar-width: none;
-  /* Firefox */
-}
-
-.media-section .media-grid.top10::-webkit-scrollbar {
-  display: none;
-  /* WebKit */
-}
-
-.media-section .media-grid.top10:hover::-webkit-scrollbar {
-  display: block;
-  height: 6px;
-}
-
-.media-section .media-grid.top10:hover::-webkit-scrollbar-track {
-  background: transparent;
-  /* fully transparent track */
-}
-
-.media-section .media-grid.top10:hover::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 3px;
-}
-
-.media-section .media-grid.top10 .media-card {
-  flex: 0 0 auto;
-  scroll-snap-align: start;
-  width: 265px;
-}
-
-.media-section .media-grid.top10 .media-info {
-  display: flex;
-  align-items: flex-start;
-  margin-top: 8px;
-  /* reduced from 12px */
-  flex-direction: row;
-  gap: 8px;
-  /* added for more consistent spacing */
-  line-height: 1;
-}
-
-.media-section .media-grid.top10 .media-rank {
-  font-size: 2.1rem;
-  /* reduced from 2.5rem */
-  color: #d32f2f;
-  font-weight: 700;
-  /* increased from 600 */
-  line-height: 1;
-  margin-right: 5px;
-  /* reduced for tighter layout */
-  font-family: "Roboto", sans-serif;
-  /* ensure consistent font */
-}
-
-.media-section .media-grid.top10 .media-text {
-  display: flex;
-  flex-direction: column;
-  margin-top: 3px;
-}
-
-.media-section .media-grid.top10 .media-title {
-  margin: 0;
-  font-size: 0.8rem;
-  /* increased from 0.9rem */
-  font-weight: 300;
-  /* increased from 500 */
-  color: #ededed;
-  /* ensure good contrast */
-}
-
-.media-section .media-grid.top10 .media-genre {
-  margin: 2px 0 0;
-  /* tightened spacing */
-  font-size: 0.7rem;
-  /* increased from 0.7rem */
-  color: rgba(255, 255, 255, 0.7);
-  /* slightly lighter for subtleness */
-}
-
 /* NEWEST STUFF META */
 .newest-section {
   padding: 60px 0;
 }
 
-.bible-section, .television-section, .radio-section {
+.bible-section,
+.television-section,
+.radio-section {
   padding: 60px 0;
 }
 
 /* hide by default */
-.media-section .media-grid.newest, .media-section .media-grid.television, .media-section .media-grid.radio, .media-section .media-grid.bible {
+.media-section .media-grid.newest,
+.media-section .media-grid.television,
+.media-section .media-grid.radio,
+.media-section .media-grid.bible {
   display: flex !important;
   flex-direction: row;
   overflow-x: auto;
@@ -1369,8 +1131,8 @@ a {
 .media-section .media-grid .media-card {
   flex: 0 0 auto;
   width: 265px;
-  /* Match card width with layout */
   scroll-snap-align: start;
+  margin-bottom: 2rem;
 }
 
 .media-section .media-grid .media-info-col {
@@ -1388,6 +1150,14 @@ a {
   font-size: 0.785rem;
   font-weight: 200;
   font-family: "Roboto";
+  color: #fff;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.1rem;
+  min-height: calc(1.4em * 2);
 }
 
 .media-section .media-grid .media-genre {
@@ -2264,7 +2034,9 @@ a {
   }
 
   .media-section .media-thumb img {
-    border-radius: 10px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: block;
   }
 
   .media-section .media-info-col,
@@ -2385,7 +2157,7 @@ a {
     text-align: center !important;
     width: 100%;
   }
-  .social-list li{
+  .social-list li {
     width: 100px;
   }
 }
@@ -2427,7 +2199,7 @@ a {
     row-gap: 15px;
   }
 
-  .social-list li{
+  .social-list li {
     width: 100px;
   }
 
@@ -2450,8 +2222,6 @@ a {
     min-width: calc(50% - 12px);
   }
 }
-
-
 
 .bottom_most_section {
   position: relative;
@@ -2533,28 +2303,34 @@ a {
   text-decoration: none;
 }
 
-.categorieTittle{
-    color: #f7f7f7;
-    font-weight: 600;
+.section-title {
+  color: #f7f7f7;
+  font-weight: 600;
 }
 
-.categorieTitle span{
+.section-title span {
   font-weight: 500;
   font-size: 1.1rem;
   color: #d32f2f;
 }
 
-
-.backHome-Button{
-    padding: 4px 16px;
-    border: 2px solid gray;
-    font-weight: 600;
-    color: gray;
-    border-radius: 10px;
-    transition: all 0.3s ease;
+.backHome-Button {
+  padding: 4px 16px;
+  border: 2px solid gray;
+  font-weight: 600;
+  color: gray;
+  border-radius: 10px;
+  transition: all 0.3s ease;
 }
 
-.backHome-Button:hover{
-    color: white;
-    border-color: white;
+.backHome-Button:hover {
+  color: white;
+  border-color: white;
+}
+
+.media-card-link {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
 }
