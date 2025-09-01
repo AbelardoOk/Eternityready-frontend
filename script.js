@@ -264,7 +264,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const imageUrl = video.thumbnail?.url
           ? `${API_BASE_URL}${video.thumbnail.url.replace(/^\//, "")}`
           : "images/placeholder.jpg";
-        const videoUrl = `/player?q=${video.id}`;
+        const videoUrl = `/player/?q=${video.id}`;
 
         const li = document.createElement("li");
         li.className = "media-item";
@@ -406,7 +406,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const imageUrl = video.thumbnail?.url
           ? `${API_BASE_URL}${video.thumbnail.url.replace(/^\//, "")}`
           : "images/placeholder.jpg";
-        const playerUrl = `/player?q=${video.id}`;
+        const playerUrl = `/player/?q=${video.id}`;
         return `
           <a href="${playerUrl}" class="media-card-link">
             <div class="media-card">
