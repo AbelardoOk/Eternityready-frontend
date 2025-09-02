@@ -360,16 +360,94 @@ document.addEventListener("DOMContentLoaded", () => {
   //
   // ─── LÓGICA DOS SLIDERS (CARROSSÉIS) DINÂMICOS ──────────────────────────────────────────
   //
+  // async function initializeDynamicSliders() {
+  //   const slidersContainer = document.getElementById(
+  //     "dynamic-sliders-container"
+  //   );
+  //   if (!slidersContainer) {
+  //     console.warn(
+  //       "Container para sliders dinâmicos (#dynamic-sliders-container) não encontrado."
+  //     );
+  //     return;
+  //   }
+
+  //   slidersContainer.innerHTML =
+  //     '<p class="loading-feedback">Carregando conteúdo...</p>';
+  //   const categories = await fetchCategories();
+
+  //   if (categories.length === 0) {
+  //     slidersContainer.innerHTML =
+  //       '<p class="loading-feedback">Nenhuma categoria encontrada.</p>';
+  //     return;
+  //   }
+
+  //   slidersContainer.innerHTML = ""; // Limpa a mensagem de "carregando"
+
+  //   for (const category of categories) {
+  //     const videos = await fetchVideosByCategory(category.name);
+  //     if (videos.length > 0) {
+  //       const sliderHTML = createSliderHTML(category, videos);
+  //       const sliderSection = document.createElement("div");
+  //       sliderSection.className = `category-section ${category.name
+  //         .toLowerCase()
+  //         .replace(/\s+/g, "-")}-section`;
+  //       sliderSection.innerHTML = sliderHTML;
+  //       slidersContainer.appendChild(sliderSection);
+  //     }
+  //   }
+
+  //   // Após adicionar todo o HTML, inicializa os scripts de interação dos sliders
+  //   initializeSliderControls();
+  // }
+
+  let playersToCreate = [];
+  let isYouTubeApiReady = false;
+
+  /**
+   * @param {HTMLElement}
+   */
+
+  function createPlayerForCard(card) {
+    const videoId = card.dataset.youtubeId;
+    const playerId = card.querySelector(".youtube-player-embed")?.id;
+
+    if (!videoId || !playerId) return;
+
+    const player = new YT.Player(playerId, {
+      videoId: videoId,
+      playerVars: {
+        autoplay: 0,
+        controls: 0,
+        rel: 0,
+        showinfo: 0,
+        loop: 1,
+        playlist: videoId,
+        modestbranding: 1,
+      },
+      events: {
+        onReady: (event) => {
+          event.target.mute();
+
+          card.addEventListener("mouseenter", () => player.playVideo());
+          card.addEventListener("mouseleave", () => {
+            player.pauseVideo();
+            player.seekTo(0);
+          });
+        },
+      },
+    });
+  }
+  window.onYouTubeIframeAPIReady = function () {
+    isYouTubeApiReady = true;
+    playersToCreate.forEach(createPlayerForCard);
+    playersToCreate = [];
+  };
+
   async function initializeDynamicSliders() {
     const slidersContainer = document.getElementById(
       "dynamic-sliders-container"
     );
-    if (!slidersContainer) {
-      console.warn(
-        "Container para sliders dinâmicos (#dynamic-sliders-container) não encontrado."
-      );
-      return;
-    }
+    if (!slidersContainer) return;
 
     slidersContainer.innerHTML =
       '<p class="loading-feedback">Carregando conteúdo...</p>';
@@ -380,8 +458,7 @@ document.addEventListener("DOMContentLoaded", () => {
         '<p class="loading-feedback">Nenhuma categoria encontrada.</p>';
       return;
     }
-
-    slidersContainer.innerHTML = ""; // Limpa a mensagem de "carregando"
+    slidersContainer.innerHTML = "";
 
     for (const category of categories) {
       const videos = await fetchVideosByCategory(category.name);
@@ -396,8 +473,15 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
-    // Após adicionar todo o HTML, inicializa os scripts de interação dos sliders
     initializeSliderControls();
+
+    document.querySelectorAll(".media-card[data-video-id]").forEach((card) => {
+      if (isYouTubeApiReady) {
+        createPlayerForCard(card);
+      } else {
+        playersToCreate.push(card);
+      }
+    });
   }
 
   function createSliderHTML(category, videos) {
@@ -407,17 +491,29 @@ document.addEventListener("DOMContentLoaded", () => {
           ? `${API_BASE_URL}${video.thumbnail.url.replace(/^\//, "")}`
           : "images/placeholder.jpg";
         const playerUrl = `/player/?q=${video.id}`;
+        const youtubeVideoId = video.id;
+
+        const videoHoverData = youtubeVideoId
+          ? `data-youtube-id="${youtubeVideoId}"`
+          : "";
+
+        const playerContainer = youtubeVideoId
+          ? `<div class="youtube-player-embed" id="player-${video.id}"></div>`
+          : "";
+
         return `
           <a href="${playerUrl}" class="media-card-link">
-            <div class="media-card">
-              <div class="media-thumb">
-                <img src="${imageUrl}" alt="${video.title}" loading="lazy" />
-                ${
-                  video.duration
-                    ? `<span class="media-duration">${video.duration}</span>`
-                    : ""
-                }
-              </div>
+            <div class="media-card" ${videoHoverData}>
+               <div class="media-thumb">
+              ${playerContainer} <img src="${imageUrl}" alt="${
+          video.title
+        }" loading="lazy" class="media-thumbnail" />
+              ${
+                video.duration
+                  ? `<span class="media-duration">${video.duration}</span>`
+                  : ""
+              }
+            </div>
               <div class="media-info-col">
                 <p class="media-title">${video.title}</p>
                 <div class="media-subinfo">
