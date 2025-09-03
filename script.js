@@ -409,36 +409,43 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function createPlayerForCard(card) {
     const videoId = card.dataset.youtubeId;
-    const playerId = card.querySelector(".youtube-player-embed")?.id;
+    const playerId = document.querySelector(".youtube-player-embed")?.id;
 
     if (!videoId || !playerId) return;
 
-    const player = new YT.Player(playerId, {
-      videoId: videoId,
-      playerVars: {
-        autoplay: 0,
-        controls: 0,
-        rel: 0,
-        showinfo: 0,
-        loop: 1,
-        playlist: videoId,
-        modestbranding: 1,
-      },
-      events: {
-        onReady: (event) => {
-          event.target.mute();
-
-          card.addEventListener("mouseenter", () => player.playVideo());
-          card.addEventListener("mouseleave", () => {
-            player.pauseVideo();
-            player.seekTo(0);
-          });
+    try {
+      const player = new YT.Player(playerId, {
+        videoId: videoId,
+        playerVars: {
+          autoplay: 0,
+          controls: 0,
+          rel: 0,
+          showinfo: 0,
+          loop: 1,
+          playlist: videoId,
+          modestbranding: 1,
         },
-      },
-    });
+        events: {
+          onReady: (event) => {
+            event.target.mute();
+
+            card.addEventListener("mouseenter", () => {
+              player.playVideo();
+            });
+            card.addEventListener("mouseleave", () => {
+              player.pauseVideo();
+              player.seekTo(0);
+            });
+          },
+        },
+      });
+    } catch (e) {
+      console.error(`Error creating YT Player for ${videoId}: ${e}`);
+    }
   }
   window.onYouTubeIframeAPIReady = function () {
     isYouTubeApiReady = true;
+    console.log("API do YouTube pronta.");
     playersToCreate.forEach(createPlayerForCard);
     playersToCreate = [];
   };
@@ -475,13 +482,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     initializeSliderControls();
 
-    document.querySelectorAll(".media-card[data-video-id]").forEach((card) => {
-      if (isYouTubeApiReady) {
-        createPlayerForCard(card);
-      } else {
-        playersToCreate.push(card);
-      }
-    });
+    document
+      .querySelectorAll(".media-card[data-youtube-id]")
+      .forEach((card) => {
+        if (isYouTubeApiReady) {
+          createPlayerForCard(card);
+        } else {
+          playersToCreate.push(card);
+        }
+      });
   }
 
   function createSliderHTML(category, videos) {
@@ -491,7 +500,7 @@ document.addEventListener("DOMContentLoaded", () => {
           ? `${API_BASE_URL}${video.thumbnail.url.replace(/^\//, "")}`
           : "images/placeholder.jpg";
         const playerUrl = `/player/?q=${video.id}`;
-        const youtubeVideoId = video.id;
+        const youtubeVideoId = video.videoId;
 
         const videoHoverData = youtubeVideoId
           ? `data-youtube-id="${youtubeVideoId}"`
