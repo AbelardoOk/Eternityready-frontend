@@ -445,7 +445,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   window.onYouTubeIframeAPIReady = function () {
     isYouTubeApiReady = true;
-    console.log("API do YouTube pronta.");
     playersToCreate.forEach(createPlayerForCard);
     playersToCreate = [];
   };
