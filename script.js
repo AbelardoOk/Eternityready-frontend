@@ -409,7 +409,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function createPlayerForCard(card) {
     const videoId = card.dataset.youtubeId;
-    const playerId = document.querySelector(".youtube-player-embed")?.id;
+    const playerId = card.querySelector(".youtube-player-embed")?.id;
 
     if (!videoId || !playerId) return;
 
@@ -417,13 +417,15 @@ document.addEventListener("DOMContentLoaded", () => {
       const player = new YT.Player(playerId, {
         videoId: videoId,
         playerVars: {
-          autoplay: 0,
+          autoplay: 1,
           controls: 0,
           rel: 0,
           showinfo: 0,
           loop: 1,
           playlist: videoId,
           modestbranding: 1,
+          iv_load_policy: 3,
+          disablekb: 1,
         },
         events: {
           onReady: (event) => {
@@ -431,6 +433,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             card.addEventListener("mouseenter", () => {
               player.playVideo();
+              player.seekTo(30);
             });
             card.addEventListener("mouseleave", () => {
               player.pauseVideo();
@@ -445,7 +448,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   window.onYouTubeIframeAPIReady = function () {
     isYouTubeApiReady = true;
-    console.log("API do YouTube pronta.");
     playersToCreate.forEach(createPlayerForCard);
     playersToCreate = [];
   };
@@ -507,7 +509,7 @@ document.addEventListener("DOMContentLoaded", () => {
           : "";
 
         const playerContainer = youtubeVideoId
-          ? `<div class="youtube-player-embed" id="player-${video.id}"></div>`
+          ? `<div class="youtube-player-embed" id="player-${video.videoId}"></div>`
           : "";
 
         return `
