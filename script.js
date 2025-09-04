@@ -486,12 +486,12 @@ document.addEventListener("DOMContentLoaded", () => {
   let playerReady = false;
   let activeCard = null;
 
-  function createSharedPlayer(card) {
+  function createSharedPlayer(card, videoId) {
     const playerContainer = card.querySelector(".youtube-player-embed");
     if (!playerContainer) return;
 
     try {
-      new YT.Player(playerId, {
+      new YT.Player(playerContainer.id, {
         videoId: videoId,
         playerVars: {
           autoplay: 1,
@@ -506,12 +506,13 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         events: {
           onReady: (event) => {
-            event.target.mute();
+            event.target.unMute();
             card.addEventListener("mouseenter", () => {
               event.target.playVideo();
               event.target.seekTo(30);
             });
             card.addEventListener("mouseleave", () => {
+              event.target.mute();
               event.target.pauseVideo();
               event.target.seekTo(0);
             });
@@ -605,7 +606,6 @@ document.addEventListener("DOMContentLoaded", () => {
             if (youtubeVideoId) {
               playerInstanceCounter++;
               const uniquePlayerId = `yt-player-instance-${playerInstanceCounter}`;
-              // O container agora está vazio, pronto para receber o player compartilhado
               playerContainer = `<div class="youtube-player-embed" id="${uniquePlayerId}"></div>`;
             }
 
