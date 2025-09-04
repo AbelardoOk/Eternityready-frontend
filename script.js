@@ -402,6 +402,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let playersToCreate = [];
   let isYouTubeApiReady = false;
+  let playerInstanceCounter = 0;
 
   /**
    * @param {HTMLElement}
@@ -508,9 +509,12 @@ document.addEventListener("DOMContentLoaded", () => {
           ? `data-youtube-id="${youtubeVideoId}"`
           : "";
 
-        const playerContainer = youtubeVideoId
-          ? `<div class="youtube-player-embed" id="player-${video.videoId}"></div>`
-          : "";
+        let playerContainer = "";
+        if (youtubeVideoId) {
+          playerInstanceCounter++;
+          const uniquePlayerId = `yt-player-instance-${playerInstanceCounter}`;
+          playerContainer = `<div class="youtube-player-embed" id="${uniquePlayerId}"></div>`;
+        }
 
         return `
           <a href="${playerUrl}" class="media-card-link">
