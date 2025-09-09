@@ -1990,10 +1990,11 @@ a {
 }
 
 .media-item img {
-  width: 48px;
+  /* width: 48px; */
   height: 72px;
   object-fit: cover;
   border-radius: 4px;
+  aspect-ratio: 16 / 9;
 }
 
 .media-info {
