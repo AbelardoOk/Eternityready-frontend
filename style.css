@@ -2040,6 +2040,24 @@ a {
   padding: 8px 0;
 }
 
+.media-item-link {
+  display: flex;
+  align-content: center;
+  gap: 12px;
+  padding: 8px 0;
+}
+
+.media-item-link > .media-info > .media-title {
+  font-size: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.1rem;
+  min-height: calc(1.1em * 2);
+}
+
 .media-item:not(:last-child) {
   border-bottom: 1px solid #223344;
 }
