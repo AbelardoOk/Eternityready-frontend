@@ -438,7 +438,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const performLiveSearch = async (event) => {
       const query = event.target.value.trim();
       if (query) {
-        seeAllLink.href = `/search?query=${encodeURIComponent(query)}`;
+        seeAllLink.href = `/search/?query=${encodeURIComponent(query)}`;
         seeAllLink.textContent = `Ver todos os resultados para "${query}" »`;
       }
       if (query.length < 2) {
@@ -469,7 +469,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (query) {
           history = [query, ...history.filter((h) => h !== query)].slice(0, 5);
           localStorage.setItem("searchHistory", JSON.stringify(history));
-          window.location.href = `/search?query=${encodeURIComponent(query)}`;
+          window.location.href = `/search/?query=${encodeURIComponent(query)}`;
         }
       }
     });
