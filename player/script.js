@@ -1,10 +1,7 @@
-// script.js
-
 /**
- * Atraso na execução de uma função (ótimo para buscas ao vivo).
- * @param {Function} func A função a ser executada após o delay.
- * @param {number} delay O tempo de espera em milissegundos.
- * @returns {Function} A nova função "debounced".
+ * @param {Function} func
+ * @param {number} delay
+ * @returns {Function}
  */
 function debounce(func, delay) {
   let timeoutId;
@@ -21,12 +18,15 @@ document.addEventListener("DOMContentLoaded", async () => {
   const API_BASE_URL = "https://api.eternityready.com/";
 
   // =======================================================================
-  // --- LÓGICA DA PÁGINA DO PLAYER ---
-  // Esta parte só será executada se encontrar os elementos do player na página.
+  // --- LÓGICA DO PLAYER DE VÍDEO ---
   // =======================================================================
 
-  async function fetchVideo(videoId) {
-    if (!videoId) return null;
+  /**
+   * Busca um vídeo específico apenas na API. Usado como fallback.
+   * @param {string} videoId O ID do vídeo.
+   * @returns {Promise<object|null>} Os dados do vídeo ou null.
+   */
+  async function fetchVideoFromAPI(videoId) {
     try {
       const url = `${API_BASE_URL}api/video/${videoId}`;
       const response = await fetch(url);
@@ -34,13 +34,110 @@ document.addEventListener("DOMContentLoaded", async () => {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       const data = await response.json();
+      // A API retorna um objeto com uma chave 'video'
       return data.video || null;
     } catch (e) {
-      console.error(`Falha ao buscar vídeo: ${e}`);
+      console.error(`Failed to fetch video from API: ${e}`);
       return null;
     }
   }
 
+  /**
+   * Normaliza os dados de diferentes fontes (JSON, API) para um formato consistente.
+   * @param {object} item O item de mídia encontrado.
+   * @param {string} type O tipo de mídia ('channel', 'music', 'movie').
+   * @returns {object} Um objeto com estrutura padronizada.
+   */
+  function normalizeData(item, type) {
+    const normalized = {
+      title: item.title || item.name || "Title Unavailable",
+      description: item.description || "",
+      author: item.author || "Unknow Origin", // Padrão se não houver autor
+      embedUrl: item.embed,
+      sourceType: "unknown",
+      videoId: null,
+    };
+
+    // Detecta se é um vídeo do YouTube e extrai o ID
+    if (
+      item.embed &&
+      item.embed.includes("googleusercontent.com/youtube.com")
+    ) {
+      const parts = item.embed.split("/");
+      normalized.videoId = parts.pop(); // Pega o último segmento da URL
+      normalized.sourceType = "youtube";
+    } else if (item.embed) {
+      // Para outras fontes como canais, usamos o embed direto em um iframe
+      normalized.sourceType = "iframe";
+    }
+
+    return normalized;
+  }
+
+  /**
+   * Busca dados de mídia primeiro nos arquivos JSON locais, depois na API.
+   * @param {string} mediaId O ID da mídia a ser buscada.
+   * @returns {Promise<object|null>} Os dados da mídia normalizados ou null.
+   */
+  async function fetchMediaData(mediaId) {
+    if (!mediaId) return null;
+
+    // 1. Tenta buscar nos arquivos JSON locais primeiro
+    try {
+      const [channelsRes, musicRes, moviesRes] = await Promise.all([
+        fetch("../data/channels.json"),
+        fetch("../data/music.json"),
+        fetch("../data/movies.json"),
+      ]);
+
+      if (!channelsRes.ok || !musicRes.ok || !moviesRes.ok) {
+        throw new Error("Failed to load one or more JSON files.");
+      }
+
+      const channelsData = await channelsRes.json();
+      const musicData = await musicRes.json();
+      const moviesData = await moviesRes.json();
+
+      let foundItem = null;
+      let itemType = "";
+
+      // Procura em filmes
+      foundItem = moviesData.movies.find((item) => item.id === mediaId);
+      if (foundItem) itemType = "movie";
+
+      // Procura em músicas se não encontrou em filmes
+      if (!foundItem) {
+        foundItem = musicData.music.find((item) => item.id === mediaId);
+        if (foundItem) itemType = "music";
+      }
+
+      // Procura em canais se não encontrou ainda
+      // NOTA: Seu channels.json precisa ter um campo "id" em cada canal para isso funcionar.
+      if (!foundItem) {
+        foundItem = channelsData.channels.find((item) => item.id === mediaId);
+        if (foundItem) itemType = "channel";
+      }
+
+      if (foundItem) {
+        console.log(`Media found locally at ${itemType}s.json`);
+        return normalizeData(foundItem, itemType);
+      }
+    } catch (e) {
+      console.error("Error loading or processing local JSON files:", e);
+      // O erro não impede de tentar a API, pode ser que o arquivo não exista.
+    }
+
+    // 2. Se não encontrou localmente, busca na API como fallback
+    console.log("Media not found locally, trying API...");
+    const apiData = await fetchVideoFromAPI(mediaId);
+    // Dados da API já vêm num formato mais próximo, mas podemos normalizar para garantir consistência
+    return apiData ? apiData : null;
+  }
+
+  /**
+   * Renderiza o vídeo na página.
+   * @param {object} video Objeto com os dados do vídeo.
+   */
   function renderVideo(video) {
     const player = document.getElementById("video-player");
     const titleElement = document.getElementById("video-title");
@@ -48,34 +145,50 @@ document.addEventListener("DOMContentLoaded", async () => {
     const descriptionElement = document.getElementById("video-description");
 
     if (!video || !player || !titleElement || !descriptionElement) {
-      if (titleElement) titleElement.textContent = "Vídeo não encontrado.";
-      console.error("Elementos do DOM ou dados do vídeo não encontrados.");
+      if (titleElement) titleElement.textContent = "Midia not found.";
+      console.error("DOM Elements or midia data not found.");
       return;
     }
 
+    // Lógica de renderização melhorada para diferentes fontes
     if (video.sourceType === "youtube" && video.videoId) {
+      // Usando o embed padrão do YouTube para maior compatibilidade
       player.src = `https://www.youtube.com/embed/${video.videoId}?autoplay=1`;
+    } else if (video.sourceType === "iframe" && video.embedUrl) {
+      // Para canais e outros embeds diretos
+      player.src = video.embedUrl;
+    } else {
+      console.error("Unknown video type or missing embed URL:", video);
+      titleElement.textContent = "This media could not be loaded..";
+      return;
     }
 
     titleElement.textContent = video.title;
-    authorElement.textContent = video.author;
+    authorElement.textContent = video.author || ""; // Mostra autor se existir
     descriptionElement.innerHTML = video.description.replace(/\n/g, "<br />");
   }
 
+  /**
+   * Inicializa a página do player.
+   */
   async function initializePlayerPage() {
     const params = new URLSearchParams(window.location.search);
-    const videoId = params.get("q"); // 'q' é o ID do vídeo para a página do player
-    if (videoId) {
-      const videoData = await fetchVideo(videoId);
-      if (videoData) {
-        renderVideo(videoData);
+    const mediaId = params.get("q");
+
+    if (mediaId) {
+      const mediaData = await fetchMediaData(mediaId);
+      renderVideo(mediaData);
+    } else {
+      const titleElement = document.getElementById("video-title");
+      if (titleElement) {
+        titleElement.textContent = "No media selected.";
       }
     }
   }
 
   // =======================================================================
   // --- LÓGICA DA BARRA DE PESQUISA ---
-  // Esta parte só será executada se encontrar a barra de pesquisa na página.
+  // (O código da barra de pesquisa permanece o mesmo)
   // =======================================================================
 
   async function fetchCategories() {
@@ -87,7 +200,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       const data = await response.json();
       return data || [];
     } catch (error) {
-      console.error("Falha ao buscar categorias:", error);
+      console.error("Failed to fetch categories:", error);
       return [];
     }
   }
@@ -103,7 +216,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       const data = await response.json();
       return data.videos || [];
     } catch (error) {
-      console.error(`Falha ao buscar mídia: ${error}`);
+      console.error(`Failed to retrieve media: ${error}`);
       return [];
     }
   }
@@ -146,7 +259,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       if (videos.length === 0) {
         mediaList.innerHTML =
-          '<li class="search-feedback">Nenhum resultado encontrado.</li>';
+          '<li class="search-feedback">No results found.</li>';
         return;
       }
 
@@ -168,8 +281,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         </div>`;
 
         li.onclick = () => {
-          window.location.href = videoUrl; // Exemplo de navegação
-          console.log("Clicou em:", video.title);
+          window.location.href = videoUrl;
         };
 
         mediaList.appendChild(li);
@@ -201,14 +313,14 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       renderCategories(availableCategories);
 
-      seeAllLink.textContent = "Ver todos os resultados »";
+      seeAllLink.textContent = "See all results »";
       seeAllLink.href = "/search.html";
     }
 
     const performLiveSearch = async (event) => {
       const query = event.target.value.trim();
       seeAllLink.href = `/search.html?query=${encodeURIComponent(query)}`;
-      seeAllLink.textContent = `Ver todos os resultados para "${query}" »`;
+      seeAllLink.textContent = `See all results for "${query}" »`;
 
       if (query.length < 2) {
         renderEmpty();
@@ -218,7 +330,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       mediaSection.style.display = "block";
       categoriesSection.style.display = "none";
       historySection.style.display = "none";
-      mediaList.innerHTML = '<li class="search-feedback">Buscando...</li>';
+      mediaList.innerHTML = '<li class="search-feedback">Searching...</li>';
 
       const results = await searchMidia(query);
       renderLiveResults(results);
@@ -256,7 +368,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   // =======================================================================
   // --- LÓGICA DE UI GERAL (ex: Menu Mobile) ---
-  // Pode ser executado em todas as páginas.
+  // (O código da UI geral permanece o mesmo)
   // =======================================================================
 
   function initializeGeneralUI() {
