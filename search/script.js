@@ -302,7 +302,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       history.forEach((term) => {
         const li = document.createElement("li");
         li.className = "history-item";
-        li.innerHTML = `<a href="/search?query=${encodeURIComponent(
+        li.innerHTML = `<a href="/search/?query=${encodeURIComponent(
           term
         )}">${term}</a>`;
         historyList.appendChild(li);
@@ -313,7 +313,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const performLiveSearch = async (event) => {
       const query = event.target.value.trim();
-      seeAllLink.href = `/search?query=${encodeURIComponent(query)}`;
+      seeAllLink.href = `/search/?query=${encodeURIComponent(query)}`;
       seeAllLink.textContent = `See all results for "${query}" »`;
 
       if (query.length < 2) {
@@ -346,7 +346,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         if (query) {
           history = [query, ...history.filter((h) => h !== query)].slice(0, 5);
           localStorage.setItem("searchHistory", JSON.stringify(history));
-          window.location.href = `/search?query=${encodeURIComponent(query)}`;
+          window.location.href = `/search/?query=${encodeURIComponent(query)}`;
         }
       }
     });
