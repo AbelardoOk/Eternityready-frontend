@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // --- CONFIGURAÇÕES GLOBAIS E ESTADO DA APLICAÇÃO ---
   const API_BASE_URL = "https://api.eternityready.com/";
 
-  // Estado para armazenar dados de ambas as fontes
+  // Estado para armazenar dados
   let localData = { channels: [], movies: [], music: [] };
   let normalizedData = { channels: [], movies: [], music: [] };
   let apiCategories = [];
@@ -31,6 +31,11 @@ document.addEventListener("DOMContentLoaded", () => {
     Music: "music",
   };
   const LOCAL_CATEGORY_NAMES = Object.keys(LOCAL_CATEGORIES_MAP);
+
+  let sliderObserver;
+  let allPlaceholders = [];
+  let lastObservedIndex = -1;
+  const BATCH_SIZE = 5;
 
   async function loadAllDataSources() {
     const promises = [
@@ -88,24 +93,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function normalizeAllLocalData() {
     for (const key of Object.keys(localData)) {
-      const type = key.slice(0, -1);
       normalizedData[key] = localData[key].map((item) =>
-        normalizeLocalItem(item, type)
+        normalizeLocalItem(item)
       );
     }
+    // Limpa os dados brutos para liberar memória
     localData = { channels: [], movies: [], music: [] };
   }
 
-  function normalizeLocalItem(item, type) {
-    const isChannel = type === "channel";
-    let thumbnail = isChannel ? item.logo : item.thumbnail;
-
+  function normalizeLocalItem(item) {
+    let thumbnail = item.logo || item.thumbnail;
     if (thumbnail && !thumbnail.startsWith("http")) {
       thumbnail = new URL(thumbnail, API_BASE_URL).href;
     }
 
+    // Garante que as categorias sejam sempre um array de objetos {name: string}
     const categories = Array.isArray(item.categories)
-      ? item.categories.map((name) => ({ name }))
+      ? item.categories.map((name) =>
+          typeof name === "string" ? { name } : name
+        )
       : [];
 
     let videoId = null;
@@ -115,23 +121,23 @@ document.addEventListener("DOMContentLoaded", () => {
         const match = urlString.match(/src=['"]([^'"]+)['"]/);
         urlString = match ? match[1] : null;
       }
-      if (urlString && urlString.includes("youtube.com")) {
+      if (
+        urlString &&
+        urlString.includes("googleusercontent.com/youtube.com")
+      ) {
         try {
           const potentialId = new URL(urlString).pathname.split("/").pop();
           if (potentialId) {
-            videoId = potentialId.replace(/[^A-Za-z0-9_-]/g, ""); // Sanitiza o ID
+            videoId = potentialId.replace(/[^A-Za-z0-9_-]/g, "");
           }
         } catch (e) {
-          console.warn(
-            `Não foi possível analisar a URL do embed: "${urlString}"`,
-            e
-          );
+          console.warn(`URL do embed inválida: "${urlString}"`, e);
         }
       }
     }
 
     return {
-      id: item.id || item.title,
+      id: item.id || item.title || item.name,
       title: item.title || item.name,
       description: item.description || "",
       thumbnail: { url: thumbnail },
@@ -142,59 +148,102 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   }
 
+  /**
+   * MODIFICADO: Coleta categorias da API, as categorias principais locais
+   * e também varre todos os itens locais para encontrar sub-categorias únicas.
+   */
   async function fetchCategories() {
+    // Começa com as categorias da API
     const combinedCategories = [...apiCategories];
-    const apiCategoryNames = new Set(
+    const allCategoryNames = new Set(
       apiCategories.map((c) => c.name.toLowerCase())
     );
 
-    const localToApiEquivalents = {
-      Movies: "movies",
-      Music: "music",
-      Channels: "channels",
-    };
-
+    // Adiciona as categorias locais principais (Channels, Movies, Music) se ainda não existirem
     LOCAL_CATEGORY_NAMES.forEach((localName) => {
-      const equivalentApiName = localToApiEquivalents[localName.toLowerCase()];
-      if (
-        !apiCategoryNames.has(localName.toLowerCase()) &&
-        !apiCategoryNames.has(equivalentApiName)
-      ) {
+      if (!allCategoryNames.has(localName.toLowerCase())) {
+        allCategoryNames.add(localName.toLowerCase());
         combinedCategories.push({ name: localName });
       }
     });
 
+    // Varre todos os dados locais normalizados para encontrar outras categorias
+    for (const key of Object.keys(normalizedData)) {
+      // 'channels', 'movies', 'music'
+      for (const item of normalizedData[key]) {
+        // cada item individual
+        if (item.categories && Array.isArray(item.categories)) {
+          for (const category of item.categories) {
+            if (
+              category.name &&
+              !allCategoryNames.has(category.name.toLowerCase())
+            ) {
+              allCategoryNames.add(category.name.toLowerCase());
+              combinedCategories.push({ name: category.name });
+            }
+          }
+        }
+      }
+    }
+
     return combinedCategories;
   }
 
+  /**
+   * MODIFICADO: Busca vídeos/mídia para uma categoria específica,
+   * combinando resultados da API e dos arquivos locais.
+   */
   async function fetchVideosByCategory(categoryName) {
+    // Se for uma categoria principal local, retorna todos os itens desse tipo.
     if (LOCAL_CATEGORY_NAMES.includes(categoryName)) {
       const localKey = LOCAL_CATEGORIES_MAP[categoryName];
       return normalizedData[localKey] || [];
     }
 
-    try {
-      const url = `${API_BASE_URL}api/search?category=${encodeURIComponent(
-        categoryName
-      )}`;
-      const response = await fetch(url);
+    const lowerCaseCategory = categoryName.toLowerCase();
 
-      if (!response.ok)
-        throw new Error(`HTTP error! status: ${response.status}`);
+    // Promessa para buscar na API
+    const apiPromise = fetch(
+      `${API_BASE_URL}api/search?category=${encodeURIComponent(categoryName)}`
+    )
+      .then((res) => (res.ok ? res.json() : Promise.resolve({ videos: [] })))
+      .then((data) => data.videos || [])
+      .catch((err) => {
+        console.error(`Falha na API para categoria ${categoryName}:`, err);
+        return [];
+      });
 
-      const data = await response.json();
-      return data.videos || [];
-    } catch (error) {
-      console.error(
-        `Falha ao buscar vídeos da API para a categoria ${categoryName}:`,
-        error
+    // Promessa para filtrar os dados locais
+    const localPromise = new Promise((resolve) => {
+      const allLocalItems = [
+        ...normalizedData.channels,
+        ...normalizedData.movies,
+        ...normalizedData.music,
+      ];
+      const results = allLocalItems.filter((item) =>
+        item.categories.some(
+          (cat) => cat.name.toLowerCase() === lowerCaseCategory
+        )
       );
-      return [];
-    }
+      resolve(results);
+    });
+
+    // Aguarda ambas as buscas e combina os resultados
+    const [apiResults, localResults] = await Promise.all([
+      apiPromise,
+      localPromise,
+    ]);
+
+    // Remove duplicados, dando preferência aos resultados da API
+    const apiResultIds = new Set(apiResults.map((v) => v.id));
+    const uniqueLocalResults = localResults.filter(
+      (v) => !apiResultIds.has(v.id)
+    );
+
+    return [...apiResults, ...uniqueLocalResults];
   }
 
   // ─── CONTROLES DO PLAYER DE VÍDEO PRINCIPAL (HERO) ─────────────────────────────────
-
   function initializeHeroPlayer() {
     const heroVideo = document.querySelector(".hero-bg");
     if (!heroVideo) return;
@@ -286,15 +335,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  //
   // ─── LÓGICA DA BARRA DE PESQUISA DINÂMICA ──────────────────────────────────────────
-  //
   async function initializeSearch() {
     const input = document.getElementById("search-input");
     const dropdown = document.getElementById("search-dropdown");
     if (!input || !dropdown) return;
 
-    // ... (restante das declarações de variáveis da busca)
     const historyList = document.getElementById("history-list"),
       noHistory = document.getElementById("no-history"),
       categoriesList = document.getElementById("categories-list"),
@@ -350,16 +396,15 @@ document.addEventListener("DOMContentLoaded", () => {
         apiSearchPromise,
         localSearchPromise,
       ]);
-      const apiResultTitles = new Set(apiResults.map((v) => v.title));
+      const apiResultIds = new Set(apiResults.map((v) => v.id));
       const uniqueLocalResults = localResults.filter(
-        (v) => !apiResultTitles.has(v.title)
+        (v) => !apiResultIds.has(v.id)
       );
       return [...apiResults, ...uniqueLocalResults];
     }
 
-    // ... (O restante da função initializeSearch permanece praticamente o mesmo)
     function renderTrending() {
-      /* ...código sem alterações... */ trendingList.innerHTML = "";
+      trendingList.innerHTML = "";
       trending.forEach((t) => {
         const btn = document.createElement("button");
         btn.className = "chip";
@@ -372,7 +417,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
     function renderCategories(categoriesData) {
-      /* ...código sem alterações... */ categoriesList.innerHTML = "";
+      categoriesList.innerHTML = "";
       categoriesData.slice(0, 6).forEach((c) => {
         const btn = document.createElement("button");
         btn.className = "chip";
@@ -395,7 +440,6 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
       videos.slice(0, 5).forEach((video) => {
-        // Lógica ajustada para pegar URL da thumbnail de qualquer fonte
         const imageUrl = video.thumbnail?.url?.startsWith("http")
           ? video.thumbnail.url
           : video.thumbnail?.url
@@ -415,7 +459,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
     function renderEmpty() {
-      /* ...código sem alterações... */ mediaSection.style.display = "none";
+      mediaSection.style.display = "none";
       categoriesSection.style.display = "block";
       historySection.style.display = "block";
       noHistory.style.display = history.length ? "none" : "block";
@@ -481,7 +525,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // ─── LÓGICA DOS SLIDERS (CARROSSÉIS) DINÂMICOS ──────────────────────────────────────────
-
   let sharedYTPlayer = null;
   let playerReady = false;
   let activeCard = null;
@@ -526,8 +569,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.onYouTubeIframeAPIReady = function () {
     playerReady = true;
-    // playersToCreate.forEach(createPlayerForCard);
-    // playersToCreate = [];
   };
 
   function initializePlayerPreviews() {
@@ -567,83 +608,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  async function initializeDynamicSliders() {
-    const slidersContainer = document.getElementById(
-      "dynamic-sliders-container"
-    );
-    if (!slidersContainer) return;
+  /**
+   * @param {HTMLElement} placeholder
+   * @param {object} category
+   */
+  async function loadAndBuildSlider(placeholder, category) {
+    const videos = await fetchVideosByCategory(category.name);
 
-    slidersContainer.innerHTML =
-      '<p class="loading-feedback">Carregando conteúdo...</p>';
-    const categories = await fetchCategories();
-    if (categories.length === 0) {
-      slidersContainer.innerHTML =
-        '<p class="loading-feedback">Nenhuma categoria encontrada.</p>';
-      return;
+    if (videos.length < 3) {
+      placeholder.remove();
+      return false;
     }
 
-    slidersContainer.innerHTML = "";
-    let playerInstanceCounter = 0;
+    let playerInstanceCounter = document.querySelectorAll(
+      ".youtube-player-embed"
+    ).length;
 
-    for (const category of categories) {
-      const videos = await fetchVideosByCategory(category.name);
-      if (videos.length > 0) {
-        // A função createSliderHTML agora só prepara o container do player
-        const sliderHTML = videos
-          .map((video) => {
-            const imageUrl = video.thumbnail?.url?.startsWith("http")
-              ? video.thumbnail.url
-              : video.thumbnail?.url
-              ? `${API_BASE_URL}${video.thumbnail.url.replace(/^\//, "")}`
-              : "images/placeholder.jpg";
-            const playerUrl = `/player/?q=${video.id}`;
-            const youtubeVideoId = video.videoId;
-            const videoHoverData = youtubeVideoId
-              ? `data-youtube-id="${youtubeVideoId}"`
-              : "";
-
-            let playerContainer = "";
-            if (youtubeVideoId) {
-              playerInstanceCounter++;
-              const uniquePlayerId = `yt-player-instance-${playerInstanceCounter}`;
-              playerContainer = `<div class="youtube-player-embed" id="${uniquePlayerId}"></div>`;
-            }
-
-            return `<a href="${playerUrl}" class="media-card-link"><div class="media-card" ${videoHoverData}><div class="media-thumb">${playerContainer} <img src="${imageUrl}" alt="${
-              video.title
-            }" loading="lazy" class="media-thumbnail" />${
-              video.duration
-                ? `<span class="media-duration">${video.duration}</span>`
-                : ""
-            }</div><div class="media-info-col"><p class="media-title">${
-              video.title
-            }</p><div class="media-subinfo"><p class="media-genre">${video.categories
-              .map((c) => c.name)
-              .join(
-                ", "
-              )}</p><p class="media-by">by <span class="media-author">${
-              video.author || "EternityReady"
-            }</span></p></div></div></div></a>`;
-          })
-          .join("");
-
-        // --- CORREÇÃO APLICADA AQUI ---
-        // Usando a variável 'sliderHTML' em vez de 'sliderContent'
-        const sliderContent = `<div class="section-header"><h2 class="section-title"><a href="/categories/?category=${category.name}">${category.name}</a></h2><a href="/categories?category=${category.name}" class="section-link"><i class="fa fa-chevron-right"></i></a></div><div class="slider-wrapper"><button class="slider-arrow prev" aria-label="Anterior"><i class="fa fa-chevron-left"></i></button><div class="media-grid">${sliderHTML}</div><button class="slider-arrow next" aria-label="Próximo"><i class="fa fa-chevron-right"></i></button></div><hr class="media-separator" />`;
-
-        const sliderSection = document.createElement("div");
-        sliderSection.className = `category-section ${category.name
-          .toLowerCase()
-          .replace(/\s+/g, "-")}-section`;
-        sliderSection.innerHTML = sliderContent;
-        slidersContainer.appendChild(sliderSection);
-      }
-    }
-    initializeSliderControls();
-  }
-
-  function createSliderHTML(category, videos) {
-    const videoCardsHTML = videos
+    const sliderHTML = videos
       .map((video) => {
         const imageUrl = video.thumbnail?.url?.startsWith("http")
           ? video.thumbnail.url
@@ -676,29 +657,121 @@ document.addEventListener("DOMContentLoaded", () => {
         }</span></p></div></div></div></a>`;
       })
       .join("");
-    return `<div class="section-header"><h2 class="section-title"><a href="/categories/?category=${category.name}">${category.name}</a></h2><a href="/categories?category=${category.name}" class="section-link"><i class="fa fa-chevron-right"></i></a></div><div class="slider-wrapper"><button class="slider-arrow prev" aria-label="Anterior"><i class="fa fa-chevron-left"></i></button><div class="media-grid">${videoCardsHTML}</div><button class="slider-arrow next" aria-label="Próximo"><i class="fa fa-chevron-right"></i></button></div><hr class="media-separator" />`;
+
+    const sliderContent = `<div class="section-header"><h2 class="section-title"><a href="/categories/?category=${encodeURIComponent(
+      category.name
+    )}">${
+      category.name
+    }</a></h2><a href="/categories?category=${encodeURIComponent(
+      category.name
+    )}" class="section-link"><i class="fa fa-chevron-right"></i></a></div><div class="slider-wrapper"><button class="slider-arrow prev" aria-label="Anterior"><i class="fa fa-chevron-left"></i></button><div class="media-grid">${sliderHTML}</div><button class="slider-arrow next" aria-label="Próximo"><i class="fa fa-chevron-right"></i></button></div><hr class="media-separator" />`;
+
+    const sliderSection = document.createElement("div");
+    sliderSection.className = `category-section ${category.name
+      .toLowerCase()
+      .replace(/[\s+&]/g, "-")}-section`;
+    sliderSection.innerHTML = sliderContent;
+
+    placeholder.replaceWith(sliderSection);
+    initializeSliderControls(sliderSection);
+    return true;
   }
 
-  //
+  async function initializeDynamicSliders() {
+    const slidersContainer = document.getElementById(
+      "dynamic-sliders-container"
+    );
+    if (!slidersContainer) return;
+
+    slidersContainer.innerHTML =
+      '<p class="loading-feedback">Carregando categorias...</p>';
+    const categories = await fetchCategories();
+
+    if (categories.length === 0) {
+      slidersContainer.innerHTML =
+        '<p class="loading-feedback">Nenhuma categoria encontrada.</p>';
+      return;
+    }
+
+    // 1. Limpa o container e cria os placeholders
+    slidersContainer.innerHTML = "";
+    categories.forEach((category) => {
+      const placeholder = document.createElement("div");
+      placeholder.className = "slider-placeholder";
+      placeholder.dataset.categoryName = category.name;
+      // Adiciona um feedback visual de carregamento
+      placeholder.innerHTML = `<div class="loading-spinner"></div>`;
+      slidersContainer.appendChild(placeholder);
+    });
+
+    allPlaceholders = Array.from(
+      document.querySelectorAll(".slider-placeholder")
+    );
+
+    sliderObserver = new IntersectionObserver(
+      async (entries, observer) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            const placeholder = entry.target;
+            const categoryName = placeholder.dataset.categoryName;
+
+            // Para de observar imediatamente para não disparar de novo
+            observer.unobserve(placeholder);
+
+            // Carrega o slider e, SE for bem-sucedido, aciona a observação do PRÓXIMO item da lista geral
+            const success = await loadAndBuildSlider(placeholder, {
+              name: categoryName,
+            });
+            if (success) {
+              // Tenta observar o PRÓXIMO placeholder na lista geral
+              const nextPlaceholderToObserve =
+                allPlaceholders[lastObservedIndex + 1];
+              if (nextPlaceholderToObserve) {
+                nextPlaceholderToObserve.classList.add("is-observable");
+                sliderObserver.observe(nextPlaceholderToObserve);
+                lastObservedIndex++;
+              }
+            }
+          }
+        }
+      },
+      {
+        rootMargin: "200px 0px", // Começa a carregar quando estiver a 200px de distância da tela
+        threshold: 0.01,
+      }
+    );
+
+    for (let i = 0; i < BATCH_SIZE; i++) {
+      const placeholder = allPlaceholders[i];
+      if (placeholder) {
+        placeholder.classList.add("is-observable");
+        sliderObserver.observe(placeholder);
+        lastObservedIndex = i;
+      } else {
+        break;
+      }
+    }
+  }
+
   // ─── INICIALIZAÇÃO DOS COMPONENTES DE UI E FUNÇÃO PRINCIPAL ─────────
-  //
-  function initializeSliderControls() {
-    /* ...código sem alterações... */ document
-      .querySelectorAll(".slider-wrapper")
-      .forEach((wrapper) => {
-        const slider = wrapper.querySelector(".media-grid");
-        const prevBtn = wrapper.querySelector(".slider-arrow.prev");
-        const nextBtn = wrapper.querySelector(".slider-arrow.next");
-        if (!slider || !prevBtn || !nextBtn) return;
-        const scrollAmount = slider.clientWidth * 0.8;
-        prevBtn.addEventListener("click", () =>
-          slider.scrollBy({ left: -scrollAmount, behavior: "smooth" })
-        );
-        nextBtn.addEventListener("click", () =>
-          slider.scrollBy({ left: scrollAmount, behavior: "smooth" })
-        );
-      });
-    document.querySelectorAll(".media-grid").forEach((slider) => {
+  /**
+   * @param {HTMLElement} context
+   */
+  function initializeSliderControls(context = document) {
+    context.querySelectorAll(".slider-wrapper").forEach((wrapper) => {
+      const slider = wrapper.querySelector(".media-grid");
+      const prevBtn = wrapper.querySelector(".slider-arrow.prev");
+      const nextBtn = wrapper.querySelector(".slider-arrow.next");
+      if (!slider || !prevBtn || !nextBtn) return;
+      const scrollAmount = slider.clientWidth * 0.8;
+      prevBtn.addEventListener("click", () =>
+        slider.scrollBy({ left: -scrollAmount, behavior: "smooth" })
+      );
+      nextBtn.addEventListener("click", () =>
+        slider.scrollBy({ left: scrollAmount, behavior: "smooth" })
+      );
+    });
+    context.querySelectorAll(".media-grid").forEach((slider) => {
       let isDown = false,
         startX,
         scrollLeft;
@@ -728,9 +801,9 @@ document.addEventListener("DOMContentLoaded", () => {
       slider.addEventListener("touchend", endDrag);
     });
   }
+
   function initializeGeneralUI() {
-    /* ...código sem alterações... */ const menuBtn =
-        document.querySelector(".btn-menu"),
+    const menuBtn = document.querySelector(".btn-menu"),
       overlay = document.querySelector(".menu-overlay"),
       mobileNav = document.querySelector(".mobile-nav"),
       closeBtn = document.querySelector(".btn-nav-close");
@@ -752,9 +825,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /**
-   * Função principal de inicialização para orquestrar o carregamento e a renderização.
-   */
   async function main() {
     await loadAllDataSources();
     normalizeAllLocalData();
@@ -766,5 +836,5 @@ document.addEventListener("DOMContentLoaded", () => {
     initializePlayerPreviews();
   }
 
-  main(); // Executa a aplicação.
+  main();
 });
